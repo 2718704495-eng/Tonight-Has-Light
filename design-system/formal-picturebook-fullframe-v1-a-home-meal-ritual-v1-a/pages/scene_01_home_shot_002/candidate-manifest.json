@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "contractId": "HOME-MEAL-RITUAL-V1-A",
+  "candidateId": "home-meal-h2-hang-outerwear-v1-a-r1",
+  "pageId": "scene_01_home_shot_002",
+  "assetId": "ART-PBOOK-HOME-002",
+  "sourceProperty": "ai-assisted-formal-fullframe",
+  "promptId": "HOME-H2-HANG-OUTERWEAR-PROMPT-V1-A",
+  "status": "USER VISUAL PASS / FROZEN",
+  "prompt": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/prompt.md",
+    "sha256": "ec30d2d426358bea16b1868aa1b57e12360f5f017e87d961f20144acd367956e"
+  },
+  "references": [
+    {
+      "index": 1,
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/390x844/scene_01_home_shot_001.png",
+      "sha256": "b68c2dfd7bcf40a9d3bd77320faecdbeff517e2b2f7f160abbf4a7d4c6a836fe",
+      "role": "approved H1 room material, hook location, floor direction, warm-light direction, adult and gray-blue outer-layer continuity reference only"
+    },
+    {
+      "index": 2,
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png",
+      "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51",
+      "role": "approved H5 hanging outerwear, dark knitted inner top, left hook, room completion and ordinary cat continuity reference only"
+    }
+  ],
+  "generation": {
+    "tool": "built-in image_gen",
+    "date": "2026-08-30",
+    "generationCount": 1,
+    "repairCount": 0,
+    "maxGenerations": 2,
+    "initialRawPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/source/raw/scene_01_home_shot_002-imagegen-r1.png",
+    "initialRawSha256": "c22cf2a24679847715cb7209824f61f9a00be7a5fd96c805c8527cb4a3d4adcb",
+    "repairRawPath": null,
+    "repairRawSha256": null,
+    "acceptedVersionForReview": "r1"
+  },
+  "ownerPreflight": {
+    "decision": "PASS / NO REPAIR NEEDED",
+    "p0": 0,
+    "p1": 0,
+    "p2": 0,
+    "continuity": "The same left doorway, hook plate, cabinet and lamp, floor direction, broad warm light, gray-blue outer layer, dark knit inner top, anonymous adult and ordinary four-paw cat remain readable across approved H1, H2 r1 and approved H5.",
+    "action": "The adult's raised hand, garment shoulder and exact hook form one clear hanging-action triangle at both 390x844 and 195x422.",
+    "darkAreaBoundary": "The narrow dark plane at far left is the night doorway inherited from approved H1, not an unlit interior corner; the interior wall, cabinet, floor, adult, garment and cat remain readable.",
+    "repairDecision": "Do not spend the optional r2 repair; proceed to deterministic evidence and independent zero-write review."
+  },
+  "normalization": {
+    "type": "deterministic center cover to 780x1688 master; SHOW_ALL review exports",
+    "safeBorder": "#06265F",
+    "masterPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/source/masters/scene_01_home_shot_002-r1-master-2x.png",
+    "masterSha256": "992226070e907054a19a257d6f69d40a538df2bc9ab9f1181acee66d7b149916",
+    "pixelGenerationOrRepaint": false
+  },
+  "reviewExports": {
+    "195x422": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/195x422/scene_01_home_shot_002.png", "sha256": "8419a54d7aea95c00eb638299f4f3a0faec8e41c0a259fce190336b878bf7593" },
+    "360x800": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/360x800/scene_01_home_shot_002.png", "sha256": "0b9848fc332a331e4570e70a45e48648d6954ed2279609f28f5b2b121d73e51f" },
+    "390x844": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/390x844/scene_01_home_shot_002.png", "sha256": "ef11fcb38d1e515cb2f8702d7b4ea8734f0f92ac08f24c8e2a18bfad97ccc6dd" },
+    "430x932": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/430x932/scene_01_home_shot_002.png", "sha256": "a1f00b1445250a3ef049521ab865d9229623ed3ab935458e6753cda04a9adf29" },
+    "430x844-pressure": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/430x844-pressure/scene_01_home_shot_002.png", "sha256": "546cf28e2af815a2c3855fbc7930c8fc6b13170ca7402248a27a78901400b163" }
+  },
+  "safetyReview": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/reviews/PROMPT-SAFETY.md",
+    "sha256": "a9fe669a328ea52dfbe9da517dee3bea9aa97eb9bf5af2e7a705d6dd340f0e37",
+    "decision": "PASS",
+    "nsfw": "PASS",
+    "minors": "PASS",
+    "violence": "PASS",
+    "realPersonLikeness": "PASS",
+    "copyrightedCharactersOrBrands": "PASS",
+    "livingArtistImitation": "PASS",
+    "hateOrHarassment": "PASS",
+    "sensitiveData": "PASS"
+  },
+  "visualReviews": {
+    "owner": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/reviews/OWNER-VISUAL-REVIEW.md",
+      "sha256": "2c0fb56622dc6b570527ca994c48bb315bfa4f6ce50c0bc1fcbdc7220733a1e3",
+      "decision": "PASS FOR INDEPENDENT ZERO-WRITE REVIEW",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0
+    },
+    "independent": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/reviews/INDEPENDENT-VISUAL-REVIEW.md",
+      "sha256": "8852ebf77a514d75b36059de21062c46ef8252ff4a2012a3883699b4ba2ca85b",
+      "decision": "READY FOR H3 SERIAL PRODUCTION",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "writeOperations": 0
+    }
+  },
+  "h1UserApproval": {
+    "recordPath": "docs/HOME-H1-ARRIVAL-V1-A-R2-APPROVAL.md",
+    "recordSha256": "b3f6baca9190fa278e680613b58c37f25aac017f62e72ee54f3f104878fac4f6",
+    "approvedPageId": "scene_01_home_shot_001",
+    "approved390Sha256": "b68c2dfd7bcf40a9d3bd77320faecdbeff517e2b2f7f160abbf4a7d4c6a836fe",
+    "scope": "H1 Gate B visual pass; authorizes serial H2 then H3 production only"
+  },
+  "userApproval": {
+    "recordPath": "docs/HOME-H2-H3-VISUAL-APPROVAL-20260831.md",
+    "recordSha256": "8c6ff2e17d67233c3a95049a114f50f12123b81ab8e128d2814dbf6ceb37dbb5",
+    "approvedPageId": "scene_01_home_shot_002",
+    "approved390Sha256": "ef11fcb38d1e515cb2f8702d7b4ea8734f0f92ac08f24c8e2a18bfad97ccc6dd",
+    "scope": "H2 Gate B user visual pass/frozen; unlocks local H4 Gate B production only"
+  },
+  "permissions": {
+    "localH2ImageGeneration": false,
+    "h3": true,
+    "h4": true,
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "release": false,
+    "git": false,
+    "remoteWrite": false
+  }
+}

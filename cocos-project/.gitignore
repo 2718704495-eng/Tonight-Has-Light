@@ -1,0 +1,9 @@
+/library/
+/temp/
+/local/
+/build/
+/native/
+/node_modules/
+*.log
+.DS_Store
+

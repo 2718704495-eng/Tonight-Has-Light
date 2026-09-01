@@ -1,0 +1,74 @@
+{
+  "candidate_id": "stargaze-formal-batch-v1-a-f2-r1",
+  "safe_border": "#06265F",
+  "raw": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/source/raw/scene_02_stargaze_shot_002-imagegen-r1.png",
+    "sha256": "0d44c7dcc7af05432c91f89056fa023a7ce2ccf3b4ebb74ca847c1ce694d0084",
+    "metadata": {
+      "format": "png",
+      "width": 853,
+      "height": 1844,
+      "space": "srgb",
+      "depth": "uchar",
+      "hasAlpha": false
+    }
+  },
+  "master": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/source/masters/scene_02_stargaze_shot_002-master-2x.png",
+    "sha256": "2c8326bae7dbd85384583864e5689bf719d84d3dfdca998711ee681eff0a2d63",
+    "dimensions": {
+      "width": 780,
+      "height": 1688
+    },
+    "metadata": {
+      "format": "png",
+      "width": 780,
+      "height": 1688,
+      "space": "srgb",
+      "depth": "uchar",
+      "hasAlpha": false
+    }
+  },
+  "exports": {
+    "195x422": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/195x422/scene_02_stargaze_shot_002.png",
+      "sha256": "01309ee9a41e36e52d1f7b8eb3f69948796a518c22b9586c8a0111bec540586c",
+      "dimensions": {
+        "width": 195,
+        "height": 422
+      }
+    },
+    "360x800": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/360x800/scene_02_stargaze_shot_002.png",
+      "sha256": "944ee935672e8dfaf6d734fa60da0f4d90ed012f2dc25a2de0fa3e3233b636d6",
+      "dimensions": {
+        "width": 360,
+        "height": 800
+      }
+    },
+    "390x844": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/390x844/scene_02_stargaze_shot_002.png",
+      "sha256": "98e267506a5485a93fdefa9759611c0ac4de2120edd5dc61d253a9ff59deee52",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    "430x932": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/430x932/scene_02_stargaze_shot_002.png",
+      "sha256": "b42f74ee5deaecdda5923e6b9c15020ed5df75d7b9f69e7c75612cccb4ec21b9",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    "430x844-pressure": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/430x844-pressure/scene_02_stargaze_shot_002.png",
+      "sha256": "98ed43de9b2fc938e91b1e4df3a0329e674fbcc345306e0d8cd8a010155126fb",
+      "dimensions": {
+        "width": 430,
+        "height": 844
+      }
+    }
+  }
+}

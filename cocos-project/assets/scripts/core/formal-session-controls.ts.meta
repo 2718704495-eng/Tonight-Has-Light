@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "93dffaf5-cafa-453c-a6f6-f46c4363c2d0",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/core/formal-session-controls.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

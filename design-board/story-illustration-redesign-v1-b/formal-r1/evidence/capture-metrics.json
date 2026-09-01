@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "candidate": "STORY-ILLUSTRATION-REDESIGN-V1-B-FORMAL-R1",
+  "gate": "BLOCKED",
+  "approval": "AWAITING_USER_SECOND_APPROVAL",
+  "auditOnly": true,
+  "assetStatus": "BLOCKED",
+  "reviewManifest": {
+    "url": "http://127.0.0.1:62872/design-system/outdoor-story-illustration-v1-b/dist/FORMAL-REVIEW-MANIFEST.json",
+    "present": false,
+    "valid": false,
+    "candidate": null,
+    "status": null,
+    "error": "HTTP 404"
+  },
+  "displaySlots": 18,
+  "loadedSlots": 0,
+  "blockedSlots": 18,
+  "manualChecks": 8,
+  "contractThumbnail": {
+    "width": 195,
+    "height": 422,
+    "scale": 0.5,
+    "label": "195×422 · 合同缩略 / 50%"
+  },
+  "extremeThumbnail": {
+    "width": 98,
+    "height": 211,
+    "scale": 0.25,
+    "label": "98×211 · 额外极限缩略 / 25%"
+  },
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "documentWidth": 390,
+    "documentHeight": 14863,
+    "horizontalOverflow": false
+  },
+  "statusText": "BLOCKED · 无有效正式复核清单 · 未释放或已判失败的图像不展示",
+  "screenshots": []
+}

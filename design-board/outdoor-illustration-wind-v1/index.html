@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="《今夜有灯》OUTDOOR-ILLUSTRATION-WIND-V1-A 五幅风页探索故事板与 140ms 转场演示。"
+    />
+    <title>今夜有灯 · 五幅风页</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="board">
+      <header class="hero">
+        <p class="status">STYLE DIRECTION APPROVED · STORYBOARD R2 STRONGER · AWAITING USER REVIEW · NOT FOR BUILD</p>
+        <div class="hero-copy">
+          <div>
+            <p class="eyebrow">OUTDOOR-ILLUSTRATION-WIND-V1-A</p>
+            <h1>风翻得更明显。</h1>
+          </div>
+          <p>
+            星空、小屋和门保持稳定；只让草坡、人物与猫依次换成完整插画风态。
+            R2 放大下半场轮廓变化，每次换页仍用 140ms 双画面交叉淡化，不硬切、不闪空帧。
+          </p>
+        </div>
+      </header>
+
+      <section class="demo" aria-labelledby="demo-title">
+        <div class="demo-heading">
+          <div>
+            <p class="section-label">原速动效板</p>
+            <h2 id="demo-title">草坡大弧线 → 发梢衣角 → 猫尾</h2>
+          </div>
+          <p id="frame-description" class="frame-description" aria-live="polite">
+            F0 · 风来前的安静
+          </p>
+        </div>
+
+        <div class="demo-layout">
+          <div class="phone-shell" aria-label="五幅风页动效预览">
+            <div id="wind-stage" class="wind-stage" role="img" aria-label="成年人和猫在夜风草坡共同看星空">
+              <div class="wind-layer wind-layer-a" data-layer="a"></div>
+              <div class="wind-layer wind-layer-b" data-layer="b"></div>
+            </div>
+          </div>
+
+          <div class="controls" aria-label="动效控制">
+            <div class="control-row">
+              <button id="play-toggle" class="control-button primary" type="button" aria-pressed="true">
+                暂停自动播放
+              </button>
+              <button id="reduce-toggle" class="control-button" type="button" aria-pressed="false">
+                减少动态：关
+              </button>
+            </div>
+
+            <div class="frame-rail" role="group" aria-label="查看单幅风页">
+              <button type="button" data-frame="0" aria-pressed="true"><b>F0</b><span>安静</span></button>
+              <button type="button" data-frame="1" aria-pressed="false"><b>F1</b><span>远草</span></button>
+              <button type="button" data-frame="2" aria-pressed="false"><b>F2</b><span>近草</span></button>
+              <button type="button" data-frame="3" aria-pressed="false"><b>F3</b><span>人物</span></button>
+              <button type="button" data-frame="4" aria-pressed="false"><b>F4</b><span>猫</span></button>
+            </div>
+
+            <dl class="transition-contract">
+              <div><dt>换页</dt><dd>140ms · smoothstep 交叉淡化</dd></div>
+              <div><dt>节奏</dt><dd>首轮安静 0.9s；复播前回到 F0 安静 4.5s</dd></div>
+              <div><dt>打断</dt><dd>新输入替换旧过渡；不等待 animationend</dd></div>
+              <div><dt>减动</dt><dd>停止自动换帧；仅保留 ≤180ms 透明度反馈</dd></div>
+              <div><dt>门</dt><dd>未来接入时始终可点，并立即中断风页</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="storyboard" aria-labelledby="storyboard-title">
+        <div class="demo-heading">
+          <div>
+            <p class="section-label">五联画 · 25% 仍需可辨</p>
+            <h2 id="storyboard-title">R2 把变化集中放大在下半场。</h2>
+          </div>
+          <p>上半场稳定保留；风只改草坡、发梢衣角和猫耳尾。正式人物、猫与风页仍须原创分层重绘。</p>
+        </div>
+        <figure>
+          <img
+            src="./exploration/five-wind-pages-storyboard-r2-stronger.png"
+            alt="五幅连续夜风插画 R2，风页变化在草坡、人物和猫的轮廓上更明显"
+          />
+          <figcaption>
+            R2 保留单条银河、右侧小屋、稳定门光与两朵花；生成图仍不进入微信包。
+          </figcaption>
+        </figure>
+        <div class="thumbnail-check" aria-label="25% 缩略图检查">
+          <p><b>25% 缩略图</b><span>F0、F2、F4 要能不看标注分出来。</span></p>
+          <img
+            src="./exploration/five-wind-pages-storyboard-r2-stronger.png"
+            alt="以原图四分之一尺寸显示的五幅 R2 夜风插画"
+          />
+        </div>
+        <div class="comparison" aria-label="R1 和 R2 变化对照">
+          <article>
+            <p><b>R1</b><span>变化偏细，手机上主要像草纹轻微移动。</span></p>
+            <img src="./exploration/five-wind-pages-storyboard-r1.png" alt="R1 五幅风页对照" />
+          </article>
+          <article>
+            <p><b>R2</b><span>草坡、发梢衣角和猫尾形成更大的轮廓差。</span></p>
+            <img src="./exploration/five-wind-pages-storyboard-r2-stronger.png" alt="R2 五幅风页对照" />
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

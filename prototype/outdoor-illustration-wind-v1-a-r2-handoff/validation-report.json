@@ -1,0 +1,860 @@
+{
+  "candidate": "OUTDOOR-ILLUSTRATION-WIND-V1-A-R2",
+  "engineering_revision": "R2-EDGEFIX-01",
+  "alpha_encoding": "straight",
+  "status": "PASS_MECHANICAL_HANDOFF_ONLY",
+  "asset_boundary": "prototype-only/disposable/not-for-review/not-for-release",
+  "checks": [
+    {
+      "name": "source-sha256",
+      "status": "PASS",
+      "detail": "a787d06f170cef4ac675e7a14287b4f8c4cfaef5414248091bfe481abdb1b811"
+    },
+    {
+      "name": "manifest-candidate",
+      "status": "PASS",
+      "detail": "OUTDOOR-ILLUSTRATION-WIND-V1-A-R2"
+    },
+    {
+      "name": "manifest-engineering-revision",
+      "status": "PASS",
+      "detail": "R2-EDGEFIX-01"
+    },
+    {
+      "name": "manifest-alpha-encoding",
+      "status": "PASS",
+      "detail": "straight"
+    },
+    {
+      "name": "manifest-boundary",
+      "status": "PASS",
+      "detail": "prototype-only/disposable/not-for-review/not-for-release"
+    },
+    {
+      "name": "manifest-state-count",
+      "status": "PASS",
+      "detail": 5
+    },
+    {
+      "name": "crossfade-contract",
+      "status": "PASS",
+      "detail": 140
+    },
+    {
+      "name": "smoothstep-contract",
+      "status": "PASS",
+      "detail": "smoothstep"
+    },
+    {
+      "name": "reduced-motion-contract",
+      "status": "PASS",
+      "detail": "F0"
+    },
+    {
+      "name": "honest-anchor-contract",
+      "status": "PASS",
+      "detail": "composition-locked prototype: adult/cat seated position and identity stay fixed; approved hair/clothing/ears/full-tail silhouettes may change"
+    },
+    {
+      "name": "stable-dimensions",
+      "status": "PASS",
+      "detail": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "stable-source-hash",
+      "status": "PASS",
+      "detail": "2ddda67fc31d21d35ef4012e34e737d487a3b86d2ef5496140781e42430f2e65"
+    },
+    {
+      "name": "stable-no-divider",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "f0-canonical-mask-hash",
+      "status": "PASS",
+      "detail": "668a50a7e68bac0e066a86fab11b27d8e2fc81d51a921a966dea94249d89440a"
+    },
+    {
+      "name": "f0-mask-dimensions",
+      "status": "PASS",
+      "detail": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "f0-evidence-mask-exact",
+      "status": "PASS",
+      "detail": "dynamic-mask-f0-390x844.png"
+    },
+    {
+      "name": "f0-upper-mask-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f0-cottage-core-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f0-door-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f0-overlay-dimensions",
+      "status": "PASS",
+      "detail": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "f0-overlay-mode",
+      "status": "PASS",
+      "detail": "RGBA"
+    },
+    {
+      "name": "f0-overlay-hash",
+      "status": "PASS",
+      "detail": "2867d9d382f00150bbc06452e0728dbabe8bf2903ade8b73366847c451fb217d"
+    },
+    {
+      "name": "f0-overlay-alpha-exact",
+      "status": "PASS",
+      "detail": "approved mask"
+    },
+    {
+      "name": "f0-straight-alpha-source-rgb-exact",
+      "status": "PASS",
+      "detail": {
+        "mismatch_pixels": 0
+      }
+    },
+    {
+      "name": "f0-semi-transparent-edge-present",
+      "status": "PASS",
+      "detail": {
+        "semi_transparent_pixels": 6108
+      }
+    },
+    {
+      "name": "f0-cocos-alpha-artifact-fix",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "f0-cocos-has-alpha",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "f0-manifest-alpha-encoding",
+      "status": "PASS",
+      "detail": "straight"
+    },
+    {
+      "name": "f0-preview-exact",
+      "status": "PASS",
+      "detail": "composite-f0-390x844.png"
+    },
+    {
+      "name": "f0-upper-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f0-cottage-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f0-door-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f0-no-divider",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "f0-manifest-runtime-hash",
+      "status": "PASS",
+      "detail": "2867d9d382f00150bbc06452e0728dbabe8bf2903ade8b73366847c451fb217d"
+    },
+    {
+      "name": "f0-manifest-mask-hash",
+      "status": "PASS",
+      "detail": "668a50a7e68bac0e066a86fab11b27d8e2fc81d51a921a966dea94249d89440a"
+    },
+    {
+      "name": "f1-canonical-mask-hash",
+      "status": "PASS",
+      "detail": "668a50a7e68bac0e066a86fab11b27d8e2fc81d51a921a966dea94249d89440a"
+    },
+    {
+      "name": "f1-mask-dimensions",
+      "status": "PASS",
+      "detail": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "f1-evidence-mask-exact",
+      "status": "PASS",
+      "detail": "dynamic-mask-f1-390x844.png"
+    },
+    {
+      "name": "f1-upper-mask-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f1-cottage-core-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f1-door-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f1-overlay-dimensions",
+      "status": "PASS",
+      "detail": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "f1-overlay-mode",
+      "status": "PASS",
+      "detail": "RGBA"
+    },
+    {
+      "name": "f1-overlay-hash",
+      "status": "PASS",
+      "detail": "e7d64d1e8fa816cc9023688f9233890c2487fe9ff59c9ab424c25c88a15cb49f"
+    },
+    {
+      "name": "f1-overlay-alpha-exact",
+      "status": "PASS",
+      "detail": "approved mask"
+    },
+    {
+      "name": "f1-straight-alpha-source-rgb-exact",
+      "status": "PASS",
+      "detail": {
+        "mismatch_pixels": 0
+      }
+    },
+    {
+      "name": "f1-semi-transparent-edge-present",
+      "status": "PASS",
+      "detail": {
+        "semi_transparent_pixels": 6108
+      }
+    },
+    {
+      "name": "f1-cocos-alpha-artifact-fix",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "f1-cocos-has-alpha",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "f1-manifest-alpha-encoding",
+      "status": "PASS",
+      "detail": "straight"
+    },
+    {
+      "name": "f1-preview-exact",
+      "status": "PASS",
+      "detail": "composite-f1-390x844.png"
+    },
+    {
+      "name": "f1-upper-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f1-cottage-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f1-door-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f1-no-divider",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "f1-manifest-runtime-hash",
+      "status": "PASS",
+      "detail": "e7d64d1e8fa816cc9023688f9233890c2487fe9ff59c9ab424c25c88a15cb49f"
+    },
+    {
+      "name": "f1-manifest-mask-hash",
+      "status": "PASS",
+      "detail": "668a50a7e68bac0e066a86fab11b27d8e2fc81d51a921a966dea94249d89440a"
+    },
+    {
+      "name": "f2-canonical-mask-hash",
+      "status": "PASS",
+      "detail": "668a50a7e68bac0e066a86fab11b27d8e2fc81d51a921a966dea94249d89440a"
+    },
+    {
+      "name": "f2-mask-dimensions",
+      "status": "PASS",
+      "detail": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "f2-evidence-mask-exact",
+      "status": "PASS",
+      "detail": "dynamic-mask-f2-390x844.png"
+    },
+    {
+      "name": "f2-upper-mask-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f2-cottage-core-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f2-door-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f2-overlay-dimensions",
+      "status": "PASS",
+      "detail": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "f2-overlay-mode",
+      "status": "PASS",
+      "detail": "RGBA"
+    },
+    {
+      "name": "f2-overlay-hash",
+      "status": "PASS",
+      "detail": "998856bf03e4aac767adb3a3ed8b2a198307186ffacf39c49bcf92ed4be0a589"
+    },
+    {
+      "name": "f2-overlay-alpha-exact",
+      "status": "PASS",
+      "detail": "approved mask"
+    },
+    {
+      "name": "f2-straight-alpha-source-rgb-exact",
+      "status": "PASS",
+      "detail": {
+        "mismatch_pixels": 0
+      }
+    },
+    {
+      "name": "f2-semi-transparent-edge-present",
+      "status": "PASS",
+      "detail": {
+        "semi_transparent_pixels": 6108
+      }
+    },
+    {
+      "name": "f2-cocos-alpha-artifact-fix",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "f2-cocos-has-alpha",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "f2-manifest-alpha-encoding",
+      "status": "PASS",
+      "detail": "straight"
+    },
+    {
+      "name": "f2-preview-exact",
+      "status": "PASS",
+      "detail": "composite-f2-390x844.png"
+    },
+    {
+      "name": "f2-upper-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f2-cottage-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f2-door-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f2-no-divider",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "f2-manifest-runtime-hash",
+      "status": "PASS",
+      "detail": "998856bf03e4aac767adb3a3ed8b2a198307186ffacf39c49bcf92ed4be0a589"
+    },
+    {
+      "name": "f2-manifest-mask-hash",
+      "status": "PASS",
+      "detail": "668a50a7e68bac0e066a86fab11b27d8e2fc81d51a921a966dea94249d89440a"
+    },
+    {
+      "name": "f3-canonical-mask-hash",
+      "status": "PASS",
+      "detail": "377414a1f76940c9c37b104389d1e8903f0c2c255809a0932c0a5fd958311e0b"
+    },
+    {
+      "name": "f3-mask-dimensions",
+      "status": "PASS",
+      "detail": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "f3-evidence-mask-exact",
+      "status": "PASS",
+      "detail": "dynamic-mask-f3-390x844.png"
+    },
+    {
+      "name": "f3-upper-mask-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f3-cottage-core-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f3-door-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f3-overlay-dimensions",
+      "status": "PASS",
+      "detail": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "f3-overlay-mode",
+      "status": "PASS",
+      "detail": "RGBA"
+    },
+    {
+      "name": "f3-overlay-hash",
+      "status": "PASS",
+      "detail": "4eee879767b5763aa0b92fbad7783628296c7c8fac9fa47fda5f2a7b23fcc0ef"
+    },
+    {
+      "name": "f3-overlay-alpha-exact",
+      "status": "PASS",
+      "detail": "approved mask"
+    },
+    {
+      "name": "f3-straight-alpha-source-rgb-exact",
+      "status": "PASS",
+      "detail": {
+        "mismatch_pixels": 0
+      }
+    },
+    {
+      "name": "f3-semi-transparent-edge-present",
+      "status": "PASS",
+      "detail": {
+        "semi_transparent_pixels": 10885
+      }
+    },
+    {
+      "name": "f3-cocos-alpha-artifact-fix",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "f3-cocos-has-alpha",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "f3-manifest-alpha-encoding",
+      "status": "PASS",
+      "detail": "straight"
+    },
+    {
+      "name": "f3-preview-exact",
+      "status": "PASS",
+      "detail": "composite-f3-390x844.png"
+    },
+    {
+      "name": "f3-upper-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f3-cottage-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f3-door-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f3-no-divider",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "f3-manifest-runtime-hash",
+      "status": "PASS",
+      "detail": "4eee879767b5763aa0b92fbad7783628296c7c8fac9fa47fda5f2a7b23fcc0ef"
+    },
+    {
+      "name": "f3-manifest-mask-hash",
+      "status": "PASS",
+      "detail": "377414a1f76940c9c37b104389d1e8903f0c2c255809a0932c0a5fd958311e0b"
+    },
+    {
+      "name": "f4-canonical-mask-hash",
+      "status": "PASS",
+      "detail": "0c8d2b17329ccd1f30635a1056579c2f25877e8715c6410c7874950de80561f7"
+    },
+    {
+      "name": "f4-mask-dimensions",
+      "status": "PASS",
+      "detail": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "f4-evidence-mask-exact",
+      "status": "PASS",
+      "detail": "dynamic-mask-f4-390x844.png"
+    },
+    {
+      "name": "f4-upper-mask-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f4-cottage-core-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f4-door-clear",
+      "status": "PASS",
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "f4-overlay-dimensions",
+      "status": "PASS",
+      "detail": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "f4-overlay-mode",
+      "status": "PASS",
+      "detail": "RGBA"
+    },
+    {
+      "name": "f4-overlay-hash",
+      "status": "PASS",
+      "detail": "47981253efb0420d29ca433462c35325e125130c48e4dbc68fc836e5e216c7ac"
+    },
+    {
+      "name": "f4-overlay-alpha-exact",
+      "status": "PASS",
+      "detail": "approved mask"
+    },
+    {
+      "name": "f4-straight-alpha-source-rgb-exact",
+      "status": "PASS",
+      "detail": {
+        "mismatch_pixels": 0
+      }
+    },
+    {
+      "name": "f4-semi-transparent-edge-present",
+      "status": "PASS",
+      "detail": {
+        "semi_transparent_pixels": 10955
+      }
+    },
+    {
+      "name": "f4-cocos-alpha-artifact-fix",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "f4-cocos-has-alpha",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "f4-manifest-alpha-encoding",
+      "status": "PASS",
+      "detail": "straight"
+    },
+    {
+      "name": "f4-preview-exact",
+      "status": "PASS",
+      "detail": "composite-f4-390x844.png"
+    },
+    {
+      "name": "f4-upper-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f4-cottage-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f4-door-pixels-stable",
+      "status": "PASS",
+      "detail": "pixel-identical"
+    },
+    {
+      "name": "f4-no-divider",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "f4-manifest-runtime-hash",
+      "status": "PASS",
+      "detail": "47981253efb0420d29ca433462c35325e125130c48e4dbc68fc836e5e216c7ac"
+    },
+    {
+      "name": "f4-manifest-mask-hash",
+      "status": "PASS",
+      "detail": "0c8d2b17329ccd1f30635a1056579c2f25877e8715c6410c7874950de80561f7"
+    },
+    {
+      "name": "all-pages-full-size-distinct",
+      "status": "PASS",
+      "detail": {
+        "f0-f1": 1.4270243447968565,
+        "f0-f2": 1.6508141937051892,
+        "f0-f3": 2.5767539595738644,
+        "f0-f4": 2.532114068133026
+      }
+    },
+    {
+      "name": "large-outline-pages-thumbnail-distinct",
+      "status": "PASS",
+      "detail": {
+        "f0-f2": 1.384224779959377,
+        "f0-f4": 2.2228616565109456,
+        "f2-f4": 2.032272624689686
+      }
+    },
+    {
+      "name": "coherent-lower-mask-span",
+      "status": "PASS",
+      "detail": [
+        [
+          0,
+          633,
+          390,
+          844
+        ],
+        [
+          0,
+          633,
+          390,
+          844
+        ],
+        [
+          0,
+          633,
+          390,
+          844
+        ],
+        [
+          0,
+          576,
+          390,
+          844
+        ],
+        [
+          0,
+          579,
+          390,
+          844
+        ]
+      ]
+    }
+  ],
+  "metrics": {
+    "full_canvas_mean_abs_difference": {
+      "f0-f1": 1.4270243447968565,
+      "f0-f2": 1.6508141937051892,
+      "f0-f3": 2.5767539595738644,
+      "f0-f4": 2.532114068133026
+    },
+    "quarter_scale_mean_abs_difference": {
+      "f0-f2": 1.384224779959377,
+      "f0-f4": 2.2228616565109456,
+      "f2-f4": 2.032272624689686
+    },
+    "approved_mask_bbox": [
+      [
+        0,
+        633,
+        390,
+        844
+      ],
+      [
+        0,
+        633,
+        390,
+        844
+      ],
+      [
+        0,
+        633,
+        390,
+        844
+      ],
+      [
+        0,
+        576,
+        390,
+        844
+      ],
+      [
+        0,
+        579,
+        390,
+        844
+      ]
+    ],
+    "alpha_integrity": {
+      "F0": {
+        "alpha_encoding": "straight",
+        "semi_transparent_pixels": 6108,
+        "straight_rgb_mismatch_pixels": 0,
+        "mean_absolute_rgb_error": 0.0
+      },
+      "F1": {
+        "alpha_encoding": "straight",
+        "semi_transparent_pixels": 6108,
+        "straight_rgb_mismatch_pixels": 0,
+        "mean_absolute_rgb_error": 0.0
+      },
+      "F2": {
+        "alpha_encoding": "straight",
+        "semi_transparent_pixels": 6108,
+        "straight_rgb_mismatch_pixels": 0,
+        "mean_absolute_rgb_error": 0.0
+      },
+      "F3": {
+        "alpha_encoding": "straight",
+        "semi_transparent_pixels": 10885,
+        "straight_rgb_mismatch_pixels": 0,
+        "mean_absolute_rgb_error": 0.0
+      },
+      "F4": {
+        "alpha_encoding": "straight",
+        "semi_transparent_pixels": 10955,
+        "straight_rgb_mismatch_pixels": 0,
+        "mean_absolute_rgb_error": 0.0
+      }
+    }
+  },
+  "limitations": [
+    "User approval covers the visual direction, not production-art rights.",
+    "Composition anchors are visually locked; exact character pixel identity is not claimed.",
+    "Mechanical checks do not prove human phone-scale readability.",
+    "No WeChat preview/upload, experience setting, review submission or release was run."
+  ]
+}

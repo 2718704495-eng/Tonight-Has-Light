@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="《今夜有灯》正式室内 UI V1：窗边小桌与半开门廊构图探索、第一夜关键界面和待批准决策。"
+    />
+    <title>今夜有灯 · 正式室内 UI V1</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="eyebrow">GATE B2 · FORMAL VISIBLE EXPERIENCE</div>
+      <div class="headline-row">
+        <div>
+          <h1>从夜风草坡，走进一间还亮着灯的屋子。</h1>
+          <p>
+            本板只比较室内空间、门转场和 UI 承载方式。户外 V7、成年人＋普通家猫、
+            B-lite 风链、已批准风声全部保持不变。
+          </p>
+        </div>
+        <div class="status-card">
+          <span>当前状态</span>
+          <strong>BLOCKED</strong>
+          <small>待用户批准；没有进入 Cocos</small>
+        </div>
+      </div>
+      <div class="principles" aria-label="本轮设计原则">
+        <span>画面先于界面</span>
+        <span>一处暖光即可</span>
+        <span>猫保持普通家猫</span>
+        <span>没有任务压力</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="baseline" aria-labelledby="baseline-title">
+        <figure class="baseline-frame">
+          <img src="./assets/v7-approved-reference.png" alt="已批准的 V7 户外夜风草坡母版" />
+          <figcaption>已批准 V7 · SHA-256 7157484b…847b3d</figcaption>
+        </figure>
+        <div class="baseline-copy">
+          <p class="section-label">00 / 不变项</p>
+          <h2 id="baseline-title">室内必须像从这片夜色里长出来。</h2>
+          <div class="locked-grid">
+            <div><b>角色</b><span>人物左、猫右；三分之四背面；共同材质与受光。</span></div>
+            <div><b>材质</b><span>明亮柔和的水粉纸绘／染色纸层，不换成毛毡或塑料。</span></div>
+            <div><b>光线</b><span>大面积冷蓝保留空气感，暖光只聚在水壶周围。</span></div>
+            <div><b>语气</b><span>没有教程轰炸、奖励、进度条或强迫分享。</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="directions" aria-labelledby="directions-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">01 / 室内构图 A–B</p>
+            <h2 id="directions-title">同一晚，只换空间承接方式。</h2>
+          </div>
+          <p>两张图均为 imagegen 光色／构图探索，不是生产资产，人物、猫、物件与文字仍需原创分层重绘。</p>
+        </div>
+
+        <div class="direction-grid">
+          <article class="direction-card is-recommended">
+            <div class="direction-header">
+              <div><span>方案 A</span><h3>窗边小桌</h3></div>
+              <em>负责人推荐</em>
+            </div>
+            <div class="phone phone-large">
+              <img src="./assets/concept-a-window-table-exploration.png" alt="窗边小桌室内构图探索" />
+              <div class="paper-lamp" aria-hidden="true"><i></i><b></b></div>
+              <div class="warm-patch" aria-hidden="true"></div>
+            </div>
+            <div class="direction-copy">
+              <p>视线顺序稳定为“窗外冷夜 → 人物与猫 → 壶边暖光”，进屋后明显更安定，又没有与户外断开。</p>
+              <dl>
+                <div><dt>优点</dt><dd>核心互动最清楚；360/390/430 更容易保持构图；减动版不依赖镜头。</dd></div>
+                <div><dt>签名元素</dt><dd>原创木臂纸罩灯，只投下一块可以带到壶边的暖光；它不是角色。</dd></div>
+                <div><dt>风险</dt><dd>窗外星河需要再降一级，避免和水壶争焦；纸罩灯不可照搬知名灯具。</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="direction-card">
+            <div class="direction-header">
+              <div><span>方案 B</span><h3>半开门廊</h3></div>
+              <em>连续感更强</em>
+            </div>
+            <div class="phone phone-large">
+              <img src="./assets/concept-b-open-door-exploration.png" alt="半开门廊室内构图探索" />
+            </div>
+            <div class="direction-copy">
+              <p>门外仍留一小段夜色，户外到室内不突兀；风像在门口停住，再把注意力交给水壶。</p>
+              <dl>
+                <div><dt>优点</dt><dd>空间关系直观；门转场自然；“凉快”不会进屋后立刻消失。</dd></div>
+                <div><dt>成本</dt><dd>需要额外门框、前景遮挡与透视切层，资源和适配成本约高 25%–35%。</dd></div>
+                <div><dt>风险</dt><dd>门容易再次像关卡入口；纵深与外景可能抢过人物和水壶。</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ui-states" aria-labelledby="states-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">02 / 推荐 A 的四张关键屏</p>
+            <h2 id="states-title">UI 只在需要时出现，房间始终是主体。</h2>
+          </div>
+          <p>所有控件都在 SafeArea 内，触控热区至少 44×44；正式 Cocos 版使用 Sprite、Label、Prefab，不沿用旧 Graphics 壳。</p>
+        </div>
+
+        <div class="state-grid">
+          <article class="state-card">
+            <div class="phone phone-state state-duration">
+              <img src="./assets/concept-a-window-table-exploration.png" alt="时长选择状态" />
+              <button class="quiet-menu" type="button" aria-label="设置">···</button>
+              <div class="duration-sheet">
+                <p>今晚，想待多久？</p>
+                <div class="duration-options">
+                  <button type="button"><b>一小会儿</b><span>3 分钟</span></button>
+                  <button class="selected" type="button"><b>慢一点</b><span>5 分钟</span></button>
+                  <button type="button"><b>多坐一会儿</b><span>8 分钟</span></button>
+                </div>
+                <small>不倒数，随时可以走。</small>
+                <button class="primary-action" type="button">进去看看</button>
+              </div>
+            </div>
+            <h3>时长选择</h3>
+            <p>像一张临时放下的染纸木牌，不做全屏弹窗；默认 5 分钟，但必须由用户确认。</p>
+          </article>
+
+          <article class="state-card">
+            <div class="phone phone-state state-ritual">
+              <img src="./assets/concept-a-window-table-exploration.png" alt="暖光互动状态" />
+              <button class="quiet-menu" type="button" aria-label="设置">···</button>
+              <div class="paper-lamp" aria-hidden="true"><i></i><b></b></div>
+              <button class="light-handle" type="button" aria-label="暖光"></button>
+              <p class="context-hint">把这点光，带到壶边。</p>
+            </div>
+            <h3>暖光互动</h3>
+            <p>前 10 秒没有文字；之后只出现一句。暖光可拖，也可“先点暖光、再点水壶”。</p>
+          </article>
+
+          <article class="state-card">
+            <div class="phone phone-state state-ending">
+              <img src="./assets/concept-a-window-table-exploration.png" alt="第一夜安静收尾状态" />
+              <div class="ending-copy">
+                <span>第一夜 · 水快开了</span>
+                <p>水热了。<br />你也先缓一会儿。</p>
+              </div>
+              <div class="ending-actions">
+                <button type="button">再坐一会儿</button>
+                <button class="primary-action" type="button">今晚到这里</button>
+              </div>
+            </div>
+            <h3>安静收尾</h3>
+            <p>房间只降亮 4%，不用大卡片遮住角色；用户可以继续坐着，也可以主动结束。</p>
+          </article>
+
+          <article class="state-card">
+            <div class="phone phone-state state-share">
+              <img src="./assets/concept-a-window-table-exploration.png" alt="分享预览状态" />
+              <div class="share-scrim"></div>
+              <div class="share-preview">
+                <div class="share-image">
+                  <img src="./assets/v7-approved-reference.png" alt="分享卡构图占位预览" />
+                  <p>有人给你留了一盏灯</p>
+                </div>
+                <small>固定内容，不带姓名、进度或留言。</small>
+                <button class="primary-action" type="button">留给朋友</button>
+                <button class="text-action" type="button">暂时不留</button>
+              </div>
+            </div>
+            <h3>分享预览</h3>
+            <p>外部分享图按 500×400 制作；这里只是应用内预览，最终户外图仍需正式原创重绘。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="motion" aria-labelledby="motion-title">
+        <div>
+          <p class="section-label">03 / 门转场与小剧场</p>
+          <h2 id="motion-title">只安排两次“值得动”的时刻。</h2>
+        </div>
+        <div class="motion-grid">
+          <article>
+            <span>门转场 · 约 0.9s</span>
+            <ol>
+              <li>触门后 120ms 内，门光只压亮一次。</li>
+              <li>暖色纸边从门内扩张 680ms，填满画面。</li>
+              <li>同色灯池交叉显出室内 120ms；不推镜头、不放大人物。</li>
+              <li>减少动态：直接用 180ms 交叉淡化。</li>
+            </ol>
+          </article>
+          <article>
+            <span>杯子小剧场 · 约 2.4s</span>
+            <ol>
+              <li>人物疲惫地把杯子倒扣在桌上。</li>
+              <li>猫闻一下杯沿，用前爪轻碰，杯子只晃一次。</li>
+              <li>人物停 0.8s，发现后把杯子翻正。</li>
+              <li>用户可轻触继续；4 秒无操作自然完成。</li>
+            </ol>
+          </article>
+          <article>
+            <span>声音接力 · 不做奖励音</span>
+            <ol>
+              <li>触门只给一次很轻的木门／纸灯触感，不用清脆“通关”提示。</li>
+              <li>0–0.9s 内把已批准风声柔和收窄，而不是突然截断。</li>
+              <li>进屋后交给很低的壶鸣与房间底噪；音乐方向仍单独等待批准。</li>
+              <li>静音和系统抢占后不越权自动恢复，画面仍完整表达因果。</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="decisions" aria-labelledby="decisions-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">04 / 建议一起批准的决策包</p>
+            <h2 id="decisions-title">减少后面反复改样式。</h2>
+          </div>
+          <p>这些选择现在都只是提案。你批准后才会记录版本与哈希，并分发给 UI、Cocos 和 QA。</p>
+        </div>
+        <div class="decision-grid">
+          <article><b>室内方向</b><strong>A · 窗边小桌</strong><p>最容易保持安静层级，也是负责人推荐。</p></article>
+          <article><b>设置入口</b><strong>首次触碰后出现</strong><p>零操作前 20 秒仍无 UI；用户一旦触碰，左上安全区出现稳定小圆点，否则 20 秒后出现，避开微信右上胶囊。</p></article>
+          <article><b>房间亮度</b><strong>第一版暂不做</strong><p>先保留音乐、环境声、触碰反馈、减动和大字；避免与手机亮度及暗部验收互相干扰。</p></article>
+          <article><b>后台回来</b><strong>室内先停住</strong><p>显示“我们停在这里了。”，由用户选择继续或结束今晚；声音不越权自动恢复。</p></article>
+          <article><b>窗雾内容</b><strong>露出稀疏星群</strong><p>延续户外夜空，不再新增一个抢焦的满月。</p></article>
+          <article><b>字体</b><strong>思源黑体＋思源宋体子集</strong><p>功能字用黑体；两句叙事用宋体。只裁入实际字符并登记 SIL OFL 许可。</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>FORMAL UI V1 · exploration only · no runtime style changed · 2026-08-24</p>
+    </footer>
+  </body>
+</html>

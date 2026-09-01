@@ -1,0 +1,96 @@
+schema_version: 2
+scene: 2
+id: scene_02_stargaze
+title: "看星空"
+branch_hint: "看看星空"
+location: "夜风草坡与自然星空"
+location_id: loc_night_slope_v1
+time_of_day: "深夜"
+version: STARGAZE-SKY-FOCUS-V1-A
+approval: "STYLE CONTRACT APPROVED / GATE B VISUAL SUBPACKAGE PASS / NOT IN BUILD"
+finale_version: STARGAZE-SKY-FINALE-V1-A
+finale_approval: "FINALE CONTRACT APPROVED / GATE B BROWSER DESIGN BOARD AUTHORIZED"
+story_beat: "星空自己讲完一次从看见银河暗裂，到薄云遮住同一主星，再到云缝重新打开的小故事；人物和猫只作尺度与陪伴锚点。"
+characters:
+  - char_adult_back_v1
+  - char_house_cat_v1
+visual_style: style_night_comic_b_v1
+frame_count: 5
+visual_priority:
+  primary: "自然深蓝星空、单条宽淡断口银河、尘埃暗裂、星尘疏密与深蓝留白"
+  secondary: "底部小比例成年人背影与普通家猫，用于尺度、共同视线与陪伴感"
+  tertiary: "F1/F5 右侧稳定暖门与两朵弱光花"
+advance_behavior:
+  trigger: "tap current picture"
+  autoplay: false
+  progress_ui: false
+  final_frame_behavior: "F5 starts one approved finale timeline once; exits appear only after the finale copy reveal."
+entry:
+  from: root_night_slope_v1
+  hotspot: natural_sky_hotspot_v1
+frames:
+  - order: 1
+    id: scene_02_stargaze_shot_001
+    name: "抬头"
+    beat: "天空约占 85%；人物和猫很小地锚在底部，目光先被深蓝留白与一条宽淡断口银河引向高处。"
+  - order: 2
+    id: scene_02_stargaze_shot_002
+    name: "银河深处"
+    beat: "近乎纯天空，底边只露少量发梢与猫耳；银河内部的尘埃暗裂、疏密星尘、微弱亮结与蓝色负空间成为主体。"
+  - order: 3
+    id: scene_02_stargaze_shot_003
+    name: "薄云经过"
+    beat: "在天空特写中，一片自然薄云经过并暂时遮住同一主星，其他星尘、暗裂和银河地理不变。"
+  - order: 4
+    id: scene_02_stargaze_shot_004
+    name: "云缝重开"
+    beat: "与上一幅使用同一天空地理和匹配机位；同一主星从云缝重新出现，8–10 颗主星只呈现极轻的冷白与微黄差异。"
+  - order: 5
+    id: scene_02_stargaze_shot_005
+    name: "世界很大"
+    beat: "拉回天空约占 85% 的大全景；人物和猫很小地并排坐在底部，右侧暖门仍稳定，结果是“世界很大，今晚有人陪你一起看”。"
+finale:
+  trigger: "scene_02_stargaze_shot_005 becomes visible"
+  play_count: 1
+  base_frame: "F5 remains a shooting-star-free clean plate; meteor and copy are separate Gate B browser-board overlays."
+  timeline_ms:
+    final_frame_settle: 900
+    one_meteor_motion: 800
+    trail_fade: 450
+    quiet_after_trail: 1000
+    copy_reveal: 180
+  meteor:
+    count: 1
+    path: "from upper-right toward the open sky above the adult and cat"
+    hierarchy: "a restrained narrative punctuation; never brighter or visually heavier than the Milky Way"
+    forbidden: "no second meteor, loop, shower, cross sparkle, halo, Bloom, wish/reward/task meaning, or door-directed cue"
+  copy:
+    line_1: "一颗流星，刚刚从夜里经过。"
+    line_2: "回家，还是再坐一会儿？"
+    baked_into_art: false
+  choices:
+    home:
+      label: "回家"
+      destination: "scene_01_home frame 1"
+      direct_indoor_entry: false
+    stay:
+      label: "再坐一会儿"
+      destination: root_night_slope_v1
+      records_completion: false
+  reduced_motion:
+    transforms: 0
+    displacement: 0
+    meteor_equivalent: "one static meteor trace at a neutral position above the pair; cross-fade in/out only, each transition <=180ms"
+    quiet_after_trace_ms: 1000
+    copy_reveal_ms: 180
+continuity_notes:
+  - "F1/F5 的天空覆盖约 85%；F2–F4 是星空细节镜头，不得让人物或猫重新成为主体。"
+  - "被观察的是同一颗主星；F3/F4 使用同一机位，它与银河暗裂的相对位置不变。"
+  - "薄云只经过一次，不改银河形状，不制造魔法爆闪。"
+  - "天空特写可因裁切不显示人物全身、小屋或花，但不得改变它们的地理位置。"
+  - "除 F5 末页一次、恰好一颗的批准流星覆盖层外，所有画面均禁止额外流星。"
+reference_policy:
+  - "NASA 只用于理解尘埃暗裂、星场疏密与星色冷暖的事实结构，不临摹、不拼贴、不导入参考照片像素。"
+exit_intent: "末页文案显现后，回家进入既有 scene_01_home 第 1 幅，再坐一会儿回到 root_night_slope_v1；本文件只授权 Gate B 浏览器设计板，不授权 Cocos 接线。"
+production_boundary: "STARGAZE-FORMAL-BATCH-V1-A formal visual production is complete for this branch. F1 R1, F2 R1, F3 R2, F4 R1 and F5 are exact-file user-approved and frozen, so the stargaze Gate B visual subpackage is PASS. Runtime/Cocos/build/WeChat/Git remain blocked pending project-wide Gate B, independent UI/meteor layers and separate implementation authorization."
+status: "STYLE_CONTRACT_APPROVED__FINALE_CONTRACT_APPROVED__F1_F2_F3_F4_F5_USER_PASS_FROZEN__STARGAZE_GATE_B_VISUAL_SUBPACKAGE_PASS__NOT_IN_BUILD"

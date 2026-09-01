@@ -1,0 +1,99 @@
+schema_version: 2
+scene: 2
+scene_id: scene_02_stargaze
+version: STARGAZE-SKY-FOCUS-V1-A
+approval: "STYLE CONTRACT APPROVED / GATE B ARTWORK IN PRODUCTION"
+finale_version: STARGAZE-SKY-FINALE-V1-A
+finale_approval: "FINALE CONTRACT APPROVED / GATE B BROWSER DESIGN BOARD AUTHORIZED"
+shots:
+  - id: scene_02_stargaze_shot_001
+    panel_order: 1
+    name: "抬头"
+    shot_type: extreme-wide sky-first establishing shot
+    lens: "24mm equivalent"
+    camera_angle: "low rear view tilted upward"
+    emotion: "small figures under a very large calm sky"
+    action: "The adult and cat remain seated and share an upward gaze; the sky, not their reaction, initiates the story."
+    sky_coverage_target: "about 85%"
+    composition: "One broad faint broken Milky Way and breathable deep-blue negative space dominate. The full seated adult and cat are small anchors along the bottom-left edge. The right-side house, stable warm door, and two weak flowers are present but subordinate."
+    continuity:
+      - "Start from root_night_slope_v1."
+      - "The visual hierarchy is sky first, small paired anchor second, warm door third."
+      - "Use exactly one natural Milky Way and only 8–10 important star points; no spectacle."
+    status: user_approved_formal_390_frozen
+  - id: scene_02_stargaze_shot_002
+    panel_order: 2
+    name: "银河深处"
+    shot_type: near-full-sky detail shot
+    lens: "55mm equivalent"
+    camera_angle: "upward view following the pair's gaze"
+    emotion: "quiet discovery inside the sky itself"
+    action: "The camera follows the shared gaze into the Milky Way; no character gesture becomes the event."
+    sky_coverage_target: "about 96%"
+    composition: "Show one broad faint Milky Way with irregular dust-dark rifts, uneven dense and sparse star fields, faint light knots, and a large clean deep-blue breathing area. Only a narrow sliver of adult hair and cat ears may remain at the bottom edge."
+    continuity:
+      - "Preserve the Milky Way arc, dust-dark rift, and main-star geography established in panel 1."
+      - "Do not show the house or flowers merely to prove continuity; their omission is a crop, not relocation."
+    status: user_approved_formal_390_frozen
+  - id: scene_02_stargaze_shot_003
+    panel_order: 3
+    name: "薄云经过"
+    shot_type: matched sky insert close-up
+    lens: "85mm equivalent"
+    camera_angle: "upward locked insert"
+    emotion: "a brief natural absence"
+    action: "One thin natural cloud crosses the same main star and temporarily veils it."
+    sky_coverage_target: "98–100%"
+    composition: "Frame the observed star beside the same dust-dark rift. The thin cloud softens only that local region; surrounding sparse stars, faint Milky Way grain, and deep-blue negative space remain readable. No full character body is visible."
+    continuity:
+      - "Cloud is thin and natural, not an aurora or smoke effect."
+      - "Lock this camera, star position, rift contour, and crop for panel 4."
+      - "Do not dim the whole sky or invent new star points."
+    status: user_approved_formal_390_frozen
+  - id: scene_02_stargaze_shot_004
+    panel_order: 4
+    name: "云缝重开"
+    shot_type: matched sky insert close-up
+    lens: "85mm equivalent"
+    camera_angle: "same locked upward insert as panel 3"
+    emotion: "quiet return without spectacle"
+    action: "The same main star reappears through a natural gap in the same passing cloud."
+    sky_coverage_target: "98–100%"
+    composition: "Match panel 3 exactly in sky geography. Let the cloud gap reveal the main star while 8–10 established important stars retain only extremely subtle cool-white or muted warm-white variation. No halo, flare, or cross sparkle."
+    continuity:
+      - "It is the same star and same passing cloud as panel 3."
+      - "The Milky Way, dust-dark rift, surrounding stars, and crop do not jump between panels 3 and 4."
+    status: user_approved_formal_390_frozen
+  - id: scene_02_stargaze_shot_005
+    panel_order: 5
+    name: "世界很大"
+    shot_type: extreme-wide sky-first resolving shot
+    lens: "24mm equivalent"
+    camera_angle: "low rear view tilted upward"
+    emotion: "the world is vast, and the night is shared"
+    action: "The adult and cat remain quietly side by side, very small under the whole sky."
+    sky_coverage_target: "about 85%"
+    composition: "Pull back to the complete sky with the one coherent Milky Way, dark rift, sparse stars, and blue breathing space. The paired silhouettes are small at the bottom; the house and steady warm door remain a distant right-side anchor; exactly two flower lights stay weaker. Preserve an uncluttered upper-right-to-above-pair corridor for one later finale meteor overlay, but keep the F5 clean plate free of shooting stars and text."
+    continuity:
+      - "Do not turn the pair's closeness into a foreground character portrait."
+      - "Outfit, coat, left-right order, sky geography, door, and flower count stay consistent."
+      - "The ending meaning comes from scale and shared gaze: a large world, with quiet company."
+      - "Only the approved finale overlay may add exactly one shooting star after the clean frame has held for 0.9s."
+    finale:
+      play_count: 1
+      timeline_ms:
+        clean_hold: 900
+        meteor_motion: 800
+        trail_fade: 450
+        quiet_hold: 1000
+        copy_reveal: 180
+      meteor_path: "upper-right toward the open sky above the adult and cat"
+      copy:
+        - "一颗流星，刚刚从夜里经过。"
+        - "回家，还是再坐一会儿？"
+      exits:
+        - "回家 -> scene_01_home frame 1"
+        - "再坐一会儿 -> root_night_slope_v1"
+      reduced_motion: "no displacement or transform; one static meteor trace cross-fades in/out with each transition <=180ms, then 1s quiet hold and 180ms copy reveal"
+    status: user_approved_formal_390_frozen
+production_boundary: "scene_02_stargaze_shot_001 through scene_02_stargaze_shot_004 and separately approved scene_02_stargaze_shot_005 are exact-file user-approved and frozen. STARGAZE-FORMAL-BATCH-V1-A therefore has Gate B visual subpackage PASS / NOT IN BUILD. All runtime/Cocos/build/WeChat/Git work remains blocked pending project-wide Gate B and separate implementation authorization."

@@ -1,0 +1,26 @@
+{
+  "assetId": "STORY-ILLUSTRATION-B-FORMAL-R2-PROOF",
+  "author": "OpenAI Codex art worker under main-controller direction",
+  "created": "2026-08-28",
+  "license": "original-project-work",
+  "sourceType": "hand-authored-layered-svg",
+  "externalAssets": [],
+  "generatorRecord": {
+    "imageGeneratorUsedInFormalPixels": false,
+    "proceduralTexture": "deterministic SVG feTurbulence, hatch patterns, and explicit paths",
+    "rasterEmbedding": false
+  },
+  "referenceUse": {
+    "path": "design-board/story-illustration-redesign-v1-b/exploration/b01-settle-reference-r1.png",
+    "sha256": "fdac7f8edf8a22954a93a3f756ab2c1699c1afe04462bf2fa3ed679ae2794d0c",
+    "allowed": "composition, light hierarchy, limited palette, mood",
+    "notUsed": "reference pixels, traced contours, extracted textures, generated character anatomy"
+  },
+  "redrawNotes": [
+    "Adult anatomy was constructed from independent connected head-neck-shoulder-torso-pelvis-limb paths.",
+    "The ordinary cat was constructed from independent head-neck-chest-haunch-paw-tail-root paths.",
+    "Milky Way, mountain silhouettes, house, flowers, and every grass stroke are new paths.",
+    "All texture is deterministic SVG structure and remains editable; no generated bitmap appears in the source."
+  ],
+  "status": "REVIEW-BLOCKED"
+}

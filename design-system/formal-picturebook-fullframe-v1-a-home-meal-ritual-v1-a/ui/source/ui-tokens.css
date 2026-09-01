@@ -1,0 +1,66 @@
+:root {
+  --home-ui-font: "STSong", "Songti SC", "Noto Serif CJK SC", serif;
+  --home-ui-action-size: 16px;
+  --home-ui-helper-size: 14px;
+  --home-ui-action-size-large: 19.2px;
+  --home-ui-helper-size-large: 16.8px;
+  --home-ui-line-height: 1.5;
+  --home-ui-text-warm: #f6e2bc;
+  --home-ui-text-warm-bright: #fbe9c8;
+  --home-ui-ink-dark: #26170f;
+  --home-ui-paper-warm: #d9af68;
+  --home-ui-paper-opacity: 0.86;
+  --home-ui-paper-edge: #6a3a20;
+  --home-ui-pressed-opacity: 0.72;
+  --home-ui-reveal-ms: 160ms;
+  --home-ui-pressed-ms: 120ms;
+  --home-ui-state-ms: 160ms;
+}
+
+.home-ui-label {
+  box-sizing: border-box;
+  font-family: var(--home-ui-font);
+  font-size: var(--home-ui-action-size);
+  font-weight: 500;
+  line-height: var(--home-ui-line-height);
+  letter-spacing: 0.6px;
+  color: var(--home-ui-text-warm);
+  paint-order: stroke fill;
+  stroke: var(--home-ui-ink-dark);
+  stroke-width: 1.6px;
+  stroke-linejoin: round;
+  transition: opacity var(--home-ui-pressed-ms) ease-out;
+  transform: none;
+}
+
+.home-ui-label--helper {
+  font-size: var(--home-ui-helper-size);
+  color: var(--home-ui-ink-dark);
+  stroke: none;
+}
+
+.home-ui--large .home-ui-label {
+  font-size: var(--home-ui-action-size-large);
+}
+
+.home-ui--large .home-ui-label--helper {
+  font-size: var(--home-ui-helper-size-large);
+}
+
+.home-ui-action[aria-pressed="true"],
+.home-ui-action.is-pressed {
+  opacity: var(--home-ui-pressed-opacity);
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --home-ui-reveal-ms: 150ms;
+    --home-ui-state-ms: 150ms;
+  }
+
+  .home-ui-label,
+  .home-ui-action {
+    transform: none !important;
+  }
+}

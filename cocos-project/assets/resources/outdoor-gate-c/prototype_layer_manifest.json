@@ -1,0 +1,1667 @@
+{
+  "status": "ALIGNED",
+  "gate": "C",
+  "approved_baseline": "V7",
+  "style_changed": false,
+  "engineering_layering_only": true,
+  "canvas_px": [
+    390,
+    844
+  ],
+  "hero_star_count": 10,
+  "hero_star_motion_active_count": 4,
+  "hero_star_motion_active_ids": [
+    "star_01",
+    "star_03",
+    "star_08",
+    "star_09"
+  ],
+  "hero_star_static_ids": [
+    "star_02",
+    "star_04",
+    "star_05",
+    "star_06",
+    "star_07",
+    "star_10"
+  ],
+  "hero_star_overlay_contract": {
+    "neutral_opacity": 0.0,
+    "active_ids": [
+      "star_01",
+      "star_03",
+      "star_08",
+      "star_09"
+    ],
+    "active_opacity_range": [
+      0.0,
+      0.08
+    ],
+    "static_ids_runtime_opacity": 0.0,
+    "semantics": "All ten approved stars stay baked into the V7 fidelity backplate. Addressable PNGs are positive-only Screen brightening deltas. Four may animate 0→small delta→0; six remain 0.",
+    "forbidden": [
+      "replace baked star",
+      "punch alpha hole",
+      "negative brightness",
+      "scale twinkle",
+      "synchronized twinkle"
+    ]
+  },
+  "coordinate_system": {
+    "master": "top-left origin, +x right, +y down",
+    "cocos": "bottom-left canvas coordinates; cocos_center_px supplied"
+  },
+  "source": "/Users/wxl/Documents/Codex/2026-08-21/g-i/outputs/gate-b-material-proof/v4b-natural-starry-sky-cartoon-human-cat-v7-390x844.png",
+  "source_sha256": "7157484b95988b11c1abdf9ddc0d5bb7c2d3bde25dd9d2dfcf6c5ee795847b3d",
+  "style_contract": {
+    "approved_baseline": "V7",
+    "style_changed": false,
+    "engineering_layering_only": true,
+    "authority_note": "UI/art has no authority to alter character, composition, material, palette, sky structure, lighting, or signature motion style during Gate C."
+  },
+  "render_order_semantics": "authoritative back-to-front; lower index renders first",
+  "render_order": [
+    "scene_clean_plate",
+    "sky_base",
+    "galaxy_baked",
+    "star_01",
+    "star_02",
+    "star_03",
+    "star_04",
+    "star_05",
+    "star_06",
+    "star_07",
+    "star_08",
+    "star_09",
+    "star_10",
+    "cloud_far",
+    "cloud_near",
+    "grass_far_accents",
+    "house_and_fence",
+    "door_stable_light",
+    "grass_near_accents",
+    "person_body",
+    "person_hair_tuft",
+    "person_clothes_hem",
+    "cat_body",
+    "cat_ears",
+    "cat_tail_tip",
+    "flower_a_glow",
+    "flower_b_glow",
+    "flower_a",
+    "flower_b",
+    "foreground_occlusion"
+  ],
+  "runtime_layer_count": 30,
+  "neutral_composite_contract": {
+    "canvas_px": [
+      390,
+      844
+    ],
+    "required_fields": [
+      "file",
+      "file_sha256",
+      "top_left_px",
+      "size_px",
+      "anchor_normalized_cocos",
+      "scale",
+      "render_order",
+      "blend",
+      "neutral_opacity",
+      "neutral_transform"
+    ],
+    "normal_equation": "out = dst*(1-src_alpha*opacity) + src_rgb*(src_alpha*opacity)",
+    "screen_equation": "screen = 1-(1-dst)*(1-src); out = dst*(1-src_alpha*opacity)+screen*(src_alpha*opacity)",
+    "scene_clean_plate_semantics": "motion-ready V7 plate; six approved motion masks contain restored background instead of the baked static copies",
+    "neutral_visibility_rule": "scene_clean_plate opacity=1; six motion_layer_contract IDs opacity=1; all other 23 engineering overlays opacity=0",
+    "expected_neutral_result": "byte-pixel identical to approved V7 at 390x844",
+    "neutral_reference_sha256": "7157484b95988b11c1abdf9ddc0d5bb7c2d3bde25dd9d2dfcf6c5ee795847b3d"
+  },
+  "global_scale": 1.0,
+  "safe_note": "Prototype-only V2-B engineering split. No new generation; V7 style is unchanged. Not for review submission or public release; repaint for formal production.",
+  "layers_back_to_front": [
+    {
+      "id": "scene_clean_plate",
+      "file": "prototype_scene_clean_plate_390x844.png",
+      "top_left_px": [
+        0,
+        0
+      ],
+      "size_px": [
+        390,
+        844
+      ],
+      "cocos_center_px": [
+        195.0,
+        422.0
+      ],
+      "cocos_node_position_px": [
+        195.0,
+        422.0
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "Motion-ready V7 backplate; static; six baked motion copies removed.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 0,
+      "neutral_opacity": 1.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "d9cfc08a0983b673f897fc6db78ea8e0a7bbb88890444249cffa090ad81888a3",
+      "motion_ready_clean_plate": true,
+      "removed_motion_layer_ids": [
+        "grass_far_accents",
+        "grass_near_accents",
+        "person_hair_tuft",
+        "person_clothes_hem",
+        "cat_ears",
+        "cat_tail_tip"
+      ]
+    },
+    {
+      "id": "sky_base",
+      "file": "prototype_sky_base_390x606.png",
+      "top_left_px": [
+        0,
+        0
+      ],
+      "size_px": [
+        390,
+        606
+      ],
+      "cocos_center_px": [
+        195.0,
+        541.0
+      ],
+      "cocos_node_position_px": [
+        195.0,
+        541.0
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "Static full-width sky; never transform.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 1,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "da5c65e5c0b425b8866368236ae496da075c67fce2837394b3af51cbb1162c70"
+    },
+    {
+      "id": "galaxy_baked",
+      "file": "prototype_galaxy_baked_361x551.png",
+      "top_left_px": [
+        0,
+        17
+      ],
+      "size_px": [
+        361,
+        551
+      ],
+      "cocos_center_px": [
+        180.5,
+        551.5
+      ],
+      "cocos_node_position_px": [
+        180.5,
+        551.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "No star holes. Neutral opacity 0 because the approved galaxy remains baked into scene_clean_plate.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "contains_star_alpha_holes": false,
+      "render_order": 2,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "d8601bc4930fd3468f034f764a51e385c8a34d48e909f9ed098d2191bd660945"
+    },
+    {
+      "id": "star_01",
+      "file": "prototype_star_01_cool_31x31.png",
+      "top_left_px": [
+        225,
+        56
+      ],
+      "size_px": [
+        31,
+        31
+      ],
+      "cocos_center_px": [
+        240.5,
+        772.5
+      ],
+      "cocos_node_position_px": [
+        240.5,
+        772.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "V7 source center at master (240,71); Screen delta only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "source_center_px": [
+        240,
+        71
+      ],
+      "source_center_rgb": [
+        237,
+        255,
+        255
+      ],
+      "source_center_luma": 251.173,
+      "overlay_semantics": "positive-only V7-derived Screen micro-brightening; approved star remains baked in scene_clean_plate",
+      "transparent_rgb_zero_required": true,
+      "render_order": 3,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "8581083f07fdbb0e751fab9bb1f53cc0e479e253f45e5817cbdcdad1e561ff65"
+    },
+    {
+      "id": "star_02",
+      "file": "prototype_star_02_warm_31x31.png",
+      "top_left_px": [
+        32,
+        144
+      ],
+      "size_px": [
+        31,
+        31
+      ],
+      "cocos_center_px": [
+        47.5,
+        684.5
+      ],
+      "cocos_node_position_px": [
+        47.5,
+        684.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "V7 source center at master (47,159); Screen delta only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "source_center_px": [
+        47,
+        159
+      ],
+      "source_center_rgb": [
+        255,
+        251,
+        215
+      ],
+      "source_center_luma": 249.251,
+      "overlay_semantics": "positive-only V7-derived Screen micro-brightening; approved star remains baked in scene_clean_plate",
+      "transparent_rgb_zero_required": true,
+      "render_order": 4,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "966341cfd24ad0b605707c548f13891b3a5ceac6c242ae4b9a7e349ef46319d2"
+    },
+    {
+      "id": "star_03",
+      "file": "prototype_star_03_cool_31x31.png",
+      "top_left_px": [
+        86,
+        141
+      ],
+      "size_px": [
+        31,
+        31
+      ],
+      "cocos_center_px": [
+        101.5,
+        687.5
+      ],
+      "cocos_node_position_px": [
+        101.5,
+        687.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "V7 source center at master (101,156); Screen delta only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "source_center_px": [
+        101,
+        156
+      ],
+      "source_center_rgb": [
+        246,
+        255,
+        255
+      ],
+      "source_center_luma": 253.087,
+      "overlay_semantics": "positive-only V7-derived Screen micro-brightening; approved star remains baked in scene_clean_plate",
+      "transparent_rgb_zero_required": true,
+      "render_order": 5,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "4963de069849906ddb99026de1504bbdfab80d9396f12ec5fc49bff19987a47b"
+    },
+    {
+      "id": "star_04",
+      "file": "prototype_star_04_cool_31x31.png",
+      "top_left_px": [
+        321,
+        137
+      ],
+      "size_px": [
+        31,
+        31
+      ],
+      "cocos_center_px": [
+        336.5,
+        691.5
+      ],
+      "cocos_node_position_px": [
+        336.5,
+        691.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "V7 source center at master (336,152); Screen delta only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "source_center_px": [
+        336,
+        152
+      ],
+      "source_center_rgb": [
+        247,
+        255,
+        255
+      ],
+      "source_center_luma": 253.299,
+      "overlay_semantics": "positive-only V7-derived Screen micro-brightening; approved star remains baked in scene_clean_plate",
+      "transparent_rgb_zero_required": true,
+      "render_order": 6,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "b51b937027afe44a8aea32b00d1b94173ba345fd89aadb444673577b07dba0ce"
+    },
+    {
+      "id": "star_05",
+      "file": "prototype_star_05_cool_31x31.png",
+      "top_left_px": [
+        172,
+        220
+      ],
+      "size_px": [
+        31,
+        31
+      ],
+      "cocos_center_px": [
+        187.5,
+        608.5
+      ],
+      "cocos_node_position_px": [
+        187.5,
+        608.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "V7 source center at master (187,235); Screen delta only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "source_center_px": [
+        187,
+        235
+      ],
+      "source_center_rgb": [
+        246,
+        253,
+        254
+      ],
+      "source_center_luma": 251.584,
+      "overlay_semantics": "positive-only V7-derived Screen micro-brightening; approved star remains baked in scene_clean_plate",
+      "transparent_rgb_zero_required": true,
+      "render_order": 7,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "8ef3679a114c1a387a5eed2caca2b9d550d63e26d1948b15d9cb3982ecd30139"
+    },
+    {
+      "id": "star_06",
+      "file": "prototype_star_06_cool_31x31.png",
+      "top_left_px": [
+        263,
+        211
+      ],
+      "size_px": [
+        31,
+        31
+      ],
+      "cocos_center_px": [
+        278.5,
+        617.5
+      ],
+      "cocos_node_position_px": [
+        278.5,
+        617.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "V7 source center at master (278,226); Screen delta only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "source_center_px": [
+        278,
+        226
+      ],
+      "source_center_rgb": [
+        242,
+        255,
+        255
+      ],
+      "source_center_luma": 252.236,
+      "overlay_semantics": "positive-only V7-derived Screen micro-brightening; approved star remains baked in scene_clean_plate",
+      "transparent_rgb_zero_required": true,
+      "render_order": 8,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "b2e473c6b90d7cd2f4dc98282222f518573e865f980b1f574639475ecc552dac"
+    },
+    {
+      "id": "star_07",
+      "file": "prototype_star_07_warm_31x31.png",
+      "top_left_px": [
+        74,
+        246
+      ],
+      "size_px": [
+        31,
+        31
+      ],
+      "cocos_center_px": [
+        89.5,
+        582.5
+      ],
+      "cocos_node_position_px": [
+        89.5,
+        582.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "V7 source center at master (89,261); Screen delta only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "source_center_px": [
+        89,
+        261
+      ],
+      "source_center_rgb": [
+        255,
+        246,
+        208
+      ],
+      "source_center_luma": 245.17,
+      "overlay_semantics": "positive-only V7-derived Screen micro-brightening; approved star remains baked in scene_clean_plate",
+      "transparent_rgb_zero_required": true,
+      "render_order": 9,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "b7b8809d99429062fb553e2df59f36ed30e6b579dd62ee70a112e2be004f4471"
+    },
+    {
+      "id": "star_08",
+      "file": "prototype_star_08_warm_31x31.png",
+      "top_left_px": [
+        287,
+        416
+      ],
+      "size_px": [
+        31,
+        31
+      ],
+      "cocos_center_px": [
+        302.5,
+        412.5
+      ],
+      "cocos_node_position_px": [
+        302.5,
+        412.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "V7 source center at master (302,431); Screen delta only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "source_center_px": [
+        302,
+        431
+      ],
+      "source_center_rgb": [
+        254,
+        240,
+        196
+      ],
+      "source_center_luma": 239.8,
+      "overlay_semantics": "positive-only V7-derived Screen micro-brightening; approved star remains baked in scene_clean_plate",
+      "transparent_rgb_zero_required": true,
+      "render_order": 10,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "1142343278ba972ccb12a98f5c3a9af91f8cd8452cacfcf119dc293667d1f851"
+    },
+    {
+      "id": "star_09",
+      "file": "prototype_star_09_cool_31x31.png",
+      "top_left_px": [
+        314,
+        474
+      ],
+      "size_px": [
+        31,
+        31
+      ],
+      "cocos_center_px": [
+        329.5,
+        354.5
+      ],
+      "cocos_node_position_px": [
+        329.5,
+        354.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "V7 source center at master (329,489); Screen delta only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "source_center_px": [
+        329,
+        489
+      ],
+      "source_center_rgb": [
+        241,
+        250,
+        254
+      ],
+      "source_center_luma": 248.375,
+      "overlay_semantics": "positive-only V7-derived Screen micro-brightening; approved star remains baked in scene_clean_plate",
+      "transparent_rgb_zero_required": true,
+      "render_order": 11,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "5c49e5f4e58cadca29b5bea98518874535c2e116968a75954375fb47e1d9f749"
+    },
+    {
+      "id": "star_10",
+      "file": "prototype_star_10_warm_31x31.png",
+      "top_left_px": [
+        299,
+        529
+      ],
+      "size_px": [
+        31,
+        31
+      ],
+      "cocos_center_px": [
+        314.5,
+        299.5
+      ],
+      "cocos_node_position_px": [
+        314.5,
+        299.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "V7 source center at master (314,544); Screen delta only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "source_center_px": [
+        314,
+        544
+      ],
+      "source_center_rgb": [
+        255,
+        248,
+        195
+      ],
+      "source_center_luma": 245.662,
+      "overlay_semantics": "positive-only V7-derived Screen micro-brightening; approved star remains baked in scene_clean_plate",
+      "transparent_rgb_zero_required": true,
+      "render_order": 12,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "1eb72512bfa2f13211f78e64ead8b43de7f1761849c69feba02e0ce775eef5f1"
+    },
+    {
+      "id": "cloud_far",
+      "file": "prototype_cloud_far_320x58.png",
+      "top_left_px": [
+        18,
+        485
+      ],
+      "size_px": [
+        320,
+        58
+      ],
+      "cocos_center_px": [
+        178.0,
+        330.0
+      ],
+      "cocos_node_position_px": [
+        178.0,
+        330.0
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "Center; horizontal drift only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "render_order": 13,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "68babe6d501813ee794ba79ebe45cf7396f92a9df78bcbd79eac98e4200a2599"
+    },
+    {
+      "id": "cloud_near",
+      "file": "prototype_cloud_near_350x70.png",
+      "top_left_px": [
+        3,
+        529
+      ],
+      "size_px": [
+        350,
+        70
+      ],
+      "cocos_center_px": [
+        178.0,
+        280.0
+      ],
+      "cocos_node_position_px": [
+        178.0,
+        280.0
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "Center; horizontal drift only.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "render_order": 14,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "44cc681d03cbd27bd16d3ba19578d0c0f571da831de01d3997a3d5f8c67d8ea4"
+    },
+    {
+      "id": "grass_far_accents",
+      "file": "prototype_grass_far_accents.png",
+      "top_left_px": [
+        12,
+        648
+      ],
+      "size_px": [
+        369,
+        29
+      ],
+      "cocos_center_px": [
+        196.5,
+        181.5
+      ],
+      "cocos_node_position_px": [
+        196.5,
+        167.58
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.02
+      ],
+      "pivot_note": "Bottom-center of each cluster; clockwise shear/rotation impression.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 15,
+      "neutral_opacity": 1.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "ae870b733097931bcfb5c2797bcac94d3d0123a96473dba690696a428584af39",
+      "motion_ready": true,
+      "node_opacity_contract": [
+        1.0,
+        1.0
+      ],
+      "source_content_semantics": "exact V7 pixels on a full-opacity content matte",
+      "static_copy_removed_from_scene_clean_plate": true
+    },
+    {
+      "id": "house_and_fence",
+      "file": "prototype_house_and_fence.png",
+      "top_left_px": [
+        241,
+        584
+      ],
+      "size_px": [
+        149,
+        94
+      ],
+      "cocos_center_px": [
+        315.5,
+        213.0
+      ],
+      "cocos_node_position_px": [
+        315.5,
+        173.52
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.08
+      ],
+      "pivot_note": "Bottom-center; static. Door is not a call-to-action.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 16,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "c7fb4b4cb75b6d7ff41e2af440d605c10159e73e055e5d4450f769087ed3d034"
+    },
+    {
+      "id": "door_stable_light",
+      "file": "prototype_door_stable_light.png",
+      "top_left_px": [
+        290,
+        623
+      ],
+      "size_px": [
+        42,
+        59
+      ],
+      "cocos_center_px": [
+        311.0,
+        191.5
+      ],
+      "cocos_node_position_px": [
+        311.0,
+        191.5
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "Center; opacity fixed at 100% during zero-operation sample.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "render_order": 17,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "86d646275dabd90018221419bad0ebf33f2105699abfea0b7225231787ef9fb5"
+    },
+    {
+      "id": "grass_near_accents",
+      "file": "prototype_grass_near_accents.png",
+      "top_left_px": [
+        17,
+        750
+      ],
+      "size_px": [
+        373,
+        40
+      ],
+      "cocos_center_px": [
+        203.5,
+        74.0
+      ],
+      "cocos_node_position_px": [
+        203.5,
+        54.8
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.02
+      ],
+      "pivot_note": "Bottom-center of each cluster; follows far grass after delay.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 18,
+      "neutral_opacity": 1.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "4fdd42f18212d9fbb97c054273046e2b7f3a753ae60cc4e94af5a1e8b946642c",
+      "motion_ready": true,
+      "node_opacity_contract": [
+        1.0,
+        1.0
+      ],
+      "source_content_semantics": "exact V7 pixels on a full-opacity content matte",
+      "static_copy_removed_from_scene_clean_plate": true
+    },
+    {
+      "id": "person_body",
+      "file": "prototype_person_body.png",
+      "top_left_px": [
+        62,
+        582
+      ],
+      "size_px": [
+        107,
+        178
+      ],
+      "cocos_center_px": [
+        115.5,
+        173.0
+      ],
+      "cocos_node_position_px": [
+        114.43,
+        107.14
+      ],
+      "anchor_normalized_cocos": [
+        0.49,
+        0.13
+      ],
+      "pivot_note": "Weight pivot at seated pelvis; breathing uses shoulder sublayer, not whole-body bob.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 19,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "4b3fc2453b2be99af14b4d4db0845382718972b8cc0ed77396c3a4e7cabf7307"
+    },
+    {
+      "id": "person_hair_tuft",
+      "file": "prototype_person_hair_tuft.png",
+      "top_left_px": [
+        79,
+        582
+      ],
+      "size_px": [
+        71,
+        47
+      ],
+      "cocos_center_px": [
+        114.5,
+        238.5
+      ],
+      "cocos_node_position_px": [
+        115.92,
+        218.76
+      ],
+      "anchor_normalized_cocos": [
+        0.52,
+        0.08
+      ],
+      "pivot_note": "Pivot at lower hair mass; rotate clockwise with wind.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 20,
+      "neutral_opacity": 1.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "b3a66c9cb8e7ece3635de93d9f839b94163dda5d7ded975af580c44d8f9c0f01",
+      "motion_ready": true,
+      "node_opacity_contract": [
+        1.0,
+        1.0
+      ],
+      "source_content_semantics": "exact V7 pixels on a full-opacity content matte",
+      "static_copy_removed_from_scene_clean_plate": true
+    },
+    {
+      "id": "person_clothes_hem",
+      "file": "prototype_person_clothes_hem.png",
+      "top_left_px": [
+        65,
+        708
+      ],
+      "size_px": [
+        98,
+        52
+      ],
+      "cocos_center_px": [
+        114.0,
+        110.0
+      ],
+      "cocos_node_position_px": [
+        112.04,
+        131.84
+      ],
+      "anchor_normalized_cocos": [
+        0.48,
+        0.92
+      ],
+      "pivot_note": "Pivot along upper seam; rotate clockwise with wind.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 21,
+      "neutral_opacity": 1.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "58d4e66cb63a0b788071e2e76b38fd3a0fd84bfb6f204eb5f4353efa6d7f2e1f",
+      "motion_ready": true,
+      "node_opacity_contract": [
+        1.0,
+        1.0
+      ],
+      "source_content_semantics": "exact V7 pixels on a full-opacity content matte",
+      "static_copy_removed_from_scene_clean_plate": true
+    },
+    {
+      "id": "cat_body",
+      "file": "prototype_cat_body.png",
+      "top_left_px": [
+        162,
+        659
+      ],
+      "size_px": [
+        64,
+        104
+      ],
+      "cocos_center_px": [
+        194.0,
+        133.0
+      ],
+      "cocos_node_position_px": [
+        193.36,
+        95.56
+      ],
+      "anchor_normalized_cocos": [
+        0.49,
+        0.14
+      ],
+      "pivot_note": "Seated-body pivot; body remains grounded.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 22,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "3ed6815b73b435b40ecb22711a8db12fc11297883b576fc34352d0f11e342e62"
+    },
+    {
+      "id": "cat_ears",
+      "file": "prototype_cat_ears.png",
+      "top_left_px": [
+        171,
+        659
+      ],
+      "size_px": [
+        41,
+        32
+      ],
+      "cocos_center_px": [
+        191.5,
+        169.0
+      ],
+      "cocos_node_position_px": [
+        191.5,
+        155.56
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.08
+      ],
+      "pivot_note": "Pivot at ear bases; short clockwise motion, then settle.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 23,
+      "neutral_opacity": 1.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "07400f366b275599d0f3aa4289d901efbe28bf7552a2cdeb6ee811a29bc19064",
+      "motion_ready": true,
+      "node_opacity_contract": [
+        1.0,
+        1.0
+      ],
+      "source_content_semantics": "exact V7 pixels on a full-opacity content matte",
+      "static_copy_removed_from_scene_clean_plate": true
+    },
+    {
+      "id": "cat_tail_tip",
+      "file": "prototype_cat_tail_tip.png",
+      "top_left_px": [
+        191,
+        738
+      ],
+      "size_px": [
+        36,
+        25
+      ],
+      "cocos_center_px": [
+        209.0,
+        93.5
+      ],
+      "cocos_node_position_px": [
+        197.48,
+        92.5
+      ],
+      "anchor_normalized_cocos": [
+        0.18,
+        0.46
+      ],
+      "pivot_note": "Pivot at left tail base; rotate clockwise, retain slight follow-through.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 24,
+      "neutral_opacity": 1.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "a92172bea58360e29d849055d4c3d9a3994a637a7cef3c042765331c11a67def",
+      "motion_ready": true,
+      "node_opacity_contract": [
+        1.0,
+        1.0
+      ],
+      "source_content_semantics": "exact V7 pixels on a full-opacity content matte",
+      "static_copy_removed_from_scene_clean_plate": true
+    },
+    {
+      "id": "flower_a_glow",
+      "file": "prototype_flower_a_glow_42x42.png",
+      "top_left_px": [
+        51,
+        758
+      ],
+      "size_px": [
+        42,
+        42
+      ],
+      "cocos_center_px": [
+        72.0,
+        65.0
+      ],
+      "cocos_node_position_px": [
+        72.0,
+        65.0
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "Center on flower A core.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "render_order": 25,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "ef464a7de968785c5ca3fb98ec6eb3236f428d9d58d3b67f8abf3ec70e28474a"
+    },
+    {
+      "id": "flower_b_glow",
+      "file": "prototype_flower_b_glow_38x38.png",
+      "top_left_px": [
+        298,
+        707
+      ],
+      "size_px": [
+        38,
+        38
+      ],
+      "cocos_center_px": [
+        317.0,
+        118.0
+      ],
+      "cocos_node_position_px": [
+        317.0,
+        118.0
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.5
+      ],
+      "pivot_note": "Center on flower B core.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "screen",
+      "prototype_only": true,
+      "render_order": 26,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "4a2f7317d6c20e7ee3c910c80678b8b01e5da37c710d4863c2b4196edd3bcd4a"
+    },
+    {
+      "id": "flower_a",
+      "file": "prototype_flower_a.png",
+      "top_left_px": [
+        55,
+        759
+      ],
+      "size_px": [
+        35,
+        57
+      ],
+      "cocos_center_px": [
+        72.5,
+        56.5
+      ],
+      "cocos_node_position_px": [
+        72.5,
+        30.28
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.04
+      ],
+      "pivot_note": "Stem base; static geometry in Gate C.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 27,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "f3fc56f705d07a9fc7bc31c3ff2620ebc6ef25bb51d09d535a4474c504ab65df"
+    },
+    {
+      "id": "flower_b",
+      "file": "prototype_flower_b.png",
+      "top_left_px": [
+        302,
+        707
+      ],
+      "size_px": [
+        33,
+        47
+      ],
+      "cocos_center_px": [
+        318.5,
+        113.5
+      ],
+      "cocos_node_position_px": [
+        318.5,
+        91.88
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.04
+      ],
+      "pivot_note": "Stem base; static geometry in Gate C.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 28,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "54c6b40f609a0294f07ddb5919afbe182c1e96bdee898112a51bc3ef822c5eb4"
+    },
+    {
+      "id": "foreground_occlusion",
+      "file": "prototype_foreground_occlusion.png",
+      "top_left_px": [
+        0,
+        742
+      ],
+      "size_px": [
+        390,
+        102
+      ],
+      "cocos_center_px": [
+        195.0,
+        51.0
+      ],
+      "cocos_node_position_px": [
+        195.0,
+        0.0
+      ],
+      "anchor_normalized_cocos": [
+        0.5,
+        0.0
+      ],
+      "pivot_note": "Static full-width foreground occluder; render above character feet.",
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "blend": "normal",
+      "prototype_only": true,
+      "render_order": 29,
+      "neutral_opacity": 0.0,
+      "neutral_transform": {
+        "position_delta_px": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "file_sha256": "fcaee274ae23e24c37efa3713347acb417671f4a3465a871602eeec71df0a449"
+    }
+  ],
+  "asset_package_id": "outdoor-motion-phone-v2-b-assets-r1",
+  "motion_contract_id": "OUTDOOR-MOTION-PHONE-V2-B",
+  "supersedes_runtime_asset_manifest_sha256": "816198a587aa2596afff4e43394b30859310d8c095dd14903d4fd6238cb51ae8",
+  "motion_layer_contract": {
+    "ids": [
+      "grass_far_accents",
+      "grass_near_accents",
+      "person_hair_tuft",
+      "person_clothes_hem",
+      "cat_ears",
+      "cat_tail_tip"
+    ],
+    "node_neutral_opacity": 1.0,
+    "node_runtime_opacity": 1.0,
+    "per_pixel_alpha": "binary content matte; 0 or 255",
+    "baked_static_copy_removed": true,
+    "source_content": "exact approved V7 pixels",
+    "background_restoration": "deterministic reuse of frozen Gate C clean reference plus adjacent V7 material at attachment zones",
+    "new_generation_used": false,
+    "source_sha256": "7157484b95988b11c1abdf9ddc0d5bb7c2d3bde25dd9d2dfcf6c5ee795847b3d",
+    "background_reference_sha256": "55089939b4219159a33c5bbfd9be894774b66d3d4f0292a968b0eefa6a99b233"
+  }
+}

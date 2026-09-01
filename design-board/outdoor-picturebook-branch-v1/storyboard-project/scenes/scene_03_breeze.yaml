@@ -1,0 +1,44 @@
+schema_version: 1
+scene: 3
+id: scene_03_breeze
+title: "吹吹风"
+branch_hint: "吹吹风"
+location: "夜风草坡"
+location_id: loc_night_slope_v1
+time_of_day: "深夜"
+story_beat: "成年人碰到一根草穗，一阵风把松开的草叶带到猫耳边，猫轻拍一下，风和两者都重新安静。"
+characters:
+  - char_adult_back_v1
+  - char_house_cat_v1
+visual_style: style_night_comic_b_v1
+frame_count: 5
+advance_behavior:
+  trigger: "tap current picture"
+  autoplay: false
+  progress_ui: false
+entry:
+  from: root_night_slope_v1
+  hotspot: grass_tip_hotspot_v1
+frames:
+  - order: 1
+    id: scene_03_breeze_shot_001
+    beat: "成年人坐着用指尖碰到近处草穗，猫安静看着手边。"
+  - order: 2
+    id: scene_03_breeze_shot_002
+    beat: "风从远草传到近草，再掠过发梢和衣角，一片松开的细草叶被带起。"
+  - order: 3
+    id: scene_03_breeze_shot_003
+    beat: "草叶轻轻搭到猫的近侧耳边，猫耳自然一抖，没有受伤或惊吓。"
+  - order: 4
+    id: scene_03_breeze_shot_004
+    beat: "猫保持四足姿态，只抬一只前爪自然拍开草叶。"
+  - order: 5
+    id: scene_03_breeze_shot_005
+    beat: "草叶被余风带走，草坡慢慢落稳，成年人收回手，猫重新坐好陪在身边。"
+continuity_notes:
+  - "风在全支线保持远草到近草、再到人物和猫的同一传播方向。"
+  - "同一片细草叶贯穿第二至第五幅，大小、色值和运动方向不可漂移。"
+  - "猫的拍叶动作必须符合普通家猫解剖，不拟人、不站立。"
+exit_intent: "故事在户外安静结束；后续可回到根选择，但本文件不授权运行时接线。"
+production_boundary: "Gate B disposable exploration only; no generated image is a formal or runtime asset."
+status: BLOCKED

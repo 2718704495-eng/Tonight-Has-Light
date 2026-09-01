@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "status": "BUILT / H4 CLEAN-PLATE REVIEW BOARDS ONLY / RESPONSE+UI USE SEPARATE REPORTS",
+  "deterministic": true,
+  "candidateId": "home-meal-h4-table-ritual-v1-a-r2",
+  "inputs": {
+    "h3_390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/exports/390x844/scene_01_home_shot_003.png",
+      "sha256": "c582fa5e9ad5c0f465e307472ccfc6791ed78b2d1e81663669df9151819aab72",
+      "width": 390,
+      "height": 844,
+      "format": "png"
+    },
+    "h3_195": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/exports/195x422/scene_01_home_shot_003.png",
+      "sha256": "ce8e04691102079b2cea11b02c4e51cf52a752c3902433a07dd0481b0822b4c2",
+      "width": 195,
+      "height": 422,
+      "format": "png"
+    },
+    "h4_390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/390x844/scene_01_home_shot_004.png",
+      "sha256": "bbb02106fb4f5a820d1199eb61c7b10b5065028461bfdd6bf813276abe796533",
+      "width": 390,
+      "height": 844,
+      "format": "png"
+    },
+    "h4_195": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/195x422/scene_01_home_shot_004.png",
+      "sha256": "269a8f7243959fe785d264064a5f57a356f3768471456a9b0e877c31acd8b35a",
+      "width": 195,
+      "height": 422,
+      "format": "png"
+    },
+    "h5_390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png",
+      "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51",
+      "width": 390,
+      "height": 844,
+      "format": "png"
+    },
+    "h5_195": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/195x422/scene_01_home_shot_005.png",
+      "sha256": "674994ba660f8f2ed8a7f605c976e6eb0199ede70ced81e91e092862078ed57e",
+      "width": 195,
+      "height": 422,
+      "format": "png"
+    }
+  },
+  "outputs": {
+    "story390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/evidence/h3-h4-h5-story-390.png",
+      "sha256": "71ed1867b44421a987b77526b74c2bbdab545a1a37b566b4bb3da3db1776fbee",
+      "width": 1170,
+      "height": 900,
+      "format": "png"
+    },
+    "story195": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/evidence/h3-h4-h5-story-195.png",
+      "sha256": "bb9342f21a7450fc2cc875eaecb2d9f168869a1ad6770e39a8fcec540656ec9b",
+      "width": 585,
+      "height": 478,
+      "format": "png"
+    },
+    "interaction390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/evidence/h4-interaction-neighborhoods-390.png",
+      "sha256": "95be9a2423cc997f3d93653fee84b330182db6a21f889b4d085e7f5d9b3ce606",
+      "width": 390,
+      "height": 844,
+      "format": "png"
+    },
+    "dish390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/evidence/h3-h4-h5-dish-continuity-390.png",
+      "sha256": "eba708c6c81fec3a78d1669c2340b6d2781a250ea9caa5cb9f70dd7e27d44cee",
+      "width": 810,
+      "height": 346,
+      "format": "png"
+    }
+  },
+  "interactionGeometry": {
+    "dish": {
+      "x": 154,
+      "y": 370,
+      "width": 136,
+      "height": 102
+    },
+    "warmWaterCup": {
+      "x": 300,
+      "y": 371,
+      "width": 62,
+      "height": 91
+    },
+    "minimumEdgeGapPx": 10,
+    "requiredEdgeGapPx": 8,
+    "minimumTargetPx": 44
+  },
+  "evidenceBoundary": {
+    "scope": "clean-plate-review-boards-only",
+    "cleanPlateModified": false,
+    "chineseLabelsBakedInEvidenceOnly": true,
+    "responseLayersProducedByThisBuilder": false,
+    "responseStateReport": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/evidence/h4-response-state-report.json",
+    "quietUiBuildReport": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/evidence/build-report.json",
+    "userApproved": false
+  }
+}

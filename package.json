@@ -1,0 +1,16 @@
+{
+  "name": "tonight-has-light-delivery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "《今夜有灯》Gate B–D 可见交付与 Cocos Creator 基础工程",
+  "scripts": {
+    "preview": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "verify:docs": "node scripts/verify-docs.mjs",
+    "verify:story-motion": "node --test prototype/story-illustration-v1-b-motion-preview/tests/*.test.mjs",
+    "verify:picturebook-board": "node --test design-board/outdoor-picturebook-branch-v1/tests/*.test.mjs",
+    "verify:prototype": "node prototype/tests/verify-delivery.mjs && node prototype/indoor-n01-v1/tests/verify-prototype.mjs && npm run verify:story-motion && npm run verify:picturebook-board",
+    "verify:cocos": "npm --prefix cocos-project run verify",
+    "verify": "npm run verify:docs && npm run verify:prototype && npm run verify:cocos"
+  }
+}

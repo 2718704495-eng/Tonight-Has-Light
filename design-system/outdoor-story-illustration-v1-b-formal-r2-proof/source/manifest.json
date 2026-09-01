@@ -1,0 +1,61 @@
+{
+  "version": "STORY-ILLUSTRATION-B-FORMAL-R2-PROOF",
+  "status": "REVIEW-BLOCKED",
+  "shot": "B01",
+  "title": "坐稳",
+  "canvas": {
+    "width": 860,
+    "height": 1864,
+    "logicalWidth": 390,
+    "logicalHeight": 844
+  },
+  "approvedDirection": {
+    "id": "STORY-ILLUSTRATION-REDESIGN-V1-B-KF-R1",
+    "reference": "design-board/story-illustration-redesign-v1-b/exploration/b01-settle-reference-r1.png",
+    "referenceSha256": "fdac7f8edf8a22954a93a3f756ab2c1699c1afe04462bf2fa3ed679ae2794d0c",
+    "scope": "composition-light-color-mood-only"
+  },
+  "productionPolicy": {
+    "embeddedRaster": false,
+    "referencePixelsCopied": false,
+    "externalHref": false,
+    "generatedPixels": false,
+    "sourceMethod": "original-hand-authored-svg-paths-and-deterministic-svg-texture"
+  },
+  "palette": [
+    "#06182F",
+    "#0A213B",
+    "#173B57",
+    "#294E67",
+    "#4E7380",
+    "#91A5AA",
+    "#C2C2B2",
+    "#D3A05B"
+  ],
+  "layers": [
+    { "id": "layer-sky", "order": 1, "editable": true, "futureRole": "static-backplate", "technique": "limited-palette value gradient and paper hatch" },
+    { "id": "layer-milky-way", "order": 2, "editable": true, "futureRole": "static-baked-sky", "technique": "single masked broken dry-brush band" },
+    { "id": "layer-stars", "order": 3, "editable": true, "futureRole": "static-stars-plus-nine-runtime-main-stars", "technique": "hand-placed points" },
+    { "id": "layer-mountains", "order": 4, "editable": true, "futureRole": "static-midground", "technique": "three broad value masses with sparse hatch" },
+    { "id": "layer-house", "order": 5, "editable": true, "futureRole": "stable-clickable-environment", "technique": "dry-brush ink and restrained detail" },
+    { "id": "layer-door-light", "order": 6, "editable": true, "futureRole": "stable-door-feedback", "technique": "small amber core and local spill" },
+    { "id": "layer-far-grass", "order": 7, "editable": true, "futureRole": "far-wind-plane", "technique": "thin directional grass rhythm" },
+    { "id": "layer-adult-body", "order": 8, "editable": true, "futureRole": "adult-breath-base", "technique": "connected adult anatomy and broad value masses" },
+    { "id": "layer-adult-hair", "order": 9, "editable": true, "futureRole": "adult-hair-wind-cue", "technique": "original irregular silhouette and rim strokes" },
+    { "id": "layer-adult-clothing-edge", "order": 10, "editable": true, "futureRole": "adult-clothing-wind-cue", "technique": "knit edge, seam, and dry-brush contour" },
+    { "id": "layer-cat-body", "order": 11, "editable": true, "futureRole": "cat-breath-base", "technique": "ordinary seated cat anatomy" },
+    { "id": "layer-cat-ears", "order": 12, "editable": true, "futureRole": "cat-ear-wind-cue", "technique": "separate natural ear silhouette" },
+    { "id": "layer-cat-tail", "order": 13, "editable": true, "futureRole": "cat-tail-wind-cue", "technique": "tail rooted at haunch and resting on grass" },
+    { "id": "layer-near-grass", "order": 14, "editable": true, "futureRole": "near-wind-plane", "technique": "four broad grass bands and irregular blades" },
+    { "id": "layer-flowers", "order": 15, "editable": true, "futureRole": "two-optional-flower-targets", "technique": "exactly two weak amber flowers" },
+    { "id": "layer-foreground-strokes", "order": 16, "editable": true, "futureRole": "foreground-occlusion", "technique": "dry-brush grounding strokes" },
+    { "id": "layer-paper-grain", "order": 17, "editable": true, "futureRole": "baked-material-unifier", "technique": "deterministic SVG turbulence and fiber pattern" }
+  ],
+  "exports": [
+    { "path": "dist/390x844/b01-settle.png", "width": 390, "height": 844 },
+    { "path": "dist/195x422/b01-settle.png", "width": 195, "height": 422 },
+    { "path": "dist/360x800/b01-settle.png", "width": 360, "height": 800 },
+    { "path": "dist/430x932/b01-settle.png", "width": 430, "height": 932 },
+    { "path": "dist/430x844-pressure/b01-settle.png", "width": 430, "height": 844 }
+  ]
+}

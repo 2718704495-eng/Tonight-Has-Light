@@ -1,0 +1,164 @@
+{
+  "candidateManifestSha256": "031f8775ea8699f7a488e4d3b963d9c4d2192ca0e99054a4ccc7dfe6258a8a17",
+  "status": "MECHANICAL CHECK PASS / BLOCKED FOR USER VISUAL APPROVAL",
+  "generatedAt": "2026-08-29T03:13:00.212Z",
+  "branches": {
+    "star": [
+      {
+        "frame": 0,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 1,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 2,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 3,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 4,
+        "prompt": "轻触画面，回到草坡",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      }
+    ],
+    "breeze": [
+      {
+        "frame": 0,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 1,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 2,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 3,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 4,
+        "prompt": "轻触画面，回到草坡",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      }
+    ],
+    "home": [
+      {
+        "frame": 0,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 1,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 2,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 3,
+        "prompt": "轻触画面，继续看",
+        "storyTapDisabled": false,
+        "visibleLayers": 1
+      },
+      {
+        "frame": 4,
+        "prompt": "灯一直为你亮着。",
+        "storyTapDisabled": true,
+        "visibleLayers": 1
+      }
+    ]
+  },
+  "hub": {
+    "hintsReady": true,
+    "horizontalOverflow": 0,
+    "hotspots": [
+      {
+        "branch": "star",
+        "height": 454.6875,
+        "label": "看看星空",
+        "width": 388,
+        "zIndex": "3"
+      },
+      {
+        "branch": "breeze",
+        "height": 244.171875,
+        "label": "吹吹风",
+        "width": 267.734375,
+        "zIndex": "3"
+      },
+      {
+        "branch": "home",
+        "height": 185.234375,
+        "label": "回家",
+        "width": 104.75,
+        "zIndex": "5"
+      },
+      {
+        "branch": null,
+        "height": 227.328125,
+        "label": "人物和猫",
+        "width": 221.15625,
+        "zIndex": "2"
+      }
+    ],
+    "stage": [
+      388,
+      842
+    ]
+  },
+  "accessibilityPreview": {
+    "horizontalOverflow": 0,
+    "invitationFontSize": "19.008px",
+    "invitationTransform": "none",
+    "invitationTransitionDuration": "0.15s",
+    "largeText": true,
+    "reduced": true,
+    "stage": [
+      342,
+      742
+    ],
+    "viewport": [
+      360,
+      800
+    ]
+  },
+  "consoleLogs": [],
+  "blocked": [
+    "User visual approval",
+    "Formal editable layered art",
+    "Real keyboard/VoiceOver/TalkBack",
+    "WeChat phone touch, low-light and performance"
+  ]
+}

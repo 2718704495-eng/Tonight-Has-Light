@@ -1,0 +1,95 @@
+{
+  "candidate_id": "formal-picturebook-root-wind-hem-v1-a-r4-manual",
+  "contract_id": "ROOT-WIND-HEM-V1-A-R4",
+  "build_id": "root-r4-manual-hem-local-svg-patch-20260830",
+  "input": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/input/root_night_slope_v2-wind-hem-r2-source-master-2x.png",
+    "sha256": "38e030cbec217c1349beba788e4a041631d295c52a2a0957dc4f9fa45c72a068"
+  },
+  "patch": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/manual-patch/root_wind_hem_r4_patch.svg",
+    "sha256": "96e63a42b747eea076a3093c6d6181d9ff8b7ff14728a545aa9f8f9305953761"
+  },
+  "right_hem_texture": {
+    "contract_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/manual-patch/right_hem_texture.json",
+    "contract_sha256": "7d1dc3c19a0813a4238841e692ba376c53736ba1d8c23cc68c99153ceb6df1a0",
+    "source_rect_master_2x": {
+      "left": 70,
+      "top": 1335,
+      "width": 200,
+      "height": 80
+    },
+    "source_mask_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/manual-patch/right_hem_source_mask.svg",
+    "source_mask_sha256": "a7647ede9d97f6132fa4a0f7de8017ec243121c4c2d40d930e2c1d1115f44d3f",
+    "transparent_patch_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/manual-patch/right_hem_texture_patch.png",
+    "transparent_patch_sha256": "383acc6e38f880fd7b92661b6a7d36b196916fde8ebe0bf83c5c62f756d7579c",
+    "transform": {
+      "flop": true,
+      "width": 135,
+      "height": 54,
+      "rotate_degrees": -12,
+      "brightness": 1.03,
+      "saturation": 0.97,
+      "mask_blur_sigma": 1.1
+    },
+    "destination_master_2x": {
+      "left": 224,
+      "top": 1330
+    }
+  },
+  "repair_clone": {
+    "source_rect_master_2x": {
+      "left": 0,
+      "top": 1420,
+      "width": 105,
+      "height": 82
+    },
+    "destination_master_2x": {
+      "left": 58,
+      "top": 1334
+    },
+    "mask_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/manual-patch/repair_clone_mask.svg",
+    "mask_sha256": "42b4d1e2683565245b602a8355b7f80325be7f38f1c6113c26d4146d72441903"
+  },
+  "master": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/masters/root_night_slope_v2-wind-hem-r4-manual-master-2x.png",
+    "width": 780,
+    "height": 1688,
+    "space": "srgb",
+    "channels": 4,
+    "depth": "uchar",
+    "sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8"
+  },
+  "outputs": {
+    "390x844": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/exports/390x844/root_night_slope_v2-wind-hem-r4-manual.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a"
+    },
+    "195x422": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/exports/195x422/root_night_slope_v2-wind-hem-r4-manual.png",
+      "width": 195,
+      "height": 422,
+      "sha256": "6ceac63b51bf9c6e8311aded28c6adf1fe7e6349e864d5f475976b7c09bb9491"
+    },
+    "360x800": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/exports/360x800/root_night_slope_v2-wind-hem-r4-manual.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "0b24bd86d062b2ad1c7f905b52156c341dad6c220298c816740a7a9687191636"
+    },
+    "430x932": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/exports/430x932/root_night_slope_v2-wind-hem-r4-manual.png",
+      "width": 430,
+      "height": 932,
+      "sha256": "59877dd4db6b10da3ff0547d542893862b7f957a0b566d287fc5898c00e700fb"
+    },
+    "430x844-pressure": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/exports/430x844-pressure/root_night_slope_v2-wind-hem-r4-manual.png",
+      "width": 430,
+      "height": 844,
+      "sha256": "b475ab37dc5fdc9eb1741eaab2e5fb3de5638ffeabb590729ef99d755e20fc2f"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "cbe2e285-497e-40e7-85d2-ddedab252419",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/cocos/outdoor-gate-c/outdoor-gate-c-timeline.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

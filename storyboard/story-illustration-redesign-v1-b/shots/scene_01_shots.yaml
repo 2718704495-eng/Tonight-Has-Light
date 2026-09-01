@@ -1,0 +1,18 @@
+scene_id: scene_01_outdoor_breeze
+shots:
+  - id: B01
+    title: 坐稳
+    framing: sky-dominant wide back view
+    story_change: far grass first receives the breeze
+    evidence: design-board/story-illustration-redesign-v1-b/exploration/b01-settle-reference-r1.png
+  - id: B02
+    title: 风经过
+    framing: extreme low grass-height action shot
+    story_change: large grass bands carry one breeze to hair, hem, cat ear and tail
+    evidence: design-board/story-illustration-redesign-v1-b/exploration/b02-wind-passes-r1.png
+  - id: B03
+    title: 余风
+    framing: ground-level hand-and-tail detail
+    story_change: cat tail and two grass tips retain the final after-motion
+    evidence: design-board/story-illustration-redesign-v1-b/exploration/b03-afterwind-detail-r1.png
+

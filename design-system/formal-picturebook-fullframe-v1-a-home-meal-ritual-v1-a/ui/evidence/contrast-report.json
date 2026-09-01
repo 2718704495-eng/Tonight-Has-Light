@@ -1,0 +1,27 @@
+{
+  "status": "PASS / TOKEN PAIRS AND FINAL PIXEL SAMPLES",
+  "method": "WCAG 2 relative luminance from declared sRGB token pairs; object-adjacent warm text uses a dark outline so the immediate adjacent contrast is deterministic.",
+  "minimumTextRatio": 4.5,
+  "minimumMeaningfulBoundaryRatio": 3.0,
+  "minimumActualRenderedRatio": 10.84,
+  "pairs": [
+    {
+      "usage": "H1 and H4 warm text fill against dark outline",
+      "foreground": "#F6E2BC",
+      "adjacent": "#26170F",
+      "ratio": 13.63,
+      "pass": true
+    },
+    {
+      "usage": "H2 warm helper text fill against dark outline",
+      "foreground": "#F6E2BC",
+      "adjacent": "#26170F",
+      "ratio": 13.63,
+      "pass": true
+    }
+  ],
+  "evidence": [
+    "Actual anti-aliased text pixels are sampled in pixel-contrast-report.json from final composites bound to the declared H4 state hashes.",
+    "Standard, true 120%, reduced-motion, 360x800, 390x844, 430x932 and 430x844-pressure samples are regenerated in this evidence directory."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "package_id": "STARGAZE-FORMAL-BATCH-V1-A",
+  "candidate_id": "stargaze-formal-batch-v1-a-f4-r1",
+  "asset_id": "ART-PBOOK-STAR-004",
+  "created_on": "2026-08-31",
+  "source_kind": "ai-assisted-formal-fullframe",
+  "generator": "OpenAI built-in image_gen",
+  "generation_count": 1,
+  "targeted_repair_count": 0,
+  "prompt": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_004/prompt.md",
+    "sha256": "2686801fa3ca069854451579428db77154e376614abf9090232b049a5b39bda8"
+  },
+  "references": [
+    {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/source/masters/scene_02_stargaze_shot_003-master-2x.png",
+      "sha256": "d2561098ca35f15b02adb7a74bc7cc61778bbfb789552f57a27dc58685b57745",
+      "role": "exact user-approved F3 master edit target; locks camera, crop, Milky Way, dust-dark rift, established stars, same cloud, same main star, and bottom-edge adult/cat scale anchors"
+    }
+  ],
+  "raw": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_004/source/raw/scene_02_stargaze_shot_004-imagegen-r1.png",
+    "sha256": "6bb51bb0a31f7663f3381c274978f64da42dc5e356aadb078f6efa53c61f34d2"
+  },
+  "master": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_004/source/masters/scene_02_stargaze_shot_004-master-2x.png",
+    "sha256": "7a1d0cac3e0b6a27dd7629213fbf58547b9f3f378348308f87f1bda8fa642fd0"
+  },
+  "human_edits": [],
+  "rights_boundary": {
+    "living_artist_name": false,
+    "existing_ip_character": false,
+    "brand_or_logo": false,
+    "real_person_likeness": false,
+    "personal_data": false
+  },
+  "review_audit": {
+    "prompt_safety": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_004/reviews/PROMPT-SAFETY.md",
+    "root_owner_review": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_004/reviews/ROOT-OWNER-VISUAL-REVIEW.md",
+    "root_owner_result": {
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "ready_for_user_review": true
+    },
+    "independent_review": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_004/reviews/INDEPENDENT-VISUAL-REVIEW.md",
+    "independent_result": {
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "write_operations": 0,
+      "ready_for_user_review": true
+    }
+  },
+  "user_visual_approval": {
+    "date": "2026-08-31",
+    "phrase": "批准 STARGAZE-F4-FORMAL-V1-A-R1：F4 单帧视觉通过",
+    "record": "docs/STARGAZE-F4-FORMAL-V1-A-R1-APPROVAL.md",
+    "status": "USER VISUAL PASS / FROZEN",
+    "approved_390x844_sha256": "0973fec9fc18cfdb7422dcef32941a1fb071f84c95154cb10fd1d5279bda1ae9",
+    "approved_master_sha256": "7a1d0cac3e0b6a27dd7629213fbf58547b9f3f378348308f87f1bda8fa642fd0",
+    "pre_approval_hash_manifest": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_004/approvals/HASHES.pre-approval.sha256",
+    "pre_approval_hash_manifest_sha256": "abc92a43429d03d58be0e9c22ef09c0f68d955c30681cef7fc3ce1b89ad5b111"
+  },
+  "runtime_authorized": false
+}

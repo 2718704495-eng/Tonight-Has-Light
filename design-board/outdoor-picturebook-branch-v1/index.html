@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <title>《今夜有灯》草坡三路互动绘本 · Gate B 设计预览</title>
+    <link rel="preload" as="image" href="../story-illustration-redesign-v1-b/exploration/b01-settle-reference-r1.png" />
+    <link rel="preload" as="image" href="./exploration/star-branch-contact-sheet-r3.png" />
+    <link rel="preload" as="image" href="./exploration/breeze-branch-contact-sheet-r1.png" />
+    <link rel="preload" as="image" href="./exploration/home-branch-contact-sheet-r1.png" />
+    <link rel="stylesheet" href="./styles.css?v=stargaze-finale-r2-1" />
+  </head>
+  <body>
+    <main class="proof-layout">
+      <header class="proof-heading">
+        <p class="proof-kicker">Gate B · 中文可点击设计预览</p>
+        <h1>草坡不是菜单，画里的东西会邀请你。</h1>
+        <p class="proof-note">场景稳定约 1.5 秒后出现三条画中批注；点击图片逐幅看完一段小故事，星空末页会经过一颗流星。</p>
+      </header>
+
+      <section class="phone-column" aria-label="390×844 手机画面预览">
+        <div class="phone-stage" id="phone-stage">
+          <section class="hub-scene" id="hub-scene" aria-label="夜风草坡入口">
+            <img
+              class="hub-art"
+              src="../story-illustration-redesign-v1-b/exploration/b01-settle-reference-r1.png"
+              alt="一位成年人和一只普通家猫坐在深蓝草坡上看银河，右侧小屋亮着门灯。"
+            />
+
+            <button class="hotspot hotspot-sky" type="button" data-branch="star" aria-label="看看星空">
+              <span class="ink-invitation">看看星空</span>
+            </button>
+            <button class="hotspot hotspot-grass" type="button" data-branch="breeze" aria-label="吹吹风">
+              <span class="ink-invitation">吹吹风</span>
+            </button>
+            <button class="hotspot hotspot-home" type="button" data-branch="home" aria-label="回家">
+              <span class="ink-invitation">回家</span>
+            </button>
+            <button class="quiet-character-zone" id="quiet-character-zone" type="button" aria-label="人物和猫">
+              <span class="visually-hidden">轻触人物和猫会得到互动提示</span>
+            </button>
+
+            <p class="gentle-hint" id="gentle-hint" role="status">
+              天空、草尖和亮着的门，都可以轻轻碰一碰。
+            </p>
+          </section>
+
+          <section class="story-scene" id="story-scene" aria-label="互动绘本分支" hidden>
+            <div class="story-layer is-visible" id="story-layer-a"><div class="story-panel"></div></div>
+            <div class="story-layer" id="story-layer-b"><div class="story-panel"></div></div>
+
+            <button class="story-tap" id="story-tap" type="button" aria-label="轻触画面，继续看"></button>
+            <button class="return-hub" id="return-hub" type="button">回草坡</button>
+            <p class="story-title" id="story-title"></p>
+            <p class="story-prompt" id="story-prompt">轻触画面，继续看</p>
+
+            <div class="stargaze-finale" id="stargaze-finale" aria-hidden="true" hidden>
+              <span class="meteor" aria-hidden="true"><span class="meteor-trace"></span></span>
+              <div class="stargaze-finale-copy" id="stargaze-finale-copy" hidden>
+                <p class="finale-observation">一颗流星，刚刚从夜里经过。</p>
+                <p class="finale-question">回家，还是再坐一会儿？</p>
+                <div class="finale-actions" aria-label="星空结尾选择">
+                  <button class="finale-action finale-home" id="finale-home" type="button">回家</button>
+                  <button class="finale-action finale-stay" id="finale-stay" type="button">再坐一会儿</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <aside class="proof-aside" aria-label="设计板说明">
+        <p class="aside-label">当前画面</p>
+        <h2 id="current-state">草坡入口</h2>
+        <p id="current-copy">可以不做任何事，也可以碰天空、草尖或亮着的门。</p>
+
+        <div class="ink-rule" aria-hidden="true"></div>
+
+        <p class="aside-label">这版在验证</p>
+        <ul>
+          <li>提示像画中邀请，不像选关按钮。</li>
+          <li>每次轻触只翻一幅，不自动播放。</li>
+          <li>星空末页可选回家或再坐一会儿；回家停在明亮暖屋。</li>
+        </ul>
+
+        <label class="motion-toggle">
+          <input type="checkbox" id="reduce-motion" />
+          <span>减少动态预览</span>
+        </label>
+        <label class="motion-toggle">
+          <input type="checkbox" id="large-text" />
+          <span>120% 大字预览</span>
+        </label>
+        <button class="proof-reset" id="proof-reset" type="button">重新看草坡入口</button>
+        <p class="asset-boundary">探索图仅作 Gate B 体验讨论，不是 Cocos 或微信正式资产。</p>
+      </aside>
+    </main>
+
+    <p class="visually-hidden" id="live-region" aria-live="polite"></p>
+    <script src="./app.js?v=stargaze-finale-r2-1" type="module"></script>
+  </body>
+</html>

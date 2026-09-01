@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "contractId": "HOME-MEAL-RITUAL-V1-A",
+  "candidateId": "home-meal-h1-arrival-v1-a-r2",
+  "pageId": "scene_01_home_shot_001",
+  "assetId": "ART-PBOOK-HOME-001",
+  "sourceProperty": "ai-assisted-formal-fullframe",
+  "promptId": "HOME-H1-ARRIVAL-PROMPT-V1-A",
+  "status": "USER VISUAL PASS / FROZEN",
+  "prompt": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/prompt.md",
+    "sha256": "cdc045d79e35cb5e7135b4e2da32fd268058818c7a182817351e73dcf378a0dc"
+  },
+  "references": [
+    {
+      "index": 1,
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png",
+      "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51",
+      "role": "approved H5 room geography, near-same 32–35mm camera, broad warm light and table-content reference only"
+    },
+    {
+      "index": 2,
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/exports/390x844/root_night_slope_v2-wind-hem-r4-manual.png",
+      "sha256": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a",
+      "role": "approved adult, ordinary cat, gray-blue outer-layer identity and mature B night-comic material reference only"
+    }
+  ],
+  "generation": {
+    "tool": "built-in image_gen",
+    "date": "2026-08-30",
+    "generationCount": 1,
+    "repairCount": 1,
+    "maxGenerations": 2,
+    "initialRawPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/source/raw/scene_01_home_shot_001-imagegen-r1.png",
+    "initialRawSha256": "0173347aef71b01889afe6ddd39c1e8759484c18b3861b22ad22f8dde16ba3aa",
+    "repairRawPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/source/raw/scene_01_home_shot_001-imagegen-r2.png",
+    "repairRawSha256": "800d229c307f39c5ab99e15a6a0e6aa1fd29232f305ebddca7acd58227a77e6c",
+    "acceptedVersionForReview": "r2"
+  },
+  "ownerPreflight": {
+    "decision": "FAIL / ONE LOCAL DEFECT",
+    "p0": 0,
+    "p1": 1,
+    "p2": 0,
+    "singleDefect": "The adult reads as wearing the dark knitted inner top instead of the required plain gray-blue outer layer.",
+    "preserve": "Room geography, warm light, cat, empty hook, kettle, exactly two cups, rice, soup and empty central plate all remain frozen for r2."
+  },
+  "targetedRepair": {
+    "promptId": "HOME-H1-ARRIVAL-R2-GARMENT-REPAIR-V1-A",
+    "promptPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/prompt-r2-garment-repair.md",
+    "promptSha256": "df4eea642a401db1afdee5c6f5ac0a66e5280c61436f57cebd2923caf9af4158",
+    "status": "COMPLETED / NO MORE GENERATION ALLOWED",
+    "outputRawPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/source/raw/scene_01_home_shot_001-imagegen-r2.png",
+    "outputRawSha256": "800d229c307f39c5ab99e15a6a0e6aa1fd29232f305ebddca7acd58227a77e6c"
+  },
+  "normalization": {
+    "type": "deterministic center cover to 780x1688 master; SHOW_ALL review exports",
+    "safeBorder": "#06265F",
+    "masterPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/source/masters/scene_01_home_shot_001-r2-master-2x.png",
+    "masterSha256": "425f3c6a8f23e9dcbca4fc4e7c08ecd66317914e38daab9520e01ba58c7f7c44",
+    "pixelGenerationOrRepaint": false
+  },
+  "reviewExports": {
+    "195x422": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/195x422/scene_01_home_shot_001.png", "sha256": "037523e90281531145a6ae47633e6ec87e883df943e1853ef13f910296acd982" },
+    "360x800": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/360x800/scene_01_home_shot_001.png", "sha256": "5365a35bbb41e62041794017e1162f03cedb0acf7e5a18b238fd9a653f4e1ce5" },
+    "390x844": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/390x844/scene_01_home_shot_001.png", "sha256": "b68c2dfd7bcf40a9d3bd77320faecdbeff517e2b2f7f160abbf4a7d4c6a836fe" },
+    "430x932": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/430x932/scene_01_home_shot_001.png", "sha256": "9da22d742243679d67f7605f5867d5717059e1517e4d76e8056bac4e45360fd6" },
+    "430x844-pressure": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/430x844-pressure/scene_01_home_shot_001.png", "sha256": "5dccde9f7dcab653985d4ba6b6b470935ca2f44bd81959c6b7aa41e595c8067d" }
+  },
+  "safetyReview": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/reviews/PROMPT-SAFETY.md",
+    "decision": "PASS",
+    "nsfw": "PASS",
+    "minors": "PASS",
+    "violence": "PASS",
+    "realPersonLikeness": "PASS",
+    "copyrightedCharactersOrBrands": "PASS",
+    "livingArtistImitation": "PASS",
+    "sensitiveData": "PASS"
+  },
+  "visualReviews": {
+    "owner": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/reviews/OWNER-VISUAL-REVIEW.md",
+      "decision": "PASS FOR INDEPENDENT REVIEW",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0
+    },
+    "independent": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/reviews/INDEPENDENT-VISUAL-REVIEW.md",
+      "decision": "READY FOR USER VISUAL APPROVAL",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "writeOperations": 0
+    }
+  },
+  "userVisualApproval": {
+    "phrase": "批准 HOME-H1-ARRIVAL-V1-A-R2：H1 单帧视觉通过",
+    "date": "2026-08-30",
+    "recordPath": "docs/HOME-H1-ARRIVAL-V1-A-R2-APPROVAL.md",
+    "recordSha256": "b3f6baca9190fa278e680613b58c37f25aac017f62e72ee54f3f104878fac4f6",
+    "approved390Sha256": "b68c2dfd7bcf40a9d3bd77320faecdbeff517e2b2f7f160abbf4a7d4c6a836fe",
+    "preapprovalManifestSha256": "efdedf0f7cb9da15ca492b24a4d5e631dfe642b5733a379d7902fba052cbdcf4",
+    "scope": "H1 Gate B visual pass; authorizes serial H2 then H3 production only"
+  },
+  "authorization": {
+    "phrase": "批准 HOME-MEAL-RITUAL-V1-A Gate B 生产计划，开始 H1 单帧探针",
+    "recordPath": "docs/HOME-MEAL-RITUAL-V1-A-H1-PILOT-APPROVAL.md",
+    "recordSha256": "def904ebf65aa710f6da2151a1f7dd66f26762390621d15d1b4999b703493129",
+    "scope": "B0 plus one H1 initial candidate; one targeted r2 only if exactly one local defect"
+  },
+  "permissions": {
+    "localH1ImageGeneration": false,
+    "h2AndH3SerialProduction": true,
+    "h4": false,
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "review": false,
+    "release": false,
+    "git": false,
+    "remoteWrite": false
+  }
+}

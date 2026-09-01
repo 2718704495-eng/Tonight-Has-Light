@@ -1,0 +1,22 @@
+{
+  "schema": "tonight-has-light.formal-picturebook-partial-0-4-8.boundary.v1",
+  "candidateId": "formal-picturebook-partial-0-4-8-assets-r1",
+  "developerVersion": "0.4.8",
+  "classification": "user-approved formal picturebook / exact-byte runtime copies / WeChat developer 0.4.8 partial experience only / not-for-review / not-for-public-release",
+  "assetManifestSha256": "10e47544bd6f4666a54e6e1d7f6d92da33a9dc10d2c1a50df4e62f9416086101",
+  "hiddenBranches": [
+    "breeze"
+  ],
+  "allowedUse": [
+    "local build and validation for WeChat developer version 0.4.8",
+    "one WeChat developer upload version 0.4.8",
+    "the user may independently promote that exact developer upload to an experience version"
+  ],
+  "forbiddenUse": [
+    "WeChat review submission",
+    "public release",
+    "reuse in any candidate or version other than 0.4.8"
+  ],
+  "h4BothState": "activate home/h4-ate/spriteFrame and home/h4-sipped/spriteFrame together; no third bitmap",
+  "guard": "bind every upload receipt to the final 0.4.8 build tree; deny review submission and public release"
+}

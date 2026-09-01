@@ -1,0 +1,14 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "7949d8ce-d922-4759-8d02-79ae4496b3a9",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "isBundle": true,
+    "bundleConfigID": "outdoor_story_b_kf_r1_temp_experience_subpackage",
+    "bundleName": "outdoor-story-b-kf-r1-temp",
+    "priority": 9
+  }
+}

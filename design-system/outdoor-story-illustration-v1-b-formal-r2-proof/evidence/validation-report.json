@@ -1,0 +1,53 @@
+{
+  "candidate": "STORY-ILLUSTRATION-B-FORMAL-R2-PROOF",
+  "status": "REVIEW-BLOCKED",
+  "machineChecks": {
+    "editableSvg": true,
+    "embeddedRaster": false,
+    "externalHref": false,
+    "namedLayers": 17,
+    "futureMainStars": 9,
+    "flowers": 2,
+    "milkyWayGroups": 1,
+    "deterministicOutputDimensions": true
+  },
+  "visualQuality": "REVIEW-BLOCKED",
+  "note": "Machine checks do not approve anatomy, story read, material quality, or similarity to the approved direction.",
+  "files": [
+    {
+      "path": "dist/390x844/b01-settle.png",
+      "width": 390,
+      "height": 844,
+      "channels": 3,
+      "space": "srgb"
+    },
+    {
+      "path": "dist/195x422/b01-settle.png",
+      "width": 195,
+      "height": 422,
+      "channels": 3,
+      "space": "srgb"
+    },
+    {
+      "path": "dist/360x800/b01-settle.png",
+      "width": 360,
+      "height": 800,
+      "channels": 3,
+      "space": "srgb"
+    },
+    {
+      "path": "dist/430x932/b01-settle.png",
+      "width": 430,
+      "height": 932,
+      "channels": 3,
+      "space": "srgb"
+    },
+    {
+      "path": "dist/430x844-pressure/b01-settle.png",
+      "width": 430,
+      "height": 844,
+      "channels": 3,
+      "space": "srgb"
+    }
+  ]
+}

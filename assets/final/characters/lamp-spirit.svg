@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" role="img" aria-labelledby="title desc">
+  <title id="title">今夜有灯·灯灵正面标准姿</title>
+  <desc id="desc">高宽约一点六比一的窄长折页灯身，顶部单折、右侧短披片、两枚小眼和不规则琥珀暖芯。</desc>
+  <metadata>
+    AI-assisted code-authored editable vector; project: 今夜有灯; asset: lamp-spirit;
+    version: 1.0.0; date: 2026-08-21; third-party assets: none.
+    All paths, gradients and groups are original and remain editable.
+  </metadata>
+  <defs>
+    <linearGradient id="lamp-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D6E0DE"/>
+      <stop offset="0.5" stop-color="#AEBFBE"/>
+      <stop offset="1" stop-color="#789091"/>
+    </linearGradient>
+    <radialGradient id="lamp-core" cx="50%" cy="45%" r="58%">
+      <stop offset="0" stop-color="#FFF2C8"/>
+      <stop offset="0.44" stop-color="#F6D39A"/>
+      <stop offset="1" stop-color="#F2B66D"/>
+    </radialGradient>
+    <radialGradient id="lamp-aura">
+      <stop offset="0" stop-color="#F2B66D" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#F2B66D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <g id="layer-aura" data-layer="aura">
+    <ellipse cx="160" cy="286" rx="145" ry="198" fill="url(#lamp-aura)"/>
+  </g>
+  <g id="layer-shadow" data-layer="shadow">
+    <ellipse cx="150" cy="464" rx="106" ry="17" fill="#080D14" opacity="0.2"/>
+  </g>
+  <g id="layer-body" data-layer="folded-body" transform="translate(-72 0) scale(1.45 1)">
+    <path d="M87 415c-8-82-5-232 10-307 5-25 21-39 46-52 17 22 38 36 67 44-11 73-5 218-12 314-3 43-104 45-111 1Z" fill="url(#lamp-paper)" stroke="#607B7D" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M98 108 143 56l28 59c-23 18-51 15-73-7Z" fill="#E5ECE7" stroke="#748B8B" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M148 78c13 16 29 25 49 31" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.25"/>
+    <path d="M112 130c-8 70-10 171-5 244" fill="none" stroke="#F4F5EC" stroke-width="5" stroke-linecap="round" opacity="0.17"/>
+  </g>
+  <g id="layer-tail" data-layer="right-cape-tail" transform="translate(-72 0) scale(1.45 1)">
+    <path d="M197 228c39 26 51 87 16 119-5-31-18-74-16-119Z" fill="#668487" stroke="#577477" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M205 254c14 18 19 39 17 62" fill="none" stroke="#AFC2C0" stroke-width="4" stroke-linecap="round" opacity="0.35"/>
+  </g>
+  <g id="layer-core" data-layer="amber-core" transform="translate(-72 0) scale(1.45 1)">
+    <path d="M119 312c-5-29 13-60 43-62 31-2 48 30 37 58-10 27-26 48-46 44-22-4-31-20-34-40Z" fill="url(#lamp-core)" stroke="#C58A4F" stroke-width="4"/>
+    <path d="M143 277c12-10 28-9 36 3" fill="none" stroke="#FFF8DB" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+  </g>
+  <g id="layer-face" data-layer="eyes" transform="translate(-72 0) scale(1.45 1)">
+    <ellipse cx="132" cy="181" rx="7" ry="9" fill="#26303A"/>
+    <ellipse cx="170" cy="181" rx="7" ry="9" fill="#26303A"/>
+  </g>
+</svg>

@@ -1,0 +1,107 @@
+{
+  "version": "STORY-ILLUSTRATION-REDESIGN-V1-B-FORMAL-R1",
+  "status": "FORMAL_REDRAW_CANDIDATE_NOT_APPROVED_FOR_COCOS",
+  "prototypeInputsAllowed": false,
+  "sourceCanvas": {
+    "width": 860,
+    "height": 1864,
+    "colorSpace": "sRGB IEC61966-2.1",
+    "alphaMode": "straight",
+    "logicalPrimary": [390, 844],
+    "authoringScaleFor430x932": 2
+  },
+  "responsiveFrames": [
+    { "id": "safe_360x800", "width": 360, "height": 800, "mode": "cover-center" },
+    { "id": "safe_390x844", "width": 390, "height": 844, "mode": "cover-center" },
+    { "id": "safe_430x932", "width": 430, "height": 932, "mode": "cover-center" },
+    { "id": "safe_430x844_pressure", "width": 430, "height": 844, "mode": "cover-center" }
+  ],
+  "renderContract": {
+    "blend": "normal",
+    "mipmaps": false,
+    "wrap": "clamp-to-edge",
+    "atlasRotation": false,
+    "edgeRgbBleedPixels": 4,
+    "reducedMotionNeutralShot": "B01"
+  },
+  "shots": [
+    {
+      "id": "B01",
+      "title": "坐稳",
+      "source": "src/b01-settle.svg",
+      "composition": "sky-dominant-wide",
+      "layers": [
+        { "id": "sky", "renderOrder": 0, "pivot": [430, 932], "blend": "normal" },
+        { "id": "milky_way", "renderOrder": 1, "pivot": [430, 480], "blend": "normal" },
+        { "id": "main_stars", "renderOrder": 2, "pivot": [430, 480], "blend": "normal" },
+        { "id": "mountains", "renderOrder": 10, "pivot": [430, 1180], "blend": "normal" },
+        { "id": "house", "renderOrder": 20, "pivot": [694, 1310], "blend": "normal" },
+        { "id": "door_light", "renderOrder": 21, "pivot": [731, 1371], "blend": "normal" },
+        { "id": "far_grass", "renderOrder": 30, "pivot": [430, 1540], "blend": "normal" },
+        { "id": "person_body", "renderOrder": 40, "pivot": [290, 1518], "blend": "normal" },
+        { "id": "person_hair", "renderOrder": 41, "pivot": [267, 1184], "blend": "normal" },
+        { "id": "person_moving_part", "renderOrder": 42, "pivot": [201, 1457], "blend": "normal" },
+        { "id": "cat_body", "renderOrder": 43, "pivot": [468, 1518], "blend": "normal" },
+        { "id": "cat_ear", "renderOrder": 44, "pivot": [468, 1314], "blend": "normal" },
+        { "id": "cat_tail", "renderOrder": 45, "pivot": [490, 1510], "blend": "normal" },
+        { "id": "near_grass", "renderOrder": 50, "pivot": [430, 1780], "blend": "normal" },
+        { "id": "flower_left", "renderOrder": 60, "pivot": [126, 1650], "blend": "normal" },
+        { "id": "flower_right", "renderOrder": 61, "pivot": [704, 1685], "blend": "normal" },
+        { "id": "foreground_occlusion", "renderOrder": 70, "pivot": [430, 1840], "blend": "normal" },
+        { "id": "paper_texture", "renderOrder": 80, "pivot": [430, 932], "blend": "normal" }
+      ]
+    },
+    {
+      "id": "B02",
+      "title": "风经过",
+      "source": "src/b02-wind-passes.svg",
+      "composition": "grass-height-action",
+      "layers": [
+        { "id": "sky", "renderOrder": 0, "pivot": [430, 932], "blend": "normal" },
+        { "id": "milky_way", "renderOrder": 1, "pivot": [430, 410], "blend": "normal" },
+        { "id": "main_stars", "renderOrder": 2, "pivot": [430, 410], "blend": "normal" },
+        { "id": "mountains", "renderOrder": 10, "pivot": [430, 940], "blend": "normal" },
+        { "id": "house", "renderOrder": 20, "pivot": [745, 1036], "blend": "normal" },
+        { "id": "door_light", "renderOrder": 21, "pivot": [777, 1082], "blend": "normal" },
+        { "id": "far_grass", "renderOrder": 30, "pivot": [430, 1124], "blend": "normal" },
+        { "id": "person_body", "renderOrder": 40, "pivot": [228, 1070], "blend": "normal" },
+        { "id": "person_hair", "renderOrder": 41, "pivot": [214, 684], "blend": "normal" },
+        { "id": "person_moving_part", "renderOrder": 42, "pivot": [316, 1010], "blend": "normal" },
+        { "id": "cat_body", "renderOrder": 43, "pivot": [516, 1122], "blend": "normal" },
+        { "id": "cat_ear", "renderOrder": 44, "pivot": [514, 870], "blend": "normal" },
+        { "id": "cat_tail", "renderOrder": 45, "pivot": [543, 1110], "blend": "normal" },
+        { "id": "near_grass", "renderOrder": 50, "pivot": [430, 1768], "blend": "normal" },
+        { "id": "flower_left", "renderOrder": 60, "pivot": [125, 1490], "blend": "normal" },
+        { "id": "flower_right", "renderOrder": 61, "pivot": [720, 1435], "blend": "normal" },
+        { "id": "foreground_occlusion", "renderOrder": 70, "pivot": [430, 1840], "blend": "normal" },
+        { "id": "paper_texture", "renderOrder": 80, "pivot": [430, 932], "blend": "normal" }
+      ]
+    },
+    {
+      "id": "B03",
+      "title": "余风",
+      "source": "src/b03-afterwind.svg",
+      "composition": "hand-and-tail-detail",
+      "layers": [
+        { "id": "sky", "renderOrder": 0, "pivot": [430, 932], "blend": "normal" },
+        { "id": "milky_way", "renderOrder": 1, "pivot": [430, 340], "blend": "normal" },
+        { "id": "main_stars", "renderOrder": 2, "pivot": [430, 340], "blend": "normal" },
+        { "id": "mountains", "renderOrder": 10, "pivot": [430, 690], "blend": "normal" },
+        { "id": "house", "renderOrder": 20, "pivot": [684, 777], "blend": "normal" },
+        { "id": "door_light", "renderOrder": 21, "pivot": [719, 824], "blend": "normal" },
+        { "id": "far_grass", "renderOrder": 30, "pivot": [430, 930], "blend": "normal" },
+        { "id": "person_body", "renderOrder": 40, "pivot": [286, 1128], "blend": "normal" },
+        { "id": "person_hair", "renderOrder": 41, "pivot": [0, 0], "blend": "normal", "visible": false, "reason": "out-of-frame" },
+        { "id": "person_moving_part", "renderOrder": 42, "pivot": [287, 1108], "blend": "normal" },
+        { "id": "cat_body", "renderOrder": 43, "pivot": [755, 1260], "blend": "normal" },
+        { "id": "cat_ear", "renderOrder": 44, "pivot": [784, 670], "blend": "normal" },
+        { "id": "cat_tail", "renderOrder": 45, "pivot": [716, 1370], "blend": "normal" },
+        { "id": "near_grass", "renderOrder": 50, "pivot": [430, 1774], "blend": "normal" },
+        { "id": "flower_left", "renderOrder": 60, "pivot": [136, 1418], "blend": "normal" },
+        { "id": "flower_right", "renderOrder": 61, "pivot": [731, 1630], "blend": "normal" },
+        { "id": "foreground_occlusion", "renderOrder": 70, "pivot": [430, 1840], "blend": "normal" },
+        { "id": "paper_texture", "renderOrder": 80, "pivot": [430, 932], "blend": "normal" }
+      ]
+    }
+  ]
+}

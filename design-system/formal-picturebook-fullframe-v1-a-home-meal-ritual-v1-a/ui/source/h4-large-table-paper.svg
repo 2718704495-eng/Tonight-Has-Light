@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+    
+    <path data-role="large-table-paper"
+      d="M155 468 C175 462 199 464 221 461 C244 459 274 461 305 464 C333 467 365 465 383 471 L381 518 C350 521 320 517 292 520 C262 523 233 519 203 521 C181 522 164 517 150 515 Z"
+      fill="#D9AF68" fill-opacity="0.82"
+      stroke="#6A3A20" stroke-width="1.1" stroke-opacity="0.45"/>
+    <path data-role="large-table-paper-grain"
+      d="M166 482 C211 477 259 482 372 479 M160 503 C227 508 291 500 375 507"
+      fill="none" stroke="#FBE9C8" stroke-width="0.7" stroke-opacity="0.24"/>
+  
+    <text x="218" y="499.912" text-anchor="middle"
+    font-family="STSong, Songti SC, Noto Serif CJK SC, serif"
+    font-size="19.2" font-weight="500" letter-spacing="0.6"
+    fill="#F6E2BC" stroke="#26170F" stroke-width="1.6"
+    stroke-linejoin="round" paint-order="stroke fill">吃一点</text>
+    <text x="339" y="499.912" text-anchor="middle"
+    font-family="STSong, Songti SC, Noto Serif CJK SC, serif"
+    font-size="19.2" font-weight="500" letter-spacing="0.4"
+    fill="#F6E2BC" stroke="#26170F" stroke-width="1.6"
+    stroke-linejoin="round" paint-order="stroke fill">喝口温水</text>
+  </svg>

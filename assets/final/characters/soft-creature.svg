@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">今夜有灯·软团兽正面标准姿</title>
+  <desc id="desc">无熊耳、无熊鼻的扁圆软团轮廓，顶部只有一处向左折下的软褶。</desc>
+  <metadata>
+    AI-assisted code-authored editable vector; project: 今夜有灯; asset: soft-creature;
+    version: 1.0.0; date: 2026-08-21; third-party assets: none.
+    All paths, gradients and groups are original and remain editable.
+  </metadata>
+  <defs>
+    <linearGradient id="soft-skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D5DBD6"/>
+      <stop offset="0.55" stop-color="#ADBAB6"/>
+      <stop offset="1" stop-color="#879997"/>
+    </linearGradient>
+    <linearGradient id="soft-fold" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#BFCAC5"/>
+      <stop offset="1" stop-color="#7D8F8F"/>
+    </linearGradient>
+  </defs>
+
+  <g id="layer-shadow" data-layer="shadow">
+    <ellipse cx="258" cy="439" rx="202" ry="27" fill="#080D14" opacity="0.22"/>
+  </g>
+
+  <g id="layer-body" data-layer="body-outline" transform="translate(-46 0) scale(1.18 1)">
+    <path
+      d="M82 356C62 305 70 235 115 194c30-28 69-31 101-48 22-12 29-30 50-43 3 29 27 47 68 56 68 15 111 80 99 178-10 75-70 98-176 98-99 0-153-19-175-79Z"
+      fill="url(#soft-skin)" stroke="#718382" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M216 146c21 15 52 11 68-9-5 28-46 44-68 9Z" fill="url(#soft-fold)" opacity="0.95"/>
+    <path d="M339 174c28 21 50 57 55 94" fill="none" stroke="#E8ECE6" stroke-width="7" stroke-linecap="round" opacity="0.2"/>
+  </g>
+
+  <g id="layer-arms" data-layer="arms" transform="translate(-46 0) scale(1.18 1)">
+    <path d="M112 260c-40 9-63 50-48 77 12 22 38 2 65-49Z" fill="#A5B3AF" stroke="#718382" stroke-width="4"/>
+    <path d="M403 258c42 10 62 51 45 78-14 21-38-2-63-51Z" fill="#A5B3AF" stroke="#718382" stroke-width="4"/>
+    <path d="M99 315c8 2 15-1 22-8M414 310c7 4 14 5 21 1" fill="none" stroke="#728584" stroke-width="4" stroke-linecap="round" opacity="0.72"/>
+  </g>
+
+  <g id="layer-feet" data-layer="feet" transform="translate(-46 0) scale(1.18 1)">
+    <path d="M147 416c5-33 55-41 74-10 11 18-1 35-33 37-34 3-45-8-41-27Z" fill="#738785"/>
+    <path d="M291 407c19-30 68-24 73 11 3 20-12 28-45 24-31-4-39-18-28-35Z" fill="#738785"/>
+    <path d="M237 426c8-8 18-8 27 0" fill="none" stroke="#536866" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <g id="layer-face" data-layer="face" transform="translate(-46 0) scale(1.18 1)">
+    <ellipse cx="219" cy="249" rx="8" ry="12" fill="#26303A"/>
+    <ellipse cx="293" cy="249" rx="8" ry="12" fill="#26303A"/>
+    <path d="M246 286c8 5 17 5 25 0" fill="none" stroke="#38434A" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g id="layer-cheeks" data-layer="subtle-cheeks" opacity="0.2" transform="translate(-46 0) scale(1.18 1)">
+    <ellipse cx="180" cy="288" rx="26" ry="11" fill="#B86E57"/>
+    <ellipse cx="332" cy="288" rx="26" ry="11" fill="#B86E57"/>
+  </g>
+</svg>

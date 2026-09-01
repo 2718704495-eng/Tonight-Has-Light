@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "asset_id": "ART-OUTDOOR-ROOT-WIND-HEM-002",
+  "candidate_id": "formal-picturebook-root-wind-hem-v1-a-r3",
+  "source_property": "ai-assisted-formal-fullframe",
+  "creator": "OPENAI-IMAGEGEN+PROJECT-OWNER",
+  "generated_on": "2026-08-30",
+  "purpose": "single direction-only edit attempt under ROOT-WIND-HEM-V1-A-R3",
+  "tool_record": {
+    "tool": "built-in image generation edit",
+    "direction_edit_count": 1,
+    "additional_generation_count": 0,
+    "result": "blocked; the requested rightward hem was not produced and content outside the permitted edit area drifted"
+  },
+  "prompt": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-root-r3-wind-hem-right/prompts/root_night_slope_v3_wind_hem_right_fix.md",
+    "sha256": "b73b5297fdd73b28f4e76f9d1ce1068d7dafbb4e696451ed40134a20a073b765",
+    "safety_check": "no artist name, existing IP, brand, real-person request or instruction from attached imagery"
+  },
+  "inputs": [
+    {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/masters/root_night_slope_v2-wind-hem-master-2x.png",
+      "sha256": "38e030cbec217c1349beba788e4a041631d295c52a2a0957dc4f9fa45c72a068",
+      "rights": "project-generated prior candidate",
+      "boundary": "exact composition and visual identity anchor; authorized change limited to the garment hem and tightly adjacent wind cues"
+    }
+  ],
+  "outputs": [
+    {
+      "role": "single raw direction edit",
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r3-wind-hem-right/source/raw/root_night_slope_v3-wind-hem-right-imagegen-r1.png",
+      "sha256": "c74e87bcae3661d68f29f52c795807dadbc3ab1981d9c32be4af830b08c42f17"
+    },
+    {
+      "role": "normalized failed-evidence master",
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r3-wind-hem-right/source/masters/root_night_slope_v3-wind-hem-right-master-2x.png",
+      "sha256": "54e86c34bb4234e0a0ffa58993a8e1d2e722691cf59f1ec225fa480536a83a51"
+    }
+  ],
+  "human_decisions": {
+    "accepted": "none; this artifact failed owner preflight before same-file user review",
+    "blocking_findings": "hem still projects left; no readable rightward lifted arc at 195x422; full-frame generative re-render changed content outside the authorized ROI",
+    "similarity_review": "no new similarity pass claimed because the candidate is blocked before formal visual review",
+    "stop_line": "one edit executed; no second generation"
+  },
+  "permissions": "failed evidence only; not-in-build; no Cocos, build, WeChat, upload, experience setting, review submission, release or Git"
+}
+

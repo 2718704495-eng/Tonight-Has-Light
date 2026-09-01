@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "status": "BUILT / VISUAL REVIEW REQUIRED",
+  "deterministic": true,
+  "pageId": "scene_01_home_shot_001",
+  "inputs": {
+    "h1": {
+      "candidateVersion": "r2",
+      "export390": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/390x844/scene_01_home_shot_001.png",
+        "sha256": "b68c2dfd7bcf40a9d3bd77320faecdbeff517e2b2f7f160abbf4a7d4c6a836fe",
+        "width": 390,
+        "height": 844,
+        "format": "png"
+      },
+      "export195": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/195x422/scene_01_home_shot_001.png",
+        "sha256": "037523e90281531145a6ae47633e6ec87e883df943e1853ef13f910296acd982",
+        "width": 195,
+        "height": 422,
+        "format": "png"
+      }
+    },
+    "h5": {
+      "approved": true,
+      "export390": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png",
+        "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51",
+        "width": 390,
+        "height": 844,
+        "format": "png"
+      },
+      "export195": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/195x422/scene_01_home_shot_005.png",
+        "sha256": "674994ba660f8f2ed8a7f605c976e6eb0199ede70ced81e91e092862078ed57e",
+        "width": 195,
+        "height": 422,
+        "format": "png"
+      }
+    },
+    "rootR4": {
+      "approved": true,
+      "export390": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/exports/390x844/root_night_slope_v2-wind-hem-r4-manual.png",
+        "sha256": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a",
+        "width": 390,
+        "height": 844,
+        "format": "png"
+      }
+    }
+  },
+  "outputs": {
+    "h1H5SideBySide390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/evidence/h1-h5-side-by-side-390.png",
+      "sha256": "3ba962edea238ebfd7f95420da64a428d84244e074b36af8bf940d51543c5879",
+      "width": 780,
+      "height": 900,
+      "format": "png"
+    },
+    "h1H5SideBySide195": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/evidence/h1-h5-side-by-side-195.png",
+      "sha256": "e98f183d93a4e34f5566c48e1726837557dd510647117c9b774908fde4f67695",
+      "width": 390,
+      "height": 478,
+      "format": "png"
+    },
+    "landmarks390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/evidence/h1-landmarks-390.png",
+      "sha256": "bbec4c2c4ee4f6e0ff4220aa2819be0a062cc4672569df78a68cd7e0af2531ef",
+      "width": 390,
+      "height": 844,
+      "format": "png"
+    },
+    "continuityCheck390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/evidence/h1-continuity-check-390.png",
+      "sha256": "206a9b7735a2a3f5d4b590bd18e6985c5a31439f3651dd1d850d2d5179b578da",
+      "width": 780,
+      "height": 1086,
+      "format": "png"
+    }
+  },
+  "notes": [
+    "H1 uses the candidate manifest’s accepted r2 export only; r1 is not consumed.",
+    "Chinese labels are baked only into evidence boards, never into any clean plate.",
+    "This is continuity evidence, not a Gate B visual PASS or user approval."
+  ]
+}

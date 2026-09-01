@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "c8211baa-9163-4ac9-bbce-46a3a1d5f87b",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/cocos/outdoor-gate-c/outdoor-slow-swipe.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

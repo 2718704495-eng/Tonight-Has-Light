@@ -1,0 +1,315 @@
+{
+  "candidateId": "indoor-n01-prototype-v1-20260824",
+  "approvedReferenceSha256": "ad65d6fa811487fe5bd69726f1c5bf9d4b4c983d517c360b7087ff42f89cb36a",
+  "capturedAt": "2026-08-24T14:13:48.808Z",
+  "sizes": {
+    "360x800": {
+      "cup": {
+        "height": 81.015625,
+        "width": 73.796875,
+        "x": 146.15625,
+        "y": 490.359375
+      },
+      "dataset": {
+        "beat": "idle",
+        "phase": "waiting",
+        "reducedMotion": "false",
+        "sound": "on"
+      },
+      "imageComplete": true,
+      "kettle": {
+        "height": 117.625,
+        "width": 115.546875,
+        "x": 173.515625,
+        "y": 426.484375
+      },
+      "scroll": {
+        "height": 800,
+        "width": 360
+      },
+      "stage": {
+        "height": 779.0625,
+        "width": 360,
+        "x": 0,
+        "y": 10.46875
+      },
+      "viewport": {
+        "height": 800,
+        "width": 360
+      }
+    },
+    "390x844": {
+      "cup": {
+        "height": 87.765625,
+        "width": 79.9375,
+        "x": 158.328125,
+        "y": 519.890625
+      },
+      "dataset": {
+        "beat": "idle",
+        "phase": "waiting",
+        "reducedMotion": "false",
+        "sound": "on"
+      },
+      "imageComplete": true,
+      "kettle": {
+        "height": 127.4375,
+        "width": 125.1875,
+        "x": 187.96875,
+        "y": 450.6875
+      },
+      "scroll": {
+        "height": 844,
+        "width": 390
+      },
+      "stage": {
+        "height": 844,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    "430x932": {
+      "cup": {
+        "height": 96.765625,
+        "width": 88.140625,
+        "x": 174.578125,
+        "y": 573.9375
+      },
+      "dataset": {
+        "beat": "idle",
+        "phase": "waiting",
+        "reducedMotion": "false",
+        "sound": "on"
+      },
+      "imageComplete": true,
+      "kettle": {
+        "height": 140.5,
+        "width": 138.015625,
+        "x": 207.25,
+        "y": 497.625
+      },
+      "scroll": {
+        "height": 932,
+        "width": 430
+      },
+      "stage": {
+        "height": 930.5625,
+        "width": 430,
+        "x": 0,
+        "y": 0.71875
+      },
+      "viewport": {
+        "height": 932,
+        "width": 430
+      }
+    },
+    "430x844": {
+      "cup": {
+        "height": 87.765625,
+        "width": 79.9375,
+        "x": 178.328125,
+        "y": 519.890625
+      },
+      "dataset": {
+        "beat": "idle",
+        "phase": "waiting",
+        "reducedMotion": "false",
+        "sound": "on"
+      },
+      "imageComplete": true,
+      "kettle": {
+        "height": 127.4375,
+        "width": 125.1875,
+        "x": 207.96875,
+        "y": 450.6875
+      },
+      "scroll": {
+        "height": 844,
+        "width": 430
+      },
+      "stage": {
+        "height": 844,
+        "width": 390,
+        "x": 20,
+        "y": 0
+      },
+      "viewport": {
+        "height": 844,
+        "width": 430
+      }
+    }
+  },
+  "states": {
+    "kettle": {
+      "beat": "kettle",
+      "line": "水正在热着。",
+      "phase": "responding",
+      "reducedMotion": "false",
+      "sound": "on"
+    },
+    "cupAvailable": {
+      "beat": "cat",
+      "cupDisabled": false,
+      "phase": "responding",
+      "reducedMotion": "false",
+      "sound": "on"
+    },
+    "cupRighting": {
+      "beat": "righting",
+      "cupDisabled": true,
+      "phase": "responding",
+      "reducedMotion": "false",
+      "sound": "on"
+    },
+    "settled": {
+      "beat": "quiet",
+      "line": "水热了。\n你也先缓一会儿。",
+      "phase": "settled",
+      "reducedMotion": "false",
+      "sound": "on"
+    },
+    "idle10s": {
+      "beat": "idle",
+      "cupDisabled": true,
+      "line": "壶里的水，正轻轻响着。",
+      "phase": "waiting",
+      "reducedMotion": "false",
+      "sound": "on"
+    }
+  },
+  "reducedMotion": {
+    "responding": {
+      "cat": {
+        "animationName": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transitionDuration": "0s"
+      },
+      "cupDown": {
+        "animationName": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transitionDuration": "0s"
+      },
+      "cupUp": {
+        "animationName": "none",
+        "opacity": "0",
+        "transform": "none",
+        "transitionDuration": "0s"
+      },
+      "dataset": {
+        "beat": "kettle",
+        "phase": "responding",
+        "reducedMotion": "true",
+        "sound": "off"
+      },
+      "lid": {
+        "animationName": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transitionDuration": "0s"
+      },
+      "sleeve": {
+        "animationName": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transitionDuration": "0s"
+      },
+      "steam": {
+        "animationName": "none",
+        "opacity": "0.68",
+        "transform": "none",
+        "transitionDuration": "0.18s"
+      }
+    },
+    "settled": {
+      "beat": "quiet",
+      "line": "水热了。\n你也先缓一会儿。",
+      "phase": "settled",
+      "reducedMotion": "true",
+      "sound": "off",
+      "soundPressed": "false"
+    }
+  },
+  "resources": [
+    "./styles.css",
+    "../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png",
+    "../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png",
+    "../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png",
+    "../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png",
+    "../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png",
+    "../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png",
+    "./app.js"
+  ],
+  "console": [],
+  "behavior": {
+    "earlyCup": {
+      "available": {
+        "cupDisabled": false,
+        "cupRect": {
+          "height": 87.765625,
+          "width": 79.9375,
+          "x": 158.328125,
+          "y": 519.890625
+        },
+        "dataset": {
+          "beat": "cat",
+          "phase": "responding",
+          "reducedMotion": "false",
+          "sound": "on"
+        }
+      },
+      "righting": {
+        "cupDisabled": true,
+        "dataset": {
+          "beat": "righting",
+          "phase": "responding",
+          "reducedMotion": "false",
+          "sound": "on"
+        }
+      },
+      "settled": {
+        "cupDisabled": true,
+        "dataset": {
+          "beat": "quiet",
+          "phase": "settled",
+          "reducedMotion": "false",
+          "sound": "on"
+        },
+        "line": "水热了。\n你也先缓一会儿。"
+      }
+    },
+    "naturalCup": {
+      "beforeAuto": {
+        "beat": "cat",
+        "cupDisabled": false,
+        "phase": "responding",
+        "reducedMotion": "false",
+        "sound": "on"
+      },
+      "afterAuto": {
+        "beat": "righting",
+        "cupDisabled": true,
+        "phase": "responding",
+        "reducedMotion": "false",
+        "sound": "on"
+      },
+      "settled": {
+        "beat": "quiet",
+        "line": "水热了。\n你也先缓一会儿。",
+        "phase": "settled",
+        "reducedMotion": "false",
+        "sound": "on"
+      }
+    }
+  },
+  "resourcePolicy": {
+    "noRemoteReferences": true,
+    "audioFileRequests": []
+  }
+}

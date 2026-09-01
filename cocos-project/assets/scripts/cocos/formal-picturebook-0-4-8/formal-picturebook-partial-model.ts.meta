@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "fa1f75f1-0141-4fe8-97a6-296f81b1eba3",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/cocos/formal-picturebook-0-4-8/formal-picturebook-partial-model.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

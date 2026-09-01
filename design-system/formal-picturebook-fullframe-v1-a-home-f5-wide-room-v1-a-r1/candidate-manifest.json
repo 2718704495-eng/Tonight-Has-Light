@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "contract_id": "HOME-F5-WIDE-ROOM-V1-A",
+  "candidate_id": "formal-picturebook-home-f5-wide-room-v1-a-r1",
+  "page_id": "scene_01_home_shot_005",
+  "asset_id": "ART-PBOOK-HOME-005",
+  "source_property": "ai-assisted-formal-fullframe",
+  "status": "HOME_F5_GATE_B_VISUAL_PASS",
+  "not_in_batch1": true,
+  "not_in_build": true,
+  "current_visual_baseline": true,
+  "batch1_replacement_eligible": true,
+  "approval": {
+    "phrase": "批准 HOME-F5-WIDE-ROOM-V1-A：整间屋子在等你；允许重新构图一次",
+    "path": "docs/HOME-F5-WIDE-ROOM-V1-A-APPROVAL.md",
+    "sha256": "ce2e5727e8bfb35506cec263a765e44d5c3ace2c3642c88f05a2cccf49c55f56",
+    "scope": "one new full-frame recomposition; same-file visual approval was required and is now satisfied by HOME-F5-WIDE-ROOM-V1-A-R1"
+  },
+  "user_visual_approval": {
+    "status": "approved",
+    "phrase": "批准 HOME-F5-WIDE-ROOM-V1-A-R1：暖家全景视觉通过",
+    "date": "2026-08-30",
+    "record_path": "docs/HOME-F5-WIDE-ROOM-V1-A-R1-APPROVAL.md",
+    "record_sha256": "e3b9d7d7d7ed05756fd0b5fd80e4a6dcaf710bdb6b466838af138b38b5cd7106",
+    "approved_390x844_sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51",
+    "approved_195x422_sha256": "674994ba660f8f2ed8a7f605c976e6eb0199ede70ced81e91e092862078ed57e",
+    "preapproval_hash_manifest_path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/approvals/HASHES.pre-approval.sha256",
+    "preapproval_hash_manifest_sha256": "234d9bbe1d676b04924491c02cb53f6ffa491d5101524451a577032b9d0277bd"
+  },
+  "prompt": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/prompts/scene_01_home_shot_005-wide-room-v1-a.md",
+    "sha256": "0596f9abc9397b578cd8e56636de58211a9df2bf939816684286685cbfa690d0"
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "date": "2026-08-30",
+    "generation_count": 1,
+    "raw_path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/source/raw/scene_01_home_shot_005-wide-room-imagegen-r1.png",
+    "raw_sha256": "ca1068a35f1c3d1919ccc4548bc52e4e37aca7863c3a2a84c0c29aef79ef3fee"
+  },
+  "normalization": {
+    "type": "deterministic_crop_and_resize",
+    "crop": { "left": 48, "top": 0, "width": 748, "height": 1618 },
+    "purpose": "retain the wide-room view while reducing the heavy dark threshold to a thin contextual edge",
+    "pixel_generation_or_repaint": false,
+    "master_path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/source/masters/scene_01_home_shot_005-wide-room-master-2x.png",
+    "master_sha256": "fa8e4de347adcf90f1f0aa7aaf292389d27dd0745027522fd40b062766d5b23a"
+  },
+  "review_exports": {
+    "390x844": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png", "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51" },
+    "195x422": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/195x422/scene_01_home_shot_005.png", "sha256": "674994ba660f8f2ed8a7f605c976e6eb0199ede70ced81e91e092862078ed57e" },
+    "360x800": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/360x800/scene_01_home_shot_005.png", "sha256": "7ac476cf1953dcecebaa84657714c3c63b0d010573bfe36b3f6c5e214d56da62" },
+    "430x932": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/430x932/scene_01_home_shot_005.png", "sha256": "99dda84bbac1aa9d688852d2acd40b55b2a4eb12dd059a09604b3264e2d6263a" },
+    "430x844-pressure": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/430x844-pressure/scene_01_home_shot_005.png", "sha256": "84b1c9cbfbb8ccb4462a98dbaaedb27b670f8684f793fcf6543d02d6ce607047" }
+  },
+  "reviews": {
+    "owner": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/evidence/owner-review.md",
+      "decision": "PASS_FOR_USER_REVIEW_WITH_P2_NOTE"
+    },
+    "independent": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/reviews/INDEPENDENT-VISUAL-REVIEW.md",
+      "decision": "READY_FOR_USER_VISUAL_REVIEW",
+      "p0": 0,
+      "p1": 0,
+      "p2": 1,
+      "write_count": 0
+    }
+  },
+  "frozen_unchanged": {
+    "root_r4_master_sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8",
+    "stargaze_f5_master_sha256": "d36b99ebfe0805233000df9c0cbf2bc6217691111a7da7fa8e2dbe2eb99e4a85",
+    "old_home_f5_master_sha256": "1323cf0a103fffd7f8fd731ab0e1164527b9b0401b5d6acd357d1d3b215ecfb9"
+  },
+  "permissions": {
+    "batch1_replace": true,
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "review": false,
+    "release": false,
+    "git": false
+  }
+}

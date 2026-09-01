@@ -1,0 +1,32 @@
+{
+  "candidate_id": "formal-picturebook-fullframe-v1-a-batch1-r2-r4-root",
+  "status": "STATIC_SOURCE_PREFLIGHT_ONLY_NOT_RUNTIME_PASS",
+  "measured_at": "2026-08-29",
+  "master_dimensions": "780x1688 RGBA budget assumption",
+  "decoded_bytes_per_page": 5266560,
+  "decoded_mib_per_page": 5.023,
+  "two_page_transition_decoded_mib": 10.045,
+  "three_page_all_resident_decoded_mib": 15.068,
+  "pages": [
+    {
+      "page_id": "root_night_slope_v1",
+      "master_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/masters/root_night_slope_v2-wind-hem-r4-manual-master-2x.png",
+      "master_sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8",
+      "png_bytes": 1746169
+    },
+    {
+      "page_id": "scene_02_stargaze_shot_005",
+      "master_path": "design-system/formal-picturebook-fullframe-v1-a-batch1/source/masters/scene_02_stargaze_shot_005-master-2x.png",
+      "master_sha256": "d36b99ebfe0805233000df9c0cbf2bc6217691111a7da7fa8e2dbe2eb99e4a85",
+      "png_bytes": 1481403
+    },
+    {
+      "page_id": "scene_01_home_shot_005",
+      "master_path": "design-system/formal-picturebook-fullframe-v1-a-batch1/source/masters/scene_01_home_shot_005-master-2x.png",
+      "master_sha256": "1323cf0a103fffd7f8fd731ab0e1164527b9b0401b5d6acd357d1d3b215ecfb9",
+      "png_bytes": 3092466
+    }
+  ],
+  "boundary": "No Cocos build, texture compression, atlas, bundle, phone memory or WeChat package claim is made by this static calculation.",
+  "total_three_master_png_bytes": 6320038
+}

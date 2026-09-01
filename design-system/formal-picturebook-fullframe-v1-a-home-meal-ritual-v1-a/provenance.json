@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "contractId": "HOME-MEAL-RITUAL-V1-A",
+  "sourceProperty": "ai-assisted-formal-fullframe",
+  "sourceHashes": {
+    "spec": {
+      "path": "docs/superpowers/specs/2026-08-30-home-meal-ritual-v1-a-design.md",
+      "sha256": "606a48ff905fe49e0114e1f80c0d05f519f26c7cc70aadee3441585822064ed1"
+    },
+    "approvalRecord": {
+      "path": "docs/HOME-MEAL-RITUAL-V1-A-APPROVAL.md",
+      "sha256": "a513b6a7bc6b7589c53f6695b9504e93a0b102951af6fb51176cadff45d1079b"
+    },
+    "executionPlan": {
+      "path": "docs/superpowers/plans/2026-08-30-home-meal-ritual-gate-b.md",
+      "sha256": "98d265d554121f2ee0119752e85dc52cfab8f5e42a87605f20f43092dfbb646a"
+    },
+    "h1PilotApproval": {
+      "path": "docs/HOME-MEAL-RITUAL-V1-A-H1-PILOT-APPROVAL.md",
+      "sha256": "def904ebf65aa710f6da2151a1f7dd66f26762390621d15d1b4999b703493129"
+    }
+  },
+  "permissions": {
+    "localGateBDesignProduction": true,
+    "imageGeneration": false,
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "release": false,
+    "git": false,
+    "remoteWrite": false
+  },
+  "pages": {
+    "scene_01_home_shot_001": {
+      "assetId": "ART-PBOOK-HOME-001",
+      "status": "USER VISUAL PASS / FROZEN",
+      "artifacts": {
+        "prompt": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/prompt.md",
+          "sha256": "cdc045d79e35cb5e7135b4e2da32fd268058818c7a182817351e73dcf378a0dc"
+        },
+        "repairPrompt": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/prompt-r2-garment-repair.md",
+          "sha256": "df4eea642a401db1afdee5c6f5ac0a66e5280c61436f57cebd2923caf9af4158"
+        },
+        "raw": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/source/raw/scene_01_home_shot_001-imagegen-r2.png",
+          "sha256": "800d229c307f39c5ab99e15a6a0e6aa1fd29232f305ebddca7acd58227a77e6c"
+        },
+        "master": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/source/masters/scene_01_home_shot_001-r2-master-2x.png",
+          "sha256": "425f3c6a8f23e9dcbca4fc4e7c08ecd66317914e38daab9520e01ba58c7f7c44",
+          "metadata": {
+            "format": "png",
+            "width": 780,
+            "height": 1688,
+            "depth": "uchar",
+            "space": "srgb",
+            "hasAlpha": false
+          }
+        },
+        "exports": {
+          "195x422": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/195x422/scene_01_home_shot_001.png",
+            "sha256": "037523e90281531145a6ae47633e6ec87e883df943e1853ef13f910296acd982",
+            "width": 195,
+            "height": 422,
+            "metadata": { "format": "png", "width": 195, "height": 422, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "360x800": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/360x800/scene_01_home_shot_001.png",
+            "sha256": "5365a35bbb41e62041794017e1162f03cedb0acf7e5a18b238fd9a653f4e1ce5",
+            "width": 360,
+            "height": 800,
+            "metadata": { "format": "png", "width": 360, "height": 800, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "390x844": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/390x844/scene_01_home_shot_001.png",
+            "sha256": "b68c2dfd7bcf40a9d3bd77320faecdbeff517e2b2f7f160abbf4a7d4c6a836fe",
+            "width": 390,
+            "height": 844,
+            "metadata": { "format": "png", "width": 390, "height": 844, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "430x932": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/430x932/scene_01_home_shot_001.png",
+            "sha256": "9da22d742243679d67f7605f5867d5717059e1517e4d76e8056bac4e45360fd6",
+            "width": 430,
+            "height": 932,
+            "metadata": { "format": "png", "width": 430, "height": 932, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "430x844-pressure": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/430x844-pressure/scene_01_home_shot_001.png",
+            "sha256": "5dccde9f7dcab653985d4ba6b6b470935ca2f44bd81959c6b7aa41e595c8067d",
+            "width": 430,
+            "height": 844,
+            "metadata": { "format": "png", "width": 430, "height": 844, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          }
+        }
+      }
+    },
+    "scene_01_home_shot_002": {
+      "assetId": "ART-PBOOK-HOME-002",
+      "status": "USER VISUAL PASS / FROZEN",
+      "artifacts": {
+        "prompt": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/prompt.md",
+          "sha256": "ec30d2d426358bea16b1868aa1b57e12360f5f017e87d961f20144acd367956e"
+        },
+        "raw": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/source/raw/scene_01_home_shot_002-imagegen-r1.png",
+          "sha256": "c22cf2a24679847715cb7209824f61f9a00be7a5fd96c805c8527cb4a3d4adcb"
+        },
+        "master": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/source/masters/scene_01_home_shot_002-r1-master-2x.png",
+          "sha256": "992226070e907054a19a257d6f69d40a538df2bc9ab9f1181acee66d7b149916",
+          "metadata": { "format": "png", "width": 780, "height": 1688, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+        },
+        "exports": {
+          "195x422": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/195x422/scene_01_home_shot_002.png",
+            "sha256": "8419a54d7aea95c00eb638299f4f3a0faec8e41c0a259fce190336b878bf7593",
+            "width": 195,
+            "height": 422,
+            "metadata": { "format": "png", "width": 195, "height": 422, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "360x800": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/360x800/scene_01_home_shot_002.png",
+            "sha256": "0b9848fc332a331e4570e70a45e48648d6954ed2279609f28f5b2b121d73e51f",
+            "width": 360,
+            "height": 800,
+            "metadata": { "format": "png", "width": 360, "height": 800, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "390x844": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/390x844/scene_01_home_shot_002.png",
+            "sha256": "ef11fcb38d1e515cb2f8702d7b4ea8734f0f92ac08f24c8e2a18bfad97ccc6dd",
+            "width": 390,
+            "height": 844,
+            "metadata": { "format": "png", "width": 390, "height": 844, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "430x932": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/430x932/scene_01_home_shot_002.png",
+            "sha256": "a1f00b1445250a3ef049521ab865d9229623ed3ab935458e6753cda04a9adf29",
+            "width": 430,
+            "height": 932,
+            "metadata": { "format": "png", "width": 430, "height": 932, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "430x844-pressure": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/430x844-pressure/scene_01_home_shot_002.png",
+            "sha256": "546cf28e2af815a2c3855fbc7930c8fc6b13170ca7402248a27a78901400b163",
+            "width": 430,
+            "height": 844,
+            "metadata": { "format": "png", "width": 430, "height": 844, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          }
+        }
+      }
+    },
+    "scene_01_home_shot_003": {
+      "assetId": "ART-PBOOK-HOME-003",
+      "status": "USER VISUAL PASS / FROZEN",
+      "artifacts": {
+        "prompt": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/prompt.md",
+          "sha256": "8f4bcda3a0dbaf07ac285002bad093794550cfc473f28c394aafff8040582587"
+        },
+        "raw": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/source/raw/scene_01_home_shot_003-imagegen-r1.png",
+          "sha256": "b334f18f51db7b9244ef42fa25f3557cefa69dd71c7869001d66eccac709da7a"
+        },
+        "master": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/source/masters/scene_01_home_shot_003-r1-master-2x.png",
+          "sha256": "c6c58dc5b2103ba022ea137bc5f70bd29d0a61b854800f7a86e322143a7445f9",
+          "metadata": { "format": "png", "width": 780, "height": 1688, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+        },
+        "exports": {
+          "195x422": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/exports/195x422/scene_01_home_shot_003.png",
+            "sha256": "ce8e04691102079b2cea11b02c4e51cf52a752c3902433a07dd0481b0822b4c2",
+            "width": 195,
+            "height": 422,
+            "metadata": { "format": "png", "width": 195, "height": 422, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "360x800": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/exports/360x800/scene_01_home_shot_003.png",
+            "sha256": "dbd6a11427a94c859b45406d5dc102d074274883704f50af2e75ad0b333c25c7",
+            "width": 360,
+            "height": 800,
+            "metadata": { "format": "png", "width": 360, "height": 800, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "390x844": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/exports/390x844/scene_01_home_shot_003.png",
+            "sha256": "c582fa5e9ad5c0f465e307472ccfc6791ed78b2d1e81663669df9151819aab72",
+            "width": 390,
+            "height": 844,
+            "metadata": { "format": "png", "width": 390, "height": 844, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "430x932": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/exports/430x932/scene_01_home_shot_003.png",
+            "sha256": "1744fef4360f8616fe612764175203227ae5b016a46b8191f8aa5735659e82af",
+            "width": 430,
+            "height": 932,
+            "metadata": { "format": "png", "width": 430, "height": 932, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          },
+          "430x844-pressure": {
+            "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/exports/430x844-pressure/scene_01_home_shot_003.png",
+            "sha256": "9d6c23bc964abe431123f10195810e1fdca5c5c83e4da1bc18b5b26fe046840c",
+            "width": 430,
+            "height": 844,
+            "metadata": { "format": "png", "width": 430, "height": 844, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+          }
+        }
+      }
+    },
+    "scene_01_home_shot_004": {
+      "assetId": "ART-PBOOK-HOME-004",
+      "status": "USER VISUAL PASS / FROZEN",
+      "artifacts": {
+        "prompt": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/prompt.md",
+          "sha256": "592ef4234a6ba8fa41c0c9f8b31847588c77ff799cfbf3bfc970e97f9c4f0be5"
+        },
+        "repairPrompt": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/prompt-r2-cup-hand-repair.md",
+          "sha256": "3bf3bb95a87158008fb8902c4d988ba6fb3e9de4bc669507481f2bf37d9781e6"
+        },
+        "raw": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/source/raw/scene_01_home_shot_004-imagegen-r2.png",
+          "sha256": "ce09961a330d76870660ba1128635b9e2d0296f5b3e7ec30bae7bed4fb63a7ba"
+        },
+        "master": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/source/masters/scene_01_home_shot_004-r2-master-2x.png",
+          "sha256": "e8d85bcbdd3c680e5b39a7fcd49a1403e087a89ca4e739b706cbd560139c9d8f",
+          "metadata": { "format": "png", "width": 780, "height": 1688, "depth": "uchar", "space": "srgb", "hasAlpha": false }
+        },
+        "exports": {
+          "195x422": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/195x422/scene_01_home_shot_004.png", "sha256": "269a8f7243959fe785d264064a5f57a356f3768471456a9b0e877c31acd8b35a", "width": 195, "height": 422, "metadata": { "format": "png", "width": 195, "height": 422, "depth": "uchar", "space": "srgb", "hasAlpha": false } },
+          "360x800": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/360x800/scene_01_home_shot_004.png", "sha256": "2ba27b0df4ace5ccc2b5555e9732f2d1cbbf9e6fec2fdba951fde94f2dcd0b03", "width": 360, "height": 800, "metadata": { "format": "png", "width": 360, "height": 800, "depth": "uchar", "space": "srgb", "hasAlpha": false } },
+          "390x844": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/390x844/scene_01_home_shot_004.png", "sha256": "bbb02106fb4f5a820d1199eb61c7b10b5065028461bfdd6bf813276abe796533", "width": 390, "height": 844, "metadata": { "format": "png", "width": 390, "height": 844, "depth": "uchar", "space": "srgb", "hasAlpha": false } },
+          "430x932": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/430x932/scene_01_home_shot_004.png", "sha256": "6e2fdf75d52bb242f940988e77f897605628027abc2a48cca31b7941ea170050", "width": 430, "height": 932, "metadata": { "format": "png", "width": 430, "height": 932, "depth": "uchar", "space": "srgb", "hasAlpha": false } },
+          "430x844-pressure": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/430x844-pressure/scene_01_home_shot_004.png", "sha256": "36f076082f19f0bbe35b2306f56ac5d88ebd91f364f87d692f186ebb8b666509", "width": 430, "height": 844, "metadata": { "format": "png", "width": 430, "height": 844, "depth": "uchar", "space": "srgb", "hasAlpha": false } }
+        },
+        "responseLayers": {
+          "stateReport": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/evidence/h4-response-state-report.json", "sha256": "f2b1642da1d405dc90802c45580318c1728775b9a939e680a450a80aef3fa752" },
+          "reviewBoard": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/evidence/h4-response-states-2x2.png", "sha256": "ac3d68a7e40b6e946eb5895c6363ba8ff18a171a713f3628a99e3abc288e77ef" },
+          "ateSvg": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/source/response-layers/ate.svg", "sha256": "acfe49b8be244198e521f371c17bb61355e3b7951708dc7ed3aff346e9ce5ae5" },
+          "sippedSvg": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/source/response-layers/sipped.svg", "sha256": "d01ee8136be38d0a083becc6ae8cec4c6d65e7096f1fdb12611270a0b4c874a5" },
+          "states": {
+            "none": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/states/scene_01_home_shot_004-none-390x844.png", "sha256": "bbb02106fb4f5a820d1199eb61c7b10b5065028461bfdd6bf813276abe796533" },
+            "ate": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/states/scene_01_home_shot_004-ate-390x844.png", "sha256": "0a356ea97cc91afecc93c8c9a607583d63a40db0a6e0226ec224be4a47a450b5" },
+            "sipped": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/states/scene_01_home_shot_004-sipped-390x844.png", "sha256": "710a4b4f54641e0880639147807120594b7e43302e74ce5d97c4784614cf841e" },
+            "both": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/states/scene_01_home_shot_004-both-390x844.png", "sha256": "69a9ab2b2982cd83beec6430c9684940f2b9924c5a15beb29615eeaaf722a530" }
+          }
+        },
+        "quietUi": {
+          "contract": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/home-meal-ui-contract.json", "sha256": "4a141348a924a8a1874bca378d55aa3c4070a79408a2c216a4fb0f05c45a7540" },
+          "buildReport": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/evidence/build-report.json", "sha256": "934d29aac1195f5d72eb0b724c9c2870821b52c979ef6dcc3c961e14bba43002" },
+          "standardBoard": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/evidence/h4-standard-state-board.png", "sha256": "2bf247ef9f877f7048669dbab1d350073aaf4b2ca967f452b71875f4f1b67158" },
+          "largeText": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/evidence/h4-none-large-390x844.png", "sha256": "05a964b9adbbeb7fad87ecc64903701349509f294a54ed08a345bcbf608a4b30" },
+          "reducedMotion": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/evidence/h4-both-reduced-390x844.png", "sha256": "fe04e56e8053bbab1d793771ad3d8425494deb51e2dfa3471668b4ff58f8acd5" }
+        }
+      }
+    },
+    "scene_01_home_shot_005": {
+      "assetId": "ART-PBOOK-HOME-005",
+      "status": "REFERENCE HASH PASS",
+      "artifacts": {
+        "canonical390": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png",
+          "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51"
+        }
+      }
+    }
+  }
+}

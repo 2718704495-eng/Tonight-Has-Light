@@ -1,0 +1,19 @@
+{
+  "asset_id": "ART-OUTDOOR-ROOT-WIND-HEM-003",
+  "candidate_id": "formal-picturebook-root-wind-hem-v1-a-r4-manual-local-repaint",
+  "purpose": "manual local repaint of the adult sweater hem direction",
+  "date": "2026-08-30",
+  "author": "Codex main task",
+  "source": {
+    "type": "frozen R2 master",
+    "path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/masters/root_night_slope_v2-wind-hem-master-2x.png",
+    "sha256": "38e030cbec217c1349beba788e4a041631d295c52a2a0957dc4f9fa45c72a068"
+  },
+  "process": [
+    "Declared a master-space ROI for the sweater hem only.",
+    "Hand-authored an SVG patch to reduce the old screen-left flap with grass-shadow strokes.",
+    "Hand-authored a smaller screen-right lifted hem shape with cloth hatch, seam marks and cold rim highlights.",
+    "Composited the patch over R2 and verified outside-ROI byte identity."
+  ],
+  "rights_boundary": "No new third-party IP. No whole-frame generation. Not authorized for runtime or WeChat until same-file user approval."
+}

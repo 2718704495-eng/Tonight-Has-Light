@@ -1,0 +1,18 @@
+{
+  "candidateId": "gate-d-mainflow-v4-r2-edgefix-01-dev-r10-0.4.6",
+  "engineeringRevision": "R2-EDGEFIX-01",
+  "assetManifestSha256": "ba8efcd093405beac36085414ef865a78278ecfba7991d31db62cfbd18e69e69",
+  "asset_boundary": "prototype-only/disposable/not-for-review/not-for-release",
+  "allowed": [
+    "local disposable Cocos/Web candidate",
+    "local evidence capture",
+    "one WeChat developer upload version 0.4.6 and its corresponding user-promoted experience version"
+  ],
+  "forbidden": [
+    "production art claim",
+    "any remote upload or experience version other than 0.4.6 unless separately authorized by the user",
+    "review submission",
+    "release"
+  ],
+  "release_guard": "must reject every file in this directory from review/release"
+}

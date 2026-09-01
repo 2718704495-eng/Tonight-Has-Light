@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "c42f11a7-6d64-4f37-8d25-19b9dbd3a206",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/cocos/tonight-has-light-bootstrap.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

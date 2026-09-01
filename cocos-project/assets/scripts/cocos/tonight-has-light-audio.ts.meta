@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "2f940b4b-6ea2-4bb5-bc2e-8cc94f1ebf8b",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/cocos/tonight-has-light-audio.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

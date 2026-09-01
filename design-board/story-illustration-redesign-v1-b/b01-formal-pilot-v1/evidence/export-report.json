@@ -1,0 +1,92 @@
+{
+  "candidateId": "B01-FORMAL-PILOT-V1-R1",
+  "adaptation": "SHOW_ALL / contain / #06182F extension",
+  "exports": [
+    {
+      "id": "390x844",
+      "width": 390,
+      "height": 844,
+      "file": "exports/b01-formal-pilot-v1-390x844.png",
+      "safeOverlay": "exports/safe-area-overlays/b01-formal-pilot-v1-390x844-safe-overlay.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844
+      },
+      "safeCore": {
+        "x": 16,
+        "y": 48,
+        "w": 358,
+        "h": 762
+      },
+      "criticalContentCropped": false
+    },
+    {
+      "id": "360x800",
+      "width": 360,
+      "height": 800,
+      "file": "exports/b01-formal-pilot-v1-360x800.png",
+      "safeOverlay": "exports/safe-area-overlays/b01-formal-pilot-v1-360x800-safe-overlay.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 10.461538461538453,
+        "w": 360,
+        "h": 779.0769230769231
+      },
+      "safeCore": {
+        "x": 14.76923076923077,
+        "y": 54.76923076923076,
+        "w": 330.46153846153845,
+        "h": 703.3846153846154
+      },
+      "criticalContentCropped": false
+    },
+    {
+      "id": "430x932",
+      "width": 430,
+      "height": 932,
+      "file": "exports/b01-formal-pilot-v1-430x932.png",
+      "safeOverlay": "exports/safe-area-overlays/b01-formal-pilot-v1-430x932-safe-overlay.png",
+      "contentBounds": {
+        "x": -2.842170943040401e-14,
+        "y": 0.7179487179486728,
+        "w": 430.00000000000006,
+        "h": 930.5641025641027
+      },
+      "safeCore": {
+        "x": 17.641025641025614,
+        "y": 53.6410256410256,
+        "w": 394.7179487179488,
+        "h": 840.1538461538462
+      },
+      "criticalContentCropped": false
+    },
+    {
+      "id": "430x844-pressure",
+      "width": 430,
+      "height": 844,
+      "file": "exports/b01-formal-pilot-v1-430x844-pressure.png",
+      "safeOverlay": "exports/safe-area-overlays/b01-formal-pilot-v1-430x844-pressure-safe-overlay.png",
+      "contentBounds": {
+        "x": 20,
+        "y": 0,
+        "w": 390,
+        "h": 844
+      },
+      "safeCore": {
+        "x": 36,
+        "y": 48,
+        "w": 358,
+        "h": 762
+      },
+      "criticalContentCropped": false
+    }
+  ],
+  "thumbnail": {
+    "id": "thumbnail-195x422",
+    "width": 195,
+    "height": 422,
+    "file": "/Users/wxl/Desktop/小程序/design-board/story-illustration-redesign-v1-b/b01-formal-pilot-v1/exports/b01-formal-pilot-v1-thumbnail-195x422.png"
+  }
+}

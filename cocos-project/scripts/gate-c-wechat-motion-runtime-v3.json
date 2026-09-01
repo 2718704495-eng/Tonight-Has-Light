@@ -1,0 +1,17 @@
+{
+  "__version__": "1.3.9",
+  "platform": "wechatgame",
+  "buildPath": "project://build/gate-c-v7-20260824-41b0b7b1-wind-blite-audio-v1-wechat-motion-runtime-v3",
+  "outputName": "wechatgame",
+  "debug": false,
+  "md5Cache": false,
+  "sourceMaps": false,
+  "packages": {
+    "wechatgame": {
+      "orientation": "portrait",
+      "buildOpenDataContextTemplate": "",
+      "separateEngine": false,
+      "highPerformanceMode": false
+    }
+  }
+}

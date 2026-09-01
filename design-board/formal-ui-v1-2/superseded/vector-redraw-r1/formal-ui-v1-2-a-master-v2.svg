@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="390" height="844" viewBox="0 0 390 844" role="img"
+     aria-labelledby="title description">
+  <title id="title">今夜有灯：灯一直为你亮着</title>
+  <desc id="description">冷蓝星空窗外，整屋蜂蜜暖光里，一位成年人和普通家猫坐在已经备好晚饭的低桌前。</desc>
+  <metadata>
+    Formal UI V1.2-A master v2. Original editable vector artwork.
+    No embedded raster content. User reference is used only for approved composition,
+    lighting, warmth and dinner semantics; all paths, gradients and textures are redrawn.
+  </metadata>
+
+  <defs>
+    <linearGradient id="wallWash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9d99a"/>
+      <stop offset="0.45" stop-color="#eab66b"/>
+      <stop offset="1" stop-color="#d89445"/>
+    </linearGradient>
+    <linearGradient id="ceilingWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8994f"/>
+      <stop offset="1" stop-color="#f2c476"/>
+    </linearGradient>
+    <linearGradient id="floorWash" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#d5a15f"/>
+      <stop offset="0.6" stop-color="#bc7a3a"/>
+      <stop offset="1" stop-color="#8e4b28"/>
+    </linearGradient>
+    <linearGradient id="nightWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#061d4c"/>
+      <stop offset="0.62" stop-color="#0b3c70"/>
+      <stop offset="1" stop-color="#1a4968"/>
+    </linearGradient>
+    <linearGradient id="galaxyWash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c7dcf0" stop-opacity="0"/>
+      <stop offset="0.36" stop-color="#9fc6e9" stop-opacity="0.42"/>
+      <stop offset="0.62" stop-color="#e3e4dc" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#8db8dd" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="woodTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c87937"/>
+      <stop offset="0.52" stop-color="#a75a29"/>
+      <stop offset="1" stop-color="#7c3d22"/>
+    </linearGradient>
+    <linearGradient id="woodFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8d4724"/>
+      <stop offset="1" stop-color="#5d2b1c"/>
+    </linearGradient>
+    <linearGradient id="sweaterWash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d4b184"/>
+      <stop offset="0.55" stop-color="#aa7951"/>
+      <stop offset="1" stop-color="#70482f"/>
+    </linearGradient>
+    <linearGradient id="trouserWash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#655145"/>
+      <stop offset="1" stop-color="#392f2a"/>
+    </linearGradient>
+    <linearGradient id="catWash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1c078"/>
+      <stop offset="0.58" stop-color="#d88c3c"/>
+      <stop offset="1" stop-color="#a95a28"/>
+    </linearGradient>
+    <radialGradient id="broadRoomGlow" cx="55%" cy="16%" r="92%">
+      <stop offset="0" stop-color="#ffe3a4" stop-opacity="0.74"/>
+      <stop offset="0.42" stop-color="#ffd07b" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#f3a64d" stop-opacity="0.08"/>
+    </radialGradient>
+    <radialGradient id="tableLampGlow" cx="50%" cy="42%" r="58%">
+      <stop offset="0" stop-color="#ffe6a1" stop-opacity="0.82"/>
+      <stop offset="0.62" stop-color="#ffc960" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#f6a742" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pendantBulb" cx="45%" cy="36%" r="62%">
+      <stop offset="0" stop-color="#fff0b3"/>
+      <stop offset="0.55" stop-color="#ffd36e"/>
+      <stop offset="1" stop-color="#e29b37"/>
+    </radialGradient>
+    <radialGradient id="riceFill" cx="45%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#fff2ca"/>
+      <stop offset="1" stop-color="#dcb66e"/>
+    </radialGradient>
+    <pattern id="knitPattern" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M1,2 C4,5 4,7 1,10 M7,2 C10,5 10,7 7,10" fill="none" stroke="#f4d5a7" stroke-opacity="0.26" stroke-width="1.05"/>
+      <path d="M4,0 C7,3 7,5 4,8 M10,0 C13,3 13,5 10,8" fill="none" stroke="#6c432c" stroke-opacity="0.17" stroke-width="0.75"/>
+    </pattern>
+    <pattern id="tatamiPattern" width="18" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 3 H18 M0 9 H18" stroke="#fff0bd" stroke-opacity="0.12" stroke-width="0.8"/>
+      <path d="M2 0 L8 12 M10 0 L16 12" stroke="#67351f" stroke-opacity="0.12" stroke-width="0.7"/>
+    </pattern>
+    <pattern id="wallFibers" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M2 7 Q8 3 13 8 T23 7 M0 18 Q6 13 11 18 T22 17" fill="none" stroke="#fff4cf" stroke-opacity="0.12" stroke-width="1"/>
+      <path d="M5 1 Q4 8 8 12 M17 10 Q13 15 17 23" fill="none" stroke="#8b522c" stroke-opacity="0.09" stroke-width="0.8"/>
+    </pattern>
+    <filter id="roughPaper" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035 0.075" numOctaves="2" seed="14" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.72" xChannelSelector="R" yChannelSelector="B"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3.2" result="blur"/>
+      <feOffset dy="4" dx="1" result="offset"/>
+      <feColorMatrix in="offset" values="0 0 0 0 0.24 0 0 0 0 0.10 0 0 0 0 0.04 0 0 0 0.38 0" result="shade"/>
+      <feMerge><feMergeNode in="shade"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-40%" width="170%" height="190%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="blur"/>
+      <feOffset dy="2" dx="0.5" result="offset"/>
+      <feColorMatrix in="offset" values="0 0 0 0 0.18 0 0 0 0 0.07 0 0 0 0 0.02 0 0 0 0.34 0" result="shade"/>
+      <feMerge><feMergeNode in="shade"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="paperGrain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="3" seed="31" result="grain"/>
+      <feColorMatrix in="grain" type="saturate" values="0" result="mono"/>
+      <feComponentTransfer in="mono" result="faint">
+        <feFuncA type="table" tableValues="0 0.12"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="faint" mode="soft-light"/>
+    </filter>
+    <clipPath id="windowClip"><rect x="20" y="119" width="176" height="274" rx="2"/></clipPath>
+    <clipPath id="sceneClip"><rect width="390" height="844"/></clipPath>
+  </defs>
+
+  <g id="layer-01-wall-base" inkscape:groupmode="layer" inkscape:label="01 Wall base">
+    <rect width="390" height="585" fill="url(#wallWash)"/>
+    <rect width="390" height="585" fill="url(#wallFibers)" opacity="0.9"/>
+  </g>
+
+  <g id="layer-02-ceiling" inkscape:groupmode="layer" inkscape:label="02 Ceiling plane" filter="url(#roughPaper)">
+    <path d="M0 0H390V71L263 96L0 71Z" fill="url(#ceilingWash)"/>
+    <path d="M0 72L263 96L390 71" fill="none" stroke="#78421f" stroke-width="2.2" opacity="0.78"/>
+    <path d="M263 96V545" fill="none" stroke="#9a5b2e" stroke-width="1.3" opacity="0.46"/>
+    <path d="M9 18 Q91 12 173 19 T380 17" fill="none" stroke="#fbe2ac" stroke-width="1" opacity="0.23"/>
+  </g>
+
+  <g id="layer-03-window-night" inkscape:groupmode="layer" inkscape:label="03 Cold night through window" clip-path="url(#windowClip)">
+    <rect x="20" y="119" width="176" height="274" fill="url(#nightWash)"/>
+    <path d="M24 363Q62 327 103 348Q143 316 196 345V394H20Z" fill="#123552" opacity="0.92"/>
+    <path d="M17 376Q53 345 86 367Q127 333 166 365Q182 348 202 358V399H17Z" fill="#082941"/>
+    <path d="M57 393L66 319L76 393ZM83 393L94 298L106 393ZM149 393L160 314L171 393ZM173 393L183 286L193 393Z" fill="#09243a"/>
+    <path d="M47 120C93 167 110 247 167 302C181 315 190 336 197 356" fill="none" stroke="url(#galaxyWash)" stroke-width="34" stroke-linecap="round" opacity="0.78"/>
+    <path d="M56 124C98 182 116 248 174 302" fill="none" stroke="#c4d8e7" stroke-width="4" stroke-linecap="round" opacity="0.18"/>
+  </g>
+
+  <g id="layer-04-window-stars" inkscape:groupmode="layer" inkscape:label="04 Window stars">
+    <g fill="#eaf4e8" opacity="0.88">
+      <circle cx="44" cy="145" r="1.2"/><circle cx="74" cy="171" r="0.7"/><circle cx="103" cy="134" r="0.9"/>
+      <circle cx="133" cy="160" r="1.15"/><circle cx="173" cy="140" r="0.65"/><circle cx="183" cy="202" r="1"/>
+      <circle cx="51" cy="222" r="0.8"/><circle cx="87" cy="244" r="0.65"/><circle cx="120" cy="211" r="1.1"/>
+      <circle cx="157" cy="254" r="0.75"/><circle cx="35" cy="290" r="0.7"/><circle cx="72" cy="278" r="1.15"/>
+      <circle cx="115" cy="294" r="0.85"/><circle cx="141" cy="332" r="0.7"/><circle cx="180" cy="285" r="1.2"/>
+    </g>
+    <g fill="#90c4ed" opacity="0.38">
+      <circle cx="61" cy="190" r="2.3"/><circle cx="128" cy="184" r="1.8"/><circle cx="158" cy="228" r="2.1"/>
+      <circle cx="98" cy="322" r="1.9"/>
+    </g>
+  </g>
+
+  <g id="layer-05-window-frame" inkscape:groupmode="layer" inkscape:label="05 Window wood and glass" filter="url(#softShadow)">
+    <rect x="12" y="108" width="193" height="296" rx="3" fill="none" stroke="#6e351d" stroke-width="10"/>
+    <rect x="20" y="117" width="177" height="278" rx="1" fill="none" stroke="#b96a31" stroke-width="6"/>
+    <path d="M107 117V395M20 255H197" stroke="#6a321d" stroke-width="6"/>
+    <path d="M25 123H192M25 389H192" stroke="#e5a359" stroke-width="1.3" opacity="0.74"/>
+    <path d="M26 122L96 122L158 391" fill="none" stroke="#d7e6eb" stroke-width="2.5" opacity="0.13"/>
+    <path d="M33 125L103 125L167 391" fill="none" stroke="#d7e6eb" stroke-width="1" opacity="0.10"/>
+  </g>
+
+  <g id="layer-06-wall-shelf" inkscape:groupmode="layer" inkscape:label="06 Wall shelf and ceramics" filter="url(#smallShadow)">
+    <path d="M286 155H378V164H286Z" fill="#7d4024"/>
+    <path d="M292 164H372V170H292Z" fill="#ad6534"/>
+    <path d="M319 145Q316 129 322 119H342Q348 131 344 145Z" fill="#8d5b38" stroke="#65341e" stroke-width="1.2"/>
+    <path d="M352 148Q349 134 355 124H371Q378 136 374 148Z" fill="#9f6840" stroke="#65341e" stroke-width="1.2"/>
+    <path d="M323 125Q333 129 342 125M354 132Q364 136 372 131" fill="none" stroke="#e5b878" stroke-width="1" opacity="0.42"/>
+  </g>
+
+  <g id="layer-07-hanging-plant" inkscape:groupmode="layer" inkscape:label="07 Hanging plant">
+    <path d="M330 144C328 167 336 181 325 207" fill="none" stroke="#36552d" stroke-width="2.2" stroke-linecap="round"/>
+    <g fill="#47662f" stroke="#314b28" stroke-width="0.6">
+      <path d="M329 154Q314 144 310 157Q319 166 329 160Z"/><path d="M330 169Q343 158 348 171Q340 181 330 176Z"/>
+      <path d="M328 184Q313 176 312 189Q320 197 328 191Z"/><path d="M326 199Q339 192 341 203Q334 211 326 207Z"/>
+    </g>
+    <g fill="none" stroke="#89a45c" stroke-width="0.8" opacity="0.7">
+      <path d="M315 155L327 158M333 174L345 169M315 188L326 189M329 204L339 201"/>
+    </g>
+  </g>
+
+  <g id="layer-08-wall-life-details" inkscape:groupmode="layer" inkscape:label="08 Quiet wall details">
+    <path d="M298 296Q322 277 347 293V333H298Z" fill="#c17a3b" opacity="0.42"/>
+    <path d="M305 299Q322 288 340 299V325H305Z" fill="#f4cf82" opacity="0.5"/>
+    <path d="M315 319Q320 298 325 313Q330 290 336 315" fill="none" stroke="#5e7438" stroke-width="2" stroke-linecap="round"/>
+    <path d="M298 333H348" stroke="#8b4a27" stroke-width="3" opacity="0.62"/>
+  </g>
+
+  <g id="layer-09-floor-base" inkscape:groupmode="layer" inkscape:label="09 Warm floor base">
+    <path d="M0 551L390 522V844H0Z" fill="url(#floorWash)"/>
+    <path d="M0 551L390 522" stroke="#7c4224" stroke-width="3" opacity="0.58"/>
+    <path d="M0 551L390 522V844H0Z" fill="url(#tatamiPattern)" opacity="0.72"/>
+  </g>
+
+  <g id="layer-10-floor-tatami" inkscape:groupmode="layer" inkscape:label="10 Tatami seams and perspective">
+    <path d="M96 544L33 844M208 536L198 844M319 528L360 844" fill="none" stroke="#714025" stroke-width="1.5" opacity="0.44"/>
+    <path d="M0 654L390 638M0 753L390 751" fill="none" stroke="#6d3d23" stroke-width="1.5" opacity="0.36"/>
+    <path d="M3 557L386 529M5 562L387 534" stroke="#f2c579" stroke-width="0.8" opacity="0.24"/>
+  </g>
+
+  <g id="layer-11-broad-light" inkscape:groupmode="layer" inkscape:label="11 Broad indirect room light">
+    <path d="M202 102H390V536H202Z" fill="#ffe2a0" opacity="0.045"/>
+    <path d="M0 404H390V844H0Z" fill="url(#broadRoomGlow)" opacity="0.18"/>
+    <path d="M9 108Q65 92 211 116V425Q125 446 34 420Q12 317 9 108Z" fill="#6f9dc1" opacity="0.055"/>
+    <path d="M255 366Q350 338 390 375V702Q333 722 276 689Q247 532 255 366Z" fill="#ffd98d" opacity="0.10"/>
+  </g>
+
+  <g id="layer-12-pendant" inkscape:groupmode="layer" inkscape:label="12 Pendant broad light" filter="url(#smallShadow)">
+    <path d="M215 0V37" stroke="#4b2b1d" stroke-width="4"/>
+    <path d="M205 38Q215 29 225 38L228 48H202Z" fill="#684027" stroke="#3e261a" stroke-width="1.5"/>
+    <path d="M169 76Q187 46 215 45Q245 46 267 76Q247 94 216 95Q184 94 169 76Z" fill="#b46b32" stroke="#75401f" stroke-width="2"/>
+    <path d="M177 74Q193 53 216 52Q239 53 258 75Q239 86 216 87Q191 86 177 74Z" fill="#f0b84f" opacity="0.76"/>
+    <ellipse cx="216" cy="76" rx="12" ry="19" fill="url(#pendantBulb)" stroke="#bb762a" stroke-width="1"/>
+    <path d="M181 78Q214 90 253 77" fill="none" stroke="#ffe3a0" stroke-width="1.4" opacity="0.73"/>
+  </g>
+
+  <g id="layer-13-floor-cushions" inkscape:groupmode="layer" inkscape:label="13 Floor cushions" filter="url(#softShadow)">
+    <path d="M9 714Q71 688 153 715L161 774Q90 802 6 775Z" fill="#665446" stroke="#432f27" stroke-width="2"/>
+    <path d="M18 721Q76 704 148 724" fill="none" stroke="#a88868" stroke-width="2" opacity="0.42"/>
+    <path d="M291 746Q340 722 391 745V827Q342 835 294 812Z" fill="#a94f30" stroke="#74301f" stroke-width="2"/>
+    <path d="M301 754Q344 735 388 754M300 803Q344 814 389 797" fill="none" stroke="#dc8856" stroke-width="2" opacity="0.46"/>
+  </g>
+
+  <g id="layer-14-adult-legs" inkscape:groupmode="layer" inkscape:label="14 Adult seated legs" filter="url(#softShadow)">
+    <path d="M68 665Q95 634 133 650Q158 658 177 690Q151 722 112 731Q69 732 42 704Z" fill="url(#trouserWash)" stroke="#3b2c27" stroke-width="2"/>
+    <path d="M43 704Q81 716 115 704Q142 696 176 689" fill="none" stroke="#8d7461" stroke-width="2" opacity="0.42"/>
+    <path d="M61 683Q99 689 128 670" fill="none" stroke="#2d2522" stroke-width="2" opacity="0.55"/>
+  </g>
+
+  <g id="layer-15-adult-torso" inkscape:groupmode="layer" inkscape:label="15 Adult torso and posture" filter="url(#roughPaper)">
+    <path d="M83 505Q61 515 50 548Q37 588 39 650Q55 676 91 681Q128 684 161 657Q161 610 151 557Q144 519 125 506Z" fill="url(#sweaterWash)" stroke="#6d472f" stroke-width="2.2"/>
+    <path d="M83 505Q61 515 50 548Q37 588 39 650Q55 676 91 681Q128 684 161 657Q161 610 151 557Q144 519 125 506Z" fill="url(#knitPattern)" opacity="0.9"/>
+    <path d="M54 552Q82 569 103 559Q129 547 148 564" fill="none" stroke="#f0cca0" stroke-width="2" opacity="0.36"/>
+    <path d="M51 603Q86 620 119 606Q140 598 155 612" fill="none" stroke="#6c422c" stroke-width="2.3" opacity="0.36"/>
+    <path d="M79 512Q89 531 104 540Q119 530 129 507" fill="#7e5338" opacity="0.45"/>
+    <path d="M89 507Q101 519 119 508" fill="none" stroke="#e6c194" stroke-width="2.2"/>
+  </g>
+
+  <g id="layer-16-adult-head" inkscape:groupmode="layer" inkscape:label="16 Adult head three-quarter back">
+    <path d="M86 469Q85 438 111 423Q138 414 157 431Q168 448 159 470Q154 487 136 500Q111 501 96 486Z" fill="#bd8052" stroke="#623c2a" stroke-width="1.8"/>
+    <path d="M148 456Q162 459 159 471Q157 482 147 481" fill="#ca8d5d" stroke="#6a4130" stroke-width="1.3"/>
+    <path d="M151 466Q156 469 151 474" fill="none" stroke="#704332" stroke-width="1.1"/>
+    <path d="M145 481Q139 491 130 497" fill="none" stroke="#8d583c" stroke-width="1" opacity="0.38"/>
+  </g>
+
+  <g id="layer-17-adult-hair" inkscape:groupmode="layer" inkscape:label="17 Adult original hair silhouette" filter="url(#roughPaper)">
+    <path d="M84 471Q77 448 91 431Q105 413 132 416Q156 417 165 438Q169 454 156 471Q150 459 143 455Q140 472 130 484Q118 476 104 480Q104 460 94 451Q92 465 84 471Z" fill="#3f2c24" stroke="#2b211d" stroke-width="2"/>
+    <path d="M88 467Q91 440 109 428Q129 414 151 430Q158 436 160 446Q146 439 136 446Q126 452 119 465Q107 455 94 451Z" fill="#493026"/>
+    <path d="M98 459Q109 468 130 484Q137 473 141 456Q128 450 119 465Q107 455 98 459Z" fill="#443027"/>
+    <path d="M90 443Q103 421 122 422M101 451Q118 423 140 428M119 454Q138 429 158 440M91 461Q105 445 119 443" fill="none" stroke="#79503a" stroke-width="2" stroke-linecap="round" opacity="0.76"/>
+    <path d="M88 450Q81 457 84 468M145 425Q158 432 161 447" fill="none" stroke="#b17a4d" stroke-width="1.2" opacity="0.55"/>
+    <path d="M100 431Q116 416 134 421M112 439Q130 422 149 432" fill="none" stroke="#c18b5b" stroke-width="0.9" opacity="0.35"/>
+  </g>
+
+  <g id="layer-18-low-table" inkscape:groupmode="layer" inkscape:label="18 Low wooden dinner table" filter="url(#softShadow)">
+    <path d="M131 557L356 546L390 679L150 697Z" fill="url(#woodTop)" stroke="#6a351e" stroke-width="2.5"/>
+    <path d="M150 697L390 679V696L151 715Z" fill="url(#woodFront)" stroke="#5b2c1b" stroke-width="2"/>
+    <path d="M158 709L173 707L171 788Q164 795 158 787Z" fill="#61321f"/>
+    <path d="M358 695L374 692L377 769Q370 778 363 769Z" fill="#5d2e1d"/>
+    <path d="M150 576Q248 561 368 568M157 622Q257 605 378 612M162 669Q265 652 386 656" fill="none" stroke="#e3a45f" stroke-width="1" opacity="0.37"/>
+    <path d="M193 556L214 690M273 552L291 686M337 549L355 682" fill="none" stroke="#71371f" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <g id="layer-19-adult-arms" inkscape:groupmode="layer" inkscape:label="19 Adult arms resting at table" filter="url(#smallShadow)">
+    <path d="M64 548Q75 541 86 550Q100 570 116 594Q129 613 157 619L151 644Q112 640 92 613Q73 587 59 565Z" fill="#b1835c" stroke="#67442f" stroke-width="2"/>
+    <path d="M64 548Q75 541 86 550Q100 570 116 594Q129 613 157 619L151 644Q112 640 92 613Q73 587 59 565Z" fill="url(#knitPattern)" opacity="0.55"/>
+    <path d="M157 618Q174 616 181 624Q179 636 166 641L150 639Z" fill="#c78959" stroke="#704530" stroke-width="1.5"/>
+    <path d="M134 536Q145 532 154 543Q163 566 171 588Q178 600 195 603L190 623Q163 622 151 604Q139 583 129 553Z" fill="#a97752" stroke="#63412f" stroke-width="2"/>
+    <path d="M134 536Q145 532 154 543Q163 566 171 588Q178 600 195 603L190 623Q163 622 151 604Q139 583 129 553Z" fill="url(#knitPattern)" opacity="0.5"/>
+    <path d="M195 602Q208 602 213 609Q209 620 198 623L188 620Z" fill="#c78959" stroke="#704530" stroke-width="1.4"/>
+    <path d="M76 557Q90 573 99 592M143 547Q152 568 161 591" fill="none" stroke="#e3bb8c" stroke-width="1.4" opacity="0.48"/>
+  </g>
+
+  <g id="layer-20-kettle" inkscape:groupmode="layer" inkscape:label="20 Black iron kettle" filter="url(#smallShadow)" transform="translate(50 104) scale(0.82)">
+    <path d="M237 589Q237 554 267 547Q300 550 303 588" fill="none" stroke="#32251f" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="269" cy="591" rx="38" ry="28" fill="#3d2a21" stroke="#211a17" stroke-width="2"/>
+    <ellipse cx="269" cy="574" rx="27" ry="8" fill="#5c3a29" stroke="#241915" stroke-width="1.4"/>
+    <path d="M254 571Q269 558 285 571" fill="#6b4630" stroke="#241915" stroke-width="1.4"/>
+    <circle cx="269" cy="565" r="4" fill="#9b6638" stroke="#2c1e18" stroke-width="1"/>
+    <path d="M233 581Q218 580 208 570Q201 566 196 571Q210 588 236 595" fill="#422d23" stroke="#241915" stroke-width="2"/>
+    <path d="M302 580Q320 575 326 566Q331 566 334 570Q327 586 300 593" fill="#422d23" stroke="#241915" stroke-width="2"/>
+    <path d="M247 589Q268 602 291 588" fill="none" stroke="#a16b3c" stroke-width="2" opacity="0.44"/>
+    <path d="M249 579Q266 571 287 578" fill="none" stroke="#dc9c55" stroke-width="1.2" opacity="0.36"/>
+  </g>
+
+  <g id="layer-21-table-lamp" inkscape:groupmode="layer" inkscape:label="21 Single table-side practical lamp">
+    <ellipse cx="341" cy="562" rx="65" ry="82" fill="url(#tableLampGlow)"/>
+    <g filter="url(#smallShadow)">
+      <path d="M323 522H359L356 574H326Z" fill="#815129" stroke="#55311d" stroke-width="2"/>
+      <rect x="329" y="526" width="24" height="43" rx="2" fill="#f5c65f" stroke="#8a5123" stroke-width="1.4"/>
+      <path d="M341 527V568M329 548H353" stroke="#fff0b5" stroke-width="1.2" opacity="0.75"/>
+      <path d="M323 521L331 514H351L359 522M322 574H360" fill="none" stroke="#55311d" stroke-width="2.4"/>
+      <path d="M333 529Q341 522 349 529V565Q341 571 333 565Z" fill="#ffe497" opacity="0.52"/>
+    </g>
+  </g>
+
+  <g id="layer-22-tableware" inkscape:groupmode="layer" inkscape:label="22 Cups and small tableware" filter="url(#smallShadow)">
+    <path d="M184 606Q198 600 211 606L208 629Q198 635 188 629Z" fill="#d8ae6a" stroke="#6c4129" stroke-width="1.4"/>
+    <ellipse cx="198" cy="606" rx="14" ry="5" fill="#6e472f"/>
+    <path d="M212 611Q223 607 232 612L230 632Q220 637 214 631Z" fill="#e1bd79" stroke="#6c4129" stroke-width="1.3"/>
+    <ellipse cx="222" cy="612" rx="10" ry="4" fill="#6e472f"/>
+    <path d="M188 614Q198 618 208 613M215 620Q222 623 230 619" fill="none" stroke="#f9dea4" stroke-width="1.2" opacity="0.55"/>
+    <ellipse cx="365" cy="622" rx="11" ry="7" fill="#d9a74d" stroke="#714020" stroke-width="1.2"/>
+    <ellipse cx="365" cy="620" rx="7" ry="3" fill="#8d561f"/>
+  </g>
+
+  <g id="layer-23-dinner-rice" inkscape:groupmode="layer" inkscape:label="23 Two rice bowls" filter="url(#smallShadow)">
+    <g>
+      <path d="M215 654Q232 647 250 653L246 676Q232 684 219 675Z" fill="#c78a43" stroke="#6b3d22" stroke-width="1.7"/>
+      <ellipse cx="233" cy="653" rx="18" ry="7" fill="url(#riceFill)" stroke="#7d4a29" stroke-width="1.2"/>
+      <path d="M220 652Q224 642 230 650Q234 639 240 649Q245 642 248 653" fill="#f4dfae"/>
+      <path d="M222 665Q233 670 246 664" fill="none" stroke="#f5cb83" stroke-width="1.2" opacity="0.56"/>
+    </g>
+    <g>
+      <path d="M330 625Q347 618 364 624L360 647Q347 654 334 646Z" fill="#bd7a39" stroke="#6b3d22" stroke-width="1.7"/>
+      <ellipse cx="347" cy="624" rx="18" ry="7" fill="url(#riceFill)" stroke="#7d4a29" stroke-width="1.2"/>
+      <path d="M334 623Q338 614 343 621Q347 611 352 622Q357 614 361 625" fill="#f4dfae"/>
+      <path d="M335 637Q347 642 360 636" fill="none" stroke="#f5cb83" stroke-width="1.2" opacity="0.56"/>
+    </g>
+  </g>
+
+  <g id="layer-24-dinner-soup" inkscape:groupmode="layer" inkscape:label="24 Hot soup" filter="url(#smallShadow)">
+    <ellipse cx="283" cy="643" rx="28" ry="11" fill="#62321e" stroke="#472419" stroke-width="1.7"/>
+    <ellipse cx="283" cy="640" rx="24" ry="8" fill="#b55d2a"/>
+    <path d="M264 639Q275 632 285 639Q295 632 302 640Q293 646 282 645Q272 647 264 639Z" fill="#6d7b36"/>
+    <path d="M271 637Q274 629 277 637M289 637Q293 628 296 637" stroke="#e0bc68" stroke-width="1.2" fill="none" opacity="0.75"/>
+    <path d="M274 628Q268 619 276 614M288 629Q294 620 288 614" fill="none" stroke="#f2dfb3" stroke-width="1.2" opacity="0.42" stroke-linecap="round"/>
+  </g>
+
+  <g id="layer-25-dinner-main" inkscape:groupmode="layer" inkscape:label="25 Main dish and greens" filter="url(#smallShadow)">
+    <ellipse cx="330" cy="673" rx="42" ry="15" fill="#6c3822" stroke="#49251a" stroke-width="1.5"/>
+    <ellipse cx="330" cy="669" rx="37" ry="12" fill="#d59a4f"/>
+    <path d="M301 669Q308 655 317 666Q324 651 334 666Q342 651 352 668Q358 658 364 671Q351 681 330 681Q311 681 301 669Z" fill="#eab96c" stroke="#8d552f" stroke-width="1.1"/>
+    <path d="M308 666L315 676M325 661L332 677M344 661L351 675" stroke="#fff0bd" stroke-width="1.3" opacity="0.52"/>
+    <ellipse cx="197" cy="658" rx="24" ry="11" fill="#6b3a22" stroke="#4b271a" stroke-width="1.4"/>
+    <path d="M178 656Q188 645 197 654Q207 643 217 657Q208 667 195 667Q184 667 178 656Z" fill="#617233"/>
+    <path d="M184 654L191 663M199 650L203 663M210 653L211 662" stroke="#a9ad54" stroke-width="1.2"/>
+  </g>
+
+  <g id="layer-26-cat-body" inkscape:groupmode="layer" inkscape:label="26 Ordinary house cat body" filter="url(#softShadow)" transform="translate(60 114) scale(0.8)">
+    <path d="M240 644Q224 661 226 699Q227 733 244 753Q261 762 276 747Q287 727 280 693Q276 661 263 646Z" fill="url(#catWash)" stroke="#7a472a" stroke-width="2"/>
+    <path d="M240 648Q250 658 260 648Q267 674 270 698Q273 728 260 747" fill="none" stroke="#f3c98b" stroke-width="2" opacity="0.55"/>
+    <path d="M231 686Q247 696 275 685M230 711Q250 720 279 708" fill="none" stroke="#9f5a2d" stroke-width="1.8" opacity="0.5"/>
+    <path d="M249 752Q229 757 208 753Q186 750 173 760Q188 774 215 773Q241 775 256 764" fill="none" stroke="#bb7136" stroke-width="15" stroke-linecap="round"/>
+    <path d="M174 760Q188 765 202 762" fill="none" stroke="#efbb72" stroke-width="3" stroke-linecap="round" opacity="0.58"/>
+    <path d="M235 673Q241 669 247 674M265 675Q271 670 276 676M236 729Q246 736 259 731" fill="none" stroke="#754124" stroke-width="1.1" opacity="0.55"/>
+  </g>
+
+  <g id="layer-27-cat-head" inkscape:groupmode="layer" inkscape:label="27 Cat head ears and markings" transform="translate(60 114) scale(0.8)">
+    <path d="M233 645L230 610L245 621Q256 616 267 622L282 610L279 646Q271 659 256 661Q241 659 233 645Z" fill="url(#catWash)" stroke="#744229" stroke-width="2"/>
+    <path d="M233 617L243 627L233 635ZM279 617L269 628L278 636Z" fill="#b55e3c" opacity="0.76"/>
+    <path d="M244 627Q255 633 268 627M246 637Q255 642 265 636" fill="none" stroke="#f0c07d" stroke-width="1.8" opacity="0.62"/>
+    <path d="M250 622L255 633L261 622M241 642Q247 647 251 648M272 641Q266 646 262 648" fill="none" stroke="#98542d" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+
+  <g id="layer-28-steam-and-warmth" inkscape:groupmode="layer" inkscape:label="28 Steam and lived-in warmth">
+    <path d="M259 550Q250 540 259 531Q267 522 258 511M277 548Q287 538 278 527Q271 518 281 508" fill="none" stroke="#fff0c3" stroke-width="2" opacity="0.48" stroke-linecap="round"/>
+    <path d="M278 625Q273 616 280 608M291 627Q297 617 290 610" fill="none" stroke="#fff0c3" stroke-width="1.3" opacity="0.36" stroke-linecap="round"/>
+    <path d="M22 494Q102 472 183 489T367 476" fill="none" stroke="#fff1c5" stroke-width="1.2" opacity="0.15"/>
+  </g>
+
+  <g id="layer-29-paper-grain" inkscape:groupmode="layer" inkscape:label="29 Unified paper grain" clip-path="url(#sceneClip)" pointer-events="none">
+    <rect width="390" height="844" fill="#d7a05d" opacity="0.10" filter="url(#paperGrain)"/>
+    <path d="M0 0H390V844H0Z" fill="none" stroke="#6f3a22" stroke-opacity="0.11" stroke-width="5"/>
+  </g>
+
+  <g id="layer-30-warm-edge-balance" inkscape:groupmode="layer" inkscape:label="30 Warm edge balance no black corners" pointer-events="none">
+    <path d="M0 0H390V844H0Z" fill="none" stroke="#f4b65d" stroke-opacity="0.13" stroke-width="18"/>
+    <rect x="2" y="2" width="386" height="840" fill="none" stroke="#7b4528" stroke-opacity="0.16" stroke-width="1"/>
+  </g>
+</svg>

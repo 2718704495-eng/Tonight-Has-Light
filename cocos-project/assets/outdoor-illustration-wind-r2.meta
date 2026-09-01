@@ -1,0 +1,14 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "a4e1731a-5366-43b4-8503-181770321291",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "isBundle": true,
+    "bundleConfigID": "outdoor_illustration_wind_r2_experience_subpackage",
+    "bundleName": "outdoor-illustration-wind-r2",
+    "priority": 8
+  }
+}

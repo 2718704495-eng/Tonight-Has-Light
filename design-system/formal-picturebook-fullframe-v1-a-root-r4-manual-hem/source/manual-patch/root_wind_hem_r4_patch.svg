@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="1688" viewBox="0 0 780 1688">
+  <title>ROOT-WIND-HEM-V1-A-R4 editable contour accents</title>
+  <desc>Manual broken contour accents only. The matching R2 knit texture is isolated by right_hem_source_mask.svg and transformed locally by the deterministic build.</desc>
+  <path d="M238 1372 C264 1367 295 1358 329 1348 C343 1344 354 1343 362 1346"
+        fill="none" stroke="#596b78" stroke-width="1.2" stroke-linecap="round"
+        stroke-dasharray="11 7 3 8" opacity="0.34"/>
+  <path d="M250 1390 C274 1392 301 1384 326 1371"
+        fill="none" stroke="#071528" stroke-width="2.1" stroke-linecap="round"
+        stroke-dasharray="14 5 5 7" opacity="0.64"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <title>H4 sipped response edit geometry</title>
+  <desc>
+    Editable, non-ImageGen edit masks. Red exposes only the original cup pixels that need local
+    table repair; blue reuses the exact approved cup pixels shifted 4px toward the adult and 2px
+    toward the foreground; green lowers only the visible water surface. The compositor converts
+    these masks to a straight-alpha visual layer.
+  </desc>
+  <defs>
+    <clipPath id="sip-roi"><rect x="294" y="366" width="78" height="96"/></clipPath>
+  </defs>
+  <g clip-path="url(#sip-roi)">
+    <!-- ROLE red: original far-side cup silhouette. -->
+    <g id="original-cup-repair-mask" fill="#ff0000" stroke="#ff0000" stroke-linejoin="round">
+      <ellipse cx="337" cy="390" rx="21" ry="10"/>
+      <path d="M316 390 L320 438 Q322 449 337 451 Q352 449 354 438 L358 390 Z"/>
+    </g>
+
+    <!-- ROLE blue: the same silhouette at x-4/y+2; blue intentionally follows red in overlaps. -->
+    <g id="shifted-cup-mask" fill="#0000ff" stroke="#0000ff" stroke-linejoin="round">
+      <ellipse cx="333" cy="392" rx="21" ry="10"/>
+      <path d="M312 392 L316 440 Q318 451 333 453 Q348 451 350 440 L354 392 Z"/>
+    </g>
+
+    <!-- ROLE green: small, lower water surface inside the shifted rim. -->
+    <ellipse id="lower-waterline-mask" cx="333" cy="399" rx="14" ry="4.5" fill="#00ff00"/>
+  </g>
+</svg>

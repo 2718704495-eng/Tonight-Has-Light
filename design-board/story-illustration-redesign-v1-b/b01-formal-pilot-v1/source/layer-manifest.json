@@ -1,0 +1,122 @@
+{
+  "candidateId": "B01-FORMAL-PILOT-V1-R1",
+  "sourceCanvas": {
+    "width": 780,
+    "height": 1688,
+    "logicalWidth": 390,
+    "logicalHeight": 844,
+    "scale": 2
+  },
+  "renderOrder": [
+    {
+      "orderBottomToTop": 1,
+      "id": "01-sky",
+      "runtimeRole": "background plate",
+      "file": "source/layers/01-sky.png"
+    },
+    {
+      "orderBottomToTop": 2,
+      "id": "02-milky-way",
+      "runtimeRole": "future stable sky sprite",
+      "file": "source/layers/02-milky-way.png"
+    },
+    {
+      "orderBottomToTop": 3,
+      "id": "03-main-stars",
+      "runtimeRole": "future independent star brightness sprites",
+      "file": "source/layers/03-main-stars.png"
+    },
+    {
+      "orderBottomToTop": 4,
+      "id": "04-mountains",
+      "runtimeRole": "stable middle-distance plate",
+      "file": "source/layers/04-mountains.png"
+    },
+    {
+      "orderBottomToTop": 5,
+      "id": "05-house",
+      "runtimeRole": "stable house sprite",
+      "file": "source/layers/05-house.png"
+    },
+    {
+      "orderBottomToTop": 6,
+      "id": "06-door-light",
+      "runtimeRole": "future clickable door visual state",
+      "file": "source/layers/06-door-light.png"
+    },
+    {
+      "orderBottomToTop": 7,
+      "id": "07-far-grass",
+      "runtimeRole": "B01 resting far-grass state",
+      "file": "source/layers/07-far-grass.png"
+    },
+    {
+      "orderBottomToTop": 8,
+      "id": "08-near-grass",
+      "runtimeRole": "future near-grass wind state, behind characters in B01",
+      "file": "source/layers/08-near-grass.png"
+    },
+    {
+      "orderBottomToTop": 9,
+      "id": "09-adult-body",
+      "runtimeRole": "character body anchor",
+      "file": "source/layers/09-adult-body.png"
+    },
+    {
+      "orderBottomToTop": 10,
+      "id": "10-adult-hair",
+      "runtimeRole": "future hair wind state",
+      "file": "source/layers/10-adult-hair.png"
+    },
+    {
+      "orderBottomToTop": 11,
+      "id": "11-adult-clothing-edge",
+      "runtimeRole": "future hem and sleeve wind detail",
+      "file": "source/layers/11-adult-clothing-edge.png"
+    },
+    {
+      "orderBottomToTop": 12,
+      "id": "12-cat-body",
+      "runtimeRole": "ordinary cat body anchor",
+      "file": "source/layers/12-cat-body.png"
+    },
+    {
+      "orderBottomToTop": 13,
+      "id": "13-cat-ears",
+      "runtimeRole": "future cat ear wind detail",
+      "file": "source/layers/13-cat-ears.png"
+    },
+    {
+      "orderBottomToTop": 14,
+      "id": "14-cat-tail",
+      "runtimeRole": "future cat tail wind detail",
+      "file": "source/layers/14-cat-tail.png"
+    },
+    {
+      "orderBottomToTop": 15,
+      "id": "15-two-flowers",
+      "runtimeRole": "exactly two low-light optional interaction visuals",
+      "file": "source/layers/15-two-flowers.png"
+    },
+    {
+      "orderBottomToTop": 16,
+      "id": "16-foreground-grass-strokes",
+      "runtimeRole": "foreground framing and future wind state",
+      "file": "source/layers/16-foreground-grass-strokes.png"
+    },
+    {
+      "orderBottomToTop": 17,
+      "id": "17-paper-grain",
+      "runtimeRole": "shared print texture overlay",
+      "file": "source/layers/17-paper-grain.png"
+    }
+  ],
+  "constraints": {
+    "adultPosition": "left",
+    "catPosition": "right of adult",
+    "warmDoor": "right middle distance, stable",
+    "milkyWayCount": 1,
+    "flowerCount": 2,
+    "uiTextDialogueCount": 0
+  }
+}

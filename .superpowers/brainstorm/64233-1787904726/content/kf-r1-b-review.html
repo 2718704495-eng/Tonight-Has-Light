@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>今夜有灯 · B 三帧关键帧确认</title>
+  <style>
+    :root{color-scheme:dark;--night:#040e1c;--ink:#06182f;--paper:#d9d5c8;--muted:#9aabb7;--amber:#d3a05b;--line:rgba(217,213,200,.16)}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#17314d 0,transparent 38rem),var(--night);color:var(--paper);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+    body:after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.08;background-image:radial-gradient(#fff .55px,transparent .55px);background-size:5px 5px}
+    main{width:min(1280px,calc(100% - 28px));margin:auto;padding:34px 0 70px}.kicker{font:800 11px ui-monospace,monospace;letter-spacing:.15em;color:var(--amber)}
+    h1{margin:9px 0 10px;font-family:"Songti SC","STSong",serif;font-size:clamp(29px,4.3vw,52px);font-weight:600}.lead{max-width:850px;margin:0;color:#b2c0ca;line-height:1.75}.lock{display:flex;flex-wrap:wrap;gap:8px;margin:19px 0 28px}.lock span{border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:#99acb9;font-size:11px}.lock .on{border-color:rgba(211,160,91,.5);color:#edc487}
+    .frames{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}.card{border:1px solid var(--line);background:rgba(10,25,43,.78);padding:11px;cursor:pointer;transition:.16s ease}.card:hover{transform:translateY(-2px);border-color:rgba(211,160,91,.55)}.card.selected{border:2px solid var(--amber);box-shadow:0 0 0 4px rgba(211,160,91,.12)}
+    .art{position:relative;aspect-ratio:390/844;overflow:hidden;background:var(--ink)}.art img{width:100%;height:100%;object-fit:cover;display:block}.tag{position:absolute;top:10px;left:10px;padding:5px 8px;background:rgba(6,24,47,.86);border:1px solid rgba(255,255,255,.18);font:700 10px ui-monospace,monospace}
+    .copy{padding:13px 2px 4px}.copy h2{margin:0 0 5px;font-family:"Songti SC","STSong",serif;font-size:20px;font-weight:600}.copy p{margin:0;color:#9fb0bc;font-size:12px;line-height:1.6}.copy b{color:var(--amber)}
+    .thumbs{margin:25px 0 0;padding:16px;border:1px solid var(--line);background:rgba(10,25,43,.55)}.thumbs h3{margin:0 0 12px;font-size:12px;color:#d9d5c8}.thumbrow{display:flex;gap:12px;align-items:flex-start;overflow:auto}.thumbrow img{width:195px;height:422px;object-fit:cover;border:1px solid rgba(255,255,255,.12)}
+    .decision{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}.choice{padding:17px 18px;border:1px solid var(--line);background:rgba(10,25,43,.8);cursor:pointer}.choice strong{display:block;margin-bottom:5px;color:#e7e2d8}.choice p{margin:0;color:#91a4b2;font-size:12px;line-height:1.55}.choice.primary{border-color:rgba(211,160,91,.42);background:rgba(211,160,91,.08)}.choice.primary strong{color:#efc689}.choice.selected{outline:2px solid var(--amber);outline-offset:2px}
+    .note{margin:16px 0 0;color:#8195a4;font-size:11px;line-height:1.65}
+    @media(max-width:900px){.frames{grid-template-columns:1fr}.card{display:grid;grid-template-columns:minmax(180px,40%) 1fr;gap:14px}.decision{grid-template-columns:1fr}}
+    @media(max-width:560px){main{width:min(100% - 18px,420px);padding-top:22px}.card{display:block}.art{max-height:73vh}.thumbrow img{width:130px;height:281px}.frames{gap:12px}}
+    @media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+  </style>
+</head>
+<body><main>
+  <div class="kicker">STORY-ILLUSTRATION-REDESIGN-V1-B-KF-R1</div>
+  <h1>把同一阵风，讲成三个画面</h1>
+  <p class="lead">B 的画风已经按你的选择锁定。这里确认的是镜头与故事：先坐稳，风真正经过，再停在手与猫尾的细节里。点击某一帧表示“这帧想调整”。</p>
+  <div class="lock"><span class="on">B 深靛无字漫画</span><span>成年人＋普通猫不变</span><span>一条淡银河</span><span>稳定暖门</span><span>恰好两朵花</span><span>室内不改</span></div>
+  <section class="frames">
+    <article class="card" data-choice="revise-b01" onclick="toggleSelect(this)"><div class="art"><span class="tag">B01 · SETTLE</span><img src="/files/kf-r1-b01.png" alt="坐稳：一人一猫在深蓝草坡看星"></div><div class="copy"><h2>坐稳</h2><p>大全景先让天空进入。<br><b>变化：</b>远草刚接到风。</p></div></article>
+    <article class="card" data-choice="revise-b02" onclick="toggleSelect(this)"><div class="art"><span class="tag">B02 · BREEZE</span><img src="/files/kf-r1-b02.png" alt="风经过：大草带穿过人物和猫"></div><div class="copy"><h2>风经过</h2><p>草高低机位让风一眼可见。<br><b>变化：</b>草→衣角→猫耳尾同向。</p></div></article>
+    <article class="card" data-choice="revise-b03" onclick="toggleSelect(this)"><div class="art"><span class="tag">B03 · AFTERWIND</span><img src="/files/kf-r1-b03.png" alt="余风：手与猫尾的安静细节"></div><div class="copy"><h2>余风</h2><p>近景不定义关系，只留陪伴。<br><b>变化：</b>猫尾与两根草尖收势。</p></div></article>
+  </section>
+  <section class="thumbs"><h3>手机缩略检查 · 195×422（宽高各 50%）</h3><div class="thumbrow"><img src="/files/kf-r1-b01.png" alt="B01缩略图"><img src="/files/kf-r1-b02.png" alt="B02缩略图"><img src="/files/kf-r1-b03.png" alt="B03缩略图"></div></section>
+  <section class="decision">
+    <div class="choice primary" data-choice="approve-story-illustration-v1-b-kf-r1" onclick="toggleSelect(this)"><strong>批准这组三帧</strong><p>下一步进入正式分层重绘与开发准备；探索 PNG 仍不直接入包。</p></div>
+    <div class="choice" data-choice="revise-sequence" onclick="toggleSelect(this)"><strong>保持 B 风格，但调整故事</strong><p>告诉我想改哪一帧、镜头太近／太猛／太静，我只定点修改。</p></div>
+  </section>
+  <p class="note">当前状态：Gate B 仍为 BLOCKED。没有修改 Cocos、没有构建、没有上传。室内“灯一直为你亮着”保持原批准结果。</p>
+</main></body></html>

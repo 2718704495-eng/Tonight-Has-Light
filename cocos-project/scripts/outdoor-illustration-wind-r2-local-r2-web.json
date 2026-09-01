@@ -1,0 +1,10 @@
+{
+  "__version__": "1.3.9",
+  "platform": "web-mobile",
+  "buildPath": "project://build/outdoor-illustration-wind-r2-local-r2-web",
+  "outputName": "web-mobile",
+  "debug": false,
+  "md5Cache": false,
+  "sourceMaps": false,
+  "packages": {}
+}

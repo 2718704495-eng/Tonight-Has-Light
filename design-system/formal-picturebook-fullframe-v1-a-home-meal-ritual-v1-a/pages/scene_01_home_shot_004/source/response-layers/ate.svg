@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <title>H4 ate response edit geometry</title>
+  <desc>
+    Editable, non-ImageGen edit masks. Green reduces only selected food pieces.
+    The original tabletop pair stays untouched, so no duplicate utensil cue is created.
+    The compositor converts these masks to a straight-alpha visual layer.
+  </desc>
+  <defs>
+    <clipPath id="ate-roi"><rect x="154" y="366" width="132" height="122"/></clipPath>
+  </defs>
+  <g clip-path="url(#ate-roi)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ROLE green: only three separated pieces recede; the rest of the original dish remains. -->
+    <g id="reduce-food-portion" fill="#00ff00" stroke="#00ff00" stroke-width="2">
+      <path d="M232 406 l6-3 7 3 0 6-5 5-7-2-3-5z"/>
+      <path d="M213 416 l6-3 7 2 1 6-5 5-7-1-4-4z"/>
+      <path d="M239 427 l6-3 7 3-1 6-5 4-7-2-2-5z"/>
+      <path d="M219 435 l6-3 7 3 0 6-5 4-7-1-3-5z"/>
+      <path d="M258 423 l6-2 6 4-1 6-5 4-6-3-2-5z"/>
+      <path d="M250 444 l6-2 7 3-1 6-5 4-7-1-2-5z"/>
+    </g>
+  </g>
+</svg>

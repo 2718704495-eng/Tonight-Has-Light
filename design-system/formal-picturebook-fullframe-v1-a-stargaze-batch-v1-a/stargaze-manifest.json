@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "packageId": "formal-picturebook-fullframe-v1-a-stargaze-batch-v1-a",
+  "approvalRecord": "docs/STARGAZE-FORMAL-BATCH-V1-A-APPROVAL.md",
+  "approvalRecordSha256": "68018079ad328b8a648466c4f3586ba7df7dac6876e27321ca00826f72dba78f",
+  "executionPlan": "docs/superpowers/plans/2026-08-31-stargaze-formal-batch-v1-a.md",
+  "executionPlanSha256": "a481e34a1593c074ab9286c7472230be4d7aeb3a9a9f64faf1370fa52a5e76dd",
+  "runtimeAuthorized": false,
+  "pages": {
+    "scene_02_stargaze_shot_001": {
+      "assetId": "ART-PBOOK-STAR-001",
+      "name": "抬头",
+      "status": "R1 AUTHORIZED / IN PRODUCTION",
+      "generationBudget": {
+        "initial": 1,
+        "targetedRepair": 1,
+        "usedInitial": 0,
+        "usedTargetedRepair": 0
+      }
+    },
+    "scene_02_stargaze_shot_002": {
+      "assetId": "ART-PBOOK-STAR-002",
+      "name": "银河深处",
+      "status": "BLOCKED UNTIL F1 SAME-FILE USER APPROVAL"
+    },
+    "scene_02_stargaze_shot_003": {
+      "assetId": "ART-PBOOK-STAR-003",
+      "name": "薄云经过",
+      "status": "BLOCKED UNTIL F2 SAME-FILE USER APPROVAL"
+    },
+    "scene_02_stargaze_shot_004": {
+      "assetId": "ART-PBOOK-STAR-004",
+      "name": "云缝重开",
+      "status": "BLOCKED UNTIL F3 SAME-FILE USER APPROVAL"
+    },
+    "scene_02_stargaze_shot_005": {
+      "assetId": "ART-PBOOK-STAR-005",
+      "name": "世界很大",
+      "status": "USER VISUAL PASS / READ-ONLY EXTERNAL REFERENCE",
+      "canonical390": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/390x844/scene_02_stargaze_shot_005.png",
+        "sha256": "ad3a13c6a4d915f178d03d444874776e2df042f328f998de81a2bfbf0d774d8d"
+      }
+    }
+  }
+}

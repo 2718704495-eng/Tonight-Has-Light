@@ -1,0 +1,14 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "c467ccfb-18bd-5ce1-a9a6-81b11327934e",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "isBundle": true,
+    "bundleConfigID": "formal_picturebook_partial_0_4_8_subpackage",
+    "bundleName": "formal-picturebook-partial-0-4-8",
+    "priority": 9
+  }
+}

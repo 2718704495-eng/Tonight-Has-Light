@@ -1,0 +1,14 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "3d7e70b8-d95f-4f39-8e7c-fc860f65c8b4",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "isBundle": true,
+    "bundleConfigID": "indoor_n01_preview_subpackage",
+    "bundleName": "indoor-n01-preview",
+    "priority": 6
+  }
+}

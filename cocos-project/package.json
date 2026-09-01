@@ -1,0 +1,29 @@
+{
+  "name": "tonight-has-light",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "《今夜有灯》Cocos Creator 3.8.8 第一夜正式 V0 与五夜领域工程",
+  "scripts": {
+    "test": "node --test tests/*.test.ts",
+    "typecheck:domain": "node scripts/typecheck-domain.mjs",
+    "typecheck:cocos": "node /Applications/CocosCreator.app/Contents/Resources/app.asar.unpacked/node_modules/typescript/bin/tsc -p tsconfig.cocos-check.json --pretty false",
+    "sync:wechat-appid": "node scripts/sync-wechat-appid-from-existing-project.mjs",
+    "prepare:wechat-subpackages": "node scripts/prepare-wechat-subpackage-entries.mjs",
+    "prepare:wechat-experience-candidate": "node scripts/prepare-wechat-experience-candidate.mjs",
+    "audit:wechat-experience-candidate": "node scripts/audit-wechat-experience-candidate.mjs",
+    "validate:wechat-motion-runtime-build": "node scripts/validate-wechat-motion-runtime-build.mjs",
+    "validate:wechat-mainflow-build": "node scripts/validate-wechat-motion-runtime-build.mjs",
+    "prepare:wechat-formal-partial-candidate": "node scripts/prepare-wechat-formal-partial-candidate.mjs",
+    "sanitize:wechat-formal-partial-main": "node scripts/sanitize-wechat-formal-partial-main-bundle.mjs",
+    "validate:wechat-formal-partial-build": "node scripts/validate-wechat-formal-partial-build.mjs",
+    "audit:wechat-formal-partial-candidate": "node scripts/audit-wechat-formal-partial-candidate.mjs",
+    "receipt:wechat-formal-partial-upload": "node scripts/validate-wechat-formal-partial-upload-receipt.mjs",
+    "validate:project": "node scripts/validate-project.mjs",
+    "verify": "npm run validate:project && npm run typecheck:domain && npm run typecheck:cocos && npm test"
+  },
+  "creator": {
+    "version": "3.8.8"
+  },
+  "uuid": "777662a2-93aa-47ff-8214-d13e4f71f67f"
+}

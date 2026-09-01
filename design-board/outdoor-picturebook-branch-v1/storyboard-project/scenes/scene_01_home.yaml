@@ -1,0 +1,57 @@
+schema_version: 2
+scene: 1
+id: scene_01_home
+title: "回家"
+contract: HOME-MEAL-RITUAL-V1-A
+branch_hint: "回家"
+location: "整屋明亮的暖家"
+location_id: loc_bright_home_v1
+time_of_day: "深夜"
+story_beat: "一人一猫进入一直亮着灯的家，放下外衣，完成一份简单热食，在饭桌近景里可以吃一点或喝口温水，最后回到同一间暖家和同一张饭桌的全景。"
+characters:
+  - char_adult_back_v1
+  - char_house_cat_v1
+visual_style: style_night_comic_b_v1
+frame_count: 5
+advance_behavior:
+  trigger: "tap current picture"
+  autoplay: false
+  progress_ui: false
+  optional_interaction_page: scene_01_home_shot_004
+entry:
+  from: root_night_slope_v1
+  hotspot: prop_warm_door_v1
+  transition: "320ms cold-to-warm matched crossfade after H1 is ready"
+frames:
+  - order: 1
+    id: scene_01_home_shot_001
+    beat: "门内归家全景：整屋稳定明亮；成年人仍穿着灰蓝无标识外搭，猫在右侧脚边；挂钩为空，桌上已有壶、两杯、米饭和汤，中央浅盘的暖赭热菜尚未端上桌。"
+    overlay: "放下外衣"
+  - order: 2
+    id: scene_01_home_shot_002
+    beat: "玄关近景：成年人把同一件灰蓝外搭挂到左墙挂钩，露出最终全景里的深色针织内搭；猫自然四足经过。"
+  - order: 3
+    id: scene_01_home_shot_003
+    beat: "相连厨房中景：保留通向 H1/H5 主屋的门框、墙角或餐桌边缘作空间锚点；成年人一手揭开锅盖，另一手把最后一道暖赭热菜盛入与 H5 中央浅盘一致的器皿；猫停在安全距离。"
+  - order: 4
+    id: scene_01_home_shot_004
+    beat: "饭桌近景：饭菜与温水已经摆好，用户可选吃一点、喝口温水、两者都做或直接翻到下一页。"
+    overlays:
+      - "吃一点"
+      - "喝口温水"
+  - order: 5
+    id: scene_01_home_shot_005
+    beat: "严格回到已批准暖家全景：成年人左、普通猫紧邻右、完整晚饭、壶和两只杯可读，窗外仍是同一片深蓝夜空。"
+    approved_sha256_390x844: 569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51
+continuity_notes:
+  - "H1 与 H5 使用同一房间轴线、挂钩、餐桌、窗口和近似同一机位。"
+  - "H1 外搭、H2 挂起的外搭和 H5 左墙外搭是同一件；H2 内搭与 H5 人物针织衫一致。"
+  - "H3 热菜、H4 桌面与 H5 已批准饭菜保持器皿、品类和色值连续。"
+  - "H3 至少保留一个可回读 H1/H5 的空间锚点，并沿用同一墙地材质、木作和暖光方向，不得像另一间房。"
+  - "人物、猫、屋内空间和暖光均不可漂移；不增加其他人物、关系、派对、黑角或奖励光。"
+  - "H4 互动不写入夜晚完成、解锁或奖励。"
+exit_intent: "H5 作为同图持续显示的暖家落点；未来只能在独立实现 Gate 中幂等切到 indoor-ready，不能重载或改画。"
+supersedes:
+  - "scene_01_home v1 frames 001-004: cat notices door / pair rises / crosses slope / threshold"
+production_boundary: "Gate A and the written Chinese spec are approved. Gate B production plan is written. H1-H4 art and interactive response layers remain blocked until the user separately approves the H1 single-frame pilot. H5 is frozen and no Cocos/WeChat/Git work is authorized."
+status: "GATE_A_APPROVED_WRITTEN_SPEC_USER_APPROVED_GATE_B_PLAN_WRITTEN_H1_PILOT_BLOCKED"

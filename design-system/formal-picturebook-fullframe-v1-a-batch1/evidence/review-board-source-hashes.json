@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "candidate_id": "formal-picturebook-fullframe-v1-a-batch1-r2-r4-root",
+  "generated_on": "2026-08-30",
+  "text_scope": "Chinese labels and review hints exist only on the review boards; page exports and clean plates remain text-free.",
+  "boards": {
+    "full": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/evidence/review-board-3up.png",
+      "width": 1266,
+      "height": 1022,
+      "sha256": "51f413c1f4a0fcddb87eff4f4e2e96033c12b51204d5dcf3a7f371b59398a03c",
+      "sources": [
+        {
+          "page_id": "root_night_slope_v1",
+          "status": "user-approved",
+          "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/390x844/root_night_slope_v1.png",
+          "sha256": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a"
+        },
+        {
+          "page_id": "scene_02_stargaze_shot_005",
+          "status": "user-approved",
+          "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/390x844/scene_02_stargaze_shot_005.png",
+          "sha256": "ad3a13c6a4d915f178d03d444874776e2df042f328f998de81a2bfbf0d774d8d"
+        },
+        {
+          "page_id": "scene_01_home_shot_005",
+          "status": "awaiting-user",
+          "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/390x844/scene_01_home_shot_005.png",
+          "sha256": "2b53b8c47d1670228d407736ec0ca6a5ddef7d460f926d9fddbad8981cd77662"
+        }
+      ]
+    },
+    "thumbnail": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/evidence/review-board-3up-195.png",
+      "width": 633,
+      "height": 538,
+      "sha256": "1eff4e4c4784b61dabea05652b8f7789e0bcaadd6f9ab16740ff92696b0a5db1",
+      "sources": [
+        {
+          "page_id": "root_night_slope_v1",
+          "status": "user-approved",
+          "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/195x422/root_night_slope_v1.png",
+          "sha256": "6ceac63b51bf9c6e8311aded28c6adf1fe7e6349e864d5f475976b7c09bb9491"
+        },
+        {
+          "page_id": "scene_02_stargaze_shot_005",
+          "status": "user-approved",
+          "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/195x422/scene_02_stargaze_shot_005.png",
+          "sha256": "bdbc05c3fccd5ea265141bcbbc26ac47c2b6f59ffde40efcf87c78c0b9c9ebe5"
+        },
+        {
+          "page_id": "scene_01_home_shot_005",
+          "status": "awaiting-user",
+          "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/195x422/scene_01_home_shot_005.png",
+          "sha256": "691d50bca77e7ac2121cce956f6e8714777f31109195e916c97798dfb21a367a"
+        }
+      ]
+    }
+  }
+}

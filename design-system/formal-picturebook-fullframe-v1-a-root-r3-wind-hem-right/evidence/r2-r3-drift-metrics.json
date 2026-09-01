@@ -1,0 +1,36 @@
+{
+  "note": "Diagnostic only. No predeclared pass threshold; semantic hem direction remains a human visual decision.",
+  "r2": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/masters/root_night_slope_v2-wind-hem-master-2x.png",
+  "r3": "design-system/formal-picturebook-fullframe-v1-a-root-r3-wind-hem-right/source/masters/root_night_slope_v3-wind-hem-right-master-2x.png",
+  "dimensions": {
+    "width": 780,
+    "height": 1688,
+    "channels": 3
+  },
+  "regions": {
+    "full_frame": {
+      "left": 0,
+      "top": 0,
+      "width": 780,
+      "height": 1688,
+      "mean_absolute_channel_delta_0_255": 7.0211,
+      "pixels_with_any_channel_delta_gte_8_ratio": 0.385635
+    },
+    "upper_sky_outside_edit": {
+      "left": 0,
+      "top": 0,
+      "width": 780,
+      "height": 1120,
+      "mean_absolute_channel_delta_0_255": 5.2302,
+      "pixels_with_any_channel_delta_gte_8_ratio": 0.249168
+    },
+    "hem_and_character_context": {
+      "left": 80,
+      "top": 1160,
+      "width": 410,
+      "height": 360,
+      "mean_absolute_channel_delta_0_255": 11.7567,
+      "pixels_with_any_channel_delta_gte_8_ratio": 0.669715
+    }
+  }
+}

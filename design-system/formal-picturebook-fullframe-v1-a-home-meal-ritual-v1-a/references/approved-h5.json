@@ -1,0 +1,37 @@
+{
+  "referenceId": "HOME-F5-WIDE-ROOM-V1-A-R1",
+  "status": "REFERENCE HASH PASS",
+  "canonicalDirectory": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1",
+  "exports": {
+    "195x422": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/195x422/scene_01_home_shot_005.png",
+      "sha256": "674994ba660f8f2ed8a7f605c976e6eb0199ede70ced81e91e092862078ed57e",
+      "width": 195,
+      "height": 422
+    },
+    "360x800": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/360x800/scene_01_home_shot_005.png",
+      "sha256": "7ac476cf1953dcecebaa84657714c3c63b0d010573bfe36b3f6c5e214d56da62",
+      "width": 360,
+      "height": 800
+    },
+    "390x844": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png",
+      "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51",
+      "width": 390,
+      "height": 844
+    },
+    "430x932": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/430x932/scene_01_home_shot_005.png",
+      "sha256": "99dda84bbac1aa9d688852d2acd40b55b2a4eb12dd059a09604b3264e2d6263a",
+      "width": 430,
+      "height": 932
+    },
+    "430x844-pressure": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/430x844-pressure/scene_01_home_shot_005.png",
+      "sha256": "84b1c9cbfbb8ccb4462a98dbaaedb27b670f8684f793fcf6543d02d6ce607047",
+      "width": 430,
+      "height": 844
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "status": "PASS / CONTRACT AND REVIEW-VIEWPORT GEOMETRY",
+  "canvas": "390x844 logical px",
+  "adaptation": "SHOW_ALL; UI and hit targets share the scene transform",
+  "minimumTouchTargetPx": 44,
+  "minimumAdjacentEdgeGapPx": 8,
+  "logicalChecks": [
+    {
+      "id": "H1-hook-prompt",
+      "rect": { "x": 32, "y": 194, "width": 136, "height": 78 },
+      "minimumDimensionPx": 78,
+      "pass": true
+    },
+    {
+      "id": "H2-whole-picture",
+      "rect": { "x": 0, "y": 52, "width": 390, "height": 748 },
+      "minimumDimensionPx": 390,
+      "pass": true
+    },
+    {
+      "id": "H4-eat",
+      "rect": { "x": 144, "y": 346, "width": 146, "height": 170 },
+      "minimumDimensionPx": 146,
+      "pass": true
+    },
+    {
+      "id": "H4-sip",
+      "rect": { "x": 299, "y": 346, "width": 83, "height": 170 },
+      "minimumDimensionPx": 83,
+      "pass": true
+    },
+    {
+      "id": "H4-adjacent-gap",
+      "calculation": "299 - (144 + 146)",
+      "actualPx": 9,
+      "requiredPx": 8,
+      "pass": true
+    }
+  ],
+  "reviewViewportChecks": [
+    {
+      "viewport": "360x800",
+      "showAllScale": 0.923077,
+      "smallestH4TargetPx": { "width": 76.62, "height": 156.92 },
+      "h4AdjacentGapPx": 8.31,
+      "pass": true
+    },
+    {
+      "viewport": "390x844",
+      "showAllScale": 1,
+      "smallestH4TargetPx": { "width": 83, "height": 170 },
+      "h4AdjacentGapPx": 9,
+      "pass": true
+    },
+    {
+      "viewport": "430x932",
+      "showAllScale": 1.102362,
+      "smallestH4TargetPx": { "width": 91.5, "height": 187.4 },
+      "h4AdjacentGapPx": 9.92,
+      "pass": true
+    },
+    {
+      "viewport": "430x844-pressure",
+      "showAllScale": 1,
+      "smallestH4TargetPx": { "width": 83, "height": 170 },
+      "h4AdjacentGapPx": 9,
+      "pass": true
+    }
+  ],
+  "note": "The H4 sip target is inset one logical pixel from the earlier draft so the 360-wide SHOW_ALL review keeps at least 8px between action targets. Visible labels and scene art are unchanged."
+}

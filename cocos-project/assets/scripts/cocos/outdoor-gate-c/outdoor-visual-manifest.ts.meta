@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "6b7dc3d0-274f-44de-9a18-0d2242d08d92",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/cocos/outdoor-gate-c/outdoor-visual-manifest.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

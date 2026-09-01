@@ -1,0 +1,376 @@
+:root {
+  color-scheme: dark;
+  --night-ink: #06182f;
+  --paper-blue: #173b57;
+  --mist: #91a5aa;
+  --amber: #d3a05b;
+  --paper: #d9d5c8;
+  --story-transition: 300ms;
+  --room-transition: 430ms;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--paper);
+  background:
+    radial-gradient(circle at 40% -10%, rgba(78, 115, 128, 0.22), transparent 42rem),
+    var(--night-ink);
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  opacity: 0.08;
+  background-image: radial-gradient(rgba(217, 213, 200, 0.8) 0.5px, transparent 0.5px);
+  background-size: 5px 5px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+.review-heading {
+  width: min(1040px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 34px 0 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.eyebrow,
+.status {
+  font: 700 11px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.12em;
+  color: var(--amber);
+}
+
+.review-heading h1 {
+  margin: 8px 0 7px;
+  font: 600 clamp(30px, 5vw, 50px)/1.1 "Songti SC", "STSong", serif;
+}
+
+.review-heading p {
+  margin: 0;
+  color: rgba(217, 213, 200, 0.68);
+  line-height: 1.65;
+}
+
+.status {
+  flex: 0 0 auto;
+  padding: 8px 11px;
+  border: 1px solid rgba(211, 160, 91, 0.34);
+  border-radius: 999px;
+  color: rgba(239, 198, 137, 0.86);
+}
+
+.preview-layout {
+  width: min(1040px, calc(100% - 32px));
+  margin: 0 auto;
+  padding-bottom: 64px;
+  display: grid;
+  grid-template-columns: minmax(280px, 390px) minmax(270px, 1fr);
+  gap: clamp(26px, 6vw, 72px);
+  align-items: center;
+}
+
+.story-scene {
+  position: relative;
+  width: min(390px, 100%);
+  aspect-ratio: 390 / 844;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--night-ink);
+  box-shadow: 0 28px 72px rgba(0, 0, 0, 0.48), 0 0 0 1px rgba(217, 213, 200, 0.12);
+  touch-action: pan-y;
+}
+
+.story-frame,
+.indoor-frame,
+.warm-wash,
+.ink-wipe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.story-frame,
+.indoor-frame {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.frame-a {
+  z-index: 1;
+  opacity: 1;
+}
+
+.frame-b {
+  z-index: 2;
+  opacity: 0;
+  clip-path: inset(100% 0 0 0);
+  will-change: clip-path, opacity;
+}
+
+.ink-wipe {
+  z-index: 3;
+  width: 130%;
+  height: 24%;
+  left: -15%;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, transparent 0 4%, rgba(6, 24, 47, 0.52) 19%, rgba(6, 24, 47, 0.94) 49%, rgba(23, 59, 87, 0.55) 82%, transparent 96%),
+    repeating-linear-gradient(8deg, transparent 0 9px, rgba(145, 165, 170, 0.08) 10px 12px);
+  transform: translate3d(0, 420%, 0) rotate(-4deg);
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.indoor-frame {
+  z-index: 4;
+  opacity: 0;
+  transform: scale(1.012);
+  transition:
+    opacity var(--room-transition) cubic-bezier(0.22, 1, 0.36, 1),
+    transform var(--room-transition) cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+.warm-wash {
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 70% 58%, rgba(211, 160, 91, 0.3), transparent 48%);
+  transition: opacity var(--room-transition) cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.story-scene.is-indoor .frame-a,
+.story-scene.is-indoor .frame-b,
+.story-scene.is-indoor .ink-wipe {
+  opacity: 0 !important;
+}
+
+.story-scene.is-indoor .indoor-frame {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.story-scene.is-indoor .warm-wash {
+  opacity: 1;
+}
+
+.story-scene.is-reduced-motion {
+  --room-transition: 160ms;
+}
+
+.story-scene.is-reduced-motion .indoor-frame,
+.story-scene.is-reduced-motion.is-indoor .indoor-frame {
+  transform: none;
+}
+
+.story-scene.is-reduced-motion .ink-wipe {
+  display: none;
+}
+
+.door-hit {
+  position: absolute;
+  z-index: 7;
+  right: 2%;
+  bottom: 16%;
+  width: 28%;
+  height: 25%;
+  min-width: 56px;
+  min-height: 56px;
+  padding: 0;
+  border: 0;
+  border-radius: 26px;
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.door-hit:focus-visible {
+  outline: 2px solid rgba(211, 160, 91, 0.92);
+  outline-offset: -4px;
+}
+
+.story-scene.is-indoor .door-hit {
+  pointer-events: none;
+}
+
+.review-panel {
+  max-width: 430px;
+}
+
+.phase-card {
+  padding: 18px 20px;
+  border-left: 2px solid var(--amber);
+  background: rgba(23, 59, 87, 0.3);
+}
+
+.phase-card span,
+.phase-card small {
+  display: block;
+  color: rgba(217, 213, 200, 0.58);
+}
+
+.phase-card span {
+  margin-bottom: 6px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.phase-card strong {
+  display: block;
+  margin-bottom: 5px;
+  font: 600 25px/1.25 "Songti SC", "STSong", serif;
+}
+
+.phase-card small {
+  line-height: 1.55;
+}
+
+.control-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.control-row button {
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid rgba(145, 165, 170, 0.3);
+  border-radius: 999px;
+  background: rgba(6, 24, 47, 0.48);
+  cursor: pointer;
+}
+
+.control-row button:hover,
+.control-row button:focus-visible {
+  border-color: rgba(211, 160, 91, 0.7);
+}
+
+.motion-setting {
+  min-height: 58px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(145, 165, 170, 0.18);
+  cursor: pointer;
+}
+
+.motion-setting input {
+  width: 22px;
+  height: 22px;
+  accent-color: var(--amber);
+}
+
+.motion-setting strong,
+.motion-setting small {
+  display: block;
+}
+
+.motion-setting small {
+  margin-top: 3px;
+  color: rgba(217, 213, 200, 0.55);
+}
+
+.timing-list {
+  margin: 18px 0;
+  padding: 0;
+  border-top: 1px solid rgba(145, 165, 170, 0.16);
+}
+
+.timing-list div {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 14px;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(145, 165, 170, 0.12);
+}
+
+.timing-list dt {
+  color: var(--amber);
+  font: 700 11px/1.7 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.timing-list dd {
+  margin: 0;
+  color: rgba(217, 213, 200, 0.72);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.review-note {
+  margin: 0;
+  color: rgba(217, 213, 200, 0.55);
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 760px) {
+  .review-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 22px;
+  }
+
+  .preview-layout {
+    grid-template-columns: minmax(0, 390px);
+    justify-content: center;
+    align-items: start;
+  }
+
+  .review-panel {
+    max-width: 390px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --story-transition: 160ms;
+    --room-transition: 160ms;
+  }
+
+  .indoor-frame {
+    transform: none;
+  }
+
+  .ink-wipe {
+    display: none;
+  }
+}

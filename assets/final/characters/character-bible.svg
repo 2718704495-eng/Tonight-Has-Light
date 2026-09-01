@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2300" role="img" aria-labelledby="title desc">
+  <title id="title">今夜有灯·角色圣经总板</title>
+  <desc id="desc">软团兽与灯灵的三视图、六组表情、八组独立动作、四组关系动作和四十八像素黑色剪影。</desc>
+  <metadata>
+    AI-assisted code-authored editable vector; project: 今夜有灯; asset: character-bible-master-board;
+    version: 1.0.0; date: 2026-08-21; third-party assets: none.
+    All character geometry is original, grouped by semantic layer, and contains no external reference.
+    Chinese labels remain editable text using system font fallbacks.
+  </metadata>
+  <defs>
+    <linearGradient id="cb-soft" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D5DBD6"/><stop offset="0.55" stop-color="#ADBAB6"/><stop offset="1" stop-color="#879997"/></linearGradient>
+    <linearGradient id="cb-lamp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D6E0DE"/><stop offset="0.55" stop-color="#AEBFBE"/><stop offset="1" stop-color="#789091"/></linearGradient>
+    <radialGradient id="cb-core"><stop offset="0" stop-color="#FFF2C8"/><stop offset="0.5" stop-color="#F6D39A"/><stop offset="1" stop-color="#F2B66D"/></radialGradient>
+    <filter id="cb-glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="10"/></filter>
+
+    <symbol id="soft-shell" viewBox="0 0 180 160" width="180" height="160">
+      <g transform="translate(0 23) scale(1 .85)">
+      <ellipse cx="91" cy="145" rx="66" ry="9" fill="#080D14" opacity="0.18"/>
+      <path d="M24 121C14 99 18 69 38 52c14-12 31-13 45-21 10-5 13-13 22-18 2 13 12 20 30 24 29 7 47 35 42 77-5 32-31 42-76 42-43 0-67-8-77-35Z" fill="url(#cb-soft)" stroke="#718382" stroke-width="2.4"/>
+      <path d="M83 31c9 7 23 5 30-4-2 13-20 20-30 4Z" fill="#7D8F8F"/>
+      <path d="M37 80C19 84 9 103 16 115c6 10 17 1 29-22ZM164 80c18 5 27 23 19 35-6 10-17 0-28-23Z" fill="#A5B3AF" stroke="#718382" stroke-width="2"/>
+      <path d="M51 145c2-15 25-18 33-4 5 8-1 15-15 16-15 1-20-4-18-12ZM108 141c8-13 30-10 32 5 1 9-6 13-21 11-14-2-18-8-11-16Z" fill="#738785"/>
+      </g>
+    </symbol>
+    <symbol id="soft-neutral" viewBox="0 0 180 160" width="180" height="160">
+      <use href="#soft-shell"/><ellipse cx="84" cy="77" rx="3.5" ry="5" fill="#26303A"/><ellipse cx="116" cy="77" rx="3.5" ry="5" fill="#26303A"/><path d="M95 94c4 3 8 3 12 0" fill="none" stroke="#38434A" stroke-width="2.4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="soft-side" viewBox="0 0 180 160">
+      <g transform="translate(0 23) scale(1 .85)">
+      <ellipse cx="91" cy="145" rx="66" ry="9" fill="#080D14" opacity="0.18"/>
+      <path d="M28 121c-10-30 0-73 36-87 13-5 16-15 29-20 3 14 14 19 29 25 37 15 55 45 49 81-5 28-35 37-78 36-35-1-55-10-65-35Z" fill="url(#cb-soft)" stroke="#718382" stroke-width="2.4"/>
+      <path d="M66 33c9 5 20 3 28-5-4 12-19 18-28 5Z" fill="#7D8F8F"/><path d="M143 78c20 7 27 25 18 36" fill="#A5B3AF" stroke="#718382" stroke-width="2"/><ellipse cx="121" cy="72" rx="3.5" ry="5" fill="#26303A"/><path d="M104 142c8-13 31-11 34 4" fill="#738785"/>
+      </g>
+    </symbol>
+    <symbol id="soft-back" viewBox="0 0 180 160">
+      <g transform="translate(0 23) scale(1 .85)">
+      <ellipse cx="91" cy="145" rx="66" ry="9" fill="#080D14" opacity="0.18"/><path d="M24 121C14 99 18 69 38 52c14-12 31-13 45-21 10-5 13-13 22-18 2 13 12 20 30 24 29 7 47 35 42 77-5 32-31 42-76 42-43 0-67-8-77-35Z" fill="url(#cb-soft)" stroke="#718382" stroke-width="2.4"/><path d="M83 31c9 7 23 5 30-4-2 13-20 20-30 4Z" fill="#7D8F8F"/><path d="M125 55 65 119" fill="none" stroke="#738785" stroke-width="3" stroke-linecap="round" opacity="0.48"/><path d="M51 145c2-15 25-18 33-4M108 141c8-13 30-10 32 5" fill="#738785" stroke="#738785" stroke-width="6"/>
+      </g>
+    </symbol>
+
+    <symbol id="lamp-shell" viewBox="0 0 100 160" width="100" height="160">
+      <g transform="translate(-30 0) scale(1.6 1)">
+      <ellipse cx="47" cy="150" rx="28" ry="6" fill="#080D14" opacity="0.17"/><path d="M25 137c-3-31-2-88 4-116 2-9 8-15 17-20 7 9 14 14 25 17-4 28-2 83-5 119-1 17-39 17-41 0Z" fill="url(#cb-lamp)" stroke="#607B7D" stroke-width="2.3"/><path d="M29 21 46 1l11 22c-9 7-20 6-28-2Z" fill="#E5ECE7" stroke="#748B8B" stroke-width="1.8"/><path d="M66 70c15 10 19 33 6 45-2-12-7-31-6-45Z" fill="#668487" stroke="#577477" stroke-width="1.8"/>
+      </g>
+    </symbol>
+    <symbol id="lamp-neutral" viewBox="0 0 100 160" width="100" height="160">
+      <use href="#lamp-shell"/><path d="M37 102c-2-12 6-24 18-25 12-1 19 12 15 23-4 11-10 19-18 17-9-1-14-7-15-15Z" fill="url(#cb-core)"/><ellipse cx="42" cy="49" rx="2.8" ry="3.6" fill="#26303A"/><ellipse cx="56" cy="49" rx="2.8" ry="3.6" fill="#26303A"/>
+    </symbol>
+    <symbol id="lamp-side" viewBox="0 0 100 160">
+      <ellipse cx="48" cy="150" rx="24" ry="6" fill="#080D14" opacity="0.17"/><path d="M38 137c-2-37-2-87 2-116 2-11 7-16 15-20 5 8 10 13 18 17-4 31-2 85-5 119-1 17-28 17-30 0Z" fill="url(#cb-lamp)" stroke="#607B7D" stroke-width="2.3"/><path d="m40 21 15-20 9 22c-8 6-16 5-24-2Z" fill="#E5ECE7"/><path d="M65 27v105" stroke="#718A8B" stroke-width="3" opacity="0.48"/><path d="M49 102c-2-11 5-21 13-22 4 13 4 24-2 35-6-1-10-5-11-13Z" fill="#F2B66D" opacity="0.72"/><ellipse cx="54" cy="49" rx="2.8" ry="3.6" fill="#26303A"/>
+    </symbol>
+    <symbol id="lamp-back" viewBox="0 0 100 160">
+      <g transform="translate(-30 0) scale(1.6 1)">
+      <ellipse cx="47" cy="150" rx="28" ry="6" fill="#080D14" opacity="0.17"/><path d="M25 137c-3-31-2-88 4-116 2-9 8-15 17-20 7 9 14 14 25 17-4 28-2 83-5 119-1 17-39 17-41 0Z" fill="url(#cb-lamp)" stroke="#607B7D" stroke-width="2.3"/><path d="M29 21 46 1l11 22c-9 7-20 6-28-2Z" fill="#E5ECE7"/><path d="M49 29v106" stroke="#647E80" stroke-width="3" opacity="0.58"/><path d="M38 103c-2-12 6-23 17-23 11 0 17 11 14 22-4 10-10 16-17 15-8-1-12-7-14-14Z" fill="#F2B66D" opacity="0.4"/><path d="M66 70c15 10 19 33 6 45-2-12-7-31-6-45Z" fill="#668487"/>
+      </g>
+    </symbol>
+    <symbol id="cup-mini" viewBox="0 0 60 60"><ellipse cx="27" cy="14" rx="18" ry="5" fill="#F6EBD7"/><path d="M9 14c2 27 6 36 18 36s17-9 19-36c-10 4-27 4-37 0Z" fill="#B8C6CF" stroke="#718382" stroke-width="2"/><path d="M45 22c16-1 16 20 1 18" fill="none" stroke="#B8C6CF" stroke-width="4"/></symbol>
+  </defs>
+  <style>
+    .section-kicker{fill:#F2B66D;font:600 18px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;letter-spacing:3px}.section-title{fill:#F6EBD7;font:500 38px "Songti SC",STSong,serif}.section-note{fill:#8FA2AD;font:18px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}.card{fill:#141C29;stroke:#2A3A4F;stroke-width:2}.card-title{fill:#F6EBD7;font:500 19px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}.card-id{fill:#F2B66D;font:600 14px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;letter-spacing:1px}.tiny{fill:#8FA2AD;font:14px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}.guide{fill:none;stroke:#405169;stroke-width:2;stroke-dasharray:5 8}.motion{fill:none;stroke:#F2B66D;stroke-width:3;stroke-linecap:round;stroke-dasharray:2 9}.prop{fill:#526C64;stroke:#728982;stroke-width:3}
+    use[href="#soft-shell"]:not([width]),use[href="#soft-neutral"]:not([width]){width:180px;height:160px}
+    use[href="#lamp-shell"]:not([width]),use[href="#lamp-neutral"]:not([width]){width:100px;height:160px}
+  </style>
+
+  <g id="layer-background" data-layer="background"><rect width="1600" height="2300" fill="#10151F"/><circle cx="1441" cy="118" r="70" fill="#F6EBD7" opacity="0.9"/><circle cx="1470" cy="95" r="70" fill="#10151F"/><path d="M0 261c259-50 484 20 754-16 328-43 562-146 846-70v78H0Z" fill="#182235"/></g>
+  <g id="layer-header" data-layer="header"><text x="72" y="90" fill="#F2B66D" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="18" letter-spacing="5">CHARACTER BIBLE · V1.0</text><text x="72" y="164" fill="#F6EBD7" font-family="Songti SC, STSong, serif" font-size="68" font-weight="500">软团兽 ＋ 灯灵</text><text x="74" y="212" fill="#B8C6CF" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="21">横向的重量，纵向的光。无性别、无公开命名、互相照看。</text></g>
+
+  <g id="section-turnaround" data-layer="turnarounds">
+    <text class="section-kicker" x="72" y="318">01 · TURNAROUND</text><text class="section-title" x="72" y="363">三视图与 48px 剪影</text><text class="section-note" x="560" y="360">同基线 · 同缩放 · 轮廓先于表情成立</text>
+    <rect class="card" x="72" y="394" width="1456" height="360" rx="28"/>
+    <path class="guide" d="M112 693h1376"/>
+    <g id="soft-turnaround" data-layer="soft-turnaround">
+      <use href="#soft-neutral" x="118" y="458" width="220" height="196"/><use href="#soft-side" x="355" y="458" width="220" height="196"/><use href="#soft-back" x="589" y="458" width="220" height="196"/>
+      <text class="card-id" x="115" y="430">SOFT CREATURE · W:H ≈ 1.35:1</text><text class="tiny" x="194" y="717">正面</text><text class="tiny" x="430" y="717">侧面</text><text class="tiny" x="664" y="717">背面</text>
+    </g>
+    <g id="lamp-turnaround" data-layer="lamp-turnaround">
+      <use href="#lamp-neutral" x="862" y="433" width="122" height="226"/><use href="#lamp-side" x="1017" y="433" width="122" height="226"/><use href="#lamp-back" x="1172" y="433" width="122" height="226"/>
+      <text class="card-id" x="861" y="430">LAMP SPIRIT · H:W ≈ 1.6:1</text><text class="tiny" x="909" y="717">正面</text><text class="tiny" x="1063" y="717">侧面</text><text class="tiny" x="1218" y="717">背面</text>
+    </g>
+    <g id="silhouette-48" data-layer="48px-black-silhouette" transform="translate(1361 482)">
+      <rect width="48" height="48" rx="6" fill="#F6EBD7"/><path d="M4 36C1 28 3 19 10 15c5-3 10-3 14-6 3-2 4-5 7-6 1 5 5 8 11 10 7 2 8 12 5 23-2 8-11 10-22 10S7 44 4 36Z" fill="#000"/><path d="M11 43c0-5 8-6 11-1m8 0c3-5 11-3 11 2" fill="#000"/>
+      <rect y="66" width="48" height="48" rx="6" fill="#F6EBD7"/><path d="M14 106c-2-18-1-41 2-54 1-4 4-6 8-8 3 4 7 6 12 8-2 13-1 38-3 54-1 7-18 7-19 0Z" fill="#000" transform="translate(0 1)"/><path d="M16 52 24 43l5 10c-4 3-9 3-13-1Zm17 22c8 5 10 15 3 20-1-6-4-14-3-20Z" fill="#000"/>
+      <text class="tiny" x="24" y="138" text-anchor="middle">48×48</text>
+    </g>
+  </g>
+
+  <g id="section-expressions" data-layer="six-expressions">
+    <text class="section-kicker" x="72" y="822">02 · EXPRESSIONS</text><text class="section-title" x="72" y="867">六个低声量表情</text><text class="section-note" x="520" y="864">不靠符号，不大哭大笑；眼位、折面和暖芯承担情绪</text>
+    <g id="expression-e01" data-layer="E01-tired" transform="translate(72 902)"><rect class="card" width="224" height="260" rx="24"/><text class="card-id" x="20" y="33">E01</text><text class="card-title" x="20" y="60">疲惫</text><g transform="translate(22 80) scale(.52 .49)"><use href="#soft-shell"/><ellipse cx="84" cy="80" rx="3.5" ry="2.2" fill="#26303A"/><ellipse cx="116" cy="80" rx="3.5" ry="2.2" fill="#26303A"/></g><g transform="translate(139 79) scale(.64)"><use href="#lamp-shell"/><path d="M38 103c-2-10 6-20 17-20s17 10 13 20c-3 9-9 15-16 14-8-1-12-6-14-14Z" fill="#F2B66D" opacity=".72"/><path d="M39 52h6m9 0h6" stroke="#26303A" stroke-width="3" stroke-linecap="round"/></g></g>
+    <g id="expression-e02" data-layer="E02-daze" transform="translate(318 902)"><rect class="card" width="224" height="260" rx="24"/><text class="card-id" x="20" y="33">E02</text><text class="card-title" x="20" y="60">发呆</text><g transform="translate(22 78) scale(.52)"><use href="#soft-shell"/><ellipse cx="89" cy="77" rx="3.5" ry="5" fill="#26303A"/><ellipse cx="121" cy="77" rx="3.5" ry="5" fill="#26303A"/></g><g transform="translate(139 79) scale(.64)"><use href="#lamp-shell"/><path d="M37 102c-2-12 6-24 18-25 12-1 19 12 15 23-4 11-10 19-18 17-9-1-14-7-15-15Z" fill="url(#cb-core)"/><ellipse cx="46" cy="49" rx="2.8" ry="3.6" fill="#26303A"/><ellipse cx="60" cy="49" rx="2.8" ry="3.6" fill="#26303A"/></g></g>
+    <g id="expression-e03" data-layer="E03-puzzled" transform="translate(564 902)"><rect class="card" width="224" height="260" rx="24"/><text class="card-id" x="20" y="33">E03</text><text class="card-title" x="20" y="60">疑惑</text><g transform="translate(22 78) scale(.52)"><use href="#soft-shell"/><ellipse cx="84" cy="74" rx="3.5" ry="5" fill="#26303A"/><ellipse cx="116" cy="80" rx="3.5" ry="5" fill="#26303A"/></g><g transform="translate(143 76) rotate(10 32 52) scale(.64)"><use href="#lamp-shell"/><path d="M40 102c-2-12 6-24 18-25 12-1 19 12 15 23-4 11-10 19-18 17-9-1-14-7-15-15Z" fill="url(#cb-core)"/><ellipse cx="39" cy="49" rx="2.8" ry="3.6" fill="#26303A"/><ellipse cx="58" cy="49" rx="2.8" ry="3.6" fill="#26303A"/></g></g>
+    <g id="expression-e04" data-layer="E04-calm" transform="translate(810 902)"><rect class="card" width="224" height="260" rx="24"/><text class="card-id" x="20" y="33">E04</text><text class="card-title" x="20" y="60">安心</text><g transform="translate(22 83) scale(.52 .49)"><use href="#soft-shell"/><path d="M79 78h10m22 0h10" stroke="#26303A" stroke-width="3" stroke-linecap="round"/></g><g transform="translate(139 83) scale(.64 .61)"><use href="#lamp-shell"/><path d="M37 102c-2-12 6-24 18-25 12-1 20 12 15 23-4 11-10 19-18 17-9-1-14-7-15-15Z" fill="url(#cb-core)"/><path d="M38 50h7m9 0h7" stroke="#26303A" stroke-width="3" stroke-linecap="round"/></g></g>
+    <g id="expression-e05" data-layer="E05-small-joy" transform="translate(1056 902)"><rect class="card" width="224" height="260" rx="24"/><text class="card-id" x="20" y="33">E05</text><text class="card-title" x="20" y="60">微喜</text><g transform="translate(22 78) scale(.52)"><use href="#soft-shell"/><ellipse cx="87" cy="77" rx="3.5" ry="5" fill="#26303A"/><ellipse cx="113" cy="77" rx="3.5" ry="5" fill="#26303A"/><path d="M96 94c4 3 8 3 12 0" fill="none" stroke="#38434A" stroke-width="2.4" stroke-linecap="round"/></g><g transform="translate(139 79) scale(.64)"><use href="#lamp-shell"/><path d="M34 102c-2-13 7-24 20-25 14 0 22 12 17 24-4 12-11 19-20 17-10-1-15-7-17-16Z" fill="url(#cb-core)"/><ellipse cx="44" cy="49" rx="2.8" ry="3.6" fill="#26303A"/><ellipse cx="54" cy="49" rx="2.8" ry="3.6" fill="#26303A"/></g></g>
+    <g id="expression-e06" data-layer="E06-sleepy" transform="translate(1302 902)"><rect class="card" width="226" height="260" rx="24"/><text class="card-id" x="20" y="33">E06</text><text class="card-title" x="20" y="60">困</text><g transform="translate(20 87) rotate(4 50 60) scale(.52 .47)"><use href="#soft-shell"/><path d="M80 79h8m24 0h8" stroke="#26303A" stroke-width="3" stroke-linecap="round"/></g><g transform="translate(145 88) rotate(4 30 60) scale(.64 .59)"><use href="#lamp-shell"/><path d="M39 103c-1-8 5-16 14-16 9 0 14 8 11 16-3 7-7 12-13 11-7 0-10-5-12-11Z" fill="#F2B66D" opacity=".66"/><path d="M38 50h7m9 0h7" stroke="#26303A" stroke-width="3" stroke-linecap="round"/></g></g>
+  </g>
+
+  <g id="section-actions" data-layer="eight-independent-actions">
+    <text class="section-kicker" x="72" y="1233">03 · INDEPENDENT ACTIONS</text><text class="section-title" x="72" y="1278">八个独立动作关键姿</text><text class="section-note" x="620" y="1275">同一动作格展示两者各自的实现，不要求对方参与</text>
+    <g id="action-a01" data-layer="A01-idle" transform="translate(72 1314)"><rect class="card" width="346" height="250" rx="24"/><text class="card-id" x="20" y="32">A01 · 待机</text><use href="#soft-neutral" x="24" y="64" width="150" height="134"/><use href="#lamp-neutral" x="204" y="52" width="85" height="146"/><path class="motion" d="M74 207c26 7 50 7 76 0M224 210c20 6 38 6 57 0"/><text class="tiny" x="20" y="230">软起伏 / 异步漂浮</text></g>
+    <g id="action-a02" data-layer="A02-settle" transform="translate(442 1314)"><rect class="card" width="346" height="250" rx="24"/><text class="card-id" x="20" y="32">A02 · 坐下 / 停稳</text><g transform="translate(24 91) scale(.82 .66)"><use href="#soft-neutral"/></g><g transform="translate(219 78) scale(.77 .72)"><use href="#lamp-neutral"/></g><path class="motion" d="M104 75v18m151-30v16"/><text class="tiny" x="20" y="230">底部摊开 / 下沉收住</text></g>
+    <g id="action-a03" data-layer="A03-lie-low" transform="translate(812 1314)"><rect class="card" width="346" height="250" rx="24"/><text class="card-id" x="20" y="32">A03 · 躺下 / 低亮</text><g transform="translate(23 112) rotate(-9 75 60) scale(.83 .53)"><use href="#soft-neutral"/></g><g transform="translate(216 85) rotate(24 40 80) scale(.75)"><use href="#lamp-shell"/><path d="M40 103c-1-8 5-16 14-16s14 8 11 16c-3 7-7 12-13 11-7 0-10-5-12-11Z" fill="#F2B66D" opacity=".62"/></g><text class="tiny" x="20" y="230">侧倒变扁 / 横倾仍悬空</text></g>
+    <g id="action-a04" data-layer="A04-move" transform="translate(1182 1314)"><rect class="card" width="346" height="250" rx="24"/><text class="card-id" x="20" y="32">A04 · 移动</text><g transform="translate(24 68) rotate(-4 75 70) scale(.78)"><use href="#soft-neutral"/></g><g transform="translate(220 53) rotate(10 40 80) scale(.75)"><use href="#lamp-neutral"/></g><path class="motion" d="M31 205h119m53 0h104"/><path d="m142 198 12 7-12 7m157-14 12 7-12 7" fill="none" stroke="#F2B66D" stroke-width="3" stroke-linecap="round"/><text class="tiny" x="20" y="230">足不离地 / 先倾后漂</text></g>
+    <g id="action-a05" data-layer="A05-cup" transform="translate(72 1588)"><rect class="card" width="346" height="250" rx="24"/><text class="card-id" x="20" y="32">A05 · 拿杯 / 推杯</text><use href="#soft-neutral" x="18" y="66" width="145" height="129"/><use href="#cup-mini" x="135" y="136" width="54" height="54"/><use href="#lamp-neutral" x="221" y="57" width="78" height="137"/><use href="#cup-mini" x="282" y="140" width="48" height="48"/><path class="motion" d="M268 148h24"/><text class="tiny" x="20" y="230">扁臂低拿 / 尾带推杯壁</text></g>
+    <g id="action-a06" data-layer="A06-blanket-light" transform="translate(442 1588)"><rect class="card" width="346" height="250" rx="24"/><text class="card-id" x="20" y="32">A06 · 裹毯 / 钻光</text><use href="#soft-neutral" x="25" y="71" width="142" height="126"/><path d="M36 131c50-26 107-10 139 28l-11 54H31Z" class="prop"/><g transform="translate(227 64) scale(.75)"><use href="#lamp-neutral"/></g><path d="M234 174c25-4 43-2 64 7" stroke="#F2B66D" stroke-width="6" stroke-linecap="round" opacity=".75"/><text class="tiny" x="20" y="230">滚入半圈 / 从缝里穿过</text></g>
+    <g id="action-a07" data-layer="A07-window" transform="translate(812 1588)"><rect class="card" width="346" height="250" rx="24"/><text class="card-id" x="20" y="32">A07 · 看窗</text><rect x="214" y="58" width="102" height="119" rx="5" fill="#26364B" stroke="#71828B" stroke-width="6"/><path d="M265 61v113m-48-58h96" stroke="#71828B" stroke-width="4"/><circle cx="286" cy="84" r="16" fill="#F6EBD7"/><use href="#soft-neutral" x="29" y="62" width="145" height="129"/><use href="#lamp-neutral" x="164" y="77" width="66" height="114"/><text class="tiny" x="20" y="230">眼先到 / 内芯降冷 10%</text></g>
+    <g id="action-a08" data-layer="A08-approach" transform="translate(1182 1588)"><rect class="card" width="346" height="250" rx="24"/><text class="card-id" x="20" y="32">A08 · 靠近</text><use href="#soft-neutral" x="62" y="72" width="142" height="126"/><use href="#lamp-neutral" x="196" y="62" width="73" height="132"/><path class="motion" d="M38 159h26m232 0h-27"/><path d="m58 153 9 6-9 6m244-12-9 6 9 6" fill="none" stroke="#F2B66D" stroke-width="3"/><text class="tiny" x="20" y="230">只挪半足宽 / 尾带先指向</text></g>
+  </g>
+
+  <g id="section-relations" data-layer="four-relation-actions">
+    <text class="section-kicker" x="72" y="1909">04 · RELATION ACTIONS</text><text class="section-title" x="72" y="1954">四个互相照看的瞬间</text><text class="section-note" x="610" y="1951">不标注关系，不用爱心与拥抱替代叙事</text>
+    <g id="relation-r01" data-layer="R01-blanket-space" transform="translate(72 1990)"><rect class="card" width="346" height="245" rx="24"/><text class="card-id" x="20" y="32">R01 · 留一块毯子</text><use href="#soft-neutral" x="22" y="70" width="155" height="138"/><path d="M24 139c54-25 117-11 151 27l-8 52H20Z" class="prop"/><use href="#lamp-neutral" x="213" y="75" width="70" height="123"/><path d="M186 181h34" stroke="#F2B66D" stroke-width="7" stroke-linecap="round" opacity=".7"/><text class="tiny" x="20" y="228">向外松开一个灯灵宽的缝</text></g>
+    <g id="relation-r02" data-layer="R02-fix-cup" transform="translate(442 1990)"><rect class="card" width="346" height="245" rx="24"/><text class="card-id" x="20" y="32">R02 · 扶正反杯</text><use href="#soft-neutral" x="18" y="72" width="142" height="126"/><g transform="translate(166 192) rotate(180)"><use href="#cup-mini" x="-28" y="-28" width="56" height="56"/></g><use href="#lamp-neutral" x="224" y="65" width="76" height="132"/><path class="motion" d="M250 151c-17 8-31 19-44 34"/><text class="tiny" x="20" y="228">停 0.6 秒，再用尾带轻推</text></g>
+    <g id="relation-r03" data-layer="R03-move-light-near" transform="translate(812 1990)"><rect class="card" width="346" height="245" rx="24"/><text class="card-id" x="20" y="32">R03 · 把光挪近</text><g transform="translate(22 116) rotate(-8 80 60) scale(.86 .57)"><use href="#soft-neutral"/></g><ellipse cx="240" cy="159" rx="76" ry="64" fill="#F2B66D" opacity=".12" filter="url(#cb-glow)"/><use href="#lamp-neutral" x="211" y="64" width="77" height="134"/><text class="tiny" x="20" y="228">不叫醒，只把光放低</text></g>
+    <g id="relation-r04" data-layer="R04-third-seat" transform="translate(1182 1990)"><rect class="card" width="346" height="245" rx="24"/><text class="card-id" x="20" y="32">R04 · 留第三个位置</text><use href="#soft-neutral" x="13" y="86" width="112" height="100"/><use href="#lamp-neutral" x="257" y="72" width="62" height="112"/><g id="empty-chair"><path d="M148 99h62v69h-62Z" fill="#394E55" stroke="#607873" stroke-width="4"/><path d="M137 163h84v18h-84Zm14 17-8 35m63-35 8 35" fill="#526C64" stroke="#607873" stroke-width="4"/></g><ellipse cx="179" cy="156" rx="57" ry="45" fill="#F2B66D" opacity=".13"/><text class="tiny" x="20" y="228">中间的空椅留给玩家</text></g>
+  </g>
+</svg>

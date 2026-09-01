@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["assets/**/*.ts"],
+  "exclude": ["tests", "build", "temp", "library"]
+}

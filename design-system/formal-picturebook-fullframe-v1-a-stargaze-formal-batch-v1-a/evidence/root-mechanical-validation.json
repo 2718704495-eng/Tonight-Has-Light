@@ -1,0 +1,203 @@
+{
+  "candidateId": "stargaze-formal-batch-v1-a-f1-r1",
+  "status": "MECHANICAL PASS / VISUAL REVIEW REQUIRED",
+  "promptSha256": "cde397574e7b7ffdb0dcb2ff8e158585b27cc74039a56aa1fa614c84798a4ee8",
+  "checks": [
+    {
+      "label": "master",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "a51280508e89f4ce0cbbee27ce75e5548301a9bde37972395edaec81c3296dbf",
+      "metadata": {
+        "format": "png",
+        "width": 780,
+        "height": 1688,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": true
+      }
+    },
+    {
+      "label": "195x422",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "ad9c89d2880853281aec6e8cde97b071f3d508a485960dadf6d6a8e20c9367c8",
+      "metadata": {
+        "format": "png",
+        "width": 195,
+        "height": 422,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": true
+      }
+    },
+    {
+      "label": "360x800",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "31adba353d6e796857a4eb584e22ef0f3158a8470b70b34c03121d2e7036186b",
+      "metadata": {
+        "format": "png",
+        "width": 360,
+        "height": 800,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": true
+      }
+    },
+    {
+      "label": "390x844",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "6b2450a1993742545b83958d4f17913fda63a512071f42fa0a148feb4856c26e",
+      "metadata": {
+        "format": "png",
+        "width": 390,
+        "height": 844,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": true
+      }
+    },
+    {
+      "label": "430x932",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "b6a52014f24efcd340dc005756386617597d9d0339a149a4aa2f5817e696da6a",
+      "metadata": {
+        "format": "png",
+        "width": 430,
+        "height": 932,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": true
+      }
+    },
+    {
+      "label": "430x844-pressure",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "1fdbd17d8e50ac4b1308ba9939096e0d25cc8f0d7f472b4c2ef523bacf1088e3",
+      "metadata": {
+        "format": "png",
+        "width": 430,
+        "height": 844,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": true
+      }
+    },
+    {
+      "label": "raw hash",
+      "passed": true,
+      "actualHash": "d75bdf4bb9ae371a72c5d11b33c89dbdcbbe6d71f1f6f961c87ca41071b2d6b4"
+    },
+    {
+      "label": "reference approved root R4 visual continuity anchor",
+      "passed": true,
+      "actualHash": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a",
+      "recordedHash": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a"
+    },
+    {
+      "label": "reference approved formal F5 stargaze clean-plate continuity anchor",
+      "passed": true,
+      "actualHash": "ad3a13c6a4d915f178d03d444874776e2df042f328f998de81a2bfbf0d774d8d",
+      "recordedHash": "ad3a13c6a4d915f178d03d444874776e2df042f328f998de81a2bfbf0d774d8d"
+    },
+    {
+      "label": "production prompt present",
+      "passed": true,
+      "promptSha256": "cde397574e7b7ffdb0dcb2ff8e158585b27cc74039a56aa1fa614c84798a4ee8"
+    },
+    {
+      "label": "360x800 exposed safe border",
+      "passed": true,
+      "fullBorderRows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        789,
+        790,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799
+      ],
+      "fullBorderColumns": []
+    },
+    {
+      "label": "430x932 exposed safe border",
+      "passed": true,
+      "fullBorderRows": [
+        931
+      ],
+      "fullBorderColumns": []
+    },
+    {
+      "label": "430x844-pressure exposed safe border",
+      "passed": true,
+      "fullBorderRows": [],
+      "fullBorderColumns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429
+      ]
+    }
+  ],
+  "issues": []
+}

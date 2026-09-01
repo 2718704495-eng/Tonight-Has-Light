@@ -1,0 +1,64 @@
+schema_version: 1
+scene: 3
+scene_id: scene_03_breeze
+shots:
+  - id: scene_03_breeze_shot_001
+    panel_order: 1
+    shot_type: medium-close
+    lens: "70mm equivalent"
+    camera_angle: "rear-side view near seated hand height"
+    emotion: "curious, tactile calm"
+    action: "The seated adult brushes one nearby grass seed head with fingertips; the cat watches from the right."
+    composition: "Hand and grass foreground-left, ordinary seated cat lower-right, paired bodies still readable; warm door soft in the far-right background."
+    continuity:
+      - "Start from root_night_slope_v1 without moving the grass anchor."
+      - "Keep adult hand anatomy natural and unaccented."
+    status: draft
+  - id: scene_03_breeze_shot_002
+    panel_order: 2
+    shot_type: wide low-angle
+    lens: "35mm equivalent"
+    camera_angle: "near grass height looking across the slope"
+    emotion: "the small event gathers"
+    action: "Wind travels from far grass to near grass, then catches hair and clothing; one loose narrow grass blade lifts free."
+    composition: "A single readable wind path moves background-to-foreground and left-to-right; adult and cat remain anchored lower-left; house stays right."
+    continuity:
+      - "Use the same loose grass blade through panels 2–5."
+      - "No magical trail, particles, or full-screen blur."
+    status: draft
+  - id: scene_03_breeze_shot_003
+    panel_order: 3
+    shot_type: medium-close
+    lens: "75mm equivalent"
+    camera_angle: "cat-height rear three-quarter"
+    emotion: "mild surprise without fear"
+    action: "The grass blade rests lightly beside the cat’s near ear; the ear flicks once."
+    composition: "Cat occupies the lower-right foreground with complete ordinary anatomy; adult trouser leg and hand remain as left continuity anchors."
+    continuity:
+      - "The blade keeps the same size, value, and travel direction."
+      - "No injury, distress, or cartoon shock expression."
+    status: draft
+  - id: scene_03_breeze_shot_004
+    panel_order: 4
+    shot_type: close-up
+    lens: "85mm equivalent"
+    camera_angle: "low side view at cat shoulder height"
+    emotion: "a tiny natural response"
+    action: "The cat stays grounded and lifts one front paw to bat the blade free."
+    composition: "Natural cat forepaw action is central; full head, shoulder, grounded paws, and tail base keep anatomy readable; adult remains a quiet cropped anchor."
+    continuity:
+      - "Cat never stands upright or gains a human expression."
+      - "Dry-brush line and halftone density match all prior panels."
+    status: draft
+  - id: scene_03_breeze_shot_005
+    panel_order: 5
+    shot_type: wide
+    lens: "40mm equivalent"
+    camera_angle: "low rear three-quarter returning to the root view"
+    emotion: "the night settles again"
+    action: "The blade drifts onward, grass relaxes, the adult withdraws the hand, and the cat sits again beside them."
+    composition: "Pair returns lower-left, the departing blade is small mid-frame, broad sky breathes above, warm door stays right, and two flowers remain weak."
+    continuity:
+      - "End near the root composition without implying a reward or completion state."
+      - "Preserve the same wind direction until the blade exits."
+    status: draft

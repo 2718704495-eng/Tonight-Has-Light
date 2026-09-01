@@ -1,0 +1,14 @@
+8c324ec2bd023f732c533c9984831a99ac6c7c18f7a5068374ff454782dd0af2  design-system/formal-outdoor-art-pilot-v1-b-r1/evidence/extraction-probes/10_adult_body-transparent-probe-rgb-checkerboard-FAIL.png
+a6e84c34101a8c6b96af1121bcabd58bc98d35bebb89ed32e2597c7e146b83d4  design-system/formal-outdoor-art-pilot-v1-b-r1/evidence/extraction-probes/README.md
+41191e25e137121464c753f2f65a02153a5feea269858a4b41b67f0b6964815a  design-system/formal-outdoor-art-pilot-v1-b-r1/evidence/INDEPENDENT-REVIEW.md
+88c0f1f69c5c069b17630b55c2914a75cb49a659b605cb375db49aff901216bd  design-system/formal-outdoor-art-pilot-v1-b-r1/evidence/master-preflight.md
+b4dfe6f466bc1912046be32901b682e188d876f2067f592b62b98bf595a4d1eb  design-system/formal-outdoor-art-pilot-v1-b-r1/evidence/preflight/root_night_slope_v1-195x422.png
+e5cc6cfe263bab1f7152ca50336ddbd452f0cfabe635e469c1e1ccf310d1094c  design-system/formal-outdoor-art-pilot-v1-b-r1/evidence/preflight/root_night_slope_v1-390x844.png
+8c975ac0a322664eecad5612f2a1ce946658d379e4c0a755b984f614ea8da764  design-system/formal-outdoor-art-pilot-v1-b-r1/prompts/root_night_slope_v1.md
+b1f44db9215a1ceabed2905bd27c0392a1cd111e79beefa1962899616deafd5c  design-system/formal-outdoor-art-pilot-v1-b-r1/provenance.json
+ac267352bf9fc4fe9866353e31229d99d4ef71d33a6ceca1b912db76382afc31  design-system/formal-outdoor-art-pilot-v1-b-r1/scripts/normalize-master.mjs
+008f6891c66523331a103c10611f92528e02e6e15f1126460b92e82b3cc0b5c2  design-system/formal-outdoor-art-pilot-v1-b-r1/scripts/sharp-loader.mjs
+119e8df905adb6fafa51a5f382df8c8cf062953bd25b213bada0c110b72b71d3  design-system/formal-outdoor-art-pilot-v1-b-r1/scripts/write-hashes.mjs
+97fcad9a1800204cf06aba5be23fbc6e8aad73e650cd81d2c3af14f7edcc95c7  design-system/formal-outdoor-art-pilot-v1-b-r1/source/raw/root_night_slope_v1-imagegen-r1.png
+5c84ce815ba011cd9be570889c768573e80c3d55d6b59fb2bd211301f86c74e3  design-system/formal-outdoor-art-pilot-v1-b-r1/source/root_night_slope_v1-master-2x.png
+47632cd1a30afba63342db6052202fda34a788552bed3fbf9914851f35e86625  design-system/formal-outdoor-art-pilot-v1-b-r1/STATUS.md

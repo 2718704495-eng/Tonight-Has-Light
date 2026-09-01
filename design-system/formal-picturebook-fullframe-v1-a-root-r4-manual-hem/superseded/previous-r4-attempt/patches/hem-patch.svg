@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="140" viewBox="0 0 300 140">
+  <title>ROOT-WIND-HEM-V1-A-R4 editable local garment patch</title>
+  <desc>Coordinates are local to master ROI x=80 y=1320. Only the right-rising loose-knit hem is vector-painted here; old-flap cleanup is a feathered same-image grass clone made by the deterministic composite script.</desc>
+
+  <defs>
+    <linearGradient id="cloth" x1="0" y1="0.9" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e3547"/>
+      <stop offset="0.62" stop-color="#152b3e"/>
+      <stop offset="1" stop-color="#0a192c"/>
+    </linearGradient>
+    <clipPath id="hem-clip">
+      <path d="M125 70 C160 62 205 47 260 42 C267 42 273 44 277 47 C260 54 244 63 226 73 C195 89 158 94 128 84 C124 80 123 74 125 70 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Wide at the anchored lower back, narrowing and lifting toward screen-right. -->
+  <path d="M125 70 C160 62 205 47 260 42 C267 42 273 44 277 47 C260 54 244 63 226 73 C195 89 158 94 128 84 C124 80 123 74 125 70 Z"
+        fill="url(#cloth)" stroke="#071426" stroke-width="2.8" stroke-linejoin="round"/>
+
+  <g clip-path="url(#hem-clip)" fill="none" stroke-linecap="round">
+    <path d="M121 75 C163 62 210 50 266 44" stroke="#31495b" stroke-width="2.8" opacity="0.38" stroke-dasharray="16 7 4 9"/>
+    <path d="M136 84 C170 78 205 66 250 50" stroke="#071526" stroke-width="3.7" opacity="0.6" stroke-dasharray="21 6 7 8"/>
+    <path d="M160 67 l24 14 M198 54 l25 17 M230 47 l20 12" stroke="#294257" stroke-width="1.2" opacity="0.34" stroke-dasharray="6 5"/>
+  </g>
+
+  <!-- Broken dry-brush contours; the lower curve keeps visible fabric weight. -->
+  <path d="M126 70 C163 61 207 48 261 43 C268 43 273 45 276 47"
+        fill="none" stroke="#4b6172" stroke-width="1.9" stroke-linecap="round"
+        stroke-dasharray="13 6 3 8" opacity="0.5"/>
+  <path d="M128 84 C158 94 195 89 226 73 C244 63 260 54 277 47"
+        fill="none" stroke="#061326" stroke-width="3.2" stroke-linecap="round"
+        stroke-dasharray="19 5 7 7" opacity="0.92"/>
+  <path d="M134 82 C160 89 191 84 219 72"
+        fill="none" stroke="#334b60" stroke-width="1.5" stroke-linecap="round"
+        stroke-dasharray="8 4 2 6" opacity="0.5"/>
+
+  <!-- Irregular knit ribs fade before the airborne tip. -->
+  <g fill="none" stroke="#455c6f" stroke-width="1.3" stroke-linecap="round" opacity="0.48">
+    <path d="M142 79 l1 9"/>
+    <path d="M156 76 l2 9"/>
+    <path d="M171 72 l3 9"/>
+    <path d="M187 67 l3 8"/>
+    <path d="M203 61 l3 8"/>
+    <path d="M219 56 l3 7"/>
+  </g>
+</svg>
+

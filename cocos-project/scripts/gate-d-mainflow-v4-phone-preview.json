@@ -1,0 +1,17 @@
+{
+  "__version__": "1.3.9",
+  "platform": "wechatgame",
+  "buildPath": "project://build/gate-d-mainflow-v4-phone-preview-dev",
+  "outputName": "wechatgame",
+  "debug": false,
+  "md5Cache": false,
+  "sourceMaps": false,
+  "packages": {
+    "wechatgame": {
+      "orientation": "portrait",
+      "buildOpenDataContextTemplate": "",
+      "separateEngine": false,
+      "highPerformanceMode": false
+    }
+  }
+}

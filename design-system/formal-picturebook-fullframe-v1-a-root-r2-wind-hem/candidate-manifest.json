@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "candidate_id": "formal-picturebook-root-wind-hem-v1-a-r2",
+  "contract_id": "ROOT-WIND-HEM-V1-A",
+  "status": "BLOCKED_BY_INDEPENDENT_REVIEW",
+  "created_on": "2026-08-29",
+  "source_property": "ai-assisted-formal-fullframe",
+  "approval": {
+    "phrase": "批准 ROOT-WIND-HEM-V1-A：风托起衣角",
+    "record_path": "docs/ROOT-WIND-HEM-V1-A-APPROVAL.md",
+    "record_sha256": "ad2b21d5ce0ddc336f2d924f91a4a47b5407f3925cd58933d10f9ed9ddbe04f0",
+    "scope": "one new root clean plate only; same-file user visual approval remains pending"
+  },
+  "permissions": {
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "review_submission": false,
+    "release": false,
+    "git": false
+  },
+  "replaces_for_current_root_review": {
+    "asset_id": "ART-OUTDOOR-001",
+    "path": "design-system/formal-outdoor-art-pilot-v1-b-r1/source/root_night_slope_v1-master-2x.png",
+    "sha256": "5c84ce815ba011cd9be570889c768573e80c3d55d6b59fb2bd211301f86c74e3",
+    "disposition": "immutable historical evidence; not overwritten"
+  },
+  "unaffected_frozen_pages": [
+    {
+      "page_id": "scene_02_stargaze_shot_005",
+      "sha256": "d36b99ebfe0805233000df9c0cbf2bc6217691111a7da7fa8e2dbe2eb99e4a85"
+    },
+    {
+      "page_id": "scene_01_home_shot_005",
+      "sha256": "1323cf0a103fffd7f8fd731ab0e1164527b9b0401b5d6acd357d1d3b215ecfb9"
+    }
+  ],
+  "references": [
+    {
+      "path": "design-system/formal-outdoor-art-pilot-v1-b-r1/source/root_night_slope_v1-master-2x.png",
+      "sha256": "5c84ce815ba011cd9be570889c768573e80c3d55d6b59fb2bd211301f86c74e3",
+      "role": "B night-comic style, adult and ordinary-cat identity, palette, galaxy, house, door and two-flower continuity; no pixel tracing"
+    },
+    {
+      "path": "/Users/wxl/.codex/generated_images/01a02259-fb9a-7c32-a943-30c3c5c47a30/exec-743f4a17-7fab-4d18-b115-eb5d2aed7c41.png",
+      "sha256": "97d1be5e4ab36722ccb284c4c28aad719bf6d4c5e1aaba7fc60a9c92642afc4f",
+      "role": "user-selected first-panel framing and wind-lifted-hem gesture only; other panels and exact pixels ignored"
+    }
+  ],
+  "page": {
+    "page_id": "root_night_slope_v2_wind_hem",
+    "asset_id": "ART-OUTDOOR-ROOT-WIND-HEM-001",
+    "clean_plate": true,
+    "not_in_build": true,
+    "prompt_path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/prompts/root_night_slope_v2_wind_hem.md",
+    "prompt_sha256": "951f663a6b84324b692f05aee7736d496272312dfe3b12d16308dd4444ead4b6",
+    "initial_raw_path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/raw/root_night_slope_v2-wind-hem-imagegen-r1.png",
+    "initial_raw_sha256": "53b849435b96a5b7dbbaf5d324dbc1c3383a8f445af234fc4d0f5b2fb03baba9",
+    "targeted_repair_count": 1,
+    "raw_path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/raw/root_night_slope_v2-wind-hem-imagegen-r2.png",
+    "raw_sha256": "3ae5a93d8b7addc24f83389ea8633d3f46083fedd1aef1772752409d1e0e36fa",
+    "master_path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/masters/root_night_slope_v2-wind-hem-master-2x.png",
+    "master_sha256": "38e030cbec217c1349beba788e4a041631d295c52a2a0957dc4f9fa45c72a068",
+    "normalization": "center-cover to 780x1688; sRGB 8-bit RGBA opaque PNG; SHOW_ALL exports use #06265F",
+    "exports": {
+      "195x422": "911d3e79a8affbace2be2de7592e78b0b9a871952dc6364887b46e2a7dfe529f",
+      "390x844": "cc634199f926134500de3b05eb36333427fb53701122893bb7f9cc00ede44de3",
+      "360x800": "97614be42e310514214fd0b63f383cb66008fdbfac8f866a8b4a473db1366253",
+      "430x932": "9e065015654d4f9b7479b2488d6f22e0b5dccabc77577a86205a76b04fa210ad",
+      "430x844-pressure": "584af5894dbb62f2f1839b48eeb2039f80281fbe1523545da83712302f3d91e1"
+    },
+    "owner_review": "OWNER_PREFLIGHT_COMPLETE",
+    "independent_review": "BLOCKED_P1_HEM_DIRECTION_CLEAN_READONLY",
+    "independent_review_path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/evidence/independent-readonly-review.md",
+    "user_visual_approval": "pending"
+  }
+}

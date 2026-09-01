@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="《今夜有灯》FORMAL-ENDING-UI-V1 收尾界面 A/B 设计对照板。"
+    />
+    <title>今夜有灯 · FORMAL-ENDING-UI-V1</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="board" class="board">
+      <header class="board-hero">
+        <p class="status-line">BLOCKED · AWAITING USER APPROVAL · DESIGN BOARD ONLY · NOT FOR BUILD</p>
+        <div class="hero-layout">
+          <div>
+            <p class="eyebrow">FORMAL-ENDING-UI-V1 · 收尾界面 A/B</p>
+            <h1>话放轻一点，<br />把明亮的家留在画面里。</h1>
+          </div>
+          <p class="hero-copy">
+            两案都沿用已批准的“灯一直为你亮着”：不压暗房间，不遮住人物、猫和晚饭，不设置抢焦按钮。
+            差别只在承载位置——墙边的一张轻留笺，或桌边的一方低托盘。
+          </p>
+        </div>
+        <div class="contract-tags" aria-label="共同约束">
+          <span>整屋持续明亮</span>
+          <span>两项动作等权</span>
+          <span>触控区不小于 44px</span>
+          <span>大字真实 120%</span>
+          <span>减动无位移</span>
+        </div>
+      </header>
+
+      <section class="option option-a" aria-labelledby="option-a-title">
+        <div class="option-heading">
+          <div>
+            <p class="section-label">方案 A · 推荐默认</p>
+            <h2 id="option-a-title">灯下留笺</h2>
+          </div>
+          <p>
+            把话写在右侧空墙的一张窄暖纸上，像家里原本就留着的一句话。画面主体仍是暖屋、人物、猫与饭桌。
+          </p>
+        </div>
+
+        <div class="phone-grid">
+          <figure class="state-card">
+            <div class="phone" data-demo="a-ending"></div>
+            <figcaption><b>安静收尾</b><span>竖向留笺避开人物、猫和桌面主体。</span></figcaption>
+          </figure>
+          <figure class="state-card">
+            <div class="phone" data-demo="a-summary"></div>
+            <figcaption><b>收束摘要</b><span>两项动作保持相同边界、颜色与重量。</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="option option-b" aria-labelledby="option-b-title">
+        <div class="option-heading">
+          <div>
+            <p class="section-label">方案 B · 可读性优先</p>
+            <h2 id="option-b-title">桌边暖纸</h2>
+          </div>
+          <p>
+            暖纸从画面底部安静托起文字，阅读宽度更充足、适配更稳；代价是会覆盖更多地板与桌脚，因此不作为默认推荐。
+          </p>
+        </div>
+
+        <div class="phone-grid">
+          <figure class="state-card">
+            <div class="phone" data-demo="b-ending"></div>
+            <figcaption><b>安静收尾</b><span>低位宽纸承载，两项动作纵向等权排列。</span></figcaption>
+          </figure>
+          <figure class="state-card">
+            <div class="phone" data-demo="b-summary"></div>
+            <figcaption><b>收束摘要</b><span>长动作仍保留充足触控宽度与间距。</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="support-states" aria-labelledby="support-title">
+        <div class="option-heading compact-heading">
+          <div>
+            <p class="section-label">固定分享 · 轻量状态</p>
+            <h2 id="support-title">只说明发生了什么。</h2>
+          </div>
+          <p>不放大分享、不诱导；失败时保留重试和停留两条清楚路径。</p>
+        </div>
+
+        <div class="strip-grid">
+          <figure class="strip-card">
+            <div class="strip-scene" data-strip="share"></div>
+            <figcaption><b>分享预览</b><span>有人给你留了一盏灯</span></figcaption>
+          </figure>
+          <figure class="strip-card">
+            <div class="strip-scene" data-strip="failure"></div>
+            <figcaption><b>发送失败</b><span>这次没有发出去。</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="large-type" aria-labelledby="large-type-title">
+        <div class="option-heading">
+          <div>
+            <p class="section-label">大字模式 · 120%</p>
+            <h2 id="large-type-title">用 B 承接更大的字。</h2>
+          </div>
+          <p>
+            大字模式不缩回字号，动作改为纵向排列。它覆盖更多下方场景，但保住了阅读、热区与安全区。
+          </p>
+        </div>
+        <figure class="large-type-demo">
+          <div class="phone" data-demo="b-large"></div>
+          <figcaption>
+            <b>最长文案压力态</b>
+            <span>430、390、360 宽度均采用同一响应规则；底部额外预留系统手势区。</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="decision" aria-labelledby="decision-title">
+        <div>
+          <p class="section-label">等待选择</p>
+          <h2 id="decision-title">建议：A 用于默认，B 只接管大字模式。</h2>
+        </div>
+        <dl>
+          <div><dt>A 的优势</dt><dd>更像场景里的留话，遮挡最少，保持“家在等你”的完整画面。</dd></div>
+          <div><dt>B 的优势</dt><dd>阅读宽度更充足，适合 120% 大字和较窄屏幕。</dd></div>
+          <div><dt>共同边界</dt><dd>无暗幕、无营销式按钮、无位移动效、无新增关系暗示。</dd></div>
+        </dl>
+      </section>
+    </main>
+
+    <main id="preview" class="preview" hidden aria-label="收尾界面独立预览">
+      <p id="preview-status" class="preview-status">DESIGN BOARD ONLY · NOT FOR BUILD</p>
+      <div id="preview-stage" class="preview-stage"></div>
+      <p id="preview-feedback" class="sr-only" aria-live="polite"></p>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

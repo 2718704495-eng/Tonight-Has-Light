@@ -1,0 +1,252 @@
+{
+  "schema": "tonight-has-light.outdoor-illustration-wind-r2.v2",
+  "candidate": "OUTDOOR-ILLUSTRATION-WIND-V1-A-R2",
+  "engineering_revision": "R2-EDGEFIX-01",
+  "supersedes_engineering_candidate": "outdoor-illustration-wind-r2-local-r3-web",
+  "alpha_encoding": "straight",
+  "status": "local-disposable-handoff-only",
+  "asset_boundary": "prototype-only/disposable/not-for-review/not-for-release",
+  "source": {
+    "path": "design-board/outdoor-illustration-wind-v1/exploration/five-wind-pages-storyboard-r2-stronger.png",
+    "sha256": "a787d06f170cef4ac675e7a14287b4f8c4cfaef5414248091bfe481abdb1b811",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "property": "imagegen-exploration/not-production-art"
+  },
+  "mechanical_method": {
+    "divider_columns_removed": [
+      356,
+      709,
+      1061,
+      1413
+    ],
+    "panel_content_bounds": [
+      [
+        0,
+        356
+      ],
+      [
+        357,
+        709
+      ],
+      [
+        710,
+        1061
+      ],
+      [
+        1062,
+        1413
+      ],
+      [
+        1414,
+        1774
+      ]
+    ],
+    "crop_width": 349,
+    "crop_y": [
+      65,
+      821
+    ],
+    "resize": "Pillow LANCZOS to 390x844",
+    "stable_scene": "F0 crop is the only full-screen opaque base",
+    "lower_states": "five immutable approved masks over the five storyboard crops",
+    "mask_provenance": "frozen from the user-approved seamless local R2 visual candidate",
+    "alpha_edge_fix": "preserve source RGB under the immutable alpha mask; enable Cocos fixAlphaTransparencyArtifacts on RGBA pages",
+    "no_redesign": true
+  },
+  "runtime_contract": {
+    "render_order": [
+      "stable-scene",
+      "two-crossfading-lower-pages"
+    ],
+    "resident_sprites": 2,
+    "preload_all_states": true,
+    "crossfade_ms": 140,
+    "crossfade_easing": "smoothstep",
+    "reduced_motion_state": "F0",
+    "stable_requirements": [
+      "galaxy",
+      "mountain-line",
+      "cottage",
+      "door-light",
+      "two-flowers"
+    ],
+    "anchor_policy": "composition-locked prototype: adult/cat seated position and identity stay fixed; approved hair/clothing/ears/full-tail silhouettes may change",
+    "pixel_identity_claim": false
+  },
+  "stable_scene": {
+    "runtime_file": "stable-scene-390x844.png",
+    "runtime_sha256": "2ddda67fc31d21d35ef4012e34e737d487a3b86d2ef5496140781e42430f2e65",
+    "canvas": [
+      390,
+      844
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "position": [
+      0,
+      0
+    ]
+  },
+  "states": [
+    {
+      "state": "F0",
+      "runtime_file": "lower-f0-390x844.png",
+      "runtime_sha256": "2867d9d382f00150bbc06452e0728dbabe8bf2903ade8b73366847c451fb217d",
+      "approved_mask_file": "evidence/dynamic-mask-f0-390x844.png",
+      "approved_mask_sha256": "668a50a7e68bac0e066a86fab11b27d8e2fc81d51a921a966dea94249d89440a",
+      "crop_box_source_pixels": [
+        3,
+        65,
+        352,
+        821
+      ],
+      "canvas": [
+        390,
+        844
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "blend": "normal/straight-alpha",
+      "alpha_encoding": "straight",
+      "visible_cues": [
+        "quiet-lower-scene"
+      ]
+    },
+    {
+      "state": "F1",
+      "runtime_file": "lower-f1-390x844.png",
+      "runtime_sha256": "e7d64d1e8fa816cc9023688f9233890c2487fe9ff59c9ab424c25c88a15cb49f",
+      "approved_mask_file": "evidence/dynamic-mask-f1-390x844.png",
+      "approved_mask_sha256": "668a50a7e68bac0e066a86fab11b27d8e2fc81d51a921a966dea94249d89440a",
+      "crop_box_source_pixels": [
+        358,
+        65,
+        707,
+        821
+      ],
+      "canvas": [
+        390,
+        844
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "blend": "normal/straight-alpha",
+      "alpha_encoding": "straight",
+      "visible_cues": [
+        "far-grass-leading-edge"
+      ]
+    },
+    {
+      "state": "F2",
+      "runtime_file": "lower-f2-390x844.png",
+      "runtime_sha256": "998856bf03e4aac767adb3a3ed8b2a198307186ffacf39c49bcf92ed4be0a589",
+      "approved_mask_file": "evidence/dynamic-mask-f2-390x844.png",
+      "approved_mask_sha256": "668a50a7e68bac0e066a86fab11b27d8e2fc81d51a921a966dea94249d89440a",
+      "crop_box_source_pixels": [
+        711,
+        65,
+        1060,
+        821
+      ],
+      "canvas": [
+        390,
+        844
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "blend": "normal/straight-alpha",
+      "alpha_encoding": "straight",
+      "visible_cues": [
+        "large-near-and-far-grass-arc"
+      ]
+    },
+    {
+      "state": "F3",
+      "runtime_file": "lower-f3-390x844.png",
+      "runtime_sha256": "4eee879767b5763aa0b92fbad7783628296c7c8fac9fa47fda5f2a7b23fcc0ef",
+      "approved_mask_file": "evidence/dynamic-mask-f3-390x844.png",
+      "approved_mask_sha256": "377414a1f76940c9c37b104389d1e8903f0c2c255809a0932c0a5fd958311e0b",
+      "crop_box_source_pixels": [
+        1063,
+        65,
+        1412,
+        821
+      ],
+      "canvas": [
+        390,
+        844
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "blend": "normal/straight-alpha",
+      "alpha_encoding": "straight",
+      "visible_cues": [
+        "large-grass-arc",
+        "adult-hair",
+        "adult-clothing-edge"
+      ]
+    },
+    {
+      "state": "F4",
+      "runtime_file": "lower-f4-390x844.png",
+      "runtime_sha256": "47981253efb0420d29ca433462c35325e125130c48e4dbc68fc836e5e216c7ac",
+      "approved_mask_file": "evidence/dynamic-mask-f4-390x844.png",
+      "approved_mask_sha256": "0c8d2b17329ccd1f30635a1056579c2f25877e8715c6410c7874950de80561f7",
+      "crop_box_source_pixels": [
+        1419,
+        65,
+        1768,
+        821
+      ],
+      "canvas": [
+        390,
+        844
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "blend": "normal/straight-alpha",
+      "alpha_encoding": "straight",
+      "visible_cues": [
+        "large-grass-arc",
+        "cat-ears",
+        "cat-full-tail",
+        "adult-hair"
+      ]
+    }
+  ]
+}

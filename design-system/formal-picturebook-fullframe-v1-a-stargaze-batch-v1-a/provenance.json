@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "packageId": "formal-picturebook-fullframe-v1-a-stargaze-batch-v1-a",
+  "createdOn": "2026-08-31",
+  "sourceKind": "ai-assisted-formal-fullframe",
+  "generator": "OpenAI built-in ImageGen",
+  "rightsBoundary": {
+    "livingArtistNames": false,
+    "existingIpCharacters": false,
+    "brandLogos": false,
+    "realPersonLikeness": false,
+    "personalData": false
+  },
+  "references": {
+    "rootR4": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/masters/root_night_slope_v2-wind-hem-r4-manual-master-2x.png",
+      "sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8",
+      "role": "identity, wardrobe, seated anatomy, adult-left/cat-right relation, slope, house, door and two-flower geography; read-only reference, not an edit target"
+    },
+    "formalF5": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/source/masters/scene_02_stargaze_shot_005-master-2x.png",
+      "sha256": "d36b99ebfe0805233000df9c0cbf2bc6217691111a7da7fa8e2dbe2eb99e4a85",
+      "role": "Milky Way geography, dust-dark rift, deep-indigo limited palette, negative space, dry-brush ink, halftone and paper texture; read-only reference, not an edit target"
+    }
+  },
+  "pages": {
+    "scene_02_stargaze_shot_001": {
+      "assetId": "ART-PBOOK-STAR-001",
+      "status": "R1 AUTHORIZED / IN PRODUCTION",
+      "prompt": "design-system/formal-picturebook-fullframe-v1-a-stargaze-batch-v1-a/pages/scene_02_stargaze_shot_001/prompt.md",
+      "generationCount": 0,
+      "targetedRepairCount": 0,
+      "humanEdits": [],
+      "artifacts": null
+    }
+  },
+  "excluded": [
+    {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/source/raw/scene_02_stargaze_shot_001-imagegen-r1.png",
+      "reason": "No recoverable prompt, generation receipt or source record; preserved but not eligible for formal review or reuse."
+    }
+  ]
+}

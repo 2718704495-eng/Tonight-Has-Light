@@ -1,0 +1,17 @@
+.DS_Store
+*.log
+node_modules/
+work/
+.code-review-graph/
+.superpowers/brainstorm/.last-token
+.superpowers/brainstorm/.last-port
+.superpowers/brainstorm/*/state/
+
+# Cocos Creator generated state and build products
+cocos-project/.creator/
+cocos-project/library/
+cocos-project/temp/
+cocos-project/local/
+cocos-project/build/
+cocos-project/native/
+cocos-project/node_modules/

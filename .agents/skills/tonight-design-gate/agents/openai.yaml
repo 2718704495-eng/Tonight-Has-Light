@@ -1,0 +1,4 @@
+interface:
+  display_name: "今夜有灯设计门禁"
+  short_description: "在每次设计与开发前检查需求、视觉、动效、代码和验收证据的一致性"
+  default_prompt: "先读取项目当前合同，建立需求到视觉、代码和证据的追踪表，再判断当前 Gate 是否可通过。"

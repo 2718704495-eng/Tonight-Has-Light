@@ -1,0 +1,41 @@
+{
+  "candidateId": "gate-d-story-b-kf-r1-temp-dev-r1-0.4.7",
+  "supersedes": "gate-d-mainflow-v4-r2-edgefix-01-dev-r10-0.4.6",
+  "excludedCandidateIds": [
+    "gate-d-mainflow-v4-phone-preview-dev-r9-0.4.6"
+  ],
+  "historicalCandidateIds": [
+    "gate-d-mainflow-v4-phone-preview-dev-r3",
+    "gate-d-mainflow-v4-phone-preview-dev-r4-0.4.4",
+    "gate-d-mainflow-v4-phone-preview-dev-r8-0.4.5",
+    "gate-d-mainflow-v4-r2-edgefix-01-dev-r10-0.4.6"
+  ],
+  "classification": "prototype-only / disposable / experience-v0.4.3-through-v0.4.7-only / gate-d-story-b-kf-r1-temp-dev-r1-0.4.7-only",
+  "approvedVisual": "FORMAL-UI-V1.2-A / 灯一直为你亮着",
+  "sourceReferenceSha256": "ad65d6fa811487fe5bd69726f1c5bf9d4b4c983d517c360b7087ff42f89cb36a",
+  "derivedBackplateSha256": "cbc092d3f2cbd8ac9bbbea17d70e39436c85841493591eb47934d5caff3276d7",
+  "temporarySoundSha256": "51f00149cf5c71c23ce657a2848a99ceb85815ad6f55b4a3376c94bdd2bc7fd9",
+  "derivedOverlaySha256": {
+    "kettle-lid-overlay.png": "a64b97fb0d7fb4db292e6b39384401afef3d4b2a15c3b742e126c0dcc8a076a5",
+    "cat-head-overlay.png": "0080ed1ce2160fa91c0ca775fffe9201748fcf9997ba91e51dbe9132d685e5d4",
+    "spare-cup-overlay.png": "fb7336e5dd253669f2d34414195dde260852bcc18c8e24326e814b8a4ba76108"
+  },
+  "allowedUse": [
+    "local web-mobile diagnostic build",
+    "one disposable WeChat developer preview candidate",
+    "one WeChat developer upload version 0.4.3 and its corresponding user-promoted experience version",
+    "one WeChat developer upload version 0.4.4 and its corresponding user-promoted experience version",
+    "one WeChat developer upload version 0.4.5 and its corresponding user-promoted experience version",
+    "one WeChat developer upload version 0.4.6 and its corresponding user-promoted experience version",
+    "local OUTDOOR-ILLUSTRATION-WIND-V1-A-R2 / R2-EDGEFIX-01 candidate",
+    "one WeChat developer upload version 0.4.7 and its corresponding user-promoted experience version",
+    "gate-d-story-b-kf-r1-temp-dev-r1-0.4.7 disposable candidate only"
+  ],
+  "forbiddenUse": [
+    "formal production asset",
+    "review submission",
+    "any remote upload or experience version other than 0.4.3, 0.4.4, 0.4.5, 0.4.6 or 0.4.7 unless separately authorized by the user",
+    "public release"
+  ],
+  "soundGeneration": "Deterministic FFmpeg synthesis: seeded pink noise plus a softly decaying 760 Hz tone; no third-party recording. Peak -33.8 dBFS and mean -43.8 dBFS before the runtime AudioSource gain."
+}

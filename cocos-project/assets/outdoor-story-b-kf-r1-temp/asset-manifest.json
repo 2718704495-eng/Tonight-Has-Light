@@ -1,0 +1,125 @@
+{
+  "schema": "tonight-has-light.outdoor-story-b-kf-r1-temp.v1",
+  "candidateId": "gate-d-story-b-kf-r1-temp-dev-r1-0.4.7",
+  "developerVersion": "0.4.7",
+  "classification": "prototype-only / disposable / ImageGen-exploration / one-0.4.7-developer-upload-only / not-for-review / not-for-release",
+  "bundle": {
+    "name": "outdoor-story-b-kf-r1-temp",
+    "configId": "outdoor_story_b_kf_r1_temp_experience_subpackage",
+    "excludedBundles": [
+      "outdoor-illustration-wind-r2"
+    ]
+  },
+  "source": {
+    "property": "ImageGen exploration / prototype-only / not-production-art",
+    "assets": [
+      {
+        "beat": "B01",
+        "sourcePath": "design-board/story-illustration-redesign-v1-b/exploration/b01-settle-reference-r1.png",
+        "sourceSha256": "fdac7f8edf8a22954a93a3f756ab2c1699c1afe04462bf2fa3ed679ae2794d0c",
+        "sourceDimensions": [
+          853,
+          1844
+        ],
+        "runtimeFile": "b01-settle.png",
+        "runtimeSha256": "170b8100298ad5d0d85624e38f81ff18bfe77e930a4da3634d659234eb486864",
+        "runtimeDimensions": [
+          780,
+          1688
+        ],
+        "runtimeBytes": 1783693,
+        "channels": 3,
+        "hasAlpha": false
+      },
+      {
+        "beat": "B02",
+        "sourcePath": "design-board/story-illustration-redesign-v1-b/exploration/b02-wind-passes-r1.png",
+        "sourceSha256": "e0f00f2b573dda25b91f53aa5e04fa72456fa3ed1f784a1087b4238083504727",
+        "sourceDimensions": [
+          853,
+          1844
+        ],
+        "runtimeFile": "b02-wind-passes.png",
+        "runtimeSha256": "a6638222ec9dc0f38e3d21490f5f2803bde0a24919b51147869b77722af19cd1",
+        "runtimeDimensions": [
+          780,
+          1688
+        ],
+        "runtimeBytes": 1499600,
+        "channels": 3,
+        "hasAlpha": false
+      },
+      {
+        "beat": "B03",
+        "sourcePath": "design-board/story-illustration-redesign-v1-b/exploration/b03-afterwind-detail-r1.png",
+        "sourceSha256": "8da6d324520fce5175a1f0546a8cb67e29c041795d002439a5add28a80ea1b67",
+        "sourceDimensions": [
+          853,
+          1844
+        ],
+        "runtimeFile": "b03-afterwind.png",
+        "runtimeSha256": "c63452f9f8a9b22fc9de6a6d49f29ea04f563c457ad5501c140ea4ae3d37a5c4",
+        "runtimeDimensions": [
+          780,
+          1688
+        ],
+        "runtimeBytes": 1661139,
+        "channels": 3,
+        "hasAlpha": false
+      }
+    ]
+  },
+  "derivation": {
+    "operation": "cover/center",
+    "resize": "FFmpeg libswscale Lanczos",
+    "output": "780x1688 RGB PNG without alpha",
+    "pngCompressionLevel": 9,
+    "metadataCopied": false
+  },
+  "runtimeTotalBytes": 4944432,
+  "timeline": {
+    "B01HoldMs": 3200,
+    "firstTransitionMs": 300,
+    "B02HoldMs": 1500,
+    "secondTransitionMs": 360,
+    "B03Hold": "infinite"
+  },
+  "doorHotspots": {
+    "coordinateSpace": {
+      "width": 390,
+      "height": 844,
+      "origin": "top-left"
+    },
+    "B01": {
+      "x": 291,
+      "y": 504,
+      "width": 64,
+      "height": 72
+    },
+    "B02": {
+      "x": 326,
+      "y": 406,
+      "width": 64,
+      "height": 72
+    },
+    "B03": {
+      "x": 277,
+      "y": 283,
+      "width": 64,
+      "height": 72
+    }
+  },
+  "reducedMotion": {
+    "fixedBeat": "B01",
+    "transitions": false
+  },
+  "resourceLifecycle": {
+    "preload": "load all three runtime frames before mounting the two persistent sprites",
+    "retain": "retain all three frames through B03 and every in-flight transition",
+    "release": [
+      "release all SpriteFrames after outdoor scene teardown",
+      "release every successfully loaded asset after any partial-load failure"
+    ],
+    "forbiddenRuntimeBundle": "outdoor-illustration-wind-r2"
+  }
+}

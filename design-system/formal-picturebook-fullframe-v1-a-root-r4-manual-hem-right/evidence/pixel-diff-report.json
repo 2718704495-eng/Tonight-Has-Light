@@ -1,0 +1,20 @@
+{
+  "source_r2_master": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/masters/root_night_slope_v2-wind-hem-master-2x.png",
+  "r4_master": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem-right/source/masters/root_night_slope_v4-manual-hem-right-master-2x.png",
+  "declared_roi_master_px": {
+    "left": 42,
+    "top": 1310,
+    "width": 360,
+    "height": 170
+  },
+  "changed_pixels": 15262,
+  "changed_bounds_master_px": {
+    "left": 42,
+    "top": 1335,
+    "right": 314,
+    "bottom": 1461
+  },
+  "outside_declared_roi_changed_pixels": 0,
+  "pass_outside_roi_unchanged": true,
+  "unchanged_policy": "Pixels outside the declared ROI must be byte-identical to R2."
+}

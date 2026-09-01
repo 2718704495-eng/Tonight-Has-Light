@@ -1,0 +1,61 @@
+{
+  "status": "PASS / UI OWNER EVIDENCE BUILT / USER VISUAL APPROVAL PENDING",
+  "contractId": "HOME-MEAL-QUIET-UI-V1-A",
+  "uiDir": "/Users/wxl/Desktop/小程序/design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui",
+  "inputHashes": {
+    "h4States": {
+      "none": "bbb02106fb4f5a820d1199eb61c7b10b5065028461bfdd6bf813276abe796533",
+      "ate": "0a356ea97cc91afecc93c8c9a607583d63a40db0a6e0226ec224be4a47a450b5",
+      "sipped": "710a4b4f54641e0880639147807120594b7e43302e74ce5d97c4784614cf841e",
+      "both": "69a9ab2b2982cd83beec6430c9684940f2b9924c5a15beb29615eeaaf722a530"
+    },
+    "upstreamRecords": {
+      "ateSvg": "acfe49b8be244198e521f371c17bb61355e3b7951708dc7ed3aff346e9ce5ae5",
+      "responseStateReport": "f2b1642da1d405dc90802c45580318c1728775b9a939e680a450a80aef3fa752",
+      "responseBoard": "ac3d68a7e40b6e946eb5895c6363ba8ff18a171a713f3628a99e3abc288e77ef"
+    }
+  },
+  "generatedFiles": [
+    "h1-standard-390x844.png",
+    "h1-large-390x844.png",
+    "h2-standard-390x844.png",
+    "h2-large-390x844.png",
+    "h4-none-standard-390x844.png",
+    "h4-ate-standard-390x844.png",
+    "h4-sipped-standard-390x844.png",
+    "h4-both-standard-390x844.png",
+    "h4-standard-state-board.png",
+    "h4-none-large-390x844.png",
+    "h4-both-reduced-390x844.png",
+    "h4-none-standard-360x800.png",
+    "h4-none-standard-430x932.png",
+    "h4-none-standard-430x844-pressure.png"
+  ],
+  "outputHashes": {
+    "h1-standard-390x844.png": "5ebd82a95ba9408153e999b57a1856f752f52720815490976dc4cba8d7247573",
+    "h1-large-390x844.png": "a3b19b7ba2a9951db6686ff68128a83c005e98a9b35a6aedab2d008842fbf730",
+    "h2-standard-390x844.png": "2845f6bc0d860ce43a228b6d33aa15740f7c3c57217aa579796bcc1998b12540",
+    "h2-large-390x844.png": "8a742c622c60eef93df3720dc45dcb56519443fd1d676884ba0f3b3c7191969a",
+    "h4-none-standard-390x844.png": "b131cf3bfc16912053d83aaa61e020a0a95834e0420aa9bceb0db03902a9a850",
+    "h4-ate-standard-390x844.png": "1f3dcdd594a30a7b57fbb790f24e221daf6d0cc9b2ef37e8a29cddf9329b8ae6",
+    "h4-sipped-standard-390x844.png": "95c05e40be0f34bb918b571f98ebbd3c18562190d8c6e25b8422714974c331f6",
+    "h4-both-standard-390x844.png": "fe04e56e8053bbab1d793771ad3d8425494deb51e2dfa3471668b4ff58f8acd5",
+    "h4-standard-state-board.png": "2bf247ef9f877f7048669dbab1d350073aaf4b2ca967f452b71875f4f1b67158",
+    "h4-none-large-390x844.png": "05a964b9adbbeb7fad87ecc64903701349509f294a54ed08a345bcbf608a4b30",
+    "h4-both-reduced-390x844.png": "fe04e56e8053bbab1d793771ad3d8425494deb51e2dfa3471668b4ff58f8acd5",
+    "h4-none-standard-360x800.png": "cef1c17b821d0ae453723551c1fb27a872b6d03ae9cb24ecc87c0eb0e9a15a09",
+    "h4-none-standard-430x932.png": "498efd101bbfc42b5379781f216cf8569daf76050db23829f43758976ec17ee4",
+    "h4-none-standard-430x844-pressure.png": "0bd31d84a38cc796542ab329274180c08d8261cbaf8097ec5212464d306d0b1e"
+  },
+  "invariants": {
+    "actionFontPx": 16,
+    "helperFontPx": 14,
+    "largeActionFontPx": 19.2,
+    "largeHelperFontPx": 16.8,
+    "shrinkAllowed": false,
+    "pressedFeedbackMs": 120,
+    "responseCrossfadeMs": 160,
+    "reducedMotionCrossfadeMs": 150,
+    "reducedMotionTransform": 0
+  }
+}

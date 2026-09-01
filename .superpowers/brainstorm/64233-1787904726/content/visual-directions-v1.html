@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>今夜有灯 · 小范围故事化重塑</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --night: #071326;
+      --night-2: #0d1f37;
+      --paper: #e9e3d1;
+      --muted: #9fb0c1;
+      --line: rgba(218, 229, 237, .16);
+      --amber: #e4aa55;
+      --blue: #8fb7dc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(57, 95, 139, .24), transparent 28rem),
+        linear-gradient(180deg, #081221 0%, #06101e 100%);
+      color: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", sans-serif;
+    }
+    main { width: min(1240px, calc(100% - 32px)); margin: 0 auto; padding: 44px 0 72px; }
+    .eyebrow { color: var(--amber); letter-spacing: .16em; font-size: 12px; font-weight: 700; }
+    h1 { margin: 10px 0 12px; font-family: "Songti SC", "STSong", serif; font-size: clamp(30px, 4vw, 52px); font-weight: 600; letter-spacing: -.03em; }
+    .lead { max-width: 780px; margin: 0; color: #c3cfda; font-size: 16px; line-height: 1.75; }
+    .scope { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 30px; }
+    .scope span { border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px; color: var(--muted); font-size: 12px; background: rgba(255,255,255,.025); }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: start; }
+    .card { position: relative; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: rgba(11, 27, 47, .82); cursor: pointer; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+    .card:hover { transform: translateY(-3px); border-color: rgba(228,170,85,.55); }
+    .card.selected { border: 2px solid var(--amber); box-shadow: 0 0 0 4px rgba(228,170,85,.13), 0 18px 55px rgba(0,0,0,.34); }
+    .phone-wrap { padding: 16px 16px 0; background: linear-gradient(180deg, rgba(255,255,255,.025), transparent); }
+    .phone { position: relative; width: min(100%, 268px); aspect-ratio: 390 / 844; margin: 0 auto; border-radius: 22px; overflow: hidden; border: 1px solid rgba(255,255,255,.14); box-shadow: 0 18px 36px rgba(0,0,0,.38); background: #071326; }
+    .phone img { width: 100%; height: 100%; display: block; object-fit: cover; }
+    .badge { position: absolute; z-index: 2; top: 25px; left: 25px; padding: 6px 9px; border-radius: 999px; background: rgba(7,19,38,.86); border: 1px solid rgba(255,255,255,.2); color: #d6e6f4; font-size: 11px; backdrop-filter: blur(8px); }
+    .badge.recommended { color: #211606; background: var(--amber); border-color: var(--amber); font-weight: 800; }
+    .body { padding: 18px; }
+    .title-row { display: flex; align-items: baseline; gap: 9px; margin-bottom: 8px; }
+    .letter { width: 27px; height: 27px; display: grid; place-items: center; border-radius: 8px; color: #132033; background: var(--paper); font-weight: 800; }
+    h2 { margin: 0; font-family: "Songti SC", "STSong", serif; font-size: 21px; font-weight: 600; }
+    .thesis { min-height: 50px; margin: 0 0 14px; color: #b9c7d4; font-size: 13px; line-height: 1.6; }
+    .beats { margin: 0; padding: 0; list-style: none; display: grid; gap: 7px; counter-reset: beat; }
+    .beats li { position: relative; padding-left: 27px; color: #d7dfe7; font-size: 12px; line-height: 1.52; }
+    .beats li::before { counter-increment: beat; content: counter(beat); position: absolute; left: 0; top: 1px; width: 18px; height: 18px; display: grid; place-items: center; border-radius: 50%; border: 1px solid rgba(143,183,220,.45); color: var(--blue); font-size: 10px; }
+    .rule { height: 1px; background: var(--line); margin: 15px 0 13px; }
+    .meta { display: grid; gap: 8px; }
+    .meta p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
+    .meta b { color: #d9e3eb; }
+    .decision { margin-top: 26px; padding: 18px 20px; border: 1px solid rgba(228,170,85,.28); border-radius: 14px; background: rgba(228,170,85,.07); }
+    .decision strong { color: #f0c47d; }
+    .decision p { margin: 5px 0 0; color: #c1ccd7; line-height: 1.6; font-size: 13px; }
+    .basis { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .basis h3 { margin: 0 0 8px; font-size: 13px; color: #dce5ed; }
+    .basis p, .basis li { color: #8fa2b5; font-size: 11px; line-height: 1.6; }
+    .basis ul { margin: 0; padding-left: 18px; }
+    a { color: #a9cbea; }
+    @media (max-width: 920px) { .cards { grid-template-columns: 1fr; } .card { display: grid; grid-template-columns: minmax(220px, 40%) 1fr; } .phone-wrap { padding-bottom: 16px; } .thesis { min-height: 0; } }
+    @media (max-width: 620px) { main { width: min(100% - 20px, 430px); padding-top: 24px; } .card { display: block; } .basis { grid-template-columns: 1fr; } .phone { width: min(100%, 300px); } }
+    @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">STORY–ILLUSTRATION–REDESIGN–V1 · EXPLORATION ONLY</div>
+    <h1>先选一种，能把夜风讲成故事的画法</h1>
+    <p class="lead">三案只重塑户外开场。人物、普通家猫、自然星空、两朵微光花、右侧暖屋与“门不催促”全部保留；室内明亮暖家不动。点击画面即可选择。</p>
+    <div class="scope">
+      <span>一屏一拍，不做密集漫画格</span>
+      <span>每一帧只讲一个变化</span>
+      <span>不再使用五张同构风页</span>
+      <span>生成图只作方向探索</span>
+    </div>
+
+    <section class="cards">
+      <article class="card" data-choice="A-cinematic-picturebook" onclick="toggleSelect(this)">
+        <div class="phone-wrap">
+          <span class="badge recommended">负责人推荐</span>
+          <div class="phone"><img src="/files/direction-a-cinematic-picturebook.png" alt="A 电影绘本方向：成年人和猫在广阔星空下望向暖屋"></div>
+        </div>
+        <div class="body">
+          <div class="title-row"><span class="letter">A</span><h2>电影绘本 · 风来过</h2></div>
+          <p class="thesis">用三个不同景别推进一个很轻的故事；既保留赏景的沉浸，又让画面确实“发生了事情”。</p>
+          <ol class="beats">
+            <li>远景：两人一猫很小，先让夜空和凉意进入身体。</li>
+            <li>中景：草浪越过衣角，猫耳转向同一阵风。</li>
+            <li>近一些：手安静落在猫身边，暖门仍只是远处邀请。</li>
+          </ol>
+          <div class="rule"></div>
+          <div class="meta">
+            <p><b>转场：</b>蓝色纸纹遮化＋轻微景别推进，约 420–650ms；减动改静态淡化。</p>
+            <p><b>优点：</b>情绪最完整，成年人质感最好，室内外衔接自然。</p>
+            <p><b>风险：</b>精绘成本最高；必须重画角色圣经，不能直接使用探索图。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-choice="B-silent-graphic-novel" onclick="toggleSelect(this)">
+        <div class="phone-wrap">
+          <span class="badge">变化最明确</span>
+          <div class="phone"><img src="/files/direction-b-silent-graphic-novel.png" alt="B 无字漫画方向：有限色块面中的成年人、猫、风草和暖屋"></div>
+        </div>
+        <div class="body">
+          <div class="title-row"><span class="letter">B</span><h2>无字夜漫画 · 同一阵风</h2></div>
+          <p class="thesis">每次只显示一个全屏画格，以远景、动作格、安静细节格形成明确的“起—应—停”。</p>
+          <ol class="beats">
+            <li>远景格：星空与人物关系先成立。</li>
+            <li>动作格：大片草和衣角同向，风一眼可读。</li>
+            <li>细节格：手、猫耳与暖门组成无对白的回应。</li>
+          </ol>
+          <div class="rule"></div>
+          <div class="meta">
+            <p><b>转场：</b>90–160ms 深蓝墨块接页，再停 2–4s；不是快速轮播。</p>
+            <p><b>优点：</b>手机缩略图最清楚，资产较轻，故事节拍最明确。</p>
+            <p><b>风险：</b>切得太频繁会像看漫画而不是身处草坡，需控制自动播放。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-choice="C-paper-relief" onclick="toggleSelect(this)">
+        <div class="phone-wrap">
+          <span class="badge">工程最稳</span>
+          <div class="phone"><img src="/files/direction-c-paper-relief.png" alt="C 纸艺版画方向：层叠纸片草浪、成年人、猫与暖屋"></div>
+        </div>
+        <div class="body">
+          <div class="title-row"><span class="letter">C</span><h2>纸艺版画 · 夜风舞台</h2></div>
+          <p class="thesis">保留一个稳定舞台，但用真正独立的大纸层传递风，并通过前中后景重新组合产生画面变化。</p>
+          <ol class="beats">
+            <li>远层：银河和山保持呼吸空间。</li>
+            <li>中层：草带先后掀起，形成清楚的风路。</li>
+            <li>近层：衣角和猫尾接住余势，暖门作冷暖落点。</li>
+          </ol>
+          <div class="rule"></div>
+          <div class="meta">
+            <p><b>转场：</b>纸层错位 180–320ms＋短停顿；减动固定到中性构图。</p>
+            <p><b>优点：</b>原创识别强、分层实现自然、性能和包体最好控制。</p>
+            <p><b>风险：</b>如果景别不变，仍可能接近旧方案；故事感弱于 A/B。</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <aside class="decision">
+      <strong>这一轮只选视觉语言，不批准开发。</strong>
+      <p>点击 A／B／C 后，在对话里告诉我哪一个最接近你的感觉；也可以说“以 A 为主，借 B 的块面”。选定后我会用同一角色圣经扩成三张连续关键帧，再做第二次确认。</p>
+    </aside>
+
+    <section class="basis">
+      <div>
+        <h3>为什么旧五幅风页不再继续</h3>
+        <ul>
+          <li>它只改变草、发梢和猫尾，没有新的叙事信息。</li>
+          <li>140ms 换图更像素材替换，长静止后又显得整体偏慢。</li>
+          <li>机械无黑帧不能替代真人对“故事发生了”的判断。</li>
+        </ul>
+      </div>
+      <div>
+        <h3>研究依据</h3>
+        <ul>
+          <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3331971/" target="_blank">连续图像理解研究</a>：叙事结构和语义连续性需同时存在。</li>
+          <li><a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2015.00471/full" target="_blank">自然场景与柔和注意研究</a>：自然视觉应温和吸引，而不是要求持续集中。</li>
+          <li><a href="https://asistdl.onlinelibrary.wiley.com/doi/10.1002/pra2.896" target="_blank">移动数字漫画眼动研究</a>：一屏一拍比密集页面更适合控制阅读节奏。</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

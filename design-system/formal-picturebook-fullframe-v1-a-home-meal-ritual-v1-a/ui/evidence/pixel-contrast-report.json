@@ -1,0 +1,278 @@
+{
+  "status": "PASS",
+  "method": "Read the final rendered PNG and its matching clean/state frame, retain pixels changed by the editable text overlay, then sample the nearest actual warm-fill and dark-outline pixels and calculate WCAG 2 sRGB relative-luminance contrast.",
+  "note": "The dark outline is the immediate adjacent color around the warm glyph fill. Invisible hit targets do not rely on a non-text boundary.",
+  "minimumRatio": 10.84,
+  "samples": [
+    {
+      "id": "H1-standard",
+      "viewport": "390x844",
+      "warmFillSample": {
+        "x": 123,
+        "y": 232,
+        "rgb": [
+          229,
+          209,
+          174
+        ],
+        "distance": 27.820855486487112
+      },
+      "darkOutlineSample": {
+        "x": 68,
+        "y": 235,
+        "rgb": [
+          45,
+          29,
+          20
+        ],
+        "distance": 10.488088481701515
+      },
+      "ratio": 10.84,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "id": "H1-large-120",
+      "viewport": "390x844",
+      "warmFillSample": {
+        "x": 129,
+        "y": 239,
+        "rgb": [
+          244,
+          224,
+          187
+        ],
+        "distance": 3
+      },
+      "darkOutlineSample": {
+        "x": 123,
+        "y": 231,
+        "rgb": [
+          41,
+          26,
+          16
+        ],
+        "distance": 4.358898943540674
+      },
+      "ratio": 12.99,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "id": "H2-standard",
+      "viewport": "390x844",
+      "warmFillSample": {
+        "x": 237,
+        "y": 671,
+        "rgb": [
+          234,
+          214,
+          178
+        ],
+        "distance": 19.697715603592208
+      },
+      "darkOutlineSample": {
+        "x": 239,
+        "y": 643,
+        "rgb": [
+          38,
+          23,
+          15
+        ],
+        "distance": 0
+      },
+      "ratio": 12.18,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "id": "H2-large-120",
+      "viewport": "390x844",
+      "warmFillSample": {
+        "x": 317,
+        "y": 674,
+        "rgb": [
+          246,
+          226,
+          188
+        ],
+        "distance": 0
+      },
+      "darkOutlineSample": {
+        "x": 267,
+        "y": 646,
+        "rgb": [
+          38,
+          23,
+          15
+        ],
+        "distance": 0
+      },
+      "ratio": 13.63,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "id": "H4-standard-360",
+      "viewport": "360x800",
+      "warmFillSample": {
+        "x": 191,
+        "y": 471,
+        "rgb": [
+          233,
+          213,
+          176
+        ],
+        "distance": 21.95449840010015
+      },
+      "darkOutlineSample": {
+        "x": 291,
+        "y": 461,
+        "rgb": [
+          38,
+          23,
+          15
+        ],
+        "distance": 0
+      },
+      "ratio": 12.06,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "id": "H4-standard-390",
+      "viewport": "390x844",
+      "warmFillSample": {
+        "x": 207,
+        "y": 499,
+        "rgb": [
+          237,
+          217,
+          181
+        ],
+        "distance": 14.52583904633395
+      },
+      "darkOutlineSample": {
+        "x": 314,
+        "y": 496,
+        "rgb": [
+          38,
+          23,
+          15
+        ],
+        "distance": 0
+      },
+      "ratio": 12.54,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "id": "H4-standard-430",
+      "viewport": "430x932",
+      "warmFillSample": {
+        "x": 265,
+        "y": 552,
+        "rgb": [
+          243,
+          223,
+          186
+        ],
+        "distance": 4.69041575982343
+      },
+      "darkOutlineSample": {
+        "x": 352,
+        "y": 544,
+        "rgb": [
+          38,
+          23,
+          15
+        ],
+        "distance": 0
+      },
+      "ratio": 13.26,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "id": "H4-standard-430-pressure",
+      "viewport": "430x844",
+      "warmFillSample": {
+        "x": 227,
+        "y": 499,
+        "rgb": [
+          237,
+          217,
+          181
+        ],
+        "distance": 14.52583904633395
+      },
+      "darkOutlineSample": {
+        "x": 334,
+        "y": 496,
+        "rgb": [
+          38,
+          23,
+          15
+        ],
+        "distance": 0
+      },
+      "ratio": 12.54,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "id": "H4-large-120",
+      "viewport": "390x844",
+      "warmFillSample": {
+        "x": 342,
+        "y": 501,
+        "rgb": [
+          246,
+          226,
+          188
+        ],
+        "distance": 0
+      },
+      "darkOutlineSample": {
+        "x": 238,
+        "y": 497,
+        "rgb": [
+          38,
+          23,
+          15
+        ],
+        "distance": 0
+      },
+      "ratio": 13.63,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "id": "H4-reduced-both",
+      "viewport": "390x844",
+      "warmFillSample": {
+        "x": 207,
+        "y": 499,
+        "rgb": [
+          237,
+          217,
+          181
+        ],
+        "distance": 14.52583904633395
+      },
+      "darkOutlineSample": {
+        "x": 314,
+        "y": 496,
+        "rgb": [
+          38,
+          23,
+          15
+        ],
+        "distance": 0
+      },
+      "ratio": 12.54,
+      "required": 4.5,
+      "pass": true
+    }
+  ]
+}

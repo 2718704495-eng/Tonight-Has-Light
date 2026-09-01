@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">今夜有灯·核心互动物件集</title>
+  <desc id="desc">水壶、杯子、暖光、雾窗、围巾、被子、桌灯和门的原创分层矢量素材。</desc>
+  <metadata>
+    AI-assisted code-authored editable vector; project: 今夜有灯; asset: interaction-objects;
+    version: 1.0.0; date: 2026-08-21; third-party assets: none.
+    Each named object group is independently editable and contains no external reference.
+  </metadata>
+  <defs>
+    <linearGradient id="object-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C7D0CB"/><stop offset="0.52" stop-color="#899A98"/><stop offset="1" stop-color="#5F7475"/>
+    </linearGradient>
+    <linearGradient id="object-ceramic" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#F6EBD7"/><stop offset="1" stop-color="#B8C6CF"/>
+    </linearGradient>
+    <radialGradient id="object-warm-glow"><stop offset="0" stop-color="#FFF4CF"/><stop offset="0.35" stop-color="#F6D39A"/><stop offset="1" stop-color="#F2B66D" stop-opacity="0"/></radialGradient>
+    <filter id="object-soften" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <style>
+    .card{fill:#182235;stroke:#2A3A4F;stroke-width:2}.label{fill:#F6EBD7;font:500 24px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}.note{fill:#8295A2;font:16px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}.outline{stroke:#5B7074;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.paper-line{fill:none;stroke:#B8C6CF;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+  </style>
+  <g id="layer-preview-background" data-layer="preview-background"><rect width="1600" height="1000" rx="30" fill="#10151F"/></g>
+
+  <g id="object-kettle" data-layer="kettle" transform="translate(40 60)">
+    <rect class="card" width="360" height="390" rx="28"/>
+    <g id="kettle-shadow"><ellipse cx="180" cy="300" rx="116" ry="20" fill="#070C13" opacity="0.32"/></g>
+    <g id="kettle-body">
+      <path d="M87 267c1-73 18-130 94-132 77-2 94 55 94 132-25 24-164 24-188 0Z" fill="url(#object-metal)" class="outline"/>
+      <path d="M122 150c8-89 112-89 121 0" fill="none" stroke="#718586" stroke-width="18" stroke-linecap="round"/>
+      <path d="M118 150c8-60 111-60 119 0" fill="none" stroke="#182235" stroke-width="10" stroke-linecap="round"/>
+      <path d="M267 179c30 1 54 13 65 31-24 6-48 6-69 1" fill="#7F9290" class="outline"/>
+      <path d="M146 127h73l-8 22h-57Z" fill="#A9B6B1" class="outline"/>
+      <path d="M164 111h39" class="paper-line"/>
+      <path d="M120 208c7-22 20-35 39-41" fill="none" stroke="#E8ECE6" stroke-width="8" stroke-linecap="round" opacity="0.35"/>
+    </g>
+    <g id="kettle-steam" opacity="0.7"><path d="M157 89c-17-19 13-27 2-48M204 90c18-18-10-29 4-50" class="paper-line"/></g>
+    <text class="label" x="28" y="344">水壶</text><text class="note" x="28" y="370">暖光宽松吸附区：壶底 120%</text>
+  </g>
+
+  <g id="object-cup" data-layer="cup-upright-upside-down" transform="translate(420 60)">
+    <rect class="card" width="360" height="390" rx="28"/>
+    <g id="cup-upright" transform="translate(38 116)">
+      <ellipse cx="94" cy="24" rx="64" ry="17" fill="#F6EBD7" class="outline"/>
+      <path d="M30 24c5 78 14 102 64 102s60-24 64-102c-29 14-99 14-128 0Z" fill="url(#object-ceramic)" class="outline"/>
+      <path d="M153 47c49-3 51 67 5 66" fill="none" stroke="#B8C6CF" stroke-width="13"/>
+      <ellipse cx="94" cy="24" rx="48" ry="10" fill="#6D4D3C"/>
+      <path d="M53 54c7 29 17 43 33 49" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity="0.4"/>
+    </g>
+    <g id="cup-upside-down" transform="translate(228 261) rotate(180)">
+      <path d="M-55 0c4 55 13 77 55 77S51 55 55 0C29 11-29 11-55 0Z" fill="#879997" stroke="#5B7074" stroke-width="6"/>
+      <path d="M50 21c37-3 39 47 4 45" fill="none" stroke="#879997" stroke-width="11"/>
+      <ellipse cx="0" cy="0" rx="58" ry="13" fill="#718382"/>
+    </g>
+    <path d="M174 200c18 0 29 3 40 10" fill="none" stroke="#F2B66D" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 12"/>
+    <text class="label" x="28" y="344">杯子 · 正 / 反</text><text class="note" x="28" y="370">保留杯口椭圆，翻转仍一眼可读</text>
+  </g>
+
+  <g id="object-warm-light" data-layer="warm-light" transform="translate(800 60)">
+    <rect class="card" width="360" height="390" rx="28"/>
+    <g id="warm-light-aura"><circle cx="180" cy="189" r="132" fill="url(#object-warm-glow)" filter="url(#object-soften)"/><circle cx="180" cy="189" r="96" fill="url(#object-warm-glow)" opacity="0.8"/></g>
+    <g id="warm-light-core"><path d="M143 206c-4-39 20-78 58-76 38 2 55 46 38 79-15 31-34 53-59 49-25-4-34-25-37-52Z" fill="#F2B66D"/><path d="M163 157c17-13 39-8 49 8" fill="none" stroke="#FFF4CF" stroke-width="10" stroke-linecap="round" opacity="0.75"/></g>
+    <g id="warm-light-target"><circle cx="180" cy="194" r="72" fill="none" stroke="#F6D39A" stroke-width="3" stroke-dasharray="5 12" opacity="0.8"/></g>
+    <text class="label" x="28" y="344">暖光</text><text class="note" x="28" y="370">不是火焰；核心维持不规则软石形</text>
+  </g>
+
+  <g id="object-fog-window" data-layer="fog-window" transform="translate(1180 60)">
+    <rect class="card" width="360" height="390" rx="28"/>
+    <g id="window-frame"><rect x="56" y="55" width="248" height="247" rx="10" fill="#26364B" stroke="#71828B" stroke-width="13"/><path d="M180 62v234M63 178h234" stroke="#71828B" stroke-width="9"/></g>
+    <g id="window-night"><circle cx="236" cy="114" r="34" fill="#F6EBD7"/><circle cx="251" cy="103" r="34" fill="#26364B"/><circle cx="101" cy="103" r="3" fill="#B8C6CF"/><circle cx="142" cy="137" r="2" fill="#B8C6CF"/><circle cx="272" cy="218" r="3" fill="#B8C6CF"/></g>
+    <g id="window-fog" opacity="0.5"><path d="M73 95c45 27 95 7 141 30 29 15 53 16 80 7M69 220c44-21 84-2 126 16 31 13 64 13 97-7M91 274c33-42 97-48 151-17" fill="none" stroke="#D9E0DA" stroke-width="18" stroke-linecap="round"/></g>
+    <g id="window-cleared-moon"><path d="M180 146c26 9 45 30 47 59-31-19-67-19-99 0 3-29 22-50 52-59Z" fill="#26364B" opacity="0.75"/></g>
+    <text class="label" x="28" y="344">雾窗</text><text class="note" x="28" y="370">擦开一小块，月亮才完整出现</text>
+  </g>
+
+  <g id="object-scarf" data-layer="scarf" transform="translate(40 530)">
+    <rect class="card" width="360" height="390" rx="28"/>
+    <g id="scarf-main" transform="translate(68 52)">
+      <path d="M27 51c44-34 118-31 158 12 26 28 25 72 2 101-22 27-60 36-92 20" fill="none" stroke="#5E7870" stroke-width="40" stroke-linecap="round"/>
+      <path d="M183 151c27 26 31 67 17 112" fill="none" stroke="#526C64" stroke-width="39" stroke-linecap="round"/>
+      <path d="M74 173c-8 29-1 62 24 94" fill="none" stroke="#6D8880" stroke-width="39" stroke-linecap="round"/>
+      <path d="M64 40c18 19 25 48 19 75m42-79c19 20 24 47 19 72m38 111 29 7M73 229l28-8" fill="none" stroke="#91A49E" stroke-width="6" opacity="0.58"/>
+      <path d="M82 271v16m12-18 5 17m98-17v17m12-21 5 18" stroke="#91A49E" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <text class="label" x="28" y="344">围巾</text><text class="note" x="28" y="370">椅背可选互动，触碰后轻轻滑落</text>
+  </g>
+
+  <g id="object-blanket" data-layer="blanket" transform="translate(420 530)">
+    <rect class="card" width="360" height="390" rx="28"/>
+    <g id="blanket-main">
+      <path d="M67 89c62-28 161-25 225 4l-19 197c-67 24-136 19-203-5Z" fill="#607973" stroke="#4E6762" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M68 91c62 27 153 30 224 2-23 47-44 74-83 91-47 21-98 3-139-7Z" fill="#769087" opacity="0.92"/>
+      <path d="M88 124c51 19 116 25 170 4M84 203c66 26 125 23 182-7" fill="none" stroke="#A0B0A8" stroke-width="6" stroke-linecap="round" opacity="0.38"/>
+      <path d="M90 281v24m17-21 2 24m142-29v25m17-30 5 25" stroke="#8FA39B" stroke-width="5" stroke-linecap="round"/>
+      <path d="M230 107c16 6 28 17 34 33" fill="none" stroke="#D7DDD3" stroke-width="8" stroke-linecap="round" opacity="0.28"/>
+    </g>
+    <text class="label" x="28" y="344">被子</text><text class="note" x="28" y="370">折面分三层，保留一个灯灵宽的缝</text>
+  </g>
+
+  <g id="object-table-lamp" data-layer="table-lamp" transform="translate(800 530)">
+    <rect class="card" width="360" height="390" rx="28"/>
+    <g id="lamp-aura"><ellipse cx="184" cy="175" rx="116" ry="123" fill="url(#object-warm-glow)" opacity="0.64"/></g>
+    <g id="lamp-hardware">
+      <path d="M117 159 146 83h76l29 76Z" fill="#F0D19B" stroke="#A36E45" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M140 159h89" stroke="#C78B53" stroke-width="7" stroke-linecap="round"/>
+      <path d="M184 160v104" stroke="#718382" stroke-width="12" stroke-linecap="round"/>
+      <ellipse cx="184" cy="275" rx="74" ry="20" fill="#718382" stroke="#596E6D" stroke-width="6"/>
+      <path d="M156 104h56" stroke="#FFF2C8" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+    </g>
+    <text class="label" x="28" y="344">一盏桌灯</text><text class="note" x="28" y="370">第四夜只留下这一束近地暖光</text>
+  </g>
+
+  <g id="object-door" data-layer="door-open" transform="translate(1180 530)">
+    <rect class="card" width="360" height="390" rx="28"/>
+    <g id="door-cold-light"><path d="m85 58 186 12 35 236-226-8Z" fill="#B8C6CF" opacity="0.18"/></g>
+    <g id="door-frame"><path d="M89 296V61h179v235" fill="none" stroke="#71828B" stroke-width="14" stroke-linejoin="round"/></g>
+    <g id="door-leaf"><path d="m100 72 122 25-8 199H100Z" fill="#243247" stroke="#536879" stroke-width="7"/><circle cx="194" cy="198" r="8" fill="#F2B66D"/></g>
+    <g id="door-gap"><path d="m222 97 46-26v225l-54 0Z" fill="#B8C6CF" opacity="0.48"/><path d="M245 277c-17-26-14-67 5-88 14 28 16 60-5 88Z" fill="#10151F" opacity="0.42"/></g>
+    <g id="door-steps"><path d="M275 208c12 7 19 18 21 33M266 244c14 7 23 17 27 30" fill="none" stroke="#DDE5DE" stroke-width="5" stroke-linecap="round" opacity="0.55"/></g>
+    <text class="label" x="28" y="344">门</text><text class="note" x="28" y="370">只出现冷光与脚步，不画第三角色</text>
+  </g>
+</svg>

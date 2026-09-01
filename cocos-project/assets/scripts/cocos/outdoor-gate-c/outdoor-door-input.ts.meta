@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "f992e6e9-d4e1-407f-b207-e62ad6609aac",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/cocos/outdoor-gate-c/outdoor-door-input.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "candidateId": "stargaze-formal-batch-v1-a-f4-r1",
+  "board390": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/evidence/root-f1-f2-f3-f4-f5-board-390x844.png",
+    "sha256": "ac66911d87ec980de1fce4c158607078cb647ce700a3ac884eef50477c3bcfd8",
+    "source_hashes": {
+      "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/exports/390x844/root_night_slope_v2-wind-hem-r4-manual.png": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a",
+      "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/exports/390x844/scene_02_stargaze_shot_001.png": "6b2450a1993742545b83958d4f17913fda63a512071f42fa0a148feb4856c26e",
+      "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/390x844/scene_02_stargaze_shot_002.png": "98e267506a5485a93fdefa9759611c0ac4de2120edd5dc61d253a9ff59deee52",
+      "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/exports/390x844/scene_02_stargaze_shot_003.png": "ae9cc70c56be5b8f83e985058d7ab40bc71a0aa0f5f32819bb2706f0111244ec",
+      "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_004/exports/390x844/scene_02_stargaze_shot_004.png": "0973fec9fc18cfdb7422dcef32941a1fb071f84c95154cb10fd1d5279bda1ae9",
+      "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/390x844/scene_02_stargaze_shot_005.png": "ad3a13c6a4d915f178d03d444874776e2df042f328f998de81a2bfbf0d774d8d"
+    }
+  },
+  "board195": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/evidence/root-f1-f2-f3-f4-f5-board-195x422.png",
+    "sha256": "daa7fb8bc53574582db083b60a5a19d57ecab5f31e014bba5a129d038be4a8b5",
+    "source_hashes": {
+      "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/exports/195x422/root_night_slope_v2-wind-hem-r4-manual.png": "6ceac63b51bf9c6e8311aded28c6adf1fe7e6349e864d5f475976b7c09bb9491",
+      "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/exports/195x422/scene_02_stargaze_shot_001.png": "ad9c89d2880853281aec6e8cde97b071f3d508a485960dadf6d6a8e20c9367c8",
+      "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/195x422/scene_02_stargaze_shot_002.png": "01309ee9a41e36e52d1f7b8eb3f69948796a518c22b9586c8a0111bec540586c",
+      "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/exports/195x422/scene_02_stargaze_shot_003.png": "601899992501bcc2cf92c8122cad7fcef715642de82c52022a3d0f7e7aa62ff3",
+      "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_004/exports/195x422/scene_02_stargaze_shot_004.png": "50fb03ede500217889870dee6678c502d0d72125f375208fd5985e72298b2036",
+      "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/195x422/scene_02_stargaze_shot_005.png": "bdbc05c3fccd5ea265141bcbbc26ac47c2b6f59ffde40efcf87c78c0b9c9ebe5"
+    }
+  }
+}

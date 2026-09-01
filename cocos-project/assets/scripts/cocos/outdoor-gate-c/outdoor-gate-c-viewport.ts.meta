@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "da6b4059-b9d2-4f94-99a4-8bfdbcd6e07b",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/cocos/outdoor-gate-c/outdoor-gate-c-viewport.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "__version__": "1.3.9",
+  "bundleConfig": {
+    "custom": {
+      "formal_picturebook_partial_0_4_8_subpackage": {
+        "displayName": "Formal Picturebook Partial 0.4.8",
+        "configs": {
+          "native": { "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" } },
+          "web": {
+            "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" },
+            "fallbackOptions": { "compressionType": "merge_dep" }
+          },
+          "miniGame": {
+            "fallbackOptions": { "isRemote": false, "compressionType": "subpackage" },
+            "configMode": "fallback"
+          }
+        }
+      },
+      "outdoor_story_b_kf_r1_temp_experience_subpackage": {
+        "displayName": "Outdoor Story B KF-R1 Disposable Experience",
+        "configs": {
+          "native": { "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" } },
+          "web": {
+            "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" },
+            "fallbackOptions": { "compressionType": "merge_dep" }
+          },
+          "miniGame": {
+            "fallbackOptions": { "isRemote": false, "compressionType": "subpackage" },
+            "configMode": "fallback"
+          }
+        }
+      },
+      "outdoor_illustration_wind_r2_experience_subpackage": {
+        "displayName": "Outdoor Illustration Wind R2 Disposable Experience",
+        "configs": {
+          "native": { "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" } },
+          "web": {
+            "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" },
+            "fallbackOptions": { "compressionType": "merge_dep" }
+          },
+          "miniGame": {
+            "fallbackOptions": { "isRemote": false, "compressionType": "subpackage" },
+            "configMode": "fallback"
+          }
+        }
+      },
+      "indoor_n01_preview_subpackage": {
+        "displayName": "Indoor N01 Disposable Phone Preview",
+        "configs": {
+          "native": { "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" } },
+          "web": {
+            "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" },
+            "fallbackOptions": { "compressionType": "merge_dep" }
+          },
+          "miniGame": {
+            "fallbackOptions": { "isRemote": false, "compressionType": "subpackage" },
+            "configMode": "fallback"
+          }
+        }
+      },
+      "night_02_subpackage": {
+        "displayName": "Night 02 Subpackage",
+        "configs": {
+          "native": { "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" } },
+          "web": {
+            "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" },
+            "fallbackOptions": { "compressionType": "merge_dep" }
+          },
+          "miniGame": {
+            "fallbackOptions": { "isRemote": false, "compressionType": "subpackage" },
+            "configMode": "fallback"
+          }
+        }
+      },
+      "night_03_subpackage": {
+        "displayName": "Night 03 Subpackage",
+        "configs": {
+          "native": { "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" } },
+          "web": {
+            "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" },
+            "fallbackOptions": { "compressionType": "merge_dep" }
+          },
+          "miniGame": {
+            "fallbackOptions": { "isRemote": false, "compressionType": "subpackage" },
+            "configMode": "fallback"
+          }
+        }
+      },
+      "night_04_subpackage": {
+        "displayName": "Night 04 Subpackage",
+        "configs": {
+          "native": { "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" } },
+          "web": {
+            "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" },
+            "fallbackOptions": { "compressionType": "merge_dep" }
+          },
+          "miniGame": {
+            "fallbackOptions": { "isRemote": false, "compressionType": "subpackage" },
+            "configMode": "fallback"
+          }
+        }
+      },
+      "night_05_subpackage": {
+        "displayName": "Night 05 Subpackage",
+        "configs": {
+          "native": { "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" } },
+          "web": {
+            "preferredOptions": { "isRemote": false, "compressionType": "merge_dep" },
+            "fallbackOptions": { "compressionType": "merge_dep" }
+          },
+          "miniGame": {
+            "fallbackOptions": { "isRemote": false, "compressionType": "subpackage" },
+            "configMode": "fallback"
+          }
+        }
+      }
+    }
+  },
+  "textureCompressConfig": {
+    "genMipmaps": false
+  }
+}

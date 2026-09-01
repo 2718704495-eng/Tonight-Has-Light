@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="170" viewBox="0 0 360 170">
+  <defs>
+    <filter id="soft" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+    <pattern id="knit" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-18)">
+      <path d="M0 5 H9" stroke="#344b5d" stroke-width="0.7" opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <!-- Reduce the old screen-left flap without creating a hard rectangle. -->
+  <path d="M0 38 C34 22 78 25 118 43 C148 57 166 77 173 99 C126 107 76 107 26 95 C11 80 3 58 0 38Z" fill="#061426" opacity="0.34" filter="url(#soft)"/>
+  <path d="M0 74 C45 54 95 64 160 97" fill="none" stroke="#0b1b2d" stroke-width="4.6" opacity="0.46" stroke-linecap="round"/>
+  <path d="M8 96 C55 79 108 88 170 122" fill="none" stroke="#20364a" stroke-width="2.8" opacity="0.38" stroke-linecap="round"/>
+  <path d="M10 118 C59 98 118 105 185 142" fill="none" stroke="#647780" stroke-width="1.5" opacity="0.28" stroke-linecap="round"/>
+  <path d="M34 128 C82 110 135 116 194 149" fill="none" stroke="#07101f" stroke-width="4.2" opacity="0.36" stroke-linecap="round"/>
+
+  <!-- Screen-right lifted hem as one low-contrast cloth surface, not motion lines. -->
+  <path d="M132 55
+           C162 49 199 54 232 69
+           C249 77 263 88 273 101
+           C241 97 207 88 174 77
+           C153 70 139 63 126 58
+           C128 57 130 56 132 55Z"
+        fill="#223549" opacity="0.50"/>
+  <path d="M132 55
+           C162 49 199 54 232 69
+           C249 77 263 88 273 101
+           C241 97 207 88 174 77
+           C153 70 139 63 126 58
+           C128 57 130 56 132 55Z"
+        fill="url(#knit)" opacity="0.25"/>
+  <path d="M131 56 C162 51 199 56 235 73" fill="none" stroke="#7d8788" stroke-width="1.15" stroke-linecap="round" opacity="0.30"/>
+  <path d="M140 68 C169 75 204 87 244 103" fill="none" stroke="#091626" stroke-width="2.3" stroke-linecap="round" opacity="0.32"/>
+  <path d="M156 74 C171 82 188 91 204 101" fill="none" stroke="#405565" stroke-width="0.9" stroke-linecap="round" opacity="0.18"/>
+</svg>

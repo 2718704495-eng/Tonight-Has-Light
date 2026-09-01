@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "operation": "clone_stamp_from_frozen_r2",
+  "source_rect_master_2x": { "left": 0, "top": 1420, "width": 105, "height": 82 },
+  "destination_master_2x": { "left": 58, "top": 1334 },
+  "mask_path": "source/manual-patch/repair_clone_mask.svg",
+  "notes": [
+    "The clone source is grass from the same frozen R2 master, not generated art.",
+    "This covers the dominant old left-facing garment flap before the small SVG hem is composited.",
+    "All clone alpha is limited by the approved R4 ROI."
+  ]
+}

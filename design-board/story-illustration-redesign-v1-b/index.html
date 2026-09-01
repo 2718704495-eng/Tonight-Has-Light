@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>今夜有灯 · B 无字夜漫画三帧</title>
+  <style>
+    :root { color-scheme: dark; --ink:#06182f; --paper:#d9d5c8; --blue:#7894a5; --amber:#d3a05b; --line:rgba(217,213,200,.16); }
+    *{box-sizing:border-box} body{margin:0;background:#040e1c;color:var(--paper);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.11;background-image:radial-gradient(rgba(255,255,255,.6) .55px,transparent .55px);background-size:5px 5px;mix-blend-mode:soft-light}
+    main{width:min(1380px,calc(100% - 28px));margin:auto;padding:34px 0 70px}.kicker{color:var(--amber);font-size:11px;font-weight:800;letter-spacing:.16em}
+    h1{margin:9px 0 10px;font-family:"Songti SC","STSong",serif;font-size:clamp(28px,4.4vw,54px);font-weight:600}.intro{max-width:820px;margin:0;color:#aab9c4;line-height:1.75}
+    .status{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 28px}.status span{padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:#9fb0bc;font-size:11px}.status .selected{border-color:rgba(211,160,91,.55);color:#efc689}
+    .frames{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.frame{margin:0;padding:12px;border:1px solid var(--line);background:rgba(13,31,51,.72);box-shadow:0 24px 70px rgba(0,0,0,.25)}
+    .image{position:relative;aspect-ratio:390/844;overflow:hidden;background:var(--ink)}.image img{display:block;width:100%;height:100%;object-fit:cover}.num{position:absolute;left:12px;top:12px;padding:5px 8px;background:rgba(6,24,47,.84);border:1px solid rgba(255,255,255,.18);font:700 11px ui-monospace,monospace;color:#e5ded0}
+    figcaption{padding:14px 2px 2px}h2{margin:0 0 5px;font-family:"Songti SC","STSong",serif;font-size:20px;font-weight:600}.beat{margin:0;color:#a7b6c1;font-size:12px;line-height:1.55}.change{margin-top:9px;color:#d4d9d8;font-size:11px;line-height:1.55}.change b{color:var(--amber)}
+    .strip{margin-top:24px;display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.panel{border:1px solid var(--line);padding:18px;background:rgba(11,26,44,.7)}.panel h3{margin:0 0 8px;font-size:13px;color:#e2ded4}.panel p,.panel li{margin:0;color:#96a8b6;font-size:11px;line-height:1.7}.panel ul{padding-left:18px;margin:0}.approval{border-color:rgba(211,160,91,.35);background:rgba(211,160,91,.07)}.approval strong{color:#efc689}.approval p{margin-top:6px}
+    @media(max-width:900px){.frames{grid-template-columns:1fr}.frame{display:grid;grid-template-columns:minmax(180px,42%) 1fr;gap:14px}.strip{grid-template-columns:1fr}}
+    @media(max-width:560px){main{width:min(100% - 18px,420px);padding-top:22px}.frame{display:block}.image{max-height:72vh}.frames{gap:12px}}
+  </style>
+</head>
+<body><main>
+  <div class="kicker">STORY-ILLUSTRATION-REDESIGN-V1-B-KF-R1</div>
+  <h1>无字夜漫画 · 同一阵风</h1>
+  <p class="intro">B 风格已经选定。这次不再把同一张图换五次，而是让三种景别分别讲“坐稳、风经过、余风”。每一帧仍是可以独立停留的完整插画。</p>
+  <div class="status"><span class="selected">B 视觉语言已选</span><span>三帧待批准</span><span>生成图仅作探索</span><span>未改 Cocos</span><span>未构建／未上传</span></div>
+  <section class="frames">
+    <figure class="frame"><div class="image"><span class="num">B01</span><img src="./exploration/b01-settle-reference-r1.png" alt="成年人和普通猫在深蓝草坡看星，右侧小屋暖门亮着"></div><figcaption><h2>坐稳</h2><p class="beat">天空先出现，身体的重量慢慢落到草地上。</p><p class="change"><b>只发生：</b>远草刚接到风。</p></figcaption></figure>
+    <figure class="frame"><div class="image"><span class="num">B02</span><img src="./exploration/b02-wind-passes-r1.png" alt="大轮廓草浪从前景经过成年人和猫，方向一致"></div><figcaption><h2>风经过</h2><p class="beat">镜头落到草高，一阵风穿过草、衣角、猫耳和尾尖。</p><p class="change"><b>只发生：</b>同一阵风被一眼看见。</p></figcaption></figure>
+    <figure class="frame"><div class="image"><span class="num">B03</span><img src="./exploration/b03-afterwind-detail-r1.png" alt="成年人放松的手与猫尾在草地形成安静近景，远处暖门仍亮"></div><figcaption><h2>余风</h2><p class="beat">画面靠近手与猫尾，关系不被说明，夜晚继续。</p><p class="change"><b>只发生：</b>猫尾和两根草尖留下余势。</p></figcaption></figure>
+  </section>
+  <section class="strip">
+    <div class="panel"><h3>保持不变</h3><ul><li>成年人左、普通猫右，共同看天空；不互看、不看门。</li><li>一条淡银河、右侧稳定暖门、恰好两朵弱光花。</li><li>室内仍是已批准的整屋明亮暖家，本轮不改。</li></ul></div>
+    <div class="panel approval"><h3>这一轮的批准对象</h3><p><strong>只批准三帧故事与镜头。</strong>批准后才进入正式分层重绘和开发；这些生成探索图不会直接进入微信包。</p></div>
+  </section>
+</main></body></html>

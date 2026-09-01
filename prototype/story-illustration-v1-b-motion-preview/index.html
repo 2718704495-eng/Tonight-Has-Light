@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#06182f" />
+    <title>今夜有灯 · B 三拍故事预览</title>
+    <link
+      rel="preload"
+      as="image"
+      href="../../design-board/story-illustration-redesign-v1-b/exploration/b03-afterwind-detail-r1.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="review-heading">
+      <div>
+        <span class="eyebrow">STORY-ILLUSTRATION-REDESIGN-V1-B · LOCAL MOTION PROOF</span>
+        <h1>同一阵风，三个画面</h1>
+        <p>本地可丢弃体验样片。只验证故事节奏与转场，不代表正式入包原画。</p>
+      </div>
+      <span class="status">PROTOTYPE-ONLY · NO COCOS · NO UPLOAD</span>
+    </header>
+
+    <main class="preview-layout">
+      <section id="storyScene" class="story-scene" aria-label="深蓝夜色中，一位成年人和普通家猫一起看星空">
+        <img
+          id="frameA"
+          class="story-frame frame-a"
+          src="../../design-board/story-illustration-redesign-v1-b/exploration/b01-settle-reference-r1.png"
+          alt="成年人和普通家猫坐在草坡上共同看星空，小屋的门在右侧亮着"
+        />
+        <img
+          id="frameB"
+          class="story-frame frame-b"
+          src="../../design-board/story-illustration-redesign-v1-b/exploration/b02-wind-passes-r1.png"
+          alt="同一阵风穿过草坡、衣角和猫尾"
+        />
+        <div id="inkWipe" class="ink-wipe" aria-hidden="true"></div>
+        <img
+          id="indoorFrame"
+          class="indoor-frame"
+          src="../../design-board/formal-ui-v1-2/assets/concept-bright-home-dinner-exploration-v1-2.png"
+          alt="整屋明亮温暖，桌上已经准备好热饭和茶"
+        />
+        <div class="warm-wash" aria-hidden="true"></div>
+        <button id="doorHit" class="door-hit" type="button" aria-label="进入右侧亮着灯的小屋">
+          <span class="sr-only">进入亮着灯的小屋</span>
+        </button>
+        <span id="sceneAnnouncement" class="sr-only" aria-live="polite"></span>
+        <audio
+          id="windAudio"
+          src="../../cocos-project/assets/resources/audio/outdoor-gate-c/night-breeze-loop-v1.ogg"
+          preload="auto"
+          loop
+        ></audio>
+      </section>
+
+      <aside class="review-panel" aria-label="本地样片控制与说明">
+        <div class="phase-card">
+          <span>当前画面</span>
+          <strong id="phaseLabel">B01 · 坐稳</strong>
+          <small id="phaseNote">天空先完整留给你。</small>
+        </div>
+
+        <div class="control-row">
+          <button id="replayButton" type="button">重看这一阵风</button>
+          <button id="returnOutdoorButton" type="button" hidden>回到草坡</button>
+        </div>
+
+        <label class="motion-setting">
+          <input id="reducedMotionToggle" type="checkbox" />
+          <span><strong>减少动态</strong><small>固定 B01，只保留短淡变</small></span>
+        </label>
+
+        <dl class="timing-list">
+          <div><dt>B01</dt><dd>3.2s · 坐稳</dd></div>
+          <div><dt>接页</dt><dd>0.30s · 墨块匹配草线</dd></div>
+          <div><dt>B02</dt><dd>1.5s · 风经过</dd></div>
+          <div><dt>接页</dt><dd>0.36s · 草带遮化</dd></div>
+          <div><dt>B03</dt><dd>停住 · 不自动循环</dd></div>
+        </dl>
+
+        <p class="review-note">
+          轻触画面后才播放风声；水平慢滑画面可重看。右侧小屋从第一帧可点，点击会立即打断接页并平滑进入已批准的明亮暖屋。
+        </p>
+      </aside>
+    </main>
+
+    <script type="module" src="./app.mjs"></script>
+  </body>
+</html>

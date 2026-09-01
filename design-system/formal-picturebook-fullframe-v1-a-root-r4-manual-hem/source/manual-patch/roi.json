@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "candidate_id": "formal-picturebook-root-wind-hem-v1-a-r4-manual",
+  "source_baseline": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/masters/root_night_slope_v2-wind-hem-master-2x.png",
+    "sha256": "38e030cbec217c1349beba788e4a041631d295c52a2a0957dc4f9fa45c72a068"
+  },
+  "approved_edit_roi_master_2x": {
+    "left": 50,
+    "top": 1318,
+    "width": 328,
+    "height": 112,
+    "right_exclusive": 378,
+    "bottom_exclusive": 1430
+  },
+  "guard_regions_master_2x": {
+    "sky_and_galaxy": { "left": 0, "top": 0, "width": 780, "height": 1080 },
+    "cat": { "left": 378, "top": 1190, "width": 160, "height": 300 },
+    "house_and_door": { "left": 520, "top": 1210, "width": 250, "height": 220 },
+    "flowers": [
+      { "left": 30, "top": 1500, "width": 110, "height": 160 },
+      { "left": 580, "top": 1500, "width": 130, "height": 160 }
+    ]
+  },
+  "visual_intent": [
+    "cover the dominant screen-left flap that reversed the wind direction",
+    "restore a grounded lower-left sweater edge and nearby grass texture without touching the shoulder/back mass",
+    "draw one broad, calm, screen-right lifted knitted hem from the adult's lower back/right waist",
+    "keep adult body mass, cat, sky, galaxy, hills, house, door, flowers, framing, color and lighting unchanged"
+  ]
+}

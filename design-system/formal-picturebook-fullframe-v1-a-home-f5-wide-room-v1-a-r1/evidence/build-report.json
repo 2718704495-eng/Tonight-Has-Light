@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "candidate_id": "formal-picturebook-home-f5-wide-room-v1-a-r1",
+  "page_id": "scene_01_home_shot_005",
+  "generated_on": "2026-08-30",
+  "deterministic_normalization": {
+    "crop": {
+      "left": 48,
+      "top": 0,
+      "width": 748,
+      "height": 1618
+    },
+    "rationale": "Remove most of the heavy dark threshold while retaining a thin entry edge and the widest readable room composition. No pixels were generated or painted during normalization.",
+    "master_resize": "780x1688 fill from locked crop",
+    "review_exports": "SHOW_ALL for stress sizes; exact fill for 390x844 and 195x422",
+    "safe_border": "#06265F"
+  },
+  "raw": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/source/raw/scene_01_home_shot_005-wide-room-imagegen-r1.png",
+    "width": 853,
+    "height": 1844,
+    "space": "srgb",
+    "channels": 3,
+    "depth": "uchar",
+    "hasAlpha": false,
+    "sha256": "ca1068a35f1c3d1919ccc4548bc52e4e37aca7863c3a2a84c0c29aef79ef3fee"
+  },
+  "master": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/source/masters/scene_01_home_shot_005-wide-room-master-2x.png",
+    "width": 780,
+    "height": 1688,
+    "space": "srgb",
+    "channels": 4,
+    "depth": "uchar",
+    "hasAlpha": true,
+    "sha256": "fa8e4de347adcf90f1f0aa7aaf292389d27dd0745027522fd40b062766d5b23a"
+  },
+  "exports": {
+    "390x844": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png",
+      "width": 390,
+      "height": 844,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "hasAlpha": true,
+      "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51"
+    },
+    "195x422": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/195x422/scene_01_home_shot_005.png",
+      "width": 195,
+      "height": 422,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "hasAlpha": true,
+      "sha256": "674994ba660f8f2ed8a7f605c976e6eb0199ede70ced81e91e092862078ed57e"
+    },
+    "360x800": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/360x800/scene_01_home_shot_005.png",
+      "width": 360,
+      "height": 800,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "hasAlpha": true,
+      "sha256": "7ac476cf1953dcecebaa84657714c3c63b0d010573bfe36b3f6c5e214d56da62"
+    },
+    "430x932": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/430x932/scene_01_home_shot_005.png",
+      "width": 430,
+      "height": 932,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "hasAlpha": true,
+      "sha256": "99dda84bbac1aa9d688852d2acd40b55b2a4eb12dd059a09604b3264e2d6263a"
+    },
+    "430x844-pressure": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/430x844-pressure/scene_01_home_shot_005.png",
+      "width": 430,
+      "height": 844,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "hasAlpha": true,
+      "sha256": "84b1c9cbfbb8ccb4462a98dbaaedb27b670f8684f793fcf6543d02d6ce607047"
+    }
+  },
+  "boards": {
+    "390x844": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/evidence/home-f5-old-vs-wide-room-390x844.png",
+      "width": 840,
+      "height": 944,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "hasAlpha": true,
+      "sha256": "acb5720c7500008847d72090d10c60159b65efcf45370bad241f6e3a1cb59973",
+      "sources": {
+        "old": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/390x844/scene_01_home_shot_005.png",
+          "sha256": "2b53b8c47d1670228d407736ec0ca6a5ddef7d460f926d9fddbad8981cd77662"
+        },
+        "candidate": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png",
+          "width": 390,
+          "height": 844,
+          "space": "srgb",
+          "channels": 4,
+          "depth": "uchar",
+          "hasAlpha": true,
+          "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51"
+        }
+      }
+    },
+    "195x422": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/evidence/home-f5-old-vs-wide-room-195x422.png",
+      "width": 450,
+      "height": 506,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "hasAlpha": true,
+      "sha256": "86db6f82a28586b35fee8e573352ef0a6981222ff28db35dd978869bd0b23b42",
+      "sources": {
+        "old": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/195x422/scene_01_home_shot_005.png",
+          "sha256": "691d50bca77e7ac2121cce956f6e8714777f31109195e916c97798dfb21a367a"
+        },
+        "candidate": {
+          "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/195x422/scene_01_home_shot_005.png",
+          "width": 195,
+          "height": 422,
+          "space": "srgb",
+          "channels": 4,
+          "depth": "uchar",
+          "hasAlpha": true,
+          "sha256": "674994ba660f8f2ed8a7f605c976e6eb0199ede70ced81e91e092862078ed57e"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "candidate": "STARGAZE-SKY-FINALE-V1-A-GATE-B-R2",
+  "date": "2026-08-29",
+  "scope": "browser-design-board-layout-fix-only",
+  "status": "MECHANICAL_PASS__COMPLETE_BACKDROP_PRESERVED__BLOCKED_FOR_USER_VISUAL_APPROVAL",
+  "root_cause": {
+    "background_removed": false,
+    "r1_desktop_viewport": { "width": 1280, "height": 720 },
+    "r1_stage": { "top": -62, "bottom": 782, "width": 390, "height": 844 },
+    "finding": "The 390x844 stage was taller than the browser viewport and was scrolled partly outside the visible area. The F5 story layer and background image remained present."
+  },
+  "r2_desktop_1280x720": {
+    "stage": { "top": 24, "bottom": 695.984375, "width": 310.515625, "height": 671.984375 },
+    "fully_visible": true,
+    "background_visible": true,
+    "choices_ready": true,
+    "home_target": { "width": 100, "height": 48, "inside_stage": true },
+    "stay_target": { "width": 100, "height": 48, "inside_stage": true }
+  },
+  "r2_responsive_finale_flight": [
+    { "viewport": { "width": 360, "height": 800 }, "stage": { "top": 28, "bottom": 772.4375, "width": 344, "height": 744.4375 }, "fully_visible": true, "background_visible": true, "meteor_opacity": 0.92 },
+    { "viewport": { "width": 390, "height": 844 }, "stage": { "top": 26, "bottom": 818.046875, "width": 366, "height": 792.046875 }, "fully_visible": true, "background_visible": true, "meteor_opacity": 0.92 },
+    { "viewport": { "width": 430, "height": 932 }, "stage": { "top": 44, "bottom": 888, "width": 390, "height": 844 }, "fully_visible": true, "background_visible": true, "meteor_opacity": 0.92 }
+  ],
+  "unchanged_visible_contract": [
+    "adult_and_cat",
+    "single_broad_faint_milky_way",
+    "right_midground_house",
+    "two_weak_glow_flowers",
+    "single_meteor_timing",
+    "fixed_finale_copy",
+    "home_or_stay_choices"
+  ],
+  "tests": {
+    "picturebook_board": "6/6 PASS",
+    "full_repository_verify": "PASS",
+    "cocos_regression": "173/173 PASS",
+    "console_error_or_warning": 0
+  },
+  "evidence": [
+    "stargaze-finale-background-preserved-390x844-r2.png",
+    "stargaze-finale-fit-1280x720-r2.png"
+  ],
+  "boundaries": ["NO_COCOS", "NO_BUILD", "NO_UPLOAD", "NO_REVIEW", "NO_RELEASE", "NO_GIT"]
+}

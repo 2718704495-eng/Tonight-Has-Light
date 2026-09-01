@@ -1,0 +1,2 @@
+asset_id,display_name,category,night_scope,final_path,source_path,creator,created_on,source_kind,source_url_or_contract,license_snapshot,permitted_scope,attribution_text,third_party_inputs,generator_record,human_redraw,similarity_review,sha256,version,gate_status,notes
+EXAMPLE-DO-NOT-IMPORT,示例记录—复制后删除,other,common,TBD,TBD,CREATOR-00,YYYY-MM-DD,original,TBD,TBD,TBD,none,none,none,not-applicable,TBD,pending,v0.0.0,draft,这是填写示例，不得进包

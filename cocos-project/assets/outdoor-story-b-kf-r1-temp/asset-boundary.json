@@ -1,0 +1,42 @@
+{
+  "candidateId": "gate-d-story-b-kf-r1-temp-dev-r1-0.4.7",
+  "developerVersion": "0.4.7",
+  "classification": "prototype-only / disposable / ImageGen-exploration / one-0.4.7-developer-upload-only / not-for-review / not-for-release",
+  "assetManifestSha256": "8736a53109d5fa5a6c1193d6648859878cd917222e0ad19aa0d3ba008813de0e",
+  "sourceSha256": {
+    "B01": "fdac7f8edf8a22954a93a3f756ab2c1699c1afe04462bf2fa3ed679ae2794d0c",
+    "B02": "e0f00f2b573dda25b91f53aa5e04fa72456fa3ed1f784a1087b4238083504727",
+    "B03": "8da6d324520fce5175a1f0546a8cb67e29c041795d002439a5add28a80ea1b67"
+  },
+  "runtimeSha256": {
+    "b01-settle.png": "170b8100298ad5d0d85624e38f81ff18bfe77e930a4da3634d659234eb486864",
+    "b02-wind-passes.png": "a6638222ec9dc0f38e3d21490f5f2803bde0a24919b51147869b77722af19cd1",
+    "b03-afterwind.png": "c63452f9f8a9b22fc9de6a6d49f29ea04f563c457ad5501c140ea4ae3d37a5c4"
+  },
+  "allowedUse": [
+    "local validation and evidence capture",
+    "one WeChat developer upload version 0.4.7",
+    "the user may independently promote that exact 0.4.7 developer upload to an experience version"
+  ],
+  "forbiddenUse": [
+    "formal production asset",
+    "reuse in any candidate or version other than the exact 0.4.7 candidate",
+    "review submission",
+    "release",
+    "public release"
+  ],
+  "recursiveGuard": {
+    "scope": "this source directory and every directly or transitively derived build artifact",
+    "review": "deny",
+    "release": "deny",
+    "publicRelease": "deny"
+  },
+  "inactiveHistoricalPackaging": [
+    {
+      "bundle": "outdoor-illustration-wind-r2",
+      "runtimeReferenced": false,
+      "evidenceUse": "forbidden"
+    }
+  ],
+  "release_guard": "must recursively reject every file in this directory and every derived artifact from review/release"
+}

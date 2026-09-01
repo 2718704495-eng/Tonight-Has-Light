@@ -1,0 +1,140 @@
+{
+  "candidateId": "stargaze-formal-batch-v1-a-f2-r1",
+  "page": "scene_02_stargaze_shot_002",
+  "status": "MECHANICAL PASS / VISUAL REVIEW REQUIRED",
+  "checks": [
+    {
+      "label": "master",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "2c8326bae7dbd85384583864e5689bf719d84d3dfdca998711ee681eff0a2d63",
+      "metadata": {
+        "format": "png",
+        "width": 780,
+        "height": 1688,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "195x422",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "01309ee9a41e36e52d1f7b8eb3f69948796a518c22b9586c8a0111bec540586c",
+      "metadata": {
+        "format": "png",
+        "width": 195,
+        "height": 422,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "360x800",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "944ee935672e8dfaf6d734fa60da0f4d90ed012f2dc25a2de0fa3e3233b636d6",
+      "metadata": {
+        "format": "png",
+        "width": 360,
+        "height": 800,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "390x844",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "98e267506a5485a93fdefa9759611c0ac4de2120edd5dc61d253a9ff59deee52",
+      "metadata": {
+        "format": "png",
+        "width": 390,
+        "height": 844,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "430x932",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "b42f74ee5deaecdda5923e6b9c15020ed5df75d7b9f69e7c75612cccb4ec21b9",
+      "metadata": {
+        "format": "png",
+        "width": 430,
+        "height": 932,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "430x844-pressure",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "98ed43de9b2fc938e91b1e4df3a0329e674fbcc345306e0d8cd8a010155126fb",
+      "metadata": {
+        "format": "png",
+        "width": 430,
+        "height": 844,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "raw hash",
+      "passed": true,
+      "actualHash": "0d44c7dcc7af05432c91f89056fa023a7ce2ccf3b4ebb74ca847c1ce694d0084",
+      "recordedHash": "0d44c7dcc7af05432c91f89056fa023a7ce2ccf3b4ebb74ca847c1ce694d0084"
+    },
+    {
+      "label": "prompt hash",
+      "passed": true,
+      "actualHash": "4cf599551b48b0082c804649bbe463552f7b9850a417d631856576297dbdbb4f",
+      "recordedHash": "4cf599551b48b0082c804649bbe463552f7b9850a417d631856576297dbdbb4f"
+    },
+    {
+      "label": "reference F1 approved lower-edge adult/cat gaze bridge, sky hierarchy, and stargaze sequence continuity",
+      "passed": true,
+      "actualHash": "6b2450a1993742545b83958d4f17913fda63a512071f42fa0a148feb4856c26e",
+      "recordedHash": "6b2450a1993742545b83958d4f17913fda63a512071f42fa0a148feb4856c26e"
+    },
+    {
+      "label": "reference approved F5 Milky Way geography, deep-indigo negative space, and final-sky material reference",
+      "passed": true,
+      "actualHash": "ad3a13c6a4d915f178d03d444874776e2df042f328f998de81a2bfbf0d774d8d",
+      "recordedHash": "ad3a13c6a4d915f178d03d444874776e2df042f328f998de81a2bfbf0d774d8d"
+    },
+    {
+      "label": "reference approved root adult/cat relation, location, house, door, and two-flower geography reference",
+      "passed": true,
+      "actualHash": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a",
+      "recordedHash": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a"
+    },
+    {
+      "label": "360x800 safe-corner border",
+      "passed": true
+    },
+    {
+      "label": "430x932 safe-corner border",
+      "passed": true
+    },
+    {
+      "label": "430x844-pressure safe-corner border",
+      "passed": true
+    }
+  ],
+  "issues": []
+}

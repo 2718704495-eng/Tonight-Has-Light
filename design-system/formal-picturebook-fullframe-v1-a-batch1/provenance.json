@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "batch_id": "FORMAL-PICTUREBOOK-FULLFRAME-V1-A-BATCH-1",
+  "candidate_id": "formal-picturebook-fullframe-v1-a-batch1-r2-r4-root",
+  "status": "ROOT_AND_STAR_F5_APPROVED_HOME_AWAITING_USER",
+  "created_on": "2026-08-29",
+  "source_property": "ai-assisted-formal-fullframe",
+  "approved_spec": {
+    "approval_phrase": "批准 FORMAL-PICTUREBOOK-FULLFRAME-V1-A 规格，开始 Batch 1",
+    "spec_path": "docs/superpowers/specs/2026-08-29-formal-picturebook-fullframe-design.md",
+    "spec_sha256_at_user_approval": "69db50589d6658e9397f27013e658430d6457aec1c1cea316fd7915f59c11663",
+    "approval_record_path": "docs/FORMAL-PICTUREBOOK-FULLFRAME-V1-A-SPEC-APPROVAL.md",
+    "approval_record_sha256": "1582932d68542b743de24376fdb7024d2346ef6c7fec0e548c21e319e444b413",
+    "implementation_plan_path": "docs/superpowers/plans/2026-08-29-formal-picturebook-fullframe-batch1.md",
+    "implementation_plan_sha256": "a644993f2bc09e2155645131b8248bc3b68c0b962a9b8161356606044046201e"
+  },
+  "approved_root": {
+    "contract_id": "ROOT-WIND-HEM-V1-A-R4",
+    "candidate_id": "formal-picturebook-root-wind-hem-v1-a-r4-manual",
+    "asset_id": "ART-OUTDOOR-ROOT-WIND-HEM-003",
+    "candidate_manifest_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/candidate-manifest.json",
+    "approval_record_path": "docs/ROOT-WIND-HEM-V1-A-R4-APPROVAL.md",
+    "approval_record_sha256": "15f9a7e8ceefa973d79073091fda31502c65a3a67ab91f05d2b2c6e612a91cd5",
+    "approved_master_sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8",
+    "approved_390x844_sha256": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a",
+    "approved_195x422_sha256": "6ceac63b51bf9c6e8311aded28c6adf1fe7e6349e864d5f475976b7c09bb9491"
+  },
+  "permissions": {
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "review": false,
+    "release": false,
+    "git": false
+  },
+  "references": [
+    {
+      "asset_id": "ART-OUTDOOR-ROOT-WIND-HEM-003",
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/masters/root_night_slope_v2-wind-hem-r4-manual-master-2x.png",
+      "sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8",
+      "role": "current approved ROOT-WIND-HEM-V1-A-R4 root visual used by the corrected review board"
+    },
+    {
+      "asset_id": "ART-OUTDOOR-001",
+      "path": "design-system/formal-outdoor-art-pilot-v1-b-r1/source/root_night_slope_v1-master-2x.png",
+      "sha256": "5c84ce815ba011cd9be570889c768573e80c3d55d6b59fb2bd211301f86c74e3",
+      "role": "historical generation reference recorded by the frozen stargaze and home prompts; not the current review-board root"
+    },
+    {
+      "asset_id": "FORMAL-UI-V1.2-A",
+      "path": "design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png",
+      "sha256": "ad65d6fa811487fe5bd69726f1c5bf9d4b4c983d517c360b7087ff42f89cb36a",
+      "role": "emotional lighting reference only for bright warm home and prepared dinner; no pixel, layout, furniture or prop copying"
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "root_night_slope_v1",
+      "asset_id": "ART-OUTDOOR-ROOT-WIND-HEM-003",
+      "status": "user-approved",
+      "current_visual_version": "ROOT-WIND-HEM-V1-A-R4",
+      "master_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/masters/root_night_slope_v2-wind-hem-r4-manual-master-2x.png",
+      "master_sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8",
+      "generation": "not regenerated in Batch 1; R4 was manually patched from the approved R2 source in its own package",
+      "normalization": "byte-identical review-export copies synced from the frozen R4 package; the frozen R4 source was not rewritten",
+      "user_visual_approval": "approved on 2026-08-30; exact approval record and hashes are listed in approved_root"
+    },
+    {
+      "page_id": "scene_02_stargaze_shot_005",
+      "asset_id": "ART-PBOOK-STAR-005",
+      "status": "user-approved",
+      "prompt_path": "design-system/formal-picturebook-fullframe-v1-a-batch1/prompts/scene_02_stargaze_shot_005.md",
+      "prompt_sha256": "1293b31c68d18bc45364cc51c2dcbeca03be623fd2367e7c4ce1538d6be025f7",
+      "initial_raw_path": "design-system/formal-picturebook-fullframe-v1-a-batch1/source/raw/scene_02_stargaze_shot_005-imagegen-r1.png",
+      "initial_raw_sha256": "48e5c602dd4691a0fe07599c8151b349a33875f5dbf6eea7fcd7c0edec0fac58",
+      "targeted_repair_count": 1,
+      "raw_path": "design-system/formal-picturebook-fullframe-v1-a-batch1/source/raw/scene_02_stargaze_shot_005-imagegen-r2.png",
+      "raw_sha256": "e30ec218506fc95d5c6cbfd13d0d6553e151600fdc4ba769e4c4382db245abc6",
+      "master_path": "design-system/formal-picturebook-fullframe-v1-a-batch1/source/masters/scene_02_stargaze_shot_005-master-2x.png",
+      "master_sha256": "d36b99ebfe0805233000df9c0cbf2bc6217691111a7da7fa8e2dbe2eb99e4a85",
+      "generation": "built-in image generation, initial candidate plus one targeted repair; r1 superseded, r2 accepted as candidate",
+      "normalization": "center-cover to 780x1688, sRGB, 8-bit, opaque PNG; SHOW_ALL review exports generated",
+      "owner_review": "PASS_WITH_P2_NOTES: sky-first, adult and cat are small, one broad broken galaxy, two weak flowers, quiet right house and no baked meteor or UI.",
+      "independent_visual_review": "PASS_WITH_P2_NOTES in reviews/INDEPENDENT-VISUAL-REVIEW.md; fresh read-only reviewer made zero writes",
+      "user_visual_approval": "approved on 2026-08-31 as STARGAZE-F5-FORMAL-V1-A; exact approval record is docs/STARGAZE-F5-FORMAL-V1-A-APPROVAL.md; approved 390x844 SHA-256 ad3a13c6a4d915f178d03d444874776e2df042f328f998de81a2bfbf0d774d8d"
+    },
+    {
+      "page_id": "scene_01_home_shot_005",
+      "asset_id": "ART-PBOOK-HOME-005",
+      "status": "awaiting-user",
+      "prompt_path": "design-system/formal-picturebook-fullframe-v1-a-batch1/prompts/scene_01_home_shot_005.md",
+      "prompt_sha256": "f67bc3f4d61b113a2f8bc80491c2c873ee5dccd59bab27f0946eeba310da26ac",
+      "initial_raw_path": "design-system/formal-picturebook-fullframe-v1-a-batch1/source/raw/scene_01_home_shot_005-imagegen-r1.png",
+      "initial_raw_sha256": "dc17a5139dbe200e75a646c9ffbd4c9322a5897aa647bcc614f9395fdb4b0051",
+      "targeted_repair_count": 1,
+      "raw_path": "design-system/formal-picturebook-fullframe-v1-a-batch1/source/raw/scene_01_home_shot_005-imagegen-r2.png",
+      "raw_sha256": "96c7be0ca55998952ca35e6e6bc88b83db16b3d9215ab4fdd0ce3c94e639351f",
+      "master_path": "design-system/formal-picturebook-fullframe-v1-a-batch1/source/masters/scene_01_home_shot_005-master-2x.png",
+      "master_sha256": "1323cf0a103fffd7f8fd731ab0e1164527b9b0401b5d6acd357d1d3b215ecfb9",
+      "generation": "built-in image generation, initial candidate plus one targeted repair; r1 superseded, r2 accepted as candidate",
+      "normalization": "center-cover to 780x1688, sRGB, 8-bit, opaque PNG; SHOW_ALL review exports generated",
+      "owner_review": "PASS_WITH_P2_NOTES: bright readable home, dinner and two cups visible, adult left and ordinary cat right, night window remains secondary, no party and no black-room reveal.",
+      "independent_visual_review": "PASS_WITH_P2_NOTES in reviews/INDEPENDENT-VISUAL-REVIEW.md; fresh read-only reviewer made zero writes",
+      "user_visual_approval": "pending"
+    }
+  ]
+}

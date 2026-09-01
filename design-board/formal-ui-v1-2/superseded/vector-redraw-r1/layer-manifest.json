@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "formal-ui-v1-2-a-master-v2-internal",
+  "status": "INTERNAL_CANDIDATE_OWNER_VISUAL_REVIEW_PENDING",
+  "gate": "B2_FORMAL_VISIBLE_EXPERIENCE",
+  "canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "px",
+    "viewBox": "0 0 390 844"
+  },
+  "source": {
+    "file": "formal-ui-v1-2-a-master-v2.svg",
+    "format": "editable-semantic-svg",
+    "embeddedRasterCount": 0,
+    "externalAssetCount": 0,
+    "authorship": "original vector redraw by Codex; paths, gradients, patterns and SVG filters only"
+  },
+  "approvedReference": {
+    "file": "../approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png",
+    "sha256": "ad65d6fa811487fe5bd69726f1c5bf9d4b4c983d517c360b7087ff42f89cb36a",
+    "approvedScope": [
+      "whole-room bright warmth with no black corners",
+      "cold blue night outside the window",
+      "adult left and ordinary house cat right",
+      "low table with prepared dinner",
+      "broad pendant light plus one table-side practical light",
+      "watercolor-paper and dyed-paper visual direction"
+    ],
+    "notLicensedForDirectReuse": true
+  },
+  "styleContract": {
+    "version": "FORMAL-UI-V1.2-A",
+    "title": "灯一直为你亮着",
+    "lighting": "stable bright warm home from the first indoor frame",
+    "forbidden": [
+      "black corners",
+      "dark-room light-on performance",
+      "third lamp",
+      "bloom or pure-white clipped highlights",
+      "framed relationship portrait",
+      "embedded generated raster",
+      "birthday crowd or party props"
+    ]
+  },
+  "rendering": {
+    "browser": "system Google Chrome headless",
+    "viewport": "390x844",
+    "deviceScaleFactor": 1,
+    "fullEvidence": "evidence/formal-ui-v1-2-a-master-v2-390x844.png",
+    "thumbnailEvidence": "evidence/formal-ui-v1-2-a-master-v2-25pct.png",
+    "thumbnailDimensions": "97x211 (integer-rounded 25% inspection)"
+  },
+  "layerCount": 30,
+  "layersBackToFront": [
+    { "order": 1, "id": "layer-01-wall-base", "label": "Wall base", "semantic": "bright honey wall wash and paper fibers" },
+    { "order": 2, "id": "layer-02-ceiling", "label": "Ceiling plane", "semantic": "warm ceiling perspective and cornice" },
+    { "order": 3, "id": "layer-03-window-night", "label": "Cold night through window", "semantic": "deep-blue sky, one diffuse galaxy and tree silhouettes" },
+    { "order": 4, "id": "layer-04-window-stars", "label": "Window stars", "semantic": "sparse natural star field" },
+    { "order": 5, "id": "layer-05-window-frame", "label": "Window wood and glass", "semantic": "open wood frame and restrained glass reflections" },
+    { "order": 6, "id": "layer-06-wall-shelf", "label": "Wall shelf and ceramics", "semantic": "quiet domestic storage without a light source" },
+    { "order": 7, "id": "layer-07-hanging-plant", "label": "Hanging plant", "semantic": "living greenery and hand-drawn leaf lines" },
+    { "order": 8, "id": "layer-08-wall-life-details", "label": "Quiet wall details", "semantic": "non-portrait botanical wall detail" },
+    { "order": 9, "id": "layer-09-floor-base", "label": "Warm floor base", "semantic": "warm wood and tatami-toned ground" },
+    { "order": 10, "id": "layer-10-floor-tatami", "label": "Tatami seams and perspective", "semantic": "floor depth and woven seams" },
+    { "order": 11, "id": "layer-11-broad-light", "label": "Broad indirect room light", "semantic": "wall, furniture and floor reflections without black corners" },
+    { "order": 12, "id": "layer-12-pendant", "label": "Pendant broad light", "semantic": "primary broad ambient source" },
+    { "order": 13, "id": "layer-13-floor-cushions", "label": "Floor cushions", "semantic": "soft domestic foreground and seated weight" },
+    { "order": 14, "id": "layer-14-adult-legs", "label": "Adult seated legs", "semantic": "grounded cross-legged posture" },
+    { "order": 15, "id": "layer-15-adult-torso", "label": "Adult torso and posture", "semantic": "normal adult shoulder and back mass with knit texture" },
+    { "order": 16, "id": "layer-16-adult-head", "label": "Adult head three-quarter back", "semantic": "restrained identity and minimal visible profile" },
+    { "order": 17, "id": "layer-17-adult-hair", "label": "Adult original hair silhouette", "semantic": "original short-hair contour and painted strands" },
+    { "order": 18, "id": "layer-18-low-table", "label": "Low wooden dinner table", "semantic": "perspective table top, apron, legs and wood grain" },
+    { "order": 19, "id": "layer-19-adult-arms", "label": "Adult arms resting at table", "semantic": "hands-at-rest posture and knit sleeves" },
+    { "order": 20, "id": "layer-20-kettle", "label": "Black iron kettle", "semantic": "hot kettle with handle, lid, spout and warm reflections" },
+    { "order": 21, "id": "layer-21-table-lamp", "label": "Single table-side practical lamp", "semantic": "only secondary practical light source" },
+    { "order": 22, "id": "layer-22-tableware", "label": "Cups and small tableware", "semantic": "two cups and condiment dish" },
+    { "order": 23, "id": "layer-23-dinner-rice", "label": "Two rice bowls", "semantic": "two distinct bowls of rice" },
+    { "order": 24, "id": "layer-24-dinner-soup", "label": "Hot soup", "semantic": "soup bowl, garnish and visible steam" },
+    { "order": 25, "id": "layer-25-dinner-main", "label": "Main dish and greens", "semantic": "shared main plate and vegetable side" },
+    { "order": 26, "id": "layer-26-cat-body", "label": "Ordinary house cat body", "semantic": "small seated cat body, haunch and curled tail" },
+    { "order": 27, "id": "layer-27-cat-head", "label": "Cat head ears and markings", "semantic": "ordinary cat ears and restrained fur markings" },
+    { "order": 28, "id": "layer-28-steam-and-warmth", "label": "Steam and lived-in warmth", "semantic": "non-interactive meal steam and soft air accents" },
+    { "order": 29, "id": "layer-29-paper-grain", "label": "Unified paper grain", "semantic": "procedural SVG paper texture shared across the scene" },
+    { "order": 30, "id": "layer-30-warm-edge-balance", "label": "Warm edge balance no black corners", "semantic": "subtle warm perimeter balance, never a dark vignette" }
+  ],
+  "knownReviewFindings": [
+    "Deep-blue night window and cold-warm contrast are now present and readable at 25%.",
+    "Dinner semantics remain legible as kettle, two rice bowls, soup, main dish, greens and cups.",
+    "The internal candidate is still visibly flatter and less painterly than the user-approved reference.",
+    "Adult profile and cat silhouette still require owner visual judgment before any formal master approval."
+  ],
+  "releaseBoundary": {
+    "cocosIntegration": false,
+    "wechatPreview": false,
+    "upload": false,
+    "publish": false,
+    "gatePassClaimed": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "449ffcbb-d29b-4ae4-935f-b484cb3fb2b0",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/cocos/outdoor-gate-c/outdoor-gate-c-contract.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "logs": [],
+  "metrics": {
+    "buttons": [
+      {
+        "disabled": false,
+        "height": 0,
+        "hidden": false,
+        "label": "看看星空",
+        "width": 0
+      },
+      {
+        "disabled": false,
+        "height": 0,
+        "hidden": false,
+        "label": "吹吹风",
+        "width": 0
+      },
+      {
+        "disabled": false,
+        "height": 0,
+        "hidden": false,
+        "label": "回家",
+        "width": 0
+      },
+      {
+        "disabled": false,
+        "height": 0,
+        "hidden": false,
+        "label": "人物和猫",
+        "width": 0
+      },
+      {
+        "disabled": true,
+        "height": 790,
+        "hidden": false,
+        "label": "灯一直为你亮着。",
+        "width": 364
+      },
+      {
+        "disabled": false,
+        "height": 44,
+        "hidden": false,
+        "label": "回草坡",
+        "width": 58
+      },
+      {
+        "disabled": false,
+        "height": 44,
+        "hidden": false,
+        "label": "重新看草坡入口",
+        "width": 112
+      }
+    ],
+    "hintsReady": true,
+    "story": {
+      "hidden": false,
+      "prompt": "灯一直为你亮着。",
+      "title": "回家"
+    },
+    "url": "http://127.0.0.1:4173/design-board/outdoor-picturebook-branch-v1/"
+  }
+}

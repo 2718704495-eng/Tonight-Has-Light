@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "package_id": "STARGAZE-FORMAL-BATCH-V1-A",
+  "candidate_id": "stargaze-formal-batch-v1-a-f3-r2",
+  "asset_id": "ART-PBOOK-STAR-003",
+  "created_on": "2026-08-31",
+  "source_kind": "ai-assisted-formal-fullframe",
+  "generator": "OpenAI built-in image_gen",
+  "generation_count": 1,
+  "targeted_repair_count": 1,
+  "prompt": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/prompt.md",
+    "sha256": "a199e1b0e09787bdfc17b7300f7aff75b762cfd7ac5b7885917429dae9697246"
+  },
+  "repair_prompt": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/prompt-repair-01.md",
+    "sha256": "d6c5a46f2eff1c4740ae184fe3c5e35ed91c51e320335f1d3c7123358dca682a",
+    "reason": "Initial cloud risked reading as a meteor/comet tail; final R2 repair broadened it into a natural low-contrast cloud."
+  },
+  "references": [
+    {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/390x844/scene_02_stargaze_shot_002.png",
+      "sha256": "98e267506a5485a93fdefa9759611c0ac4de2120edd5dc61d253a9ff59deee52",
+      "role": "approved F2 exact-file sky insert, locked Milky Way arc, observed main star, dust-dark rift, and bottom-edge adult/cat crop; read-only reference"
+    },
+    {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/exports/390x844/scene_02_stargaze_shot_001.png",
+      "sha256": "6b2450a1993742545b83958d4f17913fda63a512071f42fa0a148feb4856c26e",
+      "role": "approved F1 sequence continuity and stargaze hierarchy; read-only reference"
+    },
+    {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/390x844/scene_02_stargaze_shot_005.png",
+      "sha256": "ad3a13c6a4d915f178d03d444874776e2df042f328f998de81a2bfbf0d774d8d",
+      "role": "approved F5 final-sky material, one Milky Way geography, and non-spectacle mood reference; read-only reference"
+    }
+  ],
+  "raw": {
+    "initial_path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/source/raw/scene_02_stargaze_shot_003-imagegen-r1.png",
+    "initial_sha256": "b9f75c728fd499bfb920c606dd216a67bb16996df31ddc21ad07d9a4fa043af6",
+    "final_path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/source/raw/scene_02_stargaze_shot_003-imagegen-r2-targeted-repair.png",
+    "final_sha256": "7775e6653a8e7d6773fc0b51783b1d7a08817cab3febf4de1bf6ef73b7cdb417"
+  },
+  "master": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/source/masters/scene_02_stargaze_shot_003-master-2x.png",
+    "sha256": "d2561098ca35f15b02adb7a74bc7cc61778bbfb789552f57a27dc58685b57745"
+  },
+  "human_edits": [],
+  "rights_boundary": {
+    "living_artist_name": false,
+    "existing_ip_character": false,
+    "brand_or_logo": false,
+    "real_person_likeness": false,
+    "personal_data": false
+  },
+  "review_audit": {
+    "prompt_safety": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/reviews/PROMPT-SAFETY.md",
+    "root_owner_review": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/reviews/ROOT-OWNER-VISUAL-REVIEW.md",
+    "root_owner_result": {
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "ready_for_user_review": true
+    },
+    "independent_review": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/reviews/INDEPENDENT-VISUAL-REVIEW.md",
+    "independent_result": {
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "write_operations": 0,
+      "ready_for_user_review": true
+    }
+  },
+  "user_visual_approval": {
+    "date": "2026-08-31",
+    "phrase": "批准 STARGAZE-F3-FORMAL-V1-A-R2：F3 单帧视觉通过",
+    "record": "docs/STARGAZE-F3-FORMAL-V1-A-R2-APPROVAL.md",
+    "status": "USER VISUAL PASS / FROZEN",
+    "approved_390x844_sha256": "ae9cc70c56be5b8f83e985058d7ab40bc71a0aa0f5f32819bb2706f0111244ec",
+    "approved_master_sha256": "d2561098ca35f15b02adb7a74bc7cc61778bbfb789552f57a27dc58685b57745",
+    "pre_approval_hash_manifest": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_003/approvals/HASHES.pre-approval.sha256",
+    "pre_approval_hash_manifest_sha256": "0466cb82c55385dddd058cae3f780d472c9df6f66c02b213706cee04f7750bc1"
+  },
+  "runtime_authorized": false
+}

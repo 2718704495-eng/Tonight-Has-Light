@@ -1,0 +1,128 @@
+{
+  "candidateId": "stargaze-formal-batch-v1-a-f4-r1",
+  "page": "scene_02_stargaze_shot_004",
+  "status": "MECHANICAL PASS / USER VISUAL PASS FROZEN",
+  "checks": [
+    {
+      "label": "master",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "7a1d0cac3e0b6a27dd7629213fbf58547b9f3f378348308f87f1bda8fa642fd0",
+      "metadata": {
+        "format": "png",
+        "width": 780,
+        "height": 1688,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "195x422",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "50fb03ede500217889870dee6678c502d0d72125f375208fd5985e72298b2036",
+      "metadata": {
+        "format": "png",
+        "width": 195,
+        "height": 422,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "360x800",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "1e7e5c5c0b8c556cfe929c520fe2c2d88d11384a24f7e169a7ff13e476694c06",
+      "metadata": {
+        "format": "png",
+        "width": 360,
+        "height": 800,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "390x844",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "0973fec9fc18cfdb7422dcef32941a1fb071f84c95154cb10fd1d5279bda1ae9",
+      "metadata": {
+        "format": "png",
+        "width": 390,
+        "height": 844,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "430x932",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "13a37fdc369a15e57e68d4ed9b919d51fc6868ace35afc2f206aedfb844c2ebb",
+      "metadata": {
+        "format": "png",
+        "width": 430,
+        "height": 932,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "430x844-pressure",
+      "hashPass": true,
+      "dimensionsPass": true,
+      "formatPass": true,
+      "actualHash": "c88899d5663296f21096503b072d2f4e8ab9739ee0b74966ea37b5800575818d",
+      "metadata": {
+        "format": "png",
+        "width": 430,
+        "height": 844,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    {
+      "label": "raw hash",
+      "passed": true,
+      "actualHash": "6bb51bb0a31f7663f3381c274978f64da42dc5e356aadb078f6efa53c61f34d2",
+      "recordedHash": "6bb51bb0a31f7663f3381c274978f64da42dc5e356aadb078f6efa53c61f34d2"
+    },
+    {
+      "label": "prompt hash",
+      "passed": true,
+      "actualHash": "2686801fa3ca069854451579428db77154e376614abf9090232b049a5b39bda8",
+      "recordedHash": "2686801fa3ca069854451579428db77154e376614abf9090232b049a5b39bda8"
+    },
+    {
+      "label": "reference F3 approved exact master edit target; locked camera, crop, Milky Way, dust-dark rift, established stars, cloud identity, and bottom-edge adult/cat slivers",
+      "passed": true,
+      "actualHash": "d2561098ca35f15b02adb7a74bc7cc61778bbfb789552f57a27dc58685b57745",
+      "recordedHash": "d2561098ca35f15b02adb7a74bc7cc61778bbfb789552f57a27dc58685b57745"
+    },
+    {
+      "label": "360x800 safe-corner border",
+      "passed": true
+    },
+    {
+      "label": "430x932 safe-corner border",
+      "passed": true
+    },
+    {
+      "label": "430x844-pressure safe-corner border",
+      "passed": true
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "contract": "STORY-GAMEPLAY-REPLAN-V1-A-R2",
+  "canonical_state_ids": ["ROOT_STILL", "WIND_AWAKENS", "LOOK_UP", "EYES_ADJUST", "STAR_OCCLUDED", "FOLLOW_CLOUD", "STAR_RETURNS", "WIDE_SKY", "METEOR_EVENT", "AFTER_METEOR", "DOOR_MATCH_CUT", "ARRIVAL_H1", "KITCHEN_CALL", "COOK_AND_SERVE", "TABLE_RITUAL", "LEAVE_THE_LIGHT"],
+  "legal_transitions": {
+    "ROOT_STILL": ["WIND_AWAKENS", "LOOK_UP", "DOOR_MATCH_CUT"],
+    "WIND_AWAKENS": ["ROOT_STILL"],
+    "LOOK_UP": ["EYES_ADJUST"],
+    "EYES_ADJUST": ["STAR_OCCLUDED"],
+    "STAR_OCCLUDED": ["FOLLOW_CLOUD"],
+    "FOLLOW_CLOUD": ["STAR_RETURNS"],
+    "STAR_RETURNS": ["WIDE_SKY"],
+    "WIDE_SKY": ["METEOR_EVENT"],
+    "METEOR_EVENT": ["AFTER_METEOR"],
+    "AFTER_METEOR": ["ROOT_STILL", "DOOR_MATCH_CUT"],
+    "DOOR_MATCH_CUT": ["ARRIVAL_H1"],
+    "ARRIVAL_H1": ["KITCHEN_CALL"],
+    "KITCHEN_CALL": ["COOK_AND_SERVE"],
+    "COOK_AND_SERVE": ["TABLE_RITUAL"],
+    "TABLE_RITUAL": ["LEAVE_THE_LIGHT"],
+    "LEAVE_THE_LIGHT": ["LEAVE_THE_LIGHT", "ROOT_STILL", "END"]
+  },
+  "route_notes": {
+    "wind_return": "Returning from WIND_AWAKENS preserves windToken.",
+    "meteor_return": "Returning from AFTER_METEOR preserves the current night and does not replay the meteor.",
+    "direct_home": "ROOT_STILL uses DOOR_MATCH_CUT before ARRIVAL_H1.",
+    "final_return": "LEAVE_THE_LIGHT may return to ROOT_STILL without clearing current-night state."
+  }
+}
+

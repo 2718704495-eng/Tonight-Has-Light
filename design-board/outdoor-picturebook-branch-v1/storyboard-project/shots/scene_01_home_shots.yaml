@@ -1,0 +1,80 @@
+schema_version: 2
+scene: 1
+scene_id: scene_01_home
+contract: HOME-MEAL-RITUAL-V1-A
+shots:
+  - id: scene_01_home_shot_001
+    panel_order: 1
+    shot_type: interior-wide-arrival
+    lens: "32–35mm equivalent"
+    camera_angle: "just inside the threshold, lightly pulled back, slightly above seated shoulder height; match H5 room axis"
+    emotion: "the whole lit home receives you before anything is asked"
+    action: "The adult has just entered wearing one plain gray-blue outer layer; the ordinary cat stands at the adult's right foot."
+    composition: "Complete room first; adult and cat lower-left; left-wall hook empty; low table, kettle, two cups, rice and soup visible; the warm-ochre central hot dish is still absent; cold window secondary."
+    overlay: "放下外衣"
+    continuity:
+      - "Match H5 hook, table, window, wall planes, floor and camera geography."
+      - "Outer layer is exactly the garment later hanging on the H5 hook."
+    status: gate_a_approved_gate_b_art_blocked
+  - id: scene_01_home_shot_002
+    panel_order: 2
+    shot_type: entry-medium-close
+    lens: "50–55mm equivalent"
+    camera_angle: "rear three-quarter toward the left wall hook"
+    emotion: "the first small release after coming home"
+    action: "The adult places the same unmarked outer layer on the hook, revealing the dark knitted top visible in H5; the cat walks past naturally on four paws."
+    composition: "Hand, outer layer and hook are primary; enough wall and floor remain to locate the action inside H1; no face reveal."
+    continuity:
+      - "Hook position and garment shape resolve exactly into H5."
+      - "Do not introduce a bag, branded coat, wardrobe change or anthropomorphic cat assistance."
+    status: gate_a_approved_gate_b_art_blocked
+  - id: scene_01_home_shot_003
+    panel_order: 3
+    shot_type: kitchen-medium
+    lens: "35–40mm equivalent"
+    camera_angle: "rear-side view inside the connected kitchen zone"
+    emotion: "ordinary warmth becoming tangible"
+    action: "The adult lifts the pot lid with one hand and uses the other to serve the final warm-ochre hot dish into the same shallow round plate seen at the center of H5. The cat stays outside the cooking safety zone."
+    composition: "Hands, pot and serving vessel form one clear action triangle; retain one doorway, wall corner or table edge that visibly anchors this connected kitchen to H1/H5; broad warm room bounce remains readable; no dark theatrical kitchen."
+    continuity:
+      - "The resulting dish and vessel must match H4 and the approved H5 table."
+      - "Same adult inner knit, trousers, shoes, hair and back-facing anonymity."
+      - "Wall/floor material, woodwork and warm-light direction remain those of H1/H5; the kitchen must not read as another house."
+    status: gate_a_approved_gate_b_art_blocked
+  - id: scene_01_home_shot_004
+    panel_order: 4
+    shot_type: table-medium-close
+    lens: "55–65mm equivalent"
+    camera_angle: "slightly above table height, keeping the adult back/shoulder and cat at floor level"
+    emotion: "food is ready; either small action is enough"
+    action: "The complete meal and one warm-water cup are available. Food and cup each support one optional idempotent static response."
+    composition: "Meal and cup are the primary pair; adult hand and cat remain secondary; no task card, progress or reward highlight."
+    overlays:
+      - id: eat
+        label: "吃一点"
+      - id: sip
+        label: "喝口温水"
+    continuity:
+      - "Touching food/cup stays on H4; touching non-hotspot space advances to H5."
+      - "Either, both or neither interaction is valid."
+      - "Response layers are future independent editable assets, never generated text or auto-cutout formal layers."
+    status: gate_a_approved_gate_b_art_blocked
+  - id: scene_01_home_shot_005
+    panel_order: 5
+    shot_type: interior-wide-return
+    lens: "32–35mm equivalent"
+    camera_angle: "the exact approved HOME-F5-WIDE-ROOM-V1-A-R1 frame"
+    emotion: "the room is still here, and now the table is ready"
+    action: "The adult sits left and the ordinary cat sits immediately right before the complete simple dinner."
+    composition: "Byte-identical approved frame; no crop, redraw, color change, new text or baked interaction."
+    approved_sha256_390x844: 569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51
+    continuity:
+      - "H1 returns here spatially; H2 garment is now on the left hook; H3/H4 food resolves on the table."
+      - "Bottom threshold, floor and foreground must not be darkened further."
+    status: home_f5_wide_room_v1_a_r1_user_visual_pass
+transitions:
+  root_to_h1_ms: 320
+  standard_page_ms: 260
+  h4_to_h5_ms: 420
+  reduced_motion_ms: 150
+production_boundary: "The written spec is user-approved and the Gate B production plan is written. H1-H4 prompts and art remain blocked until the user separately approves the H1 single-frame pilot. H5 is frozen. No runtime/Cocos/WeChat/Git work is authorized."

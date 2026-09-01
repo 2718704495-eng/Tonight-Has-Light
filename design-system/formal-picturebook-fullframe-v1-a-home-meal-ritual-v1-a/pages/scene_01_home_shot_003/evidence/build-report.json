@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "status": "BUILT / VISUAL REVIEW REQUIRED",
+  "deterministic": true,
+  "pageId": "scene_01_home_shot_003",
+  "inputs": {
+    "h2": {
+      "export390": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/390x844/scene_01_home_shot_002.png",
+        "sha256": "ef11fcb38d1e515cb2f8702d7b4ea8734f0f92ac08f24c8e2a18bfad97ccc6dd",
+        "width": 390,
+        "height": 844,
+        "format": "png"
+      },
+      "export195": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/195x422/scene_01_home_shot_002.png",
+        "sha256": "8419a54d7aea95c00eb638299f4f3a0faec8e41c0a259fce190336b878bf7593",
+        "width": 195,
+        "height": 422,
+        "format": "png"
+      }
+    },
+    "h3": {
+      "candidateVersion": "r1",
+      "export390": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/exports/390x844/scene_01_home_shot_003.png",
+        "sha256": "c582fa5e9ad5c0f465e307472ccfc6791ed78b2d1e81663669df9151819aab72",
+        "width": 390,
+        "height": 844,
+        "format": "png"
+      },
+      "export195": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/exports/195x422/scene_01_home_shot_003.png",
+        "sha256": "ce8e04691102079b2cea11b02c4e51cf52a752c3902433a07dd0481b0822b4c2",
+        "width": 195,
+        "height": 422,
+        "format": "png"
+      }
+    },
+    "h5": {
+      "export390": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png",
+        "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51",
+        "width": 390,
+        "height": 844,
+        "format": "png"
+      },
+      "export195": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/195x422/scene_01_home_shot_005.png",
+        "sha256": "674994ba660f8f2ed8a7f605c976e6eb0199ede70ced81e91e092862078ed57e",
+        "width": 195,
+        "height": 422,
+        "format": "png"
+      }
+    }
+  },
+  "sequence": [
+    {
+      "pageId": "scene_01_home_shot_002",
+      "state": "outerwear put down"
+    },
+    {
+      "pageId": "scene_01_home_shot_003",
+      "state": "serving hot dish in connected kitchen"
+    },
+    {
+      "pageId": "scene_01_home_shot_005",
+      "state": "returned to dinner table"
+    }
+  ],
+  "annotations": {
+    "roomAnchors": [
+      "door frame",
+      "original main-room window / lamp / low table",
+      "wall / floor material",
+      "warm light direction"
+    ]
+  },
+  "dishContinuity": {
+    "source": "H3 actual shallow round plate and hot-dish serving crop",
+    "futureTarget": "H4 is a future target only; no H4 image is generated or baked into this evidence.",
+    "result": "H5 actual central shallow round plate and finished-dish crop"
+  },
+  "outputs": {
+    "h2H3H5Story390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/evidence/h2-h3-h5-story-390.png",
+      "sha256": "5e7e5bea81812970899c8339f832e20b46dc018b58289a9bd57c1da9fe5c0885",
+      "width": 1170,
+      "height": 900,
+      "format": "png"
+    },
+    "h2H3H5Story195": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/evidence/h2-h3-h5-story-195.png",
+      "sha256": "53138e9564168da2a45a1d4f6fcea359f32306b60446435954e62379a29f2484",
+      "width": 585,
+      "height": 478,
+      "format": "png"
+    },
+    "h3RoomAnchors390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/evidence/h3-room-anchors-390.png",
+      "sha256": "e163e5addd0292bd3d929ba44db63d8398b02fbe56bb23737886ad2312384da7",
+      "width": 390,
+      "height": 844,
+      "format": "png"
+    },
+    "h3H5DishContinuity390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/evidence/h3-h5-dish-continuity-390.png",
+      "sha256": "9d3a40e071f9c18b9da8c20b80ce599d31ec4ac838abfa43d214a736d14481ff",
+      "width": 780,
+      "height": 360,
+      "format": "png"
+    }
+  },
+  "evidenceBoundary": {
+    "cleanPlate": false,
+    "userApproved": false,
+    "chineseLabelsBakedInEvidenceOnly": true,
+    "h4Generated": false
+  },
+  "notes": [
+    "The 390 and 195 triptychs read H2 outerwear put down → H3 kitchen serving → H5 returned to the dinner table.",
+    "The dish board uses actual crops from H3 and H5 only; H4 remains a future target and no H4 image is generated.",
+    "Chinese labels are baked only into evidence boards, never into H2, H3, or H5 clean plates.",
+    "This is continuity evidence, not a clean plate, Gate B visual PASS, or user approval."
+  ]
+}

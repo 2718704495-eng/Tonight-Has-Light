@@ -1,0 +1,17 @@
+scene_id: scene_01_outdoor_breeze
+title: 同一阵风
+status: keyframes_r1_approved_formal_layers_in_progress
+location: 深夜草坡，右侧中景有亮着稳定暖门的小屋
+characters:
+  - adult_back
+  - ordinary_house_cat
+beats:
+  - settle
+  - breeze_passes
+  - afterwind_detail
+forbidden:
+  - task_ui
+  - reward_language
+  - automatic_entry
+  - extra_characters
+  - additional_milky_way

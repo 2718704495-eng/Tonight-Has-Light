@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "d9690a7e-f917-40e3-a93f-f8415be9694a",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/cocos/outdoor-gate-c/outdoor-illustration-wind-model.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

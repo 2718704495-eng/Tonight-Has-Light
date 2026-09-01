@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "candidate_id": "formal-picturebook-root-wind-hem-v1-a-r3",
+  "contract_id": "ROOT-WIND-HEM-V1-A-R3",
+  "status": "BLOCKED_SINGLE_EDIT_FAILED",
+  "created_on": "2026-08-30",
+  "source_property": "ai-assisted-formal-fullframe",
+  "approval": {
+    "phrase": "批准 ROOT-WIND-HEM-V1-A-R3：只修衣角方向",
+    "record_path": "docs/ROOT-WIND-HEM-V1-A-R3-APPROVAL.md",
+    "record_sha256": "5e846a61d42b0e4b7250a7f2d3e5e53b20c0d2db318b5b9f52dd56ac42347843",
+    "scope": "one R2-derived direction-only edit; same-file user visual approval remains unavailable because owner preflight failed"
+  },
+  "permissions": {
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "experience_setting": false,
+    "review_submission": false,
+    "release": false,
+    "git": false
+  },
+  "input_r2": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/masters/root_night_slope_v2-wind-hem-master-2x.png",
+    "sha256": "38e030cbec217c1349beba788e4a041631d295c52a2a0957dc4f9fa45c72a068",
+    "disposition": "immutable historical evidence; not overwritten"
+  },
+  "unaffected_frozen_pages": [
+    {
+      "page_id": "scene_02_stargaze_shot_005",
+      "sha256": "d36b99ebfe0805233000df9c0cbf2bc6217691111a7da7fa8e2dbe2eb99e4a85"
+    },
+    {
+      "page_id": "scene_01_home_shot_005",
+      "sha256": "1323cf0a103fffd7f8fd731ab0e1164527b9b0401b5d6acd357d1d3b215ecfb9"
+    }
+  ],
+  "page": {
+    "page_id": "root_night_slope_v3_wind_hem_right",
+    "asset_id": "ART-OUTDOOR-ROOT-WIND-HEM-002",
+    "clean_plate": true,
+    "not_in_build": true,
+    "direction_edit_count": 1,
+    "additional_generation_count": 0,
+    "prompt_path": "design-system/formal-picturebook-fullframe-v1-a-root-r3-wind-hem-right/prompts/root_night_slope_v3_wind_hem_right_fix.md",
+    "prompt_sha256": "b73b5297fdd73b28f4e76f9d1ce1068d7dafbb4e696451ed40134a20a073b765",
+    "raw_path": "design-system/formal-picturebook-fullframe-v1-a-root-r3-wind-hem-right/source/raw/root_night_slope_v3-wind-hem-right-imagegen-r1.png",
+    "raw_sha256": "c74e87bcae3661d68f29f52c795807dadbc3ab1981d9c32be4af830b08c42f17",
+    "master_path": "design-system/formal-picturebook-fullframe-v1-a-root-r3-wind-hem-right/source/masters/root_night_slope_v3-wind-hem-right-master-2x.png",
+    "master_sha256": "54e86c34bb4234e0a0ffa58993a8e1d2e722691cf59f1ec225fa480536a83a51",
+    "normalization": "center-cover to 780x1688; sRGB 8-bit RGBA opaque PNG; SHOW_ALL exports use #06265F",
+    "exports": {
+      "195x422": "6a5159bdb7ebce91e827be1b8b8fd14374d789dd977eff8d67765a91dc4cee30",
+      "390x844": "c4df25fa1291e63044176690ceef6d88afc5a188bb1a89d80c95d4d51f137096",
+      "360x800": "d4e6856d8fb6211fd7c1b7ed9c939e2ee1e005c52f25ff0e2131bad2f5b86680",
+      "430x932": "3d16970a47ffb8ca2c63fdcc0d4a7b603b35a155d74049bd4694d57a2c033cee",
+      "430x844-pressure": "1e08600c204ce0bef15cd0f1f83ef034356ed6a4334484707a2f8530f7f2bbf8"
+    },
+    "owner_review": "BLOCKED_P0_SCOPE_DRIFT_P1_HEM_DIRECTION",
+    "owner_review_path": "design-system/formal-picturebook-fullframe-v1-a-root-r3-wind-hem-right/evidence/owner-review.md",
+    "owner_review_sha256": "5c98877846990e5edd946c12fc21d9b344a646e73be02abef584bf1e67f93ebf",
+    "independent_review": "BLOCKED_P1_ZERO_WRITE_VISUAL_ONLY",
+    "independent_review_path": "design-system/formal-picturebook-fullframe-v1-a-root-r3-wind-hem-right/evidence/independent-visual-only-review.md",
+    "independent_review_sha256": "af8036f296256e88789191cf77f2f9149894d7ff6dd4c3271c57752ca47fdfcc",
+    "excluded_review_record_path": "design-system/formal-picturebook-fullframe-v1-a-root-r3-wind-hem-right/reviews/INVALID-WRITE-CONTAMINATED-REVIEW.md",
+    "excluded_review_record_sha256": "27d7051f145afa383441ce4c7afeb82ea6b5a418759c6b18d9a1f9c9298bda3a",
+    "user_visual_approval": "not_requested_due_preflight_failure"
+  }
+}

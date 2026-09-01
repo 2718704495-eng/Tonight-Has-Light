@@ -1,0 +1,216 @@
+{
+  "initial": {
+    "hintsReady": true,
+    "hitSamples": {
+      "character": "人物和猫",
+      "grass": "吹吹风",
+      "home": "回家",
+      "sky": "看看星空"
+    },
+    "hotspots": [
+      {
+        "h": 455,
+        "label": "看看星空",
+        "w": 388,
+        "z": "3"
+      },
+      {
+        "h": 244,
+        "label": "吹吹风",
+        "w": 268,
+        "z": "3"
+      },
+      {
+        "h": 185,
+        "label": "回家",
+        "w": 105,
+        "z": "5"
+      },
+      {
+        "h": 227,
+        "label": "人物和猫",
+        "w": 221,
+        "z": "2"
+      }
+    ],
+    "stage": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  "star": {
+    "label": "看看星空",
+    "frames": [
+      {
+        "frame": "0",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "看星空"
+      },
+      {
+        "frame": "1",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "看星空"
+      },
+      {
+        "frame": "2",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "看星空"
+      },
+      {
+        "frame": "3",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "看星空"
+      },
+      {
+        "frame": "4",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，回到草坡",
+        "tapDisabled": false,
+        "title": "看星空"
+      }
+    ],
+    "afterFinalTap": {
+      "currentState": "草坡入口",
+      "frame": "none",
+      "hubHidden": false,
+      "storyDisabled": false,
+      "storyHidden": true
+    }
+  },
+  "breeze": {
+    "label": "吹吹风",
+    "frames": [
+      {
+        "frame": "0",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "吹吹风"
+      },
+      {
+        "frame": "1",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "吹吹风"
+      },
+      {
+        "frame": "2",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "吹吹风"
+      },
+      {
+        "frame": "3",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "吹吹风"
+      },
+      {
+        "frame": "4",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，回到草坡",
+        "tapDisabled": false,
+        "title": "吹吹风"
+      }
+    ],
+    "afterFinalTap": {
+      "currentState": "草坡入口",
+      "frame": "none",
+      "hubHidden": false,
+      "storyDisabled": false,
+      "storyHidden": true
+    }
+  },
+  "home": {
+    "label": "回家",
+    "frames": [
+      {
+        "frame": "0",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "回家"
+      },
+      {
+        "frame": "1",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "回家"
+      },
+      {
+        "frame": "2",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "回家"
+      },
+      {
+        "frame": "3",
+        "hidden": false,
+        "homeEnding": false,
+        "prompt": "轻触画面，继续看",
+        "tapDisabled": false,
+        "title": "回家"
+      },
+      {
+        "frame": "4",
+        "hidden": false,
+        "homeEnding": true,
+        "prompt": "灯一直为你亮着。",
+        "tapDisabled": true,
+        "title": "回家"
+      }
+    ],
+    "afterFinalTap": {
+      "currentState": "回家",
+      "frame": "4",
+      "homeEnding": true,
+      "hubHidden": true,
+      "storyDisabled": true,
+      "storyHidden": false
+    }
+  },
+  "hintOnce": {
+    "first": true,
+    "second": true,
+    "playwrightVisibilityNote": "Locator.isVisible ignores opacity; classList is authoritative for this opacity-hidden hint."
+  },
+  "reduceLarge": {
+    "bodyOverflowX": 0,
+    "invitationFont": "22px",
+    "promptFont": "16.8px",
+    "stageClasses": "phone-stage reduced-motion large-text",
+    "storyLayerTransition": "0.15s"
+  },
+  "consoleErrors": [],
+  "hintOnceClassCheck": {
+    "firstClass": true,
+    "afterHideClass": false,
+    "secondClass": false
+  }
+}

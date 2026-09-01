@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">今夜有灯·功能图标集</title>
+  <desc id="desc">声音、静音、减少动态、大字、关闭、分享和暂停七枚原创线性图标。</desc>
+  <metadata>
+    AI-assisted code-authored editable vector; project: 今夜有灯; asset: ui-icons;
+    version: 1.0.0; date: 2026-08-21; third-party assets: none.
+    Each named group is an independently editable 96 by 96 icon source.
+  </metadata>
+  <style>
+    .tile{fill:#182235;stroke:#2A3A4F;stroke-width:2}.glyph{fill:none;stroke:#F6EBD7;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.hint{fill:none;stroke:#F2B66D;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.label{fill:#B8C6CF;font:18px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;text-anchor:middle}
+  </style>
+  <g id="layer-preview-background" data-layer="preview-background"><rect width="960" height="480" rx="28" fill="#10151F"/></g>
+
+  <g id="icon-sound-on" data-layer="sound-on" transform="translate(42 28)">
+    <rect class="tile" width="196" height="184" rx="24"/>
+    <g transform="translate(50 30)"><path class="glyph" d="M5 38h18l22-19v58L23 58H5Z"/><path class="glyph" d="M59 34c8 8 8 20 0 28M70 22c16 16 16 36 0 52"/></g>
+    <text class="label" x="98" y="157">声音</text>
+  </g>
+  <g id="icon-sound-off" data-layer="sound-off" transform="translate(282 28)">
+    <rect class="tile" width="196" height="184" rx="24"/>
+    <g transform="translate(50 30)"><path class="glyph" d="M5 38h18l22-19v58L23 58H5Z"/><path class="hint" d="m59 35 26 26m0-26L59 61"/></g>
+    <text class="label" x="98" y="157">静音</text>
+  </g>
+  <g id="icon-reduced-motion" data-layer="reduced-motion" transform="translate(522 28)">
+    <rect class="tile" width="196" height="184" rx="24"/>
+    <g transform="translate(49 28)"><path class="glyph" d="M7 59c11-25 27-38 47-38 19 0 31 10 40 28M7 59c10 13 22 19 37 19 18 0 31-8 43-27"/><path class="hint" d="M15 71 88 17"/><circle cx="52" cy="49" r="8" fill="#F6EBD7"/></g>
+    <text class="label" x="98" y="157">减少动态</text>
+  </g>
+  <g id="icon-large-text" data-layer="large-text" transform="translate(762 28)">
+    <rect class="tile" width="156" height="184" rx="24"/>
+    <g transform="translate(28 27)"><path class="glyph" d="M8 76 35 17h13l27 59M18 55h47"/><path class="hint" d="M70 76 86 41h8l16 35M77 63h26"/></g>
+    <text class="label" x="78" y="157">大字</text>
+  </g>
+
+  <g id="icon-close" data-layer="close" transform="translate(162 268)">
+    <rect class="tile" width="196" height="184" rx="24"/>
+    <g transform="translate(50 30)"><circle class="glyph" cx="48" cy="48" r="36"/><path class="glyph" d="m34 34 28 28m0-28L34 62"/></g>
+    <text class="label" x="98" y="157">关闭</text>
+  </g>
+  <g id="icon-share" data-layer="share" transform="translate(402 268)">
+    <rect class="tile" width="196" height="184" rx="24"/>
+    <g transform="translate(50 30)"><path class="glyph" d="M23 43v34h51V43M49 62V14m0 0L32 31m17-17 17 17"/></g>
+    <text class="label" x="98" y="157">分享</text>
+  </g>
+  <g id="icon-pause" data-layer="pause" transform="translate(642 268)">
+    <rect class="tile" width="196" height="184" rx="24"/>
+    <g transform="translate(50 30)"><circle class="glyph" cx="48" cy="48" r="36"/><path class="glyph" d="M39 33v30m18-30v30"/></g>
+    <text class="label" x="98" y="157">暂停</text>
+  </g>
+</svg>

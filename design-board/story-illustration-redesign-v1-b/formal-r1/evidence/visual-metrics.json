@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "candidate": "STORY-ILLUSTRATION-REDESIGN-V1-B-FORMAL-R1",
+  "status": "BLOCKED",
+  "gate": "BLOCKED",
+  "approval": "AWAITING_USER_SECOND_APPROVAL",
+  "meaning": "Formal art is deliberately hidden until the designated review manifest explicitly releases the redrawn revision. Existing unreleased exports are not candidates.",
+  "assetRoot": "../../../design-system/outdoor-story-illustration-v1-b/dist",
+  "reviewManifest": {
+    "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/FORMAL-REVIEW-MANIFEST.json",
+    "present": false,
+    "valid": false,
+    "candidate": null,
+    "status": null,
+    "error": "missing FORMAL-REVIEW-MANIFEST.json"
+  },
+  "summary": {
+    "expected": 15,
+    "present": 15,
+    "missing": 0,
+    "invalidDimensions": 0
+  },
+  "assets": [
+    {
+      "frame": "B01",
+      "title": "坐稳",
+      "variant": "390x844",
+      "variantLabel": "390×844 主图",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/390x844/b01-settle.png",
+      "expectedDimensions": [
+        "390x844"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "390x844",
+      "bytes": 88772,
+      "error": null
+    },
+    {
+      "frame": "B02",
+      "title": "风经过",
+      "variant": "390x844",
+      "variantLabel": "390×844 主图",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/390x844/b02-wind-passes.png",
+      "expectedDimensions": [
+        "390x844"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "390x844",
+      "bytes": 107206,
+      "error": null
+    },
+    {
+      "frame": "B03",
+      "title": "余风",
+      "variant": "390x844",
+      "variantLabel": "390×844 主图",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/390x844/b03-afterwind.png",
+      "expectedDimensions": [
+        "390x844"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "390x844",
+      "bytes": 118084,
+      "error": null
+    },
+    {
+      "frame": "B01",
+      "title": "坐稳",
+      "variant": "thumbnail-195x422",
+      "variantLabel": "195×422 合同缩略 / 50%",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/thumbnail-195x422/b01-settle.png",
+      "expectedDimensions": [
+        "195x422"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "195x422",
+      "bytes": 30375,
+      "error": null
+    },
+    {
+      "frame": "B02",
+      "title": "风经过",
+      "variant": "thumbnail-195x422",
+      "variantLabel": "195×422 合同缩略 / 50%",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/thumbnail-195x422/b02-wind-passes.png",
+      "expectedDimensions": [
+        "195x422"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "195x422",
+      "bytes": 37055,
+      "error": null
+    },
+    {
+      "frame": "B03",
+      "title": "余风",
+      "variant": "thumbnail-195x422",
+      "variantLabel": "195×422 合同缩略 / 50%",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/thumbnail-195x422/b03-afterwind.png",
+      "expectedDimensions": [
+        "195x422"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "195x422",
+      "bytes": 40538,
+      "error": null
+    },
+    {
+      "frame": "B01",
+      "title": "坐稳",
+      "variant": "360x800",
+      "variantLabel": "360×800",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/360x800/b01-settle.png",
+      "expectedDimensions": [
+        "360x800"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "360x800",
+      "bytes": 77308,
+      "error": null
+    },
+    {
+      "frame": "B02",
+      "title": "风经过",
+      "variant": "360x800",
+      "variantLabel": "360×800",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/360x800/b02-wind-passes.png",
+      "expectedDimensions": [
+        "360x800"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "360x800",
+      "bytes": 93802,
+      "error": null
+    },
+    {
+      "frame": "B03",
+      "title": "余风",
+      "variant": "360x800",
+      "variantLabel": "360×800",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/360x800/b03-afterwind.png",
+      "expectedDimensions": [
+        "360x800"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "360x800",
+      "bytes": 101572,
+      "error": null
+    },
+    {
+      "frame": "B01",
+      "title": "坐稳",
+      "variant": "430x932",
+      "variantLabel": "430×932",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/430x932/b01-settle.png",
+      "expectedDimensions": [
+        "430x932"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "430x932",
+      "bytes": 52478,
+      "error": null
+    },
+    {
+      "frame": "B02",
+      "title": "风经过",
+      "variant": "430x932",
+      "variantLabel": "430×932",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/430x932/b02-wind-passes.png",
+      "expectedDimensions": [
+        "430x932"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "430x932",
+      "bytes": 67443,
+      "error": null
+    },
+    {
+      "frame": "B03",
+      "title": "余风",
+      "variant": "430x932",
+      "variantLabel": "430×932",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/430x932/b03-afterwind.png",
+      "expectedDimensions": [
+        "430x932"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "430x932",
+      "bytes": 88036,
+      "error": null
+    },
+    {
+      "frame": "B01",
+      "title": "坐稳",
+      "variant": "430x844-pressure",
+      "variantLabel": "430×844 压力裁切",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/430x844-pressure/b01-settle.png",
+      "expectedDimensions": [
+        "430x844"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "430x844",
+      "bytes": 48841,
+      "error": null
+    },
+    {
+      "frame": "B02",
+      "title": "风经过",
+      "variant": "430x844-pressure",
+      "variantLabel": "430×844 压力裁切",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/430x844-pressure/b02-wind-passes.png",
+      "expectedDimensions": [
+        "430x844"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "430x844",
+      "bytes": 63767,
+      "error": null
+    },
+    {
+      "frame": "B03",
+      "title": "余风",
+      "variant": "430x844-pressure",
+      "variantLabel": "430×844 压力裁切",
+      "path": "../../../design-system/outdoor-story-illustration-v1-b/dist/430x844-pressure/b03-afterwind.png",
+      "expectedDimensions": [
+        "430x844"
+      ],
+      "present": true,
+      "validDimensions": true,
+      "actualDimensions": "430x844",
+      "bytes": 83642,
+      "error": null
+    }
+  ],
+  "manualChecks": [
+    {
+      "id": "adult-cat-identity",
+      "label": "成年人＋普通家猫身份稳定",
+      "result": null,
+      "note": "等待逐帧人工 Yes/No 复核"
+    },
+    {
+      "id": "shared-gaze",
+      "label": "共同仰望方向稳定",
+      "result": null,
+      "note": "等待逐帧人工 Yes/No 复核"
+    },
+    {
+      "id": "single-milky-way",
+      "label": "恰好一条宽淡断口银河",
+      "result": null,
+      "note": "等待逐帧人工 Yes/No 复核"
+    },
+    {
+      "id": "stable-warm-door",
+      "label": "右侧中景暖门稳定且不催促",
+      "result": null,
+      "note": "等待逐帧人工 Yes/No 复核"
+    },
+    {
+      "id": "exactly-two-flowers",
+      "label": "恰好两朵弱光花",
+      "result": null,
+      "note": "等待逐帧人工 Yes/No 复核"
+    },
+    {
+      "id": "material-continuity",
+      "label": "干笔、网点与纸张颗粒连续",
+      "result": null,
+      "note": "等待逐帧人工 Yes/No 复核"
+    },
+    {
+      "id": "no-black-halo",
+      "label": "无矩形黑边、贴纸晕边或透明接缝",
+      "result": null,
+      "note": "等待逐帧人工 Yes/No 复核"
+    },
+    {
+      "id": "no-task-map-language",
+      "label": "无任务地图、奖励、进度或引导语言",
+      "result": null,
+      "note": "等待逐帧人工 Yes/No 复核"
+    }
+  ]
+}

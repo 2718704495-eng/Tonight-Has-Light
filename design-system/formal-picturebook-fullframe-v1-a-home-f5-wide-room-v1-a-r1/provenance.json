@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "candidate_id": "formal-picturebook-home-f5-wide-room-v1-a-r1",
+  "asset_id": "ART-PBOOK-HOME-005",
+  "status": "HOME_F5_GATE_B_VISUAL_PASS",
+  "created_on": "2026-08-30",
+  "authoring": {
+    "prompt_and_direction": "Codex project lead under user-approved HOME-F5-WIDE-ROOM-V1-A",
+    "generation": "built-in image_gen; exactly one full-frame result",
+    "normalization": "deterministic crop and resize with Sharp; no generative edit, repaint, inpaint, compositing, or copied pixels"
+  },
+  "references": [
+    {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/source/masters/scene_01_home_shot_005-master-2x.png",
+      "sha256": "1323cf0a103fffd7f8fd731ab0e1164527b9b0401b5d6acd357d1d3b215ecfb9",
+      "role": "previous Home F5 identity, dinner meaning, warm light, and B comic reference; close composition explicitly not retained"
+    },
+    {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/masters/root_night_slope_v2-wind-hem-r4-manual-master-2x.png",
+      "sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8",
+      "role": "approved adult/cat identity and B comic language reference only; no outdoor composition copied"
+    }
+  ],
+  "raw": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/source/raw/scene_01_home_shot_005-wide-room-imagegen-r1.png",
+    "sha256": "ca1068a35f1c3d1919ccc4548bc52e4e37aca7863c3a2a84c0c29aef79ef3fee",
+    "dimensions": "853x1844",
+    "color_space": "sRGB",
+    "alpha": false
+  },
+  "accepted_candidate": {
+    "master_path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/source/masters/scene_01_home_shot_005-wide-room-master-2x.png",
+    "master_sha256": "fa8e4de347adcf90f1f0aa7aaf292389d27dd0745027522fd40b062766d5b23a",
+    "crop": { "left": 48, "top": 0, "width": 748, "height": 1618 },
+    "crop_selection": "middle of three deterministic engineering previews; chosen because it preserves whole-room readability while preventing the foreground threshold from becoming a dark-room signal",
+    "user_visual_approval": {
+      "status": "approved",
+      "phrase": "批准 HOME-F5-WIDE-ROOM-V1-A-R1：暖家全景视觉通过",
+      "date": "2026-08-30",
+      "record_path": "docs/HOME-F5-WIDE-ROOM-V1-A-R1-APPROVAL.md",
+      "record_sha256": "e3b9d7d7d7ed05756fd0b5fd80e4a6dcaf710bdb6b466838af138b38b5cd7106",
+      "approved_390x844_sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51",
+      "approved_195x422_sha256": "674994ba660f8f2ed8a7f605c976e6eb0199ede70ced81e91e092862078ed57e"
+    }
+  },
+  "supersession": {
+    "old_home_f5": "historical and untouched; superseded by the user-approved HOME-F5-WIDE-ROOM-V1-A-R1 visual baseline",
+    "root_r4": "unchanged",
+    "stargaze_f5": "unchanged"
+  },
+  "review": {
+    "owner": "PASS_FOR_USER_REVIEW_WITH_P2_NOTE",
+    "independent": "READY_FOR_USER_VISUAL_REVIEW / P0=0 / P1=0 / P2=1 / ZERO_WRITES",
+    "p2": "Ceiling, foreground floor, and left threshold are deeper ochre than the center wall; runtime compression or grading must not darken them further."
+  },
+  "permissions": {
+    "batch1_replace": true,
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "review": false,
+    "release": false,
+    "git": false
+  }
+}

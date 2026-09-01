@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "candidate_id": "formal-picturebook-root-wind-hem-v1-a-r4-manual",
+  "contract_id": "ROOT-WIND-HEM-V1-A-R4",
+  "created_on": "2026-08-30",
+  "method": "manual_local_edit_over_frozen_r2",
+  "imagegen_used": false,
+  "whole_frame_regeneration_used": false,
+  "third_party_inputs": [],
+  "source_baseline": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/masters/root_night_slope_v2-wind-hem-master-2x.png",
+    "sha256": "38e030cbec217c1349beba788e4a041631d295c52a2a0957dc4f9fa45c72a068",
+    "role": "only image source"
+  },
+  "local_operations": [
+    {
+      "type": "same_image_grass_clone",
+      "contract_path": "source/manual-patch/repair_clone.json",
+      "mask_path": "source/manual-patch/repair_clone_mask.svg",
+      "purpose": "cover only the protruding old screen-left flap"
+    },
+    {
+      "type": "masked_knit_texture_reuse",
+      "contract_path": "source/manual-patch/right_hem_texture.json",
+      "mask_path": "source/manual-patch/right_hem_source_mask.svg",
+      "transparent_patch_path": "source/manual-patch/right_hem_texture_patch.png",
+      "purpose": "preserve R2 knit/paper texture while turning and lifting the local hem toward screen-right"
+    },
+    {
+      "type": "editable_svg_contour_accents",
+      "path": "source/manual-patch/root_wind_hem_r4_patch.svg",
+      "purpose": "blend the transformed knit patch with broken dry-brush contours"
+    }
+  ],
+  "approved_roi_master_2x": {
+    "left": 50,
+    "top": 1318,
+    "width": 328,
+    "height": 112
+  },
+  "user_visual_approval": {
+    "status": "approved",
+    "approved_on": "2026-08-30",
+    "phrase": "批准 ROOT-WIND-HEM-V1-A-R4：根页视觉通过",
+    "record_path": "docs/ROOT-WIND-HEM-V1-A-R4-APPROVAL.md",
+    "record_sha256": "15f9a7e8ceefa973d79073091fda31502c65a3a67ab91f05d2b2c6e612a91cd5",
+    "pre_visual_approval_hashes_sha256": "888ee916f58c1f55a5986afa040be5564e38800dea023f02fb812962167b2c42",
+    "approved_master_sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8",
+    "approved_390x844_sha256": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a"
+  },
+  "permissions": {
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "review_submission": false,
+    "release": false,
+    "git": false
+  }
+}

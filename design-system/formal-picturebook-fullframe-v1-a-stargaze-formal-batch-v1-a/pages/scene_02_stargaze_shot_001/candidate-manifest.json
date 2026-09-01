@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "candidate_id": "stargaze-formal-batch-v1-a-f1-r1",
+  "batch_id": "STARGAZE-FORMAL-BATCH-V1-A",
+  "page_id": "scene_02_stargaze_shot_001",
+  "asset_id": "ART-PBOOK-STAR-001",
+  "page_name": "抬头",
+  "status": "user-visual-pass-frozen",
+  "not_in_build": true,
+  "source_property": "ai-assisted-formal-fullframe",
+  "permissions": {
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "review": false,
+    "release": false,
+    "git": false
+  },
+  "approval": {
+    "batch_start_phrase": "批准 STARGAZE-F5-FORMAL-V1-A 正式文件；批准 STARGAZE-FORMAL-BATCH-V1-A，从 F1 单帧探针开始",
+    "batch_start_record": "docs/STARGAZE-FORMAL-BATCH-V1-A-APPROVAL.md",
+    "user_visual_approval": {
+      "phrase": "批准 STARGAZE-F1-FORMAL-V1-A-R1：F1 单帧视觉通过",
+      "record": "docs/STARGAZE-F1-FORMAL-V1-A-R1-APPROVAL.md",
+      "approved_390x844_sha256": "6b2450a1993742545b83958d4f17913fda63a512071f42fa0a148feb4856c26e",
+      "pre_approval_hash_manifest": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/approvals/HASHES.pre-approval.sha256",
+      "pre_approval_hash_manifest_sha256": "bdb0cb668dd127c442e28e7a13425104e4f658c1421da726ab97bc448ed36efa"
+    }
+  },
+  "references": [
+    {
+      "role": "approved root R4 visual continuity anchor",
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/exports/390x844/root_night_slope_v2-wind-hem-r4-manual.png",
+      "sha256": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a"
+    },
+    {
+      "role": "approved formal F5 stargaze clean-plate continuity anchor",
+      "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/390x844/scene_02_stargaze_shot_005.png",
+      "sha256": "ad3a13c6a4d915f178d03d444874776e2df042f328f998de81a2bfbf0d774d8d"
+    }
+  ],
+  "generation": {
+    "tool": "built-in image_gen",
+    "date": "2026-08-31",
+    "prompt_path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/prompt.md",
+    "prompt_sha256": "cde397574e7b7ffdb0dcb2ff8e158585b27cc74039a56aa1fa614c84798a4ee8",
+    "targeted_repair_count": 0,
+    "raw_path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/source/raw/scene_02_stargaze_shot_001-imagegen-r1.png",
+    "raw_sha256": "d75bdf4bb9ae371a72c5d11b33c89dbdcbbe6d71f1f6f961c87ca41071b2d6b4"
+  },
+  "master": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/source/masters/scene_02_stargaze_shot_001-master-2x.png",
+    "sha256": "a51280508e89f4ce0cbbee27ce75e5548301a9bde37972395edaec81c3296dbf"
+  },
+  "exports": {
+    "390x844": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/exports/390x844/scene_02_stargaze_shot_001.png",
+      "sha256": "6b2450a1993742545b83958d4f17913fda63a512071f42fa0a148feb4856c26e"
+    },
+    "195x422": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/exports/195x422/scene_02_stargaze_shot_001.png",
+      "sha256": "ad9c89d2880853281aec6e8cde97b071f3d508a485960dadf6d6a8e20c9367c8"
+    },
+    "360x800": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/exports/360x800/scene_02_stargaze_shot_001.png",
+      "sha256": "31adba353d6e796857a4eb584e22ef0f3158a8470b70b34c03121d2e7036186b"
+    },
+    "430x932": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/exports/430x932/scene_02_stargaze_shot_001.png",
+      "sha256": "b6a52014f24efcd340dc005756386617597d9d0339a149a4aa2f5817e696da6a"
+    },
+    "430x844-pressure": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/exports/430x844-pressure/scene_02_stargaze_shot_001.png",
+      "sha256": "1fdbd17d8e50ac4b1308ba9939096e0d25cc8f0d7f472b4c2ef523bacf1088e3"
+    }
+  },
+  "owner_review": {
+    "decision": "ROOT_OWNER_PASS_FOR_INDEPENDENT_REVIEW",
+    "p0": 0,
+    "p1": 0,
+    "p2": [],
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/reviews/ROOT-OWNER-VISUAL-REVIEW.md",
+    "invalid_prior_review": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/reviews/owner-review-f1-r1.md",
+    "side_window_determination": "No defect: Root R4 and formal F5 both contain a subordinate side window; the door remains the only obvious warm source.",
+    "clean_plate_forbidden_items": {
+      "text_or_pseudo_text": 0,
+      "ui_or_logo": 0,
+      "meteor_or_trail": 0,
+      "moon_or_aurora_or_second_galaxy": 0,
+      "constellation_or_task_marker": 0
+    }
+  },
+  "independent_review": {
+    "decision": "READY_FOR_USER_VISUAL_REVIEW",
+    "p0": 0,
+    "p1": 0,
+    "p2": 0,
+    "write_operations": 0,
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/reviews/INDEPENDENT-VISUAL-REVIEW.md"
+  },
+  "review_artifacts": {
+    "board_390": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/evidence/root-f1-f5-board-390x844.png",
+    "board_195": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/evidence/root-f1-f5-board-195x422.png",
+    "review_board_report": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/evidence/review-board-report.json"
+  }
+}

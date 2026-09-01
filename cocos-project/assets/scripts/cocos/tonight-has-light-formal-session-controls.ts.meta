@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "c43dbe5f-b9ce-4dfc-a4a7-8b531f4ab570",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/cocos/tonight-has-light-formal-session-controls.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

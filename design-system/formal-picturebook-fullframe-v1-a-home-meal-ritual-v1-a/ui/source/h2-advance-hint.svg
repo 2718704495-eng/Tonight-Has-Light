@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176" height="76" viewBox="0 0 176 76" role="img" aria-label="轻轻碰一下，故事会往前走。">
+  <title>H2 一次性翻页提示</title>
+  <text x="88" y="31" text-anchor="middle"
+        font-family="STSong, Songti SC, Noto Serif CJK SC, serif"
+        font-size="14" font-weight="500" letter-spacing="0.4"
+        fill="#F6E2BC" stroke="#26170F" stroke-width="1.6"
+        stroke-linejoin="round" paint-order="stroke fill">轻轻碰一下，</text>
+  <text x="88" y="53" text-anchor="middle"
+        font-family="STSong, Songti SC, Noto Serif CJK SC, serif"
+        font-size="14" font-weight="500" letter-spacing="0.4"
+        fill="#F6E2BC" stroke="#26170F" stroke-width="1.6"
+        stroke-linejoin="round" paint-order="stroke fill">故事会往前走。</text>
+</svg>

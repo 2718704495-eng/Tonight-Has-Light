@@ -1,0 +1,95 @@
+{
+  "candidate": "STARGAZE-SKY-FINALE-V1-A-GATE-B-R1",
+  "date": "2026-08-29",
+  "scope": "browser-design-board-only",
+  "status": "MECHANICAL_CHECK_PASS__BLOCKED_FOR_USER_VISUAL_APPROVAL",
+  "approved_timing_ms": {
+    "clean_hold": 900,
+    "meteor_flight": 800,
+    "tail_fade": 450,
+    "quiet_hold": 1000,
+    "copy_reveal": 180,
+    "copy_reveal_starts_at": 3150
+  },
+  "default_390x844": {
+    "stage": { "width": 390, "height": 844 },
+    "meteor_dom_count": 1,
+    "choices_ready": true,
+    "copy_inside_stage": true,
+    "home_target": { "width": 100, "height": 48 },
+    "stay_target": { "width": 100, "height": 48 },
+    "target_gap": 12,
+    "horizontal_overflow": 0
+  },
+  "responsive": [
+    {
+      "viewport": { "width": 360, "height": 800 },
+      "rendered_stage": { "width": 344, "height": 744.4375 },
+      "copy_inside_stage": true,
+      "horizontal_overflow": 0
+    },
+    {
+      "viewport": { "width": 390, "height": 844 },
+      "rendered_stage": { "width": 366, "height": 792.046875 },
+      "copy_inside_stage": true,
+      "horizontal_overflow": 0
+    },
+    {
+      "viewport": { "width": 430, "height": 932 },
+      "rendered_stage": { "width": 390, "height": 844 },
+      "copy_inside_stage": true,
+      "horizontal_overflow": 0
+    }
+  ],
+  "large_text_360x800": {
+    "scale": 1.2,
+    "copy_inside_stage": true,
+    "observation_font_px": 19.2,
+    "question_font_px": 21.6,
+    "action_font_px": 16.8,
+    "home_target": { "width": 108, "height": 48 },
+    "stay_target": { "width": 111.953125, "height": 48 },
+    "target_gap": 12,
+    "horizontal_overflow": 0
+  },
+  "reduced_motion": {
+    "animation_name": "meteor-static",
+    "transform": "none",
+    "translation": false,
+    "static_trace_fade_in_ms": 180,
+    "static_trace_fade_out_ms": 180,
+    "choices_unchanged": true
+  },
+  "routes": {
+    "home": {
+      "title": "回家",
+      "frame": 0,
+      "hub_flash": false,
+      "finale_cleared": true
+    },
+    "stay": {
+      "destination": "草坡入口",
+      "completion_or_reward_written": false
+    },
+    "early_return": {
+      "finale_timer_cleared": true,
+      "choices_visible_after_3500ms": false
+    }
+  },
+  "audio_changed": false,
+  "console_errors": 0,
+  "evidence": [
+    "stargaze-finale-meteor-390x844.png",
+    "stargaze-finale-choices-390x844.png",
+    "stargaze-finale-reduced-static-390x844.png",
+    "stargaze-finale-large-viewport-360x800-full.png"
+  ],
+  "boundaries": [
+    "NO_COCOS",
+    "NO_BUILD",
+    "NO_UPLOAD",
+    "NO_REVIEW",
+    "NO_RELEASE",
+    "NO_GIT"
+  ]
+}

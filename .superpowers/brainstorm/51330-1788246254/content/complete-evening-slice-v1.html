@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>今夜有灯｜完整夜晚组合样片</title>
+  <style>
+    :root {
+      --navy-0: #020a18;
+      --navy-1: #07172d;
+      --navy-2: #0b2b55;
+      --paper: #f4ead2;
+      --paper-dim: #cfbea0;
+      --warm: #f4b85f;
+      --warm-2: #ffd68b;
+      --ink: #1b120c;
+      --line: rgba(231, 217, 188, .24);
+      --glass: rgba(2, 10, 24, .62);
+      --phone-w: min(390px, calc(100vw - 32px));
+      --phone-h: calc(var(--phone-w) * 844 / 390);
+      --copy-scale: 1;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(31, 69, 111, .24), transparent 33%),
+        linear-gradient(145deg, #020711 0%, #07101d 48%, #120e0a 100%);
+      color: var(--paper);
+      font-family: "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif;
+      overflow-x: hidden;
+    }
+
+    body.large-copy { --copy-scale: 1.2; }
+
+    .page-shell {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 28px clamp(16px, 4vw, 56px);
+    }
+
+    .review-layout {
+      width: min(1120px, 100%);
+      display: grid;
+      grid-template-columns: minmax(320px, 390px) minmax(280px, 1fr);
+      align-items: center;
+      justify-content: center;
+      gap: clamp(28px, 6vw, 86px);
+    }
+
+    .phone-wrap { position: relative; width: var(--phone-w); }
+    .prototype-badge {
+      position: absolute;
+      z-index: 40;
+      top: 12px;
+      left: 14px;
+      color: rgba(246, 237, 217, .62);
+      font-size: 10px;
+      letter-spacing: .08em;
+      pointer-events: none;
+    }
+
+    .phone {
+      position: relative;
+      width: var(--phone-w);
+      height: var(--phone-h);
+      overflow: hidden;
+      border-radius: 28px;
+      background: #031126;
+      box-shadow:
+        0 30px 90px rgba(0,0,0,.55),
+        0 0 0 1px rgba(255,255,255,.12),
+        inset 0 0 0 1px rgba(0,0,0,.7);
+      isolation: isolate;
+      touch-action: none;
+    }
+
+    .scene-layer,
+    .scene-layer img,
+    .fx-layer,
+    .scene-ui,
+    .scene-shade {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .scene-layer { z-index: 1; }
+    .scene-layer img {
+      object-fit: cover;
+      opacity: 0;
+      transform: scale(1.002);
+      transition: opacity 320ms ease, filter 320ms ease;
+    }
+    .scene-layer img.active { opacity: 1; }
+    .scene-layer img.exit { opacity: 0; }
+
+    .scene-shade {
+      z-index: 4;
+      background: linear-gradient(to bottom, rgba(1,7,18,.14), transparent 23%, transparent 63%, rgba(1,6,14,.42));
+      pointer-events: none;
+      transition: opacity 240ms ease;
+    }
+
+    .fx-layer { z-index: 5; pointer-events: none; overflow: hidden; }
+    .scene-ui { z-index: 12; pointer-events: none; }
+
+    .settings-button {
+      position: absolute;
+      z-index: 30;
+      right: 14px;
+      top: 13px;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(3, 11, 25, .36);
+      color: rgba(247, 238, 218, .9);
+      backdrop-filter: blur(8px);
+      font-size: 19px;
+      cursor: pointer;
+      pointer-events: auto;
+    }
+    .settings-panel {
+      position: absolute;
+      z-index: 29;
+      right: 12px;
+      top: 63px;
+      width: 166px;
+      padding: 11px;
+      display: grid;
+      gap: 7px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 14px;
+      background: rgba(3, 10, 22, .86);
+      backdrop-filter: blur(16px);
+      opacity: 0;
+      transform: translateY(-6px);
+      visibility: hidden;
+      transition: 160ms ease;
+      pointer-events: auto;
+    }
+    .settings-panel.open { opacity: 1; transform: none; visibility: visible; }
+    .setting {
+      min-height: 44px;
+      border: 0;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 12px;
+      background: rgba(255,255,255,.055);
+      color: var(--paper);
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .setting span:last-child { color: var(--warm-2); }
+
+    .phone-chapter {
+      position: absolute;
+      z-index: 16;
+      left: 18px;
+      top: 54px;
+      max-width: 62%;
+      padding: 8px 10px 8px 11px;
+      border-left: 2px solid rgba(255, 211, 133, .72);
+      background: linear-gradient(90deg, rgba(2, 9, 22, .52), rgba(2, 9, 22, .18));
+      color: rgba(248, 239, 220, .9);
+      pointer-events: none;
+      opacity: .96;
+    }
+    .phone-step {
+      display: block;
+      margin-bottom: 2px;
+      color: rgba(255, 205, 119, .82);
+      font-size: calc(9px * var(--copy-scale));
+      letter-spacing: .16em;
+    }
+    .phone-chapter strong {
+      display: block;
+      font: 400 calc(15px * var(--copy-scale))/1.25 "STKaiti", "KaiTi", serif;
+      letter-spacing: .05em;
+    }
+    .phone.indoor .phone-chapter {
+      border-left-color: rgba(103, 47, 10, .46);
+      background: linear-gradient(90deg, rgba(255, 229, 178, .83), rgba(255, 229, 178, .2));
+      color: #311b0b;
+    }
+    .phone.indoor .phone-step { color: rgba(106, 51, 14, .72); }
+
+    .copy-card {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 82px;
+      padding: 10px 13px 11px 14px;
+      text-align: left;
+      border: 1px solid rgba(239, 226, 198, .18);
+      border-left: 2px solid rgba(255, 211, 133, .74);
+      border-radius: 9px 16px 9px 16px;
+      background: linear-gradient(100deg, rgba(2, 9, 22, .82), rgba(2, 9, 22, .52));
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      transform: translateY(7px);
+      transition: opacity 220ms ease, transform 220ms ease;
+      pointer-events: none;
+    }
+    .copy-card.visible { opacity: 1; transform: none; }
+    .story-kicker {
+      display: block;
+      margin-bottom: 2px;
+      color: rgba(255, 205, 119, .86);
+      font-size: calc(9px * var(--copy-scale));
+      letter-spacing: .18em;
+    }
+    .copy-card h2 {
+      margin: 0 0 3px;
+      color: rgba(255, 246, 226, .98);
+      font: 600 calc(16px * var(--copy-scale))/1.35 "STKaiti", "KaiTi", serif;
+      letter-spacing: .04em;
+    }
+    .copy-card p {
+      margin: 0;
+      color: rgba(239, 230, 210, .91);
+      font: calc(13px * var(--copy-scale))/1.62 "STKaiti", "KaiTi", serif;
+      letter-spacing: .025em;
+      text-shadow: 0 1px 8px rgba(0,0,0,.65);
+    }
+    .phone.indoor .copy-card {
+      border-color: rgba(100, 51, 15, .24);
+      border-left-color: rgba(109, 48, 10, .5);
+      background: linear-gradient(100deg, rgba(255, 235, 193, .91), rgba(255, 220, 157, .77));
+    }
+    .phone.indoor .story-kicker { color: rgba(91, 40, 11, .72); }
+    .phone.indoor .copy-card h2,
+    .phone.indoor .copy-card p {
+      color: #2b190c;
+      text-shadow: none;
+    }
+    .phone:not(.indoor) .copy-card {
+      top: 44%;
+      bottom: auto;
+      right: 34px;
+      background:
+        linear-gradient(100deg, rgba(2, 9, 22, .88), rgba(2, 9, 22, .58)),
+        repeating-linear-gradient(0deg, transparent 0 10px, rgba(255,255,255,.035) 10px 11px);
+    }
+    .phone.indoor .copy-card {
+      top: 88px;
+      bottom: auto;
+      right: 54px;
+      background:
+        linear-gradient(100deg, rgba(255, 237, 199, .92), rgba(255, 219, 153, .78)),
+        repeating-linear-gradient(0deg, transparent 0 10px, rgba(91, 40, 11, .05) 10px 11px);
+    }
+
+    .actions {
+      position: absolute;
+      z-index: 20;
+      left: 18px;
+      right: 18px;
+      bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      pointer-events: auto;
+    }
+    .action {
+      min-width: 104px;
+      min-height: 48px;
+      border: 1px solid rgba(246, 232, 203, .32);
+      border-radius: 999px;
+      padding: 10px 13px;
+      background: rgba(2, 9, 22, .62);
+      color: rgba(250, 242, 224, .95);
+      backdrop-filter: blur(9px);
+      font: calc(14px * var(--copy-scale))/1.2 "STKaiti", "KaiTi", serif;
+      letter-spacing: .04em;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease, opacity 180ms ease;
+    }
+    .action:active { transform: scale(.97); }
+    .action.warm {
+      color: #301806;
+      border-color: rgba(99, 47, 8, .32);
+      background: rgba(255, 211, 132, .88);
+    }
+    .action.quiet { min-width: 94px; opacity: .78; }
+
+    .hotspot {
+      position: absolute;
+      z-index: 18;
+      min-width: 48px;
+      min-height: 48px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      pointer-events: auto;
+    }
+    .hotspot::after {
+      content: attr(aria-label);
+      position: absolute;
+      left: 50%;
+      bottom: 4px;
+      translate: -50% 0;
+      white-space: nowrap;
+      color: rgba(248, 239, 220, .82);
+      font: calc(13px * var(--copy-scale))/1 "STKaiti", "KaiTi", serif;
+      text-shadow: 0 1px 8px rgba(0,0,0,.8);
+      opacity: .92;
+    }
+    .phone.indoor .hotspot::after {
+      color: #3c210e;
+      text-shadow: 0 1px 4px rgba(255, 223, 160, .55);
+    }
+
+    .gesture-hint {
+      position: absolute;
+      z-index: 19;
+      left: 50%;
+      top: 58%;
+      translate: -50% -50%;
+      width: min(290px, 78%);
+      padding: 14px 17px;
+      border: 1px solid rgba(242,232,212,.24);
+      border-radius: 15px;
+      background: rgba(2,9,22,.58);
+      color: rgba(247,239,221,.94);
+      text-align: center;
+      font: calc(14px * var(--copy-scale))/1.55 "STKaiti", "KaiTi", serif;
+      backdrop-filter: blur(8px);
+      pointer-events: none;
+      transition: opacity 180ms ease;
+    }
+    .gesture-hint small { display: block; opacity: .64; margin-top: 4px; font-family: inherit; }
+    .gesture-track {
+      height: 2px;
+      margin-top: 10px;
+      background: rgba(255,255,255,.16);
+      overflow: hidden;
+    }
+    .gesture-progress { height: 100%; width: 0%; background: var(--warm-2); transition: width 80ms linear; }
+
+    .drag-token {
+      position: absolute;
+      z-index: 23;
+      width: 68px;
+      height: 54px;
+      border-radius: 48% 48% 44% 44%;
+      border: 1px solid rgba(255,221,157,.5);
+      box-shadow: 0 8px 22px rgba(0,0,0,.34);
+      background-repeat: no-repeat;
+      cursor: grab;
+      touch-action: none;
+      pointer-events: auto;
+      transition: box-shadow 120ms ease, opacity 180ms ease;
+    }
+    .drag-token.dragging { cursor: grabbing; box-shadow: 0 0 26px rgba(255,194,98,.5); }
+    .drop-zone {
+      position: absolute;
+      z-index: 17;
+      width: 92px;
+      height: 86px;
+      border: 1px dashed rgba(255,220,150,.58);
+      border-radius: 50%;
+      background: rgba(255,195,92,.06);
+      pointer-events: none;
+      animation: quietPulse 2.4s ease-in-out infinite;
+    }
+
+    .stars { position:absolute; inset:0; opacity:0; transition:opacity 300ms ease; }
+    .stars.visible { opacity:1; }
+    .star {
+      position:absolute;
+      width:3px; height:3px; border-radius:50%;
+      background:#e9f2ff;
+      box-shadow:0 0 8px 2px rgba(200,224,255,.42);
+      animation: twinkle 4.8s ease-in-out infinite;
+    }
+
+    .cloud-brush {
+      position: absolute;
+      left: -18%;
+      top: 34%;
+      width: 78%;
+      height: 13%;
+      opacity: 0;
+      filter: blur(7px);
+      background:
+        radial-gradient(ellipse at 20% 55%, rgba(6,16,35,.88), transparent 54%),
+        radial-gradient(ellipse at 48% 48%, rgba(8,18,39,.9), transparent 56%),
+        radial-gradient(ellipse at 78% 60%, rgba(7,17,37,.85), transparent 55%);
+      transform: rotate(8deg);
+      transition: opacity 240ms ease, translate 1.4s ease;
+    }
+    .cloud-brush.visible { opacity:.72; }
+    .cloud-brush.opening { translate: 86% -4%; opacity: .08; }
+
+    .grass-echo { position:absolute; inset:64% -5% -5% -5%; opacity:0; transition:opacity 180ms ease; }
+    .grass-echo.visible { opacity:1; }
+    .blade {
+      position:absolute;
+      bottom:-4%;
+      width:2px;
+      height:28%;
+      transform-origin:bottom;
+      border-radius:100% 0;
+      background:linear-gradient(to top, rgba(106,137,157,.1), rgba(222,221,191,.55));
+      rotate:-22deg;
+      animation: bladeSway 3.8s ease-in-out infinite;
+    }
+    .petal {
+      position:absolute;
+      width:9px; height:5px;
+      border-radius:70% 15% 70% 15%;
+      background:#d8c78e;
+      box-shadow:0 0 9px rgba(241,201,105,.55);
+      opacity:0;
+    }
+    .petal.fly { opacity:.86; animation: petalFlight 2.7s ease-in-out forwards; }
+    .petal.kept { opacity:.84; left:28%; top:77%; transform:rotate(22deg); }
+
+    .reaction-panel {
+      position:absolute;
+      z-index:14;
+      right:14px;
+      bottom:136px;
+      width:132px;
+      height:128px;
+      overflow:hidden;
+      border:1px solid rgba(242,226,196,.34);
+      border-radius:10px 18px 10px 18px;
+      background:#061326;
+      box-shadow:0 16px 38px rgba(0,0,0,.38);
+      opacity:0;
+      transform:translateY(12px) rotate(.8deg);
+      transition:220ms ease;
+      pointer-events:none;
+    }
+    .reaction-panel.visible { opacity:1; transform:rotate(.8deg); }
+    .reaction-panel .crop {
+      position:absolute; inset:0;
+      background-image:url('/files/root-r4.png');
+      background-size:390px 844px;
+      background-position:-128px -625px;
+      filter:brightness(1.08);
+    }
+    .reaction-panel .caption {
+      position:absolute; left:6px; right:6px; bottom:5px;
+      padding:4px 5px;
+      border-radius:5px;
+      background:rgba(2,8,18,.64);
+      color:#f1e4c9;
+      text-align:center;
+      font:12px/1.35 "STKaiti", serif;
+    }
+
+    .meteor-keyframe {
+      position:absolute; inset:0;
+      width:100%; height:100%; object-fit:cover;
+      opacity:0;
+      transform:scale(1.002);
+      transition:opacity 210ms ease;
+    }
+    .meteor-keyframe.visible { opacity:1; }
+    .meteor-afterglow {
+      position:absolute; inset:0;
+      opacity:0;
+      background:radial-gradient(ellipse at 34% 72%, rgba(213,227,234,.13), transparent 20%);
+      transition:opacity 180ms ease;
+    }
+    .meteor-afterglow.visible { opacity:1; }
+
+    .warm-wash {
+      position:absolute;
+      z-index:28;
+      width:48px; height:48px;
+      left:78%; top:72%;
+      translate:-50% -50%;
+      border-radius:50%;
+      background:radial-gradient(circle, #ffcf78 0%, #f2a940 22%, rgba(242,169,64,.7) 43%, rgba(242,169,64,0) 72%);
+      opacity:0;
+      scale:.4;
+      pointer-events:none;
+    }
+    .warm-wash.expand { animation:warmEnter 760ms cubic-bezier(.3,.05,.2,1) forwards; }
+    .warm-wash.reduced {
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      translate: 0;
+      scale: 1;
+      border-radius: 0;
+      background: #f2a940;
+      opacity: .52;
+      transition: opacity 160ms ease;
+    }
+
+    .steam { position:absolute; inset:0; opacity:0; transition:opacity 180ms ease; }
+    .steam.visible { opacity:1; }
+    .wisp {
+      position:absolute;
+      width:15px;
+      height:64px;
+      border-radius:50%;
+      border-left:2px solid rgba(255,235,201,.48);
+      filter:blur(.4px);
+      opacity:.55;
+      animation:steamRise 2.3s ease-in-out infinite;
+    }
+
+    .memory-star {
+      position:absolute;
+      right:22.5%;
+      top:23%;
+      width:8px; height:8px;
+      border-radius:50%;
+      background:#eef6ff;
+      box-shadow:0 0 16px 4px rgba(203,225,255,.6);
+      opacity:0;
+      transition:opacity 300ms ease;
+    }
+    .memory-star.visible { opacity:.75; animation:twinkle 5.8s ease-in-out infinite; }
+    .table-petal {
+      position:absolute;
+      left:62%; top:58%;
+      width:12px; height:7px;
+      border-radius:70% 15% 70% 15%;
+      rotate:18deg;
+      background:#d7bc78;
+      box-shadow:0 0 10px rgba(248,197,81,.48);
+      opacity:0;
+    }
+    .table-petal.visible { opacity:.88; }
+
+    .window-meteor {
+      position:absolute;
+      right:16%; top:19%;
+      width:72px; height:78px;
+      overflow:hidden;
+      opacity:0;
+      clip-path:polygon(7% 0, 96% 5%, 100% 96%, 0 100%);
+    }
+    .window-meteor::after {
+      content:"";
+      position:absolute;
+      width:58px; height:2px;
+      left:58px; top:13px;
+      transform:rotate(143deg);
+      transform-origin:left;
+      background:linear-gradient(90deg, #fff2bf, rgba(216,230,243,.15), transparent);
+      box-shadow:0 0 5px rgba(255,236,180,.8);
+    }
+    .window-meteor.play { opacity:1; }
+    .window-meteor.play::after { animation:windowMeteor 1s ease-out forwards; }
+
+    .final-note {
+      position:absolute;
+      z-index:19;
+      left:10%; right:10%; bottom:12%;
+      padding:20px 20px 18px;
+      color:#3b230f;
+      background:
+        linear-gradient(rgba(255,236,192,.94), rgba(244,211,150,.94)),
+        repeating-linear-gradient(0deg, transparent 0 11px, rgba(96,61,30,.07) 11px 12px);
+      border:1px solid rgba(79,45,17,.35);
+      border-radius:2px 14px 3px 10px;
+      box-shadow:0 16px 38px rgba(44,24,7,.28);
+      text-align:center;
+      opacity:0;
+      transform:translateY(12px) rotate(-.4deg);
+      transition:260ms ease;
+      pointer-events:none;
+    }
+    .final-note.visible { opacity:1; transform:rotate(-.4deg); }
+    .final-note strong { display:block; font:calc(18px * var(--copy-scale))/1.7 "STKaiti", serif; font-weight:400; }
+    .final-note small { display:block; margin-top:7px; opacity:.7; font-size:11px; }
+
+    .ending-veil {
+      position:absolute; inset:0; z-index:18;
+      background:linear-gradient(to bottom, rgba(25,12,3,.03), rgba(29,14,4,.42));
+      opacity:0; transition:opacity 260ms ease; pointer-events:none;
+    }
+    .ending-veil.visible { opacity:1; }
+
+    .inspector {
+      align-self: center;
+      max-width: 520px;
+    }
+    .eyebrow { color:var(--warm); font-size:12px; letter-spacing:.14em; text-transform:uppercase; }
+    .inspector h1 {
+      margin:10px 0 12px;
+      max-width:480px;
+      color:#f3ead7;
+      font:400 clamp(28px,4vw,46px)/1.16 "STSong", "Songti SC", serif;
+      letter-spacing:-.03em;
+    }
+    .inspector > p { max-width:500px; margin:0 0 24px; color:rgba(239,229,208,.68); font-size:14px; line-height:1.8; }
+    .status-card {
+      padding:18px;
+      border:1px solid rgba(239,224,196,.14);
+      border-radius:18px;
+      background:rgba(5,11,18,.56);
+      backdrop-filter:blur(16px);
+    }
+    .node-line { display:flex; align-items:baseline; justify-content:space-between; gap:16px; }
+    .node-line strong { font:400 18px/1.4 "STSong", serif; color:#f2e6cd; }
+    .node-line span { color:rgba(239,226,201,.45); font-size:12px; }
+    .node-purpose { margin:8px 0 16px; color:rgba(239,226,201,.64); font-size:13px; line-height:1.6; }
+    .media-mix { display:flex; flex-wrap:wrap; gap:7px; }
+    .media-chip {
+      padding:6px 9px;
+      border-radius:999px;
+      border:1px solid rgba(238,223,193,.12);
+      color:rgba(239,226,201,.34);
+      font-size:11px;
+      transition:180ms ease;
+    }
+    .media-chip.on { color:#261606; background:var(--warm-2); border-color:transparent; }
+    .memory-title { margin:18px 0 8px; color:rgba(239,226,201,.44); font-size:11px; letter-spacing:.12em; }
+    .memory-list { min-height:54px; display:flex; flex-wrap:wrap; gap:7px; align-content:flex-start; }
+    .memory {
+      padding:6px 9px;
+      border-left:2px solid var(--warm);
+      background:rgba(255,190,93,.07);
+      color:rgba(244,231,207,.75);
+      font-size:11px;
+    }
+    .review-actions { display:flex; gap:9px; margin-top:16px; flex-wrap:wrap; }
+    .review-button {
+      min-height:42px;
+      padding:0 14px;
+      border:1px solid rgba(238,223,193,.15);
+      border-radius:10px;
+      background:rgba(255,255,255,.035);
+      color:rgba(242,231,210,.72);
+      cursor:pointer;
+    }
+    .review-note { margin-top:16px; color:rgba(239,226,201,.38); font-size:11px; line-height:1.65; }
+
+    @keyframes twinkle { 0%,100%{opacity:.34;transform:scale(.8)} 48%{opacity:1;transform:scale(1.22)} }
+    @keyframes quietPulse { 0%,100%{opacity:.25} 50%{opacity:.72} }
+    @keyframes bladeSway { 0%,100%{transform:rotate(-4deg)} 45%{transform:rotate(7deg)} }
+    @keyframes petalFlight {
+      0%{left:76%;top:72%;transform:rotate(0);opacity:0}
+      14%{opacity:.9}
+      55%{left:48%;top:67%;transform:rotate(165deg)}
+      100%{left:28%;top:77%;transform:rotate(290deg);opacity:.84}
+    }
+    @keyframes warmEnter {
+      0%{opacity:0;scale:.2}
+      24%{opacity:.9}
+      100%{opacity:1;scale:30}
+    }
+    @keyframes steamRise {
+      0%{translate:0 12px;scale:.8;opacity:0}
+      28%{opacity:.6}
+      100%{translate:8px -30px;scale:1.3;opacity:0}
+    }
+    @keyframes windowMeteor {
+      0%{translate:0 0;opacity:0}
+      12%{opacity:1}
+      100%{translate:-100px 62px;opacity:0}
+    }
+
+    body.reduce-motion *, body.reduce-motion *::before, body.reduce-motion *::after {
+      animation-duration:.001ms !important;
+      animation-iteration-count:1 !important;
+      scroll-behavior:auto !important;
+    }
+    body.reduce-motion .scene-layer img { transition-duration:160ms; }
+    body.reduce-motion .steam .wisp { animation:none !important; opacity:.42; translate:0; scale:1; }
+
+    @media (min-width: 791px) {
+      :root { --phone-w: min(390px, calc((100vh - 56px) * .462085)); }
+    }
+
+    @media (min-width: 791px) and (max-height: 760px) {
+      .copy-card { left:14px; right:28px; top:44%; bottom:auto; padding:7px 10px 8px 11px; }
+      .phone:not(.indoor) .copy-card { top:44%; bottom:auto; right:28px; }
+      .phone.indoor .copy-card { top:70px; bottom:auto; right:44px; }
+      .phone-chapter { top:44px; left:14px; padding:6px 8px 6px 9px; }
+      .story-kicker { font-size:calc(8px * var(--copy-scale)); }
+      .copy-card h2 { font-size:calc(13px * var(--copy-scale)); margin-bottom:2px; }
+      .copy-card p { font-size:calc(10.5px * var(--copy-scale)); line-height:1.5; }
+      .actions { left:12px; right:12px; bottom:13px; gap:6px; flex-wrap:nowrap; }
+      .action { min-width:0; min-height:42px; padding:8px 11px; font-size:calc(12px * var(--copy-scale)); flex:1 1 auto; }
+    }
+
+    @media (max-width: 790px) {
+      .page-shell { display:block; padding:10px 0 40px; }
+      .review-layout { display:flex; flex-direction:column; gap:22px; }
+      .phone { border-radius:0 0 24px 24px; }
+      .inspector { padding:0 20px; }
+      .inspector h1 { font-size:28px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <main class="review-layout">
+      <section class="phone-wrap" aria-label="今夜有灯完整夜晚交互样片">
+        <div class="prototype-badge">交互设计样片 · 不进入微信包</div>
+        <div class="phone" id="phone">
+          <div class="scene-layer">
+            <img id="sceneA" class="active" src="/files/root-r4.png" alt="" />
+            <img id="sceneB" alt="" />
+          </div>
+          <div class="scene-shade" id="sceneShade"></div>
+          <div class="fx-layer" id="fxLayer">
+            <div class="stars" id="stars"></div>
+            <div class="cloud-brush" id="cloudBrush"></div>
+            <div class="grass-echo" id="grassEcho"></div>
+            <div class="petal" id="petal"></div>
+            <div class="reaction-panel" id="reactionPanel">
+              <div class="crop"></div>
+              <div class="caption" id="reactionCaption">它往你这边靠了一点。</div>
+            </div>
+            <img class="meteor-keyframe" id="meteorKeyframe" src="/files/sky-meteor-exploration-v1.png" alt="" />
+            <div class="meteor-afterglow" id="meteorAfterglow"></div>
+            <div class="warm-wash" id="warmWash"></div>
+            <div class="steam" id="steam">
+              <span class="wisp" style="left:51%;top:39%;animation-delay:0s"></span>
+              <span class="wisp" style="left:55%;top:38%;animation-delay:.55s"></span>
+              <span class="wisp" style="left:59%;top:40%;animation-delay:1.05s"></span>
+            </div>
+            <div class="memory-star" id="memoryStar"></div>
+            <div class="table-petal" id="tablePetal"></div>
+            <div class="window-meteor" id="windowMeteor"></div>
+          </div>
+          <div class="ending-veil" id="endingVeil"></div>
+          <div class="final-note" id="finalNote">
+            <strong id="finalLine">天上的光已经走远。<br>屋里的灯，还亮着。</strong>
+            <small>今晚到这里，也可以。</small>
+          </div>
+          <div class="scene-ui" id="sceneUI">
+            <button class="settings-button" id="settingsButton" aria-label="设置">···</button>
+            <div class="settings-panel" id="settingsPanel">
+              <button class="setting" id="soundSetting"><span>声音</span><span>开</span></button>
+              <button class="setting" id="motionSetting"><span>减少动态</span><span>关</span></button>
+              <button class="setting" id="textSetting"><span>大字</span><span>关</span></button>
+            </div>
+            <div class="phone-chapter" id="phoneChapter">
+              <span class="phone-step" id="phoneStep">今夜有灯</span>
+              <strong id="phoneChapterTitle">夜风草坡</strong>
+            </div>
+            <div class="copy-card" id="copyCard">
+              <span class="story-kicker" id="storyKicker"></span>
+              <h2 id="storyTitle"></h2>
+              <p id="copyText"></p>
+            </div>
+            <div class="actions" id="actions"></div>
+            <div id="interactionLayer"></div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="inspector">
+        <div class="eyebrow">STORY-GAMEPLAY-REPLAN-V1-A-R1 · 文字入画</div>
+        <h1>一盏灯接住一盏灯</h1>
+        <p>这不是最终美术，而是验证“插画、局部动态、玩家动作、角色回应、声音和文字入画”能否共同讲完一件事。左侧手机现在承担正式体验的叙事；右侧只作为负责人审查面板。</p>
+        <div class="status-card">
+          <div class="node-line">
+            <strong id="nodeTitle">01 · 夜风草坡</strong>
+            <span id="nodeCount">1 / 14</span>
+          </div>
+          <div class="node-purpose" id="nodePurpose">先让环境存在，再给选择；门一直能回，但不催促。</div>
+          <div class="media-mix" id="mediaMix">
+            <span class="media-chip on" data-medium="illustration">全幅插画</span>
+            <span class="media-chip on" data-medium="motion">局部动态</span>
+            <span class="media-chip on" data-medium="interaction">互动</span>
+            <span class="media-chip" data-medium="sound">声音</span>
+            <span class="media-chip on" data-medium="text">短句</span>
+          </div>
+          <div class="memory-title">这一晚已经记住</div>
+          <div class="memory-list" id="memoryList"><span class="memory">还没有留下痕迹</span></div>
+          <div class="review-actions">
+            <button class="review-button" id="resetButton">从头体验</button>
+            <button class="review-button" data-choice="slice-v1-like" id="approveFeeling">这个组合方向对</button>
+          </div>
+        </div>
+        <div class="review-note">本页使用已批准插画作锚点；云、风、流星受光、蒸汽、拖放和声音为浏览器探索表现。它们不会自动升格为正式素材或 Cocos 实现。</div>
+      </aside>
+    </main>
+  </div>
+
+  <audio id="windAudio" src="/files/night-breeze.ogg" loop preload="auto"></audio>
+  <audio id="roomAudio" src="/files/night-room.ogg" loop preload="auto"></audio>
+  <audio id="kettleAudio" src="/files/kettle-test.mp3" preload="auto"></audio>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const mediaLabels = ["illustration", "motion", "interaction", "sound", "text"];
+    const state = {
+      node: "root",
+      nodeIndex: 1,
+      sceneSlot: "A",
+      sound: true,
+      reduced: false,
+      large: false,
+      audioUnlocked: false,
+      sawSky: false,
+      sawWind: false,
+      sawMeteor: false,
+      meteorOrigin: null,
+      coatHung: false,
+      kettleWarm: false,
+      dishPlaced: false,
+      ate: false,
+      sipped: false,
+      tableOrder: [],
+      lightChoice: null,
+      dragProgress: 0,
+      settingsOpen: false,
+    };
+
+    const nodeMeta = {
+      root: ["01 · 夜风草坡", "先让环境存在，再给选择；门一直能回，但不催促。", [1,1,1,0,1]],
+      breeze: ["02 · 风经过衣角", "慢滑不是任务，它让风从草、衣角走到猫；这件事会被带进屋。", [1,1,1,1,1]],
+      skyFocus: ["03 · 猫在看哪里", "由猫的视线提出一个小问题，让玩家主动发现，而不是被文案告知。", [1,1,1,1,1]],
+      cloud: ["04 · 云把星遮住", "故事第一次发生变化：想看的东西暂时看不见了。", [1,1,1,1,1]],
+      cloudOpen: ["05 · 一起等云过去", "玩家参与、环境回应、猫靠近，关系和画面同时变化。", [1,1,1,1,1]],
+      meteor: ["06 · 光从夜里经过", "流星保持完整背景，并让人物、猫和草地短暂收到同一束光。", [1,1,0,1,1]],
+      meteorChoice: ["07 · 要不要回家", "选择不立即重置；看过的光会在屋内再次出现。", [1,1,1,1,1]],
+      arrival: ["08 · 门内一直亮着", "冷蓝到暖琥珀由门光完成，不用黑屏，也不演黑屋开灯。", [1,1,1,1,1]],
+      coat: ["09 · 放下外衣", "用拖动参与生活动作；完成后肩膀、猫和房间状态都回应。", [1,1,1,1,1]],
+      kitchen: ["10 · 壶盖轻响", "按住锅盖，蒸汽和声音共同说明热度；静音仍有画面因果。", [1,1,1,1,1]],
+      serve: ["11 · 把热饭端过去", "用画中物件拖放连接厨房和饭桌，不再只点下一页。", [1,1,1,1,1]],
+      table: ["12 · 吃一点，喝口温水", "顺序自由并被记住；食物、杯水和猫会留下不同回应。", [1,1,1,1,1]],
+      rest: ["13 · 整间屋子在等你", "此前的星、风、外衣和饭桌都回到同一张暖家全景。", [1,1,1,1,1]],
+      finale: ["14 · 把灯留着", "结尾由玩家决定，并提供真正的结束或继续停留。", [1,1,1,1,1]],
+    };
+
+    const storyNarrative = {
+      root: ["今夜 · 草坡", "灯还亮着", "风有一点凉。远处那扇门一直亮着，你和猫还不急着回去。"],
+      breeze: ["今夜 · 风", "它从草尖走过", "风先碰到远处的草，又到了衣角。猫抬了抬耳朵，像是也听见了。"],
+      skyFocus: ["今夜 · 抬头", "猫在看哪里", "它一直望着银河旁的一小片暗处。那里像藏着一颗还没被看清的星。"],
+      cloud: ["今夜 · 薄云", "刚看见，它又不见了", "你才认出那颗星，云就慢慢走了过来。"],
+      cloudOpen: ["今夜 · 云缝", "不用赶", "陪云走一小段，它会自己让开。猫也往你这边靠了一点。"],
+      meteor: ["今夜 · 一瞬", "光从夜里经过", "人、猫和草脊在同一瞬间变亮。它很快，但你们都看见了。"],
+      meteorChoice: ["今夜 · 流星之后", "天上的光会经过", "远处的灯没有催促，只是一直留在那里。"],
+      arrival: ["回家 · 进门", "屋里的灯早就亮着", "门一开，墙面、桌子和厨房都是暖的。这里没有一个角落在黑里。"],
+      coat: ["回家 · 门边", "先把外面的凉意放下", "外衣落到挂钩上，肩膀才真正回到屋里。"],
+      kitchen: ["回家 · 厨房", "锅里还留着热气", "水壶快好了。猫在离火远一点的地方坐着等你。"],
+      serve: ["回家 · 热饭", "把最后一点热气盛进盘里", "今晚不用做得很好。热的就够了。"],
+      table: ["回家 · 饭桌", "饭和水都在等你", "可以先吃一点，也可以先喝口温水。没有正确顺序。"],
+      rest: ["回家 · 灯下", "整间屋子在等你", "外衣已经放下，饭和水留下了痕迹。窗外是刚才那片夜空。"],
+      finale: ["今夜 · 留灯", "一盏灯接住一盏灯", "天上的光会经过。家里的这盏，会为晚一点回来的人留着。"],
+    };
+
+    const assets = {
+      root: "/files/root-r4.png",
+      f1: "/files/sky-f1.png",
+      f3: "/files/sky-f3.png",
+      f4: "/files/sky-f4.png",
+      f5: "/files/sky-f5.png",
+      h1: "/files/home-h1.png",
+      h2: "/files/home-h2.png",
+      h3: "/files/home-h3.png",
+      h4: "/files/home-h4.png",
+      h5: "/files/home-h5.png",
+    };
+
+    function report(choice, extra = {}) {
+      if (window.brainstorm) window.brainstorm.choice(choice, { node: state.node, ...extra });
+    }
+
+    function clearTimers() {
+      (window.__sliceTimers || []).forEach(clearTimeout);
+      window.__sliceTimers = [];
+    }
+    function later(fn, ms) {
+      const id = setTimeout(fn, ms);
+      (window.__sliceTimers ||= []).push(id);
+      return id;
+    }
+
+    function unlockAudio() {
+      if (state.audioUnlocked || !state.sound) return;
+      state.audioUnlocked = true;
+      const audio = state.node.startsWith("home") || ["arrival","coat","kitchen","serve","table","rest","finale"].includes(state.node)
+        ? $("roomAudio") : $("windAudio");
+      audio.volume = 0;
+      audio.play().catch(() => {});
+      fadeAudio(audio, .34, 2200);
+      updateInspector();
+    }
+
+    function fadeAudio(audio, target, duration = 500) {
+      const start = audio.volume;
+      const started = performance.now();
+      function step(now) {
+        const p = Math.max(0, Math.min(1, (now - started) / duration));
+        audio.volume = Math.max(0, Math.min(1, start + (target - start) * p));
+        if (p < 1) requestAnimationFrame(step);
+        else if (target === 0) audio.pause();
+      }
+      requestAnimationFrame(step);
+    }
+
+    function switchAmbience(indoor) {
+      if (!state.sound || !state.audioUnlocked) return;
+      const out = indoor ? $("windAudio") : $("roomAudio");
+      const next = indoor ? $("roomAudio") : $("windAudio");
+      fadeAudio(out, 0, 500);
+      next.volume = 0;
+      next.play().catch(() => {});
+      fadeAudio(next, indoor ? .28 : .34, 900);
+    }
+
+    function setScene(src, indoor = false, duration = 320) {
+      const incoming = state.sceneSlot === "A" ? $("sceneB") : $("sceneA");
+      const outgoing = state.sceneSlot === "A" ? $("sceneA") : $("sceneB");
+      incoming.src = src;
+      incoming.onload = () => {
+        incoming.style.transitionDuration = `${state.reduced ? 160 : duration}ms`;
+        outgoing.style.transitionDuration = `${state.reduced ? 160 : duration}ms`;
+        incoming.classList.add("active");
+        outgoing.classList.remove("active");
+        state.sceneSlot = state.sceneSlot === "A" ? "B" : "A";
+      };
+      $("phone").classList.toggle("indoor", indoor);
+      $("sceneShade").style.opacity = indoor ? ".08" : "1";
+    }
+
+    function setNode(node, index, asset, indoor = false) {
+      clearTimers();
+      state.node = node;
+      state.nodeIndex = index;
+      resetTransientFx();
+      if (asset) setScene(asset, indoor, node === "arrival" ? 420 : 300);
+      $("actions").innerHTML = "";
+      $("interactionLayer").innerHTML = "";
+      setStoryForNode(node);
+      updateInspector();
+    }
+
+    function resetTransientFx() {
+      $("stars").classList.remove("visible");
+      $("cloudBrush").className = "cloud-brush";
+      $("cloudBrush").style.translate = "";
+      $("grassEcho").className = "grass-echo";
+      $("petal").className = state.sawWind ? "petal kept" : "petal";
+      $("reactionPanel").classList.remove("visible");
+      $("meteorKeyframe").classList.remove("visible");
+      $("meteorAfterglow").classList.remove("visible");
+      $("steam").classList.remove("visible");
+      $("memoryStar").classList.remove("visible");
+      $("tablePetal").classList.remove("visible");
+      $("windowMeteor").classList.remove("play");
+      $("finalNote").classList.remove("visible");
+      $("endingVeil").classList.remove("visible");
+      $("warmWash").className = "warm-wash";
+      document.querySelectorAll(".table-feedback-overlay").forEach((node) => node.remove());
+    }
+
+    function setStoryForNode(node, delay = 0) {
+      const story = storyNarrative[node] || storyNarrative.root;
+      const meta = nodeMeta[node] || nodeMeta.root;
+      const card = $("copyCard");
+      card.classList.remove("visible");
+      $("phoneStep").textContent = "今夜有灯";
+      $("phoneChapterTitle").textContent = meta[0].replace(/^\d+\s*·\s*/, "");
+      later(() => {
+        $("storyKicker").textContent = story[0];
+        $("storyTitle").textContent = story[1];
+        $("copyText").textContent = story[2];
+        card.classList.add("visible");
+      }, delay);
+    }
+
+    function setCopy(text, delay = 0) {
+      const card = $("copyCard");
+      card.classList.remove("visible");
+      if (!text) { $("copyText").textContent = ""; return; }
+      later(() => {
+        $("copyText").textContent = text;
+        card.classList.add("visible");
+      }, delay);
+    }
+
+    function action(label, handler, kind = "", choice = "") {
+      const btn = document.createElement("button");
+      btn.className = `action ${kind}`;
+      btn.textContent = label;
+      if (choice) btn.dataset.choice = choice;
+      btn.addEventListener("click", (event) => {
+        event.stopPropagation();
+        unlockAudio();
+        handler();
+      });
+      $("actions").appendChild(btn);
+      return btn;
+    }
+
+    function hotspot(label, style, handler, choice = "") {
+      const btn = document.createElement("button");
+      btn.className = "hotspot";
+      btn.setAttribute("aria-label", label);
+      btn.style.cssText = style;
+      if (choice) btn.dataset.choice = choice;
+      btn.addEventListener("click", (event) => {
+        event.stopPropagation();
+        unlockAudio();
+        handler();
+      });
+      $("interactionLayer").appendChild(btn);
+      return btn;
+    }
+
+    function gestureHint(text, sub = "") {
+      const el = document.createElement("div");
+      el.className = "gesture-hint";
+      el.innerHTML = `${text}${sub ? `<small>${sub}</small>` : ""}<div class="gesture-track"><div class="gesture-progress"></div></div>`;
+      $("interactionLayer").appendChild(el);
+      return el;
+    }
+
+    function buildStars() {
+      const coords = [[20,16],[33,25],[52,20],[66,33],[77,18],[84,41],[42,39],[59,51],[26,49],[72,57]];
+      $("stars").innerHTML = coords.map((p,i) => `<span class="star" style="left:${p[0]}%;top:${p[1]}%;animation-delay:${i*.43}s"></span>`).join("");
+      $("grassEcho").innerHTML = Array.from({length:18}, (_,i) => `<span class="blade" style="left:${i*5.7}%;height:${18+(i%5)*3}%;animation-delay:${(i%6)*.19}s"></span>`).join("");
+    }
+
+    function showRoot() {
+      setNode("root", 1, assets.root, false);
+      $("stars").classList.add("visible");
+      if (!state.reduced) $("grassEcho").classList.add("visible");
+      if (state.sawWind) $("petal").className = "petal kept";
+      setCopy(state.sawWind ? "风已经来过。远处的门还亮着，你和猫还不急着回去。" : "风有一点凉。远处那盏灯一直亮着，你和猫还不急着回去。", 900);
+      later(() => {
+        action("抬头看看", showSkyFocus, "", "root-stargaze");
+        action(state.sawWind ? "风已经经过" : "让风经过", showBreeze, "quiet", "root-breeze").disabled = state.sawWind;
+        action("回家", enterHome, "warm", "root-home");
+      }, 700);
+    }
+
+    function showBreeze() {
+      setNode("breeze", 2, assets.root, false);
+      $("grassEcho").classList.add("visible");
+      const hint = gestureHint("沿着草尖，慢慢划一下", "轻触两次也可以");
+      let startX = null, progress = 0, taps = 0;
+      const phone = $("phone");
+      const down = (e) => { startX = e.clientX ?? e.touches?.[0]?.clientX; unlockAudio(); };
+      const move = (e) => {
+        if (startX == null) return;
+        const x = e.clientX ?? e.touches?.[0]?.clientX;
+        progress = Math.max(progress, Math.min(1, Math.abs(x - startX) / 170));
+        hint.querySelector(".gesture-progress").style.width = `${progress*100}%`;
+        if (progress >= 1) finish();
+      };
+      const up = () => { startX = null; };
+      const tap = () => { taps++; progress = Math.max(progress, taps/2); hint.querySelector(".gesture-progress").style.width=`${progress*100}%`; if(taps>=2) finish(); };
+      function cleanup() {
+        phone.removeEventListener("pointerdown", down); phone.removeEventListener("pointermove", move); phone.removeEventListener("pointerup", up); phone.removeEventListener("click", tap);
+      }
+      function finish() {
+        cleanup();
+        state.sawWind = true;
+        hint.style.opacity = 0;
+        $("petal").classList.add("fly");
+        setCopy("风从草坡那头走来，先碰草尖，再托起衣角。猫的耳朵也跟着动了一下。", 250);
+        report("breeze-complete");
+        later(() => {
+          $("actions").innerHTML = "";
+          action("继续看夜空", showSkyFocus, "", "breeze-to-sky");
+          action("回家", enterHome, "warm", "breeze-to-home");
+          updateInspector();
+        }, state.reduced ? 350 : 2300);
+      }
+      phone.addEventListener("pointerdown", down);
+      phone.addEventListener("pointermove", move);
+      phone.addEventListener("pointerup", up);
+      phone.addEventListener("click", tap);
+    }
+
+    function showSkyFocus() {
+      setNode("skyFocus", 3, assets.f1, false);
+      $("stars").classList.add("visible");
+      setCopy("猫一直望着银河旁的一小片暗处，像在等一颗还没被看清的星。", 520);
+      later(() => hotspot("轻轻碰一碰", "left:18%;right:18%;top:10%;height:52%;", showCloud, "sky-touch"), 700);
+    }
+
+    function showCloud() {
+      setNode("cloud", 4, assets.f3, false);
+      state.sawSky = true;
+      $("cloudBrush").classList.add("visible");
+      setCopy("你才认出那颗星，薄云就慢慢把它遮住了。", 240);
+      later(beginCloudGesture, 1050);
+    }
+
+    function beginCloudGesture() {
+      const hint = gestureHint("跟着云，慢慢向右划", "不是赶走它，只是陪它走一段");
+      let origin = null, progress = 0, taps = 0;
+      const phone = $("phone");
+      const down = (e) => { origin = e.clientX; unlockAudio(); };
+      const move = (e) => {
+        if (origin == null) return;
+        progress = Math.max(progress, Math.min(1, (e.clientX-origin)/165));
+        hint.querySelector(".gesture-progress").style.width = `${progress*100}%`;
+        if (!state.reduced) $("cloudBrush").style.translate = `${progress*70}% ${-progress*4}%`;
+        if(progress>=1) finish();
+      };
+      const up = () => { origin=null; };
+      const tap = () => { taps++; progress=taps/2; hint.querySelector(".gesture-progress").style.width=`${progress*100}%`; if(taps>=2) finish(); };
+      function cleanup(){ phone.removeEventListener("pointerdown",down);phone.removeEventListener("pointermove",move);phone.removeEventListener("pointerup",up);phone.removeEventListener("click",tap); }
+      function finish(){ cleanup(); hint.style.opacity=0; if(!state.reduced)$("cloudBrush").classList.add("opening"); report("cloud-follow-complete"); later(showCloudOpen,state.reduced?220:750); }
+      phone.addEventListener("pointerdown",down); phone.addEventListener("pointermove",move); phone.addEventListener("pointerup",up); phone.addEventListener("click",tap);
+    }
+
+    function showCloudOpen() {
+      setNode("cloudOpen", 5, assets.f4, false);
+      $("stars").classList.add("visible");
+      $("reactionCaption").textContent = "它往你这边靠了一点。";
+      later(() => $("reactionPanel").classList.add("visible"), 420);
+      setCopy("不用赶。陪云走一小段，它会自己让开。猫也往你这边靠了一点。", 220);
+      later(() => action("一起再等一会儿", playMeteor, "", "wait-for-meteor"), 1050);
+    }
+
+    function playMeteor() {
+      setNode("meteor", 6, assets.f5, false);
+      state.sawMeteor = true;
+      state.meteorOrigin = "outside";
+      $("stars").classList.add("visible");
+      setCopy("");
+      later(() => {
+        $("meteorKeyframe").classList.add("visible");
+        $("meteorAfterglow").classList.add("visible");
+      }, state.reduced ? 220 : 900);
+      later(() => setStoryForNode("meteor"), state.reduced ? 180 : 820);
+      later(() => {
+        $("meteorKeyframe").classList.remove("visible");
+        $("meteorAfterglow").classList.remove("visible");
+      }, state.reduced ? 520 : 1780);
+      later(() => showMeteorChoice(true), state.reduced ? 850 : 2750);
+    }
+
+    function showMeteorChoice(skipScene = false) {
+      if (!skipScene) setNode("meteorChoice", 7, assets.f5, false);
+      else { state.node="meteorChoice";state.nodeIndex=7;setStoryForNode("meteorChoice");updateInspector(); }
+      setCopy("流星已经走远。远处那盏灯还在，没有催你回去。", 100);
+      later(() => {
+        $("actions").innerHTML="";
+        action("回家", enterHome, "warm", "meteor-home");
+        action("再坐一会儿", stayOutside, "quiet", "meteor-stay");
+      }, 680);
+    }
+
+    function stayOutside() {
+      setCopy("猫没有走，灯也没有。你可以再坐一会儿，等想回去时再动身。", 0);
+      $("actions").innerHTML="";
+      action("想回去的时候，再回家", enterHome, "warm", "stay-then-home");
+      updateInspector();
+    }
+
+    function enterHome() {
+      clearTimers();
+      unlockAudio();
+      state.node="arrival";state.nodeIndex=8;updateInspector();
+      resetTransientFx();
+      $("actions").innerHTML="";$("interactionLayer").innerHTML="";setStoryForNode("arrival");
+      $("warmWash").classList.add(state.reduced ? "reduced" : "expand");
+      switchAmbience(true);
+      later(() => {
+        setScene(assets.h1,true,420);
+        setCopy("门一开，墙面、饭桌和厨房都是暖的。屋里的灯早就亮着。", 250);
+      }, state.reduced ? 180 : 570);
+      later(() => { $("warmWash").className = "warm-wash"; }, state.reduced ? 360 : 1060);
+      later(showCoatInteraction, state.reduced ? 520 : 1280);
+    }
+
+    function showCoatInteraction() {
+      state.node="coat";state.nodeIndex=9;setStoryForNode("coat");updateInspector();
+      const hint=gestureHint("按住外衣，往墙边轻轻带一下", "轻触挂钩也可以");
+      let start=null, progress=0, taps=0;
+      const phone=$("phone");
+      const down=e=>{start=e.clientX;unlockAudio();};
+      const move=e=>{if(start==null)return;progress=Math.max(progress,Math.min(1,(e.clientX-start)/145));hint.querySelector(".gesture-progress").style.width=`${progress*100}%`;if(progress>=1)finish();};
+      const up=()=>start=null;
+      const tap=()=>{taps++;progress=taps/2;hint.querySelector(".gesture-progress").style.width=`${progress*100}%`;if(taps>=2)finish();};
+      function cleanup(){phone.removeEventListener("pointerdown",down);phone.removeEventListener("pointermove",move);phone.removeEventListener("pointerup",up);phone.removeEventListener("click",tap);}
+      function finish(){cleanup();state.coatHung=true;hint.style.opacity=0;setScene(assets.h2,true,250);setCopy("外衣落到挂钩上，肩膀才真正回到屋里。",220);report("coat-hung");later(()=>{action("去看看锅里",showKitchen,"warm","coat-to-kitchen");updateInspector();},780);}
+      phone.addEventListener("pointerdown",down);phone.addEventListener("pointermove",move);phone.addEventListener("pointerup",up);phone.addEventListener("click",tap);
+    }
+
+    function showKitchen() {
+      setNode("kitchen",10,assets.h3,true);
+      const hint=gestureHint("按住锅盖一会儿", "轻触三次也可以");
+      let holdTimer=null,taps=0;
+      const zone=hotspot("", "left:35%;top:30%;width:45%;height:34%;", ()=>{}, "kettle-hold");
+      const begin=()=>{unlockAudio();holdTimer=setTimeout(finish,900);};
+      const cancel=()=>{if(holdTimer){clearTimeout(holdTimer);holdTimer=null;}};
+      const tap=()=>{taps++;hint.querySelector(".gesture-progress").style.width=`${Math.min(100,taps*34)}%`;if(taps>=3)finish();};
+      let done=false;
+      function finish(){if(done)return;done=true;cancel();state.kettleWarm=true;hint.style.opacity=0;$("steam").classList.add("visible");$("kettleAudio").currentTime=0;if(state.sound)$("kettleAudio").play().catch(()=>{});setCopy("壶盖轻轻响了一下，水汽慢慢爬上来。猫在离火远一点的地方等你。",180);report("kettle-warm");later(showServeInteraction,1050);}
+      zone.addEventListener("pointerdown",begin);zone.addEventListener("pointerup",cancel);zone.addEventListener("pointerleave",cancel);zone.addEventListener("click",tap);
+    }
+
+    function showServeInteraction() {
+      state.node="serve";state.nodeIndex=11;setStoryForNode("serve");updateInspector();
+      $("interactionLayer").innerHTML="";
+      const hint=gestureHint("把这盘热饭，带到桌边", "拖到暖圈里；轻触两次也可以");
+      const token=document.createElement("div");
+      token.className="drag-token";
+      token.style.cssText="left:53%;top:49%;background-image:url('/files/home-h3.png');background-size:390px 844px;background-position:-205px -390px";
+      const target=document.createElement("div");target.className="drop-zone";target.style.cssText="left:17%;top:69%";
+      $("interactionLayer").append(token,target);
+      let dragging=false,offsetX=0,offsetY=0,taps=0;
+      token.addEventListener("pointerdown",e=>{unlockAudio();dragging=true;token.classList.add("dragging");offsetX=e.clientX-token.getBoundingClientRect().left;offsetY=e.clientY-token.getBoundingClientRect().top;token.setPointerCapture(e.pointerId);});
+      token.addEventListener("pointermove",e=>{if(!dragging)return;const rect=$("phone").getBoundingClientRect();token.style.left=`${e.clientX-rect.left-offsetX}px`;token.style.top=`${e.clientY-rect.top-offsetY}px`;const t=target.getBoundingClientRect();const inside=e.clientX>t.left&&e.clientX<t.right&&e.clientY>t.top&&e.clientY<t.bottom;if(inside)finish();});
+      token.addEventListener("pointerup",e=>{dragging=false;token.classList.remove("dragging");taps++;if(taps>=2)finish();});
+      let done=false;
+      function finish(){if(done)return;done=true;state.dishPlaced=true;token.style.opacity=0;target.style.opacity=0;hint.style.opacity=0;report("dish-served");later(showTable,260);}
+    }
+
+    function showTable() {
+      setNode("table",12,assets.h4,true);
+      setCopy("先吃一点，还是先喝口温水，都可以。",260);
+      later(renderTableActions,650);
+    }
+
+    function renderTableActions() {
+      $("actions").innerHTML="";
+      const eat=action(state.ate?"已经吃了一点":"吃一点",()=>tableAction("eat"),state.ate?"quiet":"","table-eat");
+      const sip=action(state.sipped?"已经喝过温水":"喝口温水",()=>tableAction("sip"),state.sipped?"quiet":"","table-sip");
+      eat.disabled=state.ate;sip.disabled=state.sipped;
+      if(state.ate||state.sipped) action("就在灯下坐一会儿",showRest,"warm","table-rest");
+    }
+
+    function tableAction(kind) {
+      if(kind==="eat"&&!state.ate){state.ate=true;state.tableOrder.push("eat");}
+      if(kind==="sip"&&!state.sipped){state.sipped=true;state.tableOrder.push("sip");}
+      const active=state.sceneSlot==="A"?$("sceneA"):$("sceneB");
+      if(state.ate&&state.sipped) setScene("/files/home-h4-both.png",true,180);
+      else {
+        const overlay=document.createElement("img");
+        overlay.className="table-feedback-overlay";
+        overlay.src=kind==="eat"?"/files/home-h4-ate.png":"/files/home-h4-sipped.png";
+        overlay.style.cssText="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:7;opacity:0;transition:opacity 180ms ease;pointer-events:none";
+        $("fxLayer").appendChild(overlay);requestAnimationFrame(()=>overlay.style.opacity=1);
+      }
+      $("reactionCaption").textContent=state.tableOrder[0]==="eat"?"它闻了闻热气，又退回坐垫。":"杯沿轻响，它抬了一下耳朵。";
+      $("reactionPanel").querySelector(".crop").style.backgroundImage="url('/files/home-h5.png')";
+      $("reactionPanel").querySelector(".crop").style.backgroundPosition="-205px -610px";
+      $("reactionPanel").classList.add("visible");
+      setCopy(state.ate&&state.sipped?"热饭和温水，都没有催你。":(kind==="eat"?"这一口是热的。":"杯子在手里，慢慢暖起来。"),120);
+      report(`table-${kind}`,{order:state.tableOrder.join("-")});
+      renderTableActions();updateInspector();
+    }
+
+    function showRest() {
+      setNode("rest",13,assets.h5,true);
+      if(state.sawMeteor)$("memoryStar").classList.add("visible");
+      if(state.sawWind)$("tablePetal").classList.add("visible");
+      setCopy("外衣已经放下，饭和水也留下了痕迹。原来真正等着你的，不在天上。",380);
+      if(!state.sawMeteor){
+        later(()=>{$("windowMeteor").classList.add("play");state.sawMeteor=true;state.meteorOrigin="window";report("meteor-seen-from-window");updateInspector();},state.reduced?500:1250);
+        later(()=>setCopy("从窗边，也看见了那一瞬。",0),state.reduced?760:2300);
+      }
+      later(()=>{
+        $("actions").innerHTML="";
+        action("把门廊灯也留着",()=>showFinale("leave"),"warm","leave-porch-light");
+        action("就在桌边再坐一会儿",()=>showFinale("stay"),"quiet","stay-at-table");
+      },state.reduced?950:2500);
+    }
+
+    function showFinale(choice) {
+      state.lightChoice=choice;
+      state.node="finale";state.nodeIndex=14;updateInspector();
+      setStoryForNode("finale");
+      $("endingVeil").classList.add("visible");
+      $("finalLine").innerHTML=choice==="leave"?"天上的光已经走远。<br>屋里的这盏，会一直等着。":"夜还很长。<br>灯下不用急着做什么。";
+      $("finalNote").classList.add("visible");
+      $("actions").innerHTML="";
+      later(()=>{
+        action("今晚到这里",endTonight,"warm","finish-tonight");
+        action("再坐一会儿",linger,"quiet","linger-longer");
+      },420);
+    }
+
+    function linger() {
+      $("finalNote").classList.remove("visible");
+      $("endingVeil").classList.remove("visible");
+      setCopy("不需要继续做什么。你可以就这样坐着。",100);
+      $("actions").innerHTML="";
+      action("想结束时，轻轻碰这里",endTonight,"quiet","linger-finish");
+      report("linger-state");
+    }
+
+    function endTonight() {
+      $("finalNote").classList.add("visible");
+      $("endingVeil").classList.add("visible");
+      $("actions").innerHTML="";
+      $("finalNote").querySelector("small").textContent="今晚到这里。";
+      report("slice-complete",{memories:memoryItems()});
+    }
+
+    function memoryItems() {
+      const items=[];
+      if(state.sawWind)items.push("风经过了衣角");
+      if(state.sawSky)items.push("和猫一起等过云");
+      if(state.sawMeteor)items.push(state.meteorOrigin==="outside"?"在草坡看见流星":"从窗边看见流星");
+      if(state.coatHung)items.push("外衣已经放下");
+      if(state.kettleWarm)items.push("锅里冒起热气");
+      if(state.ate)items.push("吃了一点");
+      if(state.sipped)items.push("喝过温水");
+      if(state.lightChoice==="leave")items.push("门廊灯还亮着");
+      if(state.lightChoice==="stay")items.push("留在桌边");
+      return items;
+    }
+
+    function updateInspector() {
+      const meta=nodeMeta[state.node]||nodeMeta.root;
+      $("nodeTitle").textContent=meta[0];$("nodePurpose").textContent=meta[1];$("nodeCount").textContent=`${state.nodeIndex} / 14`;
+      document.querySelectorAll(".media-chip").forEach((chip,i)=>chip.classList.toggle("on",!!meta[2][i]&&(i!==3||state.audioUnlocked&&state.sound)));
+      const items=memoryItems();$("memoryList").innerHTML=items.length?items.map(x=>`<span class="memory">${x}</span>`).join(""):"<span class='memory'>还没有留下痕迹</span>";
+    }
+
+    function resetAll() {
+      clearTimers();
+      Object.assign(state,{node:"root",nodeIndex:1,sceneSlot:state.sceneSlot,sawSky:false,sawWind:false,sawMeteor:false,meteorOrigin:null,coatHung:false,kettleWarm:false,dishPlaced:false,ate:false,sipped:false,tableOrder:[],lightChoice:null,dragProgress:0});
+      $("finalNote").querySelector("small").textContent="今晚到这里，也可以。";
+      $("windAudio").pause();$("roomAudio").pause();$("kettleAudio").pause();state.audioUnlocked=false;
+      showRoot();report("slice-reset");
+    }
+
+    $("settingsButton").addEventListener("click",e=>{e.stopPropagation();state.settingsOpen=!state.settingsOpen;$("settingsPanel").classList.toggle("open",state.settingsOpen);});
+    $("soundSetting").addEventListener("click",()=>{
+      state.sound=!state.sound;$("soundSetting").lastElementChild.textContent=state.sound?"开":"关";
+      if(!state.sound){$("windAudio").pause();$("roomAudio").pause();}
+      else {state.audioUnlocked=false;unlockAudio();}
+      updateInspector();report("setting-sound",{enabled:state.sound});
+    });
+    $("motionSetting").addEventListener("click",()=>{state.reduced=!state.reduced;document.body.classList.toggle("reduce-motion",state.reduced);$("motionSetting").lastElementChild.textContent=state.reduced?"开":"关";report("setting-reduced-motion",{enabled:state.reduced});});
+    $("textSetting").addEventListener("click",()=>{state.large=!state.large;document.body.classList.toggle("large-copy",state.large);$("textSetting").lastElementChild.textContent=state.large?"开":"关";report("setting-large-text",{enabled:state.large});});
+    $("resetButton").addEventListener("click",resetAll);
+    $("approveFeeling").addEventListener("click",()=>{$("approveFeeling").textContent="已记下：组合方向对";report("slice-v1-like");});
+    $("phone").addEventListener("pointerdown",unlockAudio,{once:true});
+
+    buildStars();
+    showRoot();
+  </script>
+</body>
+</html>

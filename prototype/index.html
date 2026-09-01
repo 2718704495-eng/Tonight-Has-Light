@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#10151f" />
+    <meta
+      name="description"
+      content="《今夜有灯》——给下班后的你，留一盏不用完成任务的灯。"
+    />
+    <title>今夜有灯 · 高保真竖切片</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="prototype-shell" aria-label="今夜有灯高保真竖切片">
+      <section id="game" class="game" data-night="1" data-phase="arrival">
+        <header class="topbar">
+          <div class="brand-lockup">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <div>
+              <p class="eyebrow">今夜有灯</p>
+              <h1 id="nightTitle">第一夜 · 水快开了</h1>
+            </div>
+          </div>
+          <div class="top-actions">
+            <button id="nightBookButton" class="icon-button" type="button" aria-label="打开夜晚册">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 4.5h9.5a2 2 0 0 1 2 2v13H7a2 2 0 0 1-2-2z" />
+                <path d="M8 8h5.5M8 11h5.5" />
+              </svg>
+            </button>
+            <button id="settingsButton" class="icon-button" type="button" aria-label="打开设置">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h10M18 7h2M4 17h2M10 17h10M8 4v6M8 14v6M16 4v6M16 14v6" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="room" aria-label="冬夜房间">
+          <div class="wall-grain" aria-hidden="true"></div>
+          <div class="paper-hill paper-hill-one" aria-hidden="true"></div>
+          <div class="paper-hill paper-hill-two" aria-hidden="true"></div>
+          <div class="moon-beam" aria-hidden="true"></div>
+
+          <button id="windowInteraction" class="window interaction-object" type="button" aria-label="擦开窗上的雾">
+            <span class="window-frame" aria-hidden="true">
+              <span class="moon"></span>
+              <span class="snow snow-one"></span>
+              <span class="snow snow-two"></span>
+              <span class="branch"></span>
+              <span class="fog"></span>
+              <span class="window-cross window-cross-v"></span>
+              <span class="window-cross window-cross-h"></span>
+            </span>
+          </button>
+
+          <div class="wall-shelf" aria-hidden="true">
+            <span class="book book-one"></span>
+            <span class="book book-two"></span>
+            <span class="vase"><i></i><i></i><i></i></span>
+          </div>
+
+          <div class="hanging-lights" aria-label="墙上的三盏小灯">
+            <button class="small-light is-on" data-light="1" type="button" aria-label="关掉第一盏小灯"></button>
+            <button class="small-light is-on" data-light="2" type="button" aria-label="关掉第二盏小灯"></button>
+            <button class="small-light is-on" data-light="3" type="button" aria-label="关掉第三盏小灯"></button>
+          </div>
+
+          <button id="doorInteraction" class="door interaction-object" type="button" aria-label="打开门">
+            <span class="door-panel" aria-hidden="true"><i class="door-handle"></i></span>
+            <span class="door-light" aria-hidden="true"></span>
+          </button>
+
+          <div class="floor-shadow" aria-hidden="true"></div>
+          <div class="low-seat" aria-hidden="true"></div>
+
+          <button id="scarfInteraction" class="chair interaction-object" type="button" aria-label="碰一碰椅背上的围巾">
+            <span class="chair-back" aria-hidden="true"></span>
+            <span class="chair-seat" aria-hidden="true"></span>
+            <span class="scarf" aria-hidden="true"></span>
+          </button>
+
+          <div class="table" aria-hidden="true">
+            <span class="table-top"></span>
+            <span class="table-leg table-leg-left"></span>
+            <span class="table-leg table-leg-right"></span>
+          </div>
+
+          <button id="kettle" class="kettle" type="button" aria-label="水壶，等待暖光">
+            <span class="kettle-handle" aria-hidden="true"></span>
+            <span class="kettle-body" aria-hidden="true"></span>
+            <span class="kettle-lid" aria-hidden="true"></span>
+            <span class="kettle-spout" aria-hidden="true"></span>
+            <span class="steam steam-one" aria-hidden="true"></span>
+            <span class="steam steam-two" aria-hidden="true"></span>
+            <span class="target-ring" aria-hidden="true"></span>
+          </button>
+
+          <button id="cup" class="cup" type="button" aria-label="把放反的杯子扶正">
+            <span class="cup-body" aria-hidden="true"></span>
+            <span class="cup-handle" aria-hidden="true"></span>
+          </button>
+
+          <button id="blanketInteraction" class="blanket interaction-object" type="button" aria-label="把毯子盖好">
+            <span class="blanket-fold" aria-hidden="true"></span>
+          </button>
+
+          <div id="softCreature" class="character soft-creature" aria-label="一位低矮柔软的小住客">
+            <svg viewBox="0 0 150 130" role="img" aria-hidden="true">
+              <defs>
+                <linearGradient id="softBody" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#d3d8d3" />
+                  <stop offset="1" stop-color="#9baaa8" />
+                </linearGradient>
+              </defs>
+              <path class="soft-shadow" d="M18 112c22-12 89-14 116 2-22 14-94 17-116-2Z" />
+              <path class="soft-body" d="M25 100C18 71 25 35 53 24c8-3 13-13 20-13s12 10 21 12c29 7 38 39 33 74-3 21-22 27-51 27-28 0-47-5-51-24Z" />
+              <path class="soft-notch" d="M59 24c5 8 23 9 31-1-4 13-27 16-31 1Z" />
+              <path class="soft-sleeve soft-sleeve-left" d="M35 66c-17 8-22 29-11 37 9 6 18-7 26-26Z" />
+              <path class="soft-sleeve soft-sleeve-right" d="M116 65c18 7 23 28 12 37-9 7-19-6-27-25Z" />
+              <path class="soft-foot" d="M42 116c2-11 17-12 22-1 2 8-24 10-22 1ZM89 115c5-11 20-9 21 2 1 8-25 6-21-2Z" />
+              <circle class="soft-eye soft-eye-left" cx="62" cy="59" r="3.2" />
+              <circle class="soft-eye soft-eye-right" cx="91" cy="59" r="3.2" />
+              <path class="soft-mouth" d="M72 70c4 3 8 3 12 0" />
+              <ellipse class="soft-blush soft-blush-left" cx="52" cy="72" rx="8" ry="4" />
+              <ellipse class="soft-blush soft-blush-right" cx="101" cy="72" rx="8" ry="4" />
+            </svg>
+          </div>
+
+          <div id="lampSpirit" class="character lamp-spirit" aria-label="一位会发光的细长小住客">
+            <span class="spirit-aura" aria-hidden="true"></span>
+            <svg viewBox="0 0 92 160" role="img" aria-hidden="true">
+              <path class="spirit-shadow" d="M19 142c13-8 43-8 55 1-12 9-43 10-55-1Z" />
+              <path class="spirit-body" d="M27 132c-4-32-1-81 5-105 2-9 8-13 16-17 6 7 13 12 21 15-5 28-3 76-5 106-1 18-34 20-37 1Z" />
+              <path class="spirit-fold" d="M33 27 48 10l9 20c-8 6-17 5-24-3Z" />
+              <path class="spirit-cape" d="M61 64c14 12 17 38 3 49-4-18-7-32-3-49Z" />
+              <circle class="spirit-eye spirit-eye-left" cx="41" cy="56" r="2.8" />
+              <circle class="spirit-eye spirit-eye-right" cx="57" cy="56" r="2.8" />
+              <path class="spirit-mouth" d="M46 66h7" />
+              <path class="spirit-knee" d="M32 111c8 5 22 5 31-1" />
+            </svg>
+          </div>
+
+          <button id="lightOrb" class="light-orb" type="button" aria-label="暖光。拖到水壶边，或轻触自动送过去">
+            <span></span>
+          </button>
+
+          <div id="arrivalSilhouette" class="arrival-silhouette" aria-hidden="true">
+            <span></span>
+          </div>
+
+          <div class="room-vignette" aria-hidden="true"></div>
+        </div>
+
+        <section class="story-panel" aria-live="polite">
+          <div class="story-copy">
+            <p id="storyLine">今晚不需要赶。</p>
+            <p id="actionHint" class="action-hint">选一个想停留的时间，我们就进去。</p>
+          </div>
+          <button id="finishButton" class="soft-button finish-button" type="button" hidden>今晚到这里</button>
+        </section>
+
+        <div id="durationSheet" class="sheet duration-sheet is-open" role="dialog" aria-modal="true" aria-labelledby="durationTitle">
+          <div class="sheet-card paper-card">
+            <span class="sheet-handle" aria-hidden="true"></span>
+            <p class="sheet-kicker">先把外面的声音放下</p>
+            <h2 id="durationTitle">今晚，想坐多久？</h2>
+            <p class="sheet-description">没有倒计时，也可以随时离开。</p>
+            <div class="duration-options" role="group" aria-label="预计停留时间">
+              <button type="button" data-duration="3"><strong>3</strong><span>分钟</span><small>一小会儿</small></button>
+              <button type="button" data-duration="5" class="is-selected"><strong>5</strong><span>分钟</span><small>刚刚好</small></button>
+              <button type="button" data-duration="8"><strong>8</strong><span>分钟</span><small>多坐一会</small></button>
+            </div>
+            <button id="enterRoomButton" class="primary-button" type="button">进屋坐一会儿</button>
+          </div>
+        </div>
+
+        <div id="shareLanding" class="sheet share-landing" role="dialog" aria-modal="true" aria-labelledby="landingTitle" hidden>
+          <div class="sheet-card paper-card landing-card">
+            <span class="small-lamp-illustration" aria-hidden="true"><i></i></span>
+            <p class="sheet-kicker">从一条分享来到这里</p>
+            <h2 id="landingTitle">有人给你留了一盏灯</h2>
+            <p class="sheet-description">不用回复，也不用解释。进去坐一会儿就好。</p>
+            <button id="acceptShareButton" class="primary-button" type="button">进去坐一会儿</button>
+          </div>
+        </div>
+
+        <div id="endingSheet" class="sheet ending-sheet" role="dialog" aria-modal="true" aria-labelledby="endingTitle" hidden>
+          <div class="sheet-card paper-card ending-card">
+            <p class="sheet-kicker">今晚的小事已经做好了</p>
+            <h2 id="endingTitle">水热了。<br />你也先缓一会儿。</h2>
+            <div class="ending-actions">
+              <button id="stayButton" class="primary-button" type="button">再坐一会儿</button>
+              <button id="closeNightButton" class="secondary-button" type="button">今晚到这里</button>
+              <button id="shareButton" class="text-button" type="button">给朋友留一盏灯</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="settingsSheet" class="sheet settings-sheet" role="dialog" aria-modal="true" aria-labelledby="settingsTitle" hidden>
+          <div class="sheet-card paper-card">
+            <div class="sheet-heading-row">
+              <div>
+                <p class="sheet-kicker">房间设置</p>
+                <h2 id="settingsTitle">按舒服的方式待着</h2>
+              </div>
+              <button class="icon-button close-sheet" type="button" data-close="settingsSheet" aria-label="关闭设置">×</button>
+            </div>
+            <label class="setting-row">
+              <span><strong>声音</strong><small>房间底噪、物件声音和两三个音符</small></span>
+              <input id="soundToggle" type="checkbox" checked />
+            </label>
+            <label class="setting-row">
+              <span><strong>减少动态</strong><small>关闭视差、呼吸与较长位移动画</small></span>
+              <input id="motionToggle" type="checkbox" />
+            </label>
+            <label class="setting-row">
+              <span><strong>大字</strong><small>放大主要文字与操作提示</small></span>
+              <input id="largeTextToggle" type="checkbox" />
+            </label>
+            <button id="resetButton" class="danger-quiet-button" type="button">重新看看第一夜</button>
+          </div>
+        </div>
+
+        <div id="nightBookSheet" class="sheet night-book-sheet" role="dialog" aria-modal="true" aria-labelledby="nightBookTitle" hidden>
+          <div class="sheet-card paper-card night-book-card">
+            <div class="sheet-heading-row">
+              <div>
+                <p class="sheet-kicker">夜晚册</p>
+                <h2 id="nightBookTitle">五个不用赶的夜晚</h2>
+              </div>
+              <button class="icon-button close-sheet" type="button" data-close="nightBookSheet" aria-label="关闭夜晚册">×</button>
+            </div>
+            <ol id="nightList" class="night-list"></ol>
+          </div>
+        </div>
+
+        <div id="shareSheet" class="sheet share-sheet" role="dialog" aria-modal="true" aria-labelledby="shareTitle" hidden>
+          <div class="sheet-card paper-card">
+            <div class="share-card-preview" aria-hidden="true">
+              <span class="share-moon"></span>
+              <span class="share-lamp"><i></i></span>
+              <p>有人给你留了一盏灯</p>
+              <small>今夜有灯</small>
+            </div>
+            <h2 id="shareTitle">把灯留在这里就好</h2>
+            <p class="sheet-description">分享中不包含昵称、留言或你的进度。</p>
+            <button id="nativeShareButton" class="primary-button" type="button">分享给朋友</button>
+            <button class="text-button close-sheet" type="button" data-close="shareSheet">先不分享</button>
+          </div>
+        </div>
+
+        <div id="pauseSheet" class="sheet pause-sheet" role="dialog" aria-modal="true" aria-labelledby="pauseTitle" hidden>
+          <div class="sheet-card paper-card compact-card">
+            <p class="sheet-kicker">刚才离开了一会儿</p>
+            <h2 id="pauseTitle">房间还停在这里</h2>
+            <p class="sheet-description">进行到一半的动作会从安全位置重新开始。</p>
+            <button id="resumeButton" class="primary-button" type="button">继续今晚</button>
+          </div>
+        </div>
+
+        <div id="errorSheet" class="sheet error-sheet" role="dialog" aria-modal="true" aria-labelledby="errorTitle" hidden>
+          <div class="sheet-card paper-card compact-card">
+            <span class="unlit-lamp" aria-hidden="true"></span>
+            <p class="sheet-kicker">房间没有完全亮起来</p>
+            <h2 id="errorTitle">先用安静版本坐一会儿</h2>
+            <p class="sheet-description">互动与文字仍然可用，声音和部分纸片动效稍后再试。</p>
+            <button id="errorContinueButton" class="primary-button" type="button">继续进入</button>
+          </div>
+        </div>
+
+        <p id="liveRegion" class="sr-only" aria-live="assertive"></p>
+      </section>
+
+      <aside class="prototype-note" aria-label="原型说明">
+        <p>高保真竖切片 · 390 × 844</p>
+        <span>拖动暖光，也可以直接轻触它</span>
+      </aside>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="《今夜有灯》FORMAL-SESSION-CONTROLS-V1 会话控制 A/B/C 设计对照板。" />
+    <title>今夜有灯 · FORMAL-SESSION-CONTROLS-V1</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="board" class="board">
+      <header class="board-hero">
+        <p class="status-line">APPROVED V1-A · LOCAL COCOS IMPLEMENTATION AUTHORIZED · NOT FOR WECHAT BUILD</p>
+        <div class="hero-layout">
+          <div>
+            <p class="eyebrow">FORMAL-SESSION-CONTROLS-V1 · 进屋后的会话选择</p>
+            <h1>先让家被看见，<br />再轻轻问一句。</h1>
+          </div>
+          <p class="hero-copy">
+            进屋后先完整看见明亮暖家，再确认 3／5／8 分钟。没有倒计时，没有任务面板；设置与提前收尾藏在一张安静的小纸签里。
+          </p>
+        </div>
+        <div class="contract-tags" aria-label="共同约束">
+          <span>5 分钟默认但必须确认</span>
+          <span>房间不压暗</span>
+          <span>热区 ≥44px / 间距 ≥8px</span>
+          <span>大字 120%</span>
+          <span>减动无位移</span>
+        </div>
+      </header>
+
+      <section class="option option-a" aria-labelledby="option-a-title">
+        <div class="option-heading">
+          <div>
+            <p class="section-label">方案 A · 已批准</p>
+            <h2 id="option-a-title">右墙留时笺</h2>
+          </div>
+          <p>
+            直接继承已批准的“灯下留笺”。纸笺只占右墙次要区，不越过星窗，不碰人物、猫和晚饭；确认后收成一枚“停一停”小签。
+          </p>
+        </div>
+        <div class="phone-grid three">
+          <figure class="state-card">
+            <div class="phone" data-demo="a-duration"></div>
+            <figcaption><b>时长确认</b><span>先看暖屋 650ms，再只用透明度显现。</span></figcaption>
+          </figure>
+          <figure class="state-card">
+            <div class="phone" data-demo="a-ready"></div>
+            <figcaption><b>正常停留</b><span>确认后只留下 48×44 的“停一停”。</span></figcaption>
+          </figure>
+          <figure class="state-card">
+            <div class="phone" data-demo="a-settings"></div>
+            <figcaption><b>设置与提前收尾</b><span>核心完成后才出现“看看今晚的留笺”。</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="alternatives" aria-labelledby="alternatives-title">
+        <div class="option-heading">
+          <div>
+            <p class="section-label">备选比较</p>
+            <h2 id="alternatives-title">更轻，或更规整。</h2>
+          </div>
+          <p>B 更像屋内纸签但容易读成任务清单；C 最容易扩展设置，却最像传统抽屉 UI。</p>
+        </div>
+        <div class="phone-grid">
+          <figure class="state-card">
+            <div class="phone" data-demo="b-tags"></div>
+            <figcaption><b>B · 墙上三枚纸签</b><span>遮挡最少，菜单感更强，绘制成本最高。</span></figcaption>
+          </figure>
+          <figure class="state-card">
+            <div class="phone" data-demo="c-drawer"></div>
+            <figcaption><b>C · 右墙暖纸抽屉</b><span>层级最清楚，但占墙更大、最像 HUD。</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="large-type" aria-labelledby="large-title">
+        <div class="option-heading">
+          <div>
+            <p class="section-label">120% 大字等价态</p>
+            <h2 id="large-title">桌边暖纸接住更大的字。</h2>
+          </div>
+          <p>右墙宽度不足时不缩字，沿用已经批准的“桌边暖纸”；它只在时长选择和设置展开时出现。</p>
+        </div>
+        <figure class="large-demo">
+          <div class="phone" data-demo="large-duration"></div>
+          <figcaption><b>360×800 压力态</b><span>三项仍一眼看全，确认与返回分开，底部预留手势区。</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="decision" aria-labelledby="decision-title">
+        <div>
+          <p class="section-label">负责人建议</p>
+          <h2 id="decision-title">批准 A；大字时切换桌边暖纸。</h2>
+        </div>
+        <dl>
+          <div><dt>为什么是 A</dt><dd>与已批准收尾 UI 共用同一材质和位置，观感风险、资产成本与实现分叉都最低。</dd></div>
+          <div><dt>保持不变</dt><dd>明亮暖屋、人物、猫、晚饭、星窗、壶杯互动和户外 V7 均不改变。</dd></div>
+          <div><dt>本次批准范围</dt><dd>按同一视觉身份接入本地 Cocos 并验证；本设计板和本地实现不会自动进入微信包。</dd></div>
+        </dl>
+      </section>
+    </main>
+
+    <main id="preview" class="preview" hidden aria-label="会话控制独立预览">
+      <p class="preview-status">APPROVED V1-A · DESIGN REFERENCE · NOT FOR WECHAT BUILD</p>
+      <div id="preview-stage" class="preview-stage"></div>
+      <p id="preview-feedback" class="sr-only" aria-live="polite"></p>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

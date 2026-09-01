@@ -1,0 +1,103 @@
+{
+  "candidate_id": "formal-picturebook-root-wind-hem-v1-a-r4-manual",
+  "contract_id": "ROOT-WIND-HEM-V1-A-R4",
+  "source_sha256": "38e030cbec217c1349beba788e4a041631d295c52a2a0957dc4f9fa45c72a068",
+  "patch_sha256": "96e63a42b747eea076a3093c6d6181d9ff8b7ff14728a545aa9f8f9305953761",
+  "master_sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8",
+  "approved_roi_master_2x": {
+    "left": 50,
+    "top": 1318,
+    "width": 328,
+    "height": 112,
+    "right_exclusive": 378,
+    "bottom_exclusive": 1430
+  },
+  "changed_pixels": 8081,
+  "changed_pixel_ratio": 0.00613759,
+  "changed_bbox": {
+    "left": 60,
+    "top": 1343,
+    "right": 362,
+    "bottom": 1398
+  },
+  "outside_roi_changed_pixels": 0,
+  "max_channel_delta_0_255": 117,
+  "mean_delta_per_changed_channel": 14.3952,
+  "patch_alpha_pixels": 398,
+  "patch_alpha_bbox": {
+    "left": 237,
+    "top": 1343,
+    "right": 362,
+    "bottom": 1392
+  },
+  "repair_clone_mask_sha256": "42b4d1e2683565245b602a8355b7f80325be7f38f1c6113c26d4146d72441903",
+  "repair_alpha_pixels": 3398,
+  "repair_dest_bbox": {
+    "left": 64,
+    "top": 1348,
+    "right": 161,
+    "bottom": 1395
+  },
+  "right_hem_contract_sha256": "7d1dc3c19a0813a4238841e692ba376c53736ba1d8c23cc68c99153ceb6df1a0",
+  "right_hem_source_mask_sha256": "a7647ede9d97f6132fa4a0f7de8017ec243121c4c2d40d930e2c1d1115f44d3f",
+  "right_hem_transparent_patch_sha256": "383acc6e38f880fd7b92661b6a7d36b196916fde8ebe0bf83c5c62f756d7579c",
+  "right_hem_alpha_pixels": 3853,
+  "right_hem_dest_bbox": {
+    "left": 232,
+    "top": 1344,
+    "right": 359,
+    "bottom": 1396
+  },
+  "guard_changes": {
+    "sky_and_galaxy": {
+      "region": {
+        "left": 0,
+        "top": 0,
+        "width": 780,
+        "height": 1080
+      },
+      "changed_pixels": 0
+    },
+    "cat": {
+      "region": {
+        "left": 378,
+        "top": 1190,
+        "width": 160,
+        "height": 300
+      },
+      "changed_pixels": 0
+    },
+    "house_and_door": {
+      "region": {
+        "left": 520,
+        "top": 1210,
+        "width": 250,
+        "height": 220
+      },
+      "changed_pixels": 0
+    },
+    "flowers_1": {
+      "region": {
+        "left": 30,
+        "top": 1500,
+        "width": 110,
+        "height": 160
+      },
+      "changed_pixels": 0
+    },
+    "flowers_2": {
+      "region": {
+        "left": 580,
+        "top": 1500,
+        "width": 130,
+        "height": 160
+      },
+      "changed_pixels": 0
+    }
+  },
+  "generated_evidence": [
+    "evidence/root-r2-r4-compare-390.png",
+    "evidence/root-r2-r4-compare-195.png",
+    "evidence/root-r2-r4-hem-crop.png"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "45e42083-ca61-4271-9c44-001a6cc95bda",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "isBundle": true,
+    "bundleConfigID": "night_05_subpackage",
+    "bundleName": "night-05",
+    "priority": 2
+  }
+}

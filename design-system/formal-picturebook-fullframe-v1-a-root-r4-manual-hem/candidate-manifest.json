@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "candidate_id": "formal-picturebook-root-wind-hem-v1-a-r4-manual",
+  "contract_id": "ROOT-WIND-HEM-V1-A-R4",
+  "status": "ROOT_PAGE_GATE_B_PASS",
+  "created_on": "2026-08-30",
+  "source_property": "manual-local-edit-over-ai-assisted-formal-fullframe-r2",
+  "approval": {
+    "method_phrase": "批准 ROOT-WIND-HEM-V1-A-R4：人工局部重绘衣角，不再整体重生成",
+    "visual_phrase": "批准 ROOT-WIND-HEM-V1-A-R4：根页视觉通过",
+    "record_path": "docs/ROOT-WIND-HEM-V1-A-R4-APPROVAL.md",
+    "record_sha256": "15f9a7e8ceefa973d79073091fda31502c65a3a67ab91f05d2b2c6e612a91cd5",
+    "pre_visual_approval_hashes_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/approvals/HASHES.pre-user-visual-approval.sha256",
+    "pre_visual_approval_hashes_sha256": "888ee916f58c1f55a5986afa040be5564e38800dea023f02fb812962167b2c42",
+    "scope": "root-page static visual Gate B PASS only; remaining pages and runtime permissions are not approved"
+  },
+  "permissions": {
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "review_submission": false,
+    "release": false,
+    "git": false
+  },
+  "source": {
+    "asset_id": "ART-OUTDOOR-ROOT-WIND-HEM-001",
+    "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/input/root_night_slope_v2-wind-hem-r2-source-master-2x.png",
+    "sha256": "38e030cbec217c1349beba788e4a041631d295c52a2a0957dc4f9fa45c72a068"
+  },
+  "page": {
+    "page_id": "root_night_slope_v2_wind_hem_r4_manual",
+    "asset_id": "ART-OUTDOOR-ROOT-WIND-HEM-003",
+    "clean_plate": true,
+    "not_in_build": true,
+    "contour_patch_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/manual-patch/root_wind_hem_r4_patch.svg",
+    "contour_patch_sha256": "96e63a42b747eea076a3093c6d6181d9ff8b7ff14728a545aa9f8f9305953761",
+    "right_hem_contract_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/manual-patch/right_hem_texture.json",
+    "right_hem_contract_sha256": "7d1dc3c19a0813a4238841e692ba376c53736ba1d8c23cc68c99153ceb6df1a0",
+    "right_hem_mask_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/manual-patch/right_hem_source_mask.svg",
+    "right_hem_mask_sha256": "a7647ede9d97f6132fa4a0f7de8017ec243121c4c2d40d930e2c1d1115f44d3f",
+    "right_hem_transparent_patch_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/manual-patch/right_hem_texture_patch.png",
+    "right_hem_transparent_patch_sha256": "383acc6e38f880fd7b92661b6a7d36b196916fde8ebe0bf83c5c62f756d7579c",
+    "repair_mask_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/manual-patch/repair_clone_mask.svg",
+    "repair_mask_sha256": "42b4d1e2683565245b602a8355b7f80325be7f38f1c6113c26d4146d72441903",
+    "master_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/source/masters/root_night_slope_v2-wind-hem-r4-manual-master-2x.png",
+    "master_sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8",
+    "normalization": "R2 780x1688 + same-image grass repair + masked R2 knit reuse + editable SVG contour accents; sRGB 8-bit RGBA opaque PNG; SHOW_ALL exports use #06265F",
+    "exports": {
+      "195x422": "6ceac63b51bf9c6e8311aded28c6adf1fe7e6349e864d5f475976b7c09bb9491",
+      "390x844": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a",
+      "360x800": "0b24bd86d062b2ad1c7f905b52156c341dad6c220298c816740a7a9687191636",
+      "430x932": "59877dd4db6b10da3ff0547d542893862b7f957a0b566d287fc5898c00e700fb",
+      "430x844-pressure": "b475ab37dc5fdc9eb1741eaab2e5fb3de5638ffeabb590729ef99d755e20fc2f"
+    },
+    "diff_metrics_path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/evidence/r4-diff-metrics.json",
+    "diff_metrics_sha256": "025619ec888320d1d28a91495397034288e22ad78c73ea273572812de4f036d6",
+    "user_visual_approval": {
+      "status": "approved",
+      "approved_on": "2026-08-30",
+      "master_sha256": "41599f03a0a7a71acd953b46066c3205b4da1522d0a06bd86b73186afedccdc8",
+      "export_390x844_sha256": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a",
+      "export_195x422_sha256": "6ceac63b51bf9c6e8311aded28c6adf1fe7e6349e864d5f475976b7c09bb9491"
+    }
+  },
+  "gate_decision": {
+    "root_page_gate_b": "PASS",
+    "complete_picturebook_gate_b": "BLOCKED",
+    "runtime_handoff": "NOT_AUTHORIZED"
+  },
+  "independent_visual_review": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/evidence/independent-visual-review.md",
+    "sha256": "0cdae8bcf922548347047d85ea2905176bb7c54266b4feb3a3af624cacc17d9a",
+    "decision": "READY_FOR_USER_VISUAL_REVIEW",
+    "p0": 0,
+    "p1": 0,
+    "p2": 1
+  },
+  "excluded_history": [
+    "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem-right",
+    "design-system/formal-picturebook-fullframe-v1-a-root-r3-wind-hem-right"
+  ]
+}

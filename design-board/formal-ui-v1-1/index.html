@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="《今夜有灯》FORMAL UI V1.1 暖屋修订：外面安静舒心，屋内温馨暖心。"
+    />
+    <title>今夜有灯 · FORMAL UI V1.1 暖屋修订</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="version-line">
+        <span>GATE B2 · FORMAL UI V1.1</span>
+        <span>暖屋修订 · 2026-08-24</span>
+      </div>
+      <div class="headline-row">
+        <div>
+          <p class="kicker">外面让心安静，屋里把人接住。</p>
+          <h1>灯光照亮黑暗，<br />不是把夜晚染成橙色。</h1>
+          <p class="lede">
+            户外 V7 的深蓝星空、凉风和安静停留全部不变。用户主动触门后，
+            室内用壶边暖光、人物与猫的暖色轮廓，形成一次清楚但不刺眼的情绪转折。
+          </p>
+        </div>
+        <aside class="status-card" aria-label="当前提案状态">
+          <span>当前状态</span>
+          <strong>BLOCKED</strong>
+          <b>AWAITING USER APPROVAL</b>
+          <small>只读提案 · 未进入 Cocos · 不是生产资产</small>
+        </aside>
+      </div>
+      <div class="principles" aria-label="暖屋修订原则">
+        <span>外冷内暖</span>
+        <span>亮处有落点</span>
+        <span>四周保留深暗</span>
+        <span>不加 Bloom</span>
+        <span>角色与材质不变</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="journey" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">01 / 视觉链</p>
+            <h2 id="journey-title">从凉风，走到一盏真正暖人的灯。</h2>
+          </div>
+          <p>
+            三幅画不是三个关卡，而是同一口呼吸的冷暖变化。门不闪、不催；
+            暖意只在用户主动触门后出现。
+          </p>
+        </div>
+
+        <div class="journey-grid">
+          <article class="journey-card">
+            <div class="journey-visual phone">
+              <img src="./assets/v7-approved-reference.png" alt="已批准的 V7 户外夜风草坡" />
+              <span class="temperature-label cold">冷静 · 舒心</span>
+            </div>
+            <div class="journey-copy">
+              <b>00 · 户外</b>
+              <h3>先把心放慢</h3>
+              <p>自然深蓝星空、凉风、草浪与两朵微光花继续成立；V7 一像素也不在本轮改动。</p>
+            </div>
+          </article>
+
+          <article class="journey-card">
+            <div class="journey-visual phone transition-visual" aria-label="触门后的暖纸层转场示意">
+              <img class="transition-cold" src="./assets/v7-approved-reference.png" alt="户外画面作为转场起点" />
+              <img class="transition-warm" src="./assets/concept-a-warm-room-exploration-v1-1.png" alt="暖屋画面作为转场终点" />
+              <div class="paper-sweep" aria-hidden="true"></div>
+              <div class="door-response" aria-hidden="true"></div>
+              <span class="temperature-label bridge">0.9s · 暖光承接</span>
+            </div>
+            <div class="journey-copy">
+              <b>01 · 触门</b>
+              <h3>门光回应一次</h3>
+              <p>暖纸层从门内掠过，不推镜头、不放大人物；它只负责把冷夜交给室内灯。</p>
+            </div>
+          </article>
+
+          <article class="journey-card is-warm">
+            <div class="journey-visual phone warm-treatment">
+              <img src="./assets/concept-a-warm-room-exploration-v1-1.png" alt="灯光照亮壶、桌、人物与猫的暖屋探索" />
+              <span class="temperature-label warm">温馨 · 暖心</span>
+            </div>
+            <div class="journey-copy">
+              <b>02 · 室内</b>
+              <h3>灯把人接住</h3>
+              <p>先看见灯罩和壶边，再看见人物左、猫右的暖边；窗外冷夜留在第三层，四周仍有深暗。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="comparison" aria-labelledby="comparison-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">02 / BEFORE — AFTER</p>
+            <h2 id="comparison-title">旧版的问题，不是“暗”，而是没有进屋。</h2>
+          </div>
+          <p>
+            V1 冷蓝 A 图保留在此仅作问题对照；它已被本轮 V1.1 暖屋提案替代，
+            不会删除旧 V1 目录，也不会进入新实现。
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          <article class="comparison-card before-card">
+            <div class="comparison-head">
+              <div><span>BEFORE · V1</span><h3>冷蓝窗边小桌</h3></div>
+              <em>被替代</em>
+            </div>
+            <figure class="comparison-figure phone">
+              <img src="./assets/concept-a-window-table-exploration.png" alt="旧冷蓝窗边小桌探索图" />
+            </figure>
+            <ul>
+              <li>室内与户外同为大面积冷蓝，情绪阈值不清楚。</li>
+              <li>壶边暖光太小，人物与猫仍像坐在外面的夜色里。</li>
+              <li>“进屋”主要靠流程和文字说明，画面本身没有完成转折。</li>
+            </ul>
+          </article>
+
+          <article class="comparison-card after-card">
+            <div class="comparison-head">
+              <div><span>AFTER · V1.1</span><h3>暖灯窗边小桌</h3></div>
+              <em>等待批准</em>
+            </div>
+            <figure class="comparison-figure phone warm-treatment">
+              <img src="./assets/concept-a-warm-room-exploration-v1-1.png" alt="新暖灯窗边小桌探索图" />
+            </figure>
+            <ul>
+              <li>纸灯与壶边成为清楚暖心的第一焦点。</li>
+              <li>人物左、猫右；肩背和猫耳背只吃到暖边，不被整片黄光抹平。</li>
+              <li>窗外深蓝继续连接户外，四周深暗让灯显得可信。</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="lighting" aria-labelledby="lighting-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">03 / 光线合同</p>
+            <h2 id="lighting-title">暖，是有次序的。</h2>
+          </div>
+          <p>下列比例是正式原创重绘的目标分区，不声称探索图已经完成像素级测量。</p>
+        </div>
+
+        <div class="lighting-layout">
+          <figure class="light-map phone warm-treatment">
+            <img src="./assets/concept-a-warm-room-exploration-v1-1.png" alt="暖屋光线层级标注图" />
+            <span class="callout callout-one"><b>1</b>纸灯／壶边</span>
+            <span class="callout callout-two"><b>2</b>人物＋猫</span>
+            <span class="callout callout-three"><b>3</b>窗外冷夜</span>
+          </figure>
+          <div class="light-spec">
+            <ol class="focus-order">
+              <li><b>第一焦点</b><strong>纸灯／壶边暖光</strong><span>亮但不白，保留纸罩纹理、壶身暗面与蒸汽层次。</span></li>
+              <li><b>第二焦点</b><strong>人物＋普通家猫</strong><span>人物在左、猫在右；肩背、发梢、猫耳背接暖边，体块仍有重量。</span></li>
+              <li><b>第三焦点</b><strong>窗外冷夜</strong><span>冷蓝是空间深度与来路，不再与室内争第一眼。</span></li>
+            </ol>
+            <div class="ratio-card" aria-label="正式重绘的光色面积目标">
+              <div><span>暖区</span><b>40–50%</b><i style="--ratio: 46%"></i></div>
+              <div><span>窗外冷区</span><b>25–30%</b><i style="--ratio: 28%"></i></div>
+              <div><span>深暗留白</span><b>20–30%</b><i style="--ratio: 26%"></i></div>
+            </div>
+            <div class="avoid-list">
+              <span>不整屏橙黄</span>
+              <span>不纯白过曝</span>
+              <span>不加 Bloom</span>
+              <span>不靠粒子造暖</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ui-states" aria-labelledby="states-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">04 / 四张关键屏</p>
+            <h2 id="states-title">界面退后一步，让灯和人留在前面。</h2>
+          </div>
+          <p>
+            四屏统一使用 V1.1 暖屋探索图作底；控件保持克制，设置位于安全区，
+            所有可点击区域至少 44×44，拖拽都有轻触替代。
+          </p>
+        </div>
+
+        <div class="state-grid">
+          <article class="state-card">
+            <div class="phone phone-state warm-treatment state-duration">
+              <img src="./assets/concept-a-warm-room-exploration-v1-1.png" alt="暖屋中的时长选择状态" />
+              <button class="quiet-menu" type="button" aria-label="打开设置">•••</button>
+              <div class="duration-sheet">
+                <p>今晚，想待多久？</p>
+                <div class="duration-options">
+                  <button type="button"><b>一小会儿</b><span>3 分钟</span></button>
+                  <button class="selected" type="button"><b>慢一点</b><span>5 分钟</span></button>
+                  <button type="button"><b>多坐一会儿</b><span>8 分钟</span></button>
+                </div>
+                <small>不倒数，随时可以走。</small>
+                <button class="primary-action" type="button">就待一会儿</button>
+              </div>
+            </div>
+            <h3>时长选择</h3>
+            <p>深暗纸牌承载信息，不把整间房压成弹窗背景；默认 5 分钟，仍由用户明确确认。</p>
+          </article>
+
+          <article class="state-card">
+            <div class="phone phone-state warm-treatment state-ritual">
+              <img src="./assets/concept-a-warm-room-exploration-v1-1.png" alt="把暖光带到壶边的核心互动" />
+              <button class="quiet-menu" type="button" aria-label="打开设置">•••</button>
+              <button class="light-handle" type="button" aria-label="选择暖光，随后可点击水壶"></button>
+              <p class="context-hint">把这点光，带到壶边。</p>
+            </div>
+            <h3>暖光互动</h3>
+            <p>灯池本身就是操作物；可拖到壶边，也可先点暖光、再点水壶。首次 10 秒不出现提示。</p>
+          </article>
+
+          <article class="state-card">
+            <div class="phone phone-state warm-treatment state-ending">
+              <img src="./assets/concept-a-warm-room-exploration-v1-1.png" alt="暖屋第一夜的安静收尾" />
+              <div class="ending-copy">
+                <span>第一夜 · 水快开了</span>
+                <p>水热了。<br />你也先缓一会儿。</p>
+              </div>
+              <div class="ending-actions">
+                <button type="button">再坐一会儿</button>
+                <button class="primary-action" type="button">今晚到这里</button>
+              </div>
+            </div>
+            <h3>安静收尾</h3>
+            <p>灯光只回落 4%，不熄灭、不弹奖励；用户继续坐着时，房间仍然温暖完整。</p>
+          </article>
+
+          <article class="state-card">
+            <div class="phone phone-state warm-treatment state-share">
+              <img src="./assets/concept-a-warm-room-exploration-v1-1.png" alt="暖屋中的固定分享预览" />
+              <div class="share-scrim" aria-hidden="true"></div>
+              <div class="share-preview">
+                <div class="share-image">
+                  <img src="./assets/concept-a-warm-room-exploration-v1-1.png" alt="固定分享卡暖屋构图预览" />
+                  <p>有人给你留了一盏灯</p>
+                </div>
+                <small>固定内容，不带姓名、进度或自由留言。</small>
+                <button class="primary-action" type="button">留给朋友</button>
+                <button class="text-action" type="button">暂时不留</button>
+              </div>
+            </div>
+            <h3>分享预览</h3>
+            <p>5:4 卡片只留下“一盏灯”的暖意，不做炫耀式通关图；接收者仍从自己的第一夜开始。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="motion" aria-labelledby="motion-title">
+        <div>
+          <p class="section-label">05 / 0.9 秒转场</p>
+          <h2 id="motion-title">光先照到物，才照到人。</h2>
+          <p class="motion-intro">动效只解释空间和光源，不制造奖励感，也不借镜头推进强迫用户进屋。</p>
+        </div>
+        <ol class="timeline">
+          <li><b>0–120ms</b><strong>门光回应</strong><span>只压亮一次，确认“我碰到了”，门本身不脉冲。</span></li>
+          <li><b>120–680ms</b><strong>暖纸层掠过</strong><span>染色纸边从门内横过，保留纸绘颗粒，不用白闪。</span></li>
+          <li><b>680–820ms</b><strong>壶和桌先亮</strong><span>室内灯池先显出纸罩、壶边、桌面纹理和蒸汽。</span></li>
+          <li><b>820–900ms</b><strong>暖边落到肩背</strong><span>人物肩背、发梢与猫耳背最后接到薄暖边，完成“被接住”。</span></li>
+        </ol>
+        <div class="motion-rule">
+          <b>默认</b><span>不推镜头 · 不放大角色 · 不整屏闪白</span>
+          <b>减少动态</b><span>关闭掠过与位移，仅用 180ms 交叉淡化到同一中性终态</span>
+        </div>
+      </section>
+
+      <section class="guardrails" aria-labelledby="guardrails-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">06 / 保持不变</p>
+            <h2 id="guardrails-title">这次只改“屋里的温度”。</h2>
+          </div>
+          <p>下列规则继续锁定；任何正式资产和运行时变化都必须在用户批准 V1.1 后另行制作和复验。</p>
+        </div>
+        <div class="guardrail-grid">
+          <article><b>材质</b><strong>水粉纸绘／染色纸层</strong><p>场景、人物、猫、物件使用同一颗粒、边缘和冷暖受光。</p></article>
+          <article><b>角色</b><strong>正常成年人＋普通家猫</strong><p>人物左、猫右；不幼龄化、不拟人化、不命名，不借现成 IP 轮廓。</p></article>
+          <article><b>适配</b><strong>SafeArea＋44×44</strong><p>360/390/430 保持关键物完整；相邻热区至少 8px。</p></article>
+          <article><b>大字</b><strong>真实 120%</strong><p>功能字不靠 SHRINK 塞回固定容器，叙事短句可自然换行。</p></article>
+          <article><b>减动</b><strong>静态因果等价</strong><p>关闭位移、视差与掠过后，仍能看懂从门到灯、从壶到人的层级。</p></article>
+          <article><b>资产</b><strong>探索图不入包</strong><p>正式角色、灯、壶、图标和中文必须可编辑、可追溯、原创重绘。</p></article>
+        </div>
+      </section>
+
+      <section class="approval" aria-labelledby="approval-title">
+        <p class="section-label">07 / 决策停止线</p>
+        <h2 id="approval-title">FORMAL UI V1.1 仍在等待你的批准。</h2>
+        <p>
+          当前只批准“查看这份暖屋修订提案”，不代表批准探索图入包、正式分层资产、Cocos 接入、
+          微信预览、审核或发布。批准后，下一步应先由 UI／美术按本合同原创分层重绘 390×844 正式母版，
+          再把那张真实母版给你看一次。
+        </p>
+        <div class="approval-code">建议批准口令：批准 FORMAL-UI-V1.1-A 暖屋修订</div>
+      </section>
+    </main>
+
+    <footer>
+      <p>FORMAL UI V1.1 · WARM ROOM REVISION · EXPLORATION ONLY · NO RUNTIME STYLE CHANGED</p>
+    </footer>
+  </body>
+</html>

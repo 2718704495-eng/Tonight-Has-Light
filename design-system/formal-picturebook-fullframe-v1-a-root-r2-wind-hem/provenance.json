@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "asset_id": "ART-OUTDOOR-ROOT-WIND-HEM-001",
+  "candidate_id": "formal-picturebook-root-wind-hem-v1-a-r2",
+  "source_property": "ai-assisted-formal-fullframe",
+  "creator": "OPENAI-IMAGEGEN+PROJECT-OWNER",
+  "generated_on": "2026-08-29",
+  "purpose": "formal full-frame root clean-plate candidate under the approved AI-assisted fullframe exception",
+  "tool_record": {
+    "tool": "built-in image generation",
+    "initial_generation_count": 1,
+    "targeted_repair_count": 1,
+    "repair_reason": "initial output retained the old near-six-tenths sky composition and did not make the approved hem gesture sufficiently aligned with the new framing contract"
+  },
+  "prompt": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/prompts/root_night_slope_v2_wind_hem.md",
+    "sha256": "951f663a6b84324b692f05aee7736d496272312dfe3b12d16308dd4444ead4b6",
+    "safety_check": "no artist name, existing IP, brand, real-person request or instruction from attached imagery"
+  },
+  "inputs": [
+    {
+      "path": "design-system/formal-outdoor-art-pilot-v1-b-r1/source/root_night_slope_v1-master-2x.png",
+      "sha256": "5c84ce815ba011cd9be570889c768573e80c3d55d6b59fb2bd211301f86c74e3",
+      "rights": "project-generated and previously user-approved visual reference",
+      "boundary": "style, identity and scene continuity only; no tracing or direct pixel reuse"
+    },
+    {
+      "path": "/Users/wxl/.codex/generated_images/01a02259-fb9a-7c32-a943-30c3c5c47a30/exec-743f4a17-7fab-4d18-b115-eb5d2aed7c41.png",
+      "sha256": "97d1be5e4ab36722ccb284c4c28aad719bf6d4c5e1aaba7fc60a9c92642afc4f",
+      "rights": "project-generated image explicitly supplied and selected by the user",
+      "boundary": "only first-panel sky ratio and wind-lifted-hem gesture; no panel divider or exact pixel copying"
+    }
+  ],
+  "process_files": [
+    {
+      "role": "initial raw, superseded",
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/raw/root_night_slope_v2-wind-hem-imagegen-r1.png",
+      "sha256": "53b849435b96a5b7dbbaf5d324dbc1c3383a8f445af234fc4d0f5b2fb03baba9"
+    },
+    {
+      "role": "targeted repair raw, current",
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/raw/root_night_slope_v2-wind-hem-imagegen-r2.png",
+      "sha256": "3ae5a93d8b7addc24f83389ea8633d3f46083fedd1aef1772752409d1e0e36fa"
+    },
+    {
+      "role": "normalized current master",
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r2-wind-hem/source/masters/root_night_slope_v2-wind-hem-master-2x.png",
+      "sha256": "38e030cbec217c1349beba788e4a041631d295c52a2a0957dc4f9fa45c72a068"
+    }
+  ],
+  "human_decisions": {
+    "kept": "sky-dominant framing, weighted adult posture, ordinary cat, dry-brush B comic language, one galaxy, right warm door, exactly two weak flowers, clearly lifted knit hem",
+    "rejected": "old six-tenths framing, whole-body floating, cape drama, contact-sheet dividers, text, UI, meteor and extra effects",
+    "redraw_note": "this exception accepts the full-frame AI-assisted clean plate as a candidate; no claim of manual character redraw is made",
+    "similarity_review": "owner and clean independent visual review found no recognizable existing character, brand, artist signature or copied panel; clean independent review separately blocked the candidate for hem-direction drift; user same-file decision remains pending"
+  },
+  "permissions": "not-in-build; no Cocos, build, WeChat, upload, review submission, release or Git"
+}

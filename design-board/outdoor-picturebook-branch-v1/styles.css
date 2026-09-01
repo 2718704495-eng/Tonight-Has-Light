@@ -1,0 +1,742 @@
+:root {
+  --night-0: #030c17;
+  --night-1: #07182b;
+  --night-2: #0d2947;
+  --ink-blue: #8da7b9;
+  --paper-pale: #e6ddc7;
+  --flower-warm: #f2bf68;
+  --home-warm: #d88927;
+  --transition-page: 300ms;
+  --transition-reduced: 150ms;
+  --finale-reveal: 180ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--night-0);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--paper-pale);
+  background:
+    radial-gradient(circle at 25% 10%, rgba(49, 83, 112, 0.18), transparent 32rem),
+    repeating-linear-gradient(105deg, rgba(255, 255, 255, 0.013) 0 1px, transparent 1px 5px),
+    var(--night-0);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.proof-layout {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+  padding: max(24px, env(safe-area-inset-top)) 24px max(32px, env(safe-area-inset-bottom));
+  display: grid;
+  grid-template-columns: minmax(280px, 390px) minmax(230px, 330px);
+  grid-template-areas:
+    "phone heading"
+    "phone aside";
+  grid-template-rows: auto 1fr;
+  justify-content: center;
+  align-items: start;
+  gap: 24px 48px;
+}
+
+.proof-heading {
+  grid-area: heading;
+  max-width: 760px;
+}
+
+.proof-kicker,
+.aside-label {
+  margin: 0 0 8px;
+  color: #91a8b7;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+}
+
+.proof-heading h1 {
+  margin: 0;
+  max-width: 18em;
+  font-family: "STKaiti", "Kaiti SC", "KaiTi", "Songti SC", serif;
+  font-size: clamp(24px, 4vw, 42px);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.035em;
+}
+
+.proof-note {
+  margin: 12px 0 0;
+  max-width: 48em;
+  color: #93a6b1;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.phone-column {
+  grid-area: phone;
+  width: var(--preview-stage-width, 390px);
+  max-width: 100%;
+  align-self: start;
+  justify-self: center;
+  position: sticky;
+  top: max(24px, env(safe-area-inset-top));
+  scroll-margin-top: max(8px, env(safe-area-inset-top));
+}
+
+.phone-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 390 / 844;
+  overflow: hidden;
+  isolation: isolate;
+  background: #06182a;
+  border: 1px solid rgba(212, 221, 216, 0.16);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.42);
+  touch-action: manipulation;
+}
+
+.hub-scene,
+.story-scene {
+  position: absolute;
+  inset: 0;
+}
+
+.hub-scene {
+  opacity: 1;
+  transition: opacity var(--transition-page) ease;
+}
+
+.hub-scene.is-leaving {
+  opacity: 0;
+}
+
+.hub-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.hotspot,
+.quiet-character-zone {
+  position: absolute;
+  z-index: 3;
+  min-width: 44px;
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hotspot-sky {
+  inset: 0 0 46% 0;
+}
+
+.hotspot-grass {
+  left: 0;
+  right: 31%;
+  bottom: 0;
+  height: 29%;
+}
+
+.hotspot-home {
+  right: 3%;
+  top: 53%;
+  width: 27%;
+  height: 22%;
+  z-index: 5;
+}
+
+.quiet-character-zone {
+  left: 7%;
+  top: 49%;
+  width: 57%;
+  height: 27%;
+  z-index: 2;
+}
+
+.ink-invitation {
+  position: absolute;
+  opacity: 0;
+  color: rgba(229, 223, 208, 0.93);
+  font-family: "STKaiti", "Kaiti SC", "KaiTi", serif;
+  font-size: clamp(15px, 4.4vw, 18px);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(2, 10, 20, 0.9), 0 0 14px rgba(167, 194, 207, 0.22);
+  transform: translateY(5px) rotate(-2deg);
+  transition: opacity 180ms ease, transform 180ms ease, color 100ms linear;
+  pointer-events: none;
+}
+
+.hotspot-sky .ink-invitation {
+  left: 57%;
+  top: 41%;
+}
+
+.hotspot-grass .ink-invitation {
+  left: 57%;
+  top: 58%;
+  transform: translateY(5px) rotate(2deg);
+}
+
+.hotspot-home .ink-invitation {
+  right: 3%;
+  top: 53%;
+  color: rgba(244, 202, 125, 0.94);
+  transform: translateY(5px) rotate(-3deg);
+}
+
+.hub-scene.hints-ready .ink-invitation,
+.hotspot:focus-visible .ink-invitation,
+.hotspot.is-pressed .ink-invitation {
+  opacity: 1;
+  transform: translateY(0) rotate(-1deg);
+}
+
+.hotspot-grass:focus-visible .ink-invitation,
+.hotspot-grass.is-pressed .ink-invitation,
+.hub-scene.hints-ready .hotspot-grass .ink-invitation {
+  transform: translateY(0) rotate(1deg);
+}
+
+.hotspot:focus-visible,
+.quiet-character-zone:focus-visible,
+.return-hub:focus-visible,
+.proof-reset:focus-visible,
+.motion-toggle input:focus-visible + span {
+  outline: 2px solid var(--flower-warm);
+  outline-offset: -3px;
+}
+
+.story-tap:focus-visible {
+  outline: 0;
+  box-shadow: inset 0 -2px 0 rgba(242, 191, 104, 0.72);
+}
+
+.hotspot.is-pressed .ink-invitation {
+  color: #fff6db;
+}
+
+.gentle-hint {
+  position: absolute;
+  z-index: 8;
+  left: 5%;
+  right: 5%;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  margin: 0;
+  padding: 24px 8px 6px;
+  color: rgba(233, 227, 212, 0.88);
+  background: linear-gradient(transparent, rgba(2, 12, 22, 0.72));
+  font-family: "STKaiti", "Kaiti SC", "KaiTi", serif;
+  font-size: 14px;
+  line-height: 1.55;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 180ms ease, transform 180ms ease;
+  pointer-events: none;
+}
+
+.gentle-hint.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.story-scene {
+  background: #06182a;
+  opacity: 0;
+  transition: opacity var(--transition-page) ease;
+}
+
+.story-scene.is-visible {
+  opacity: 1;
+}
+
+.story-layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateX(7px);
+  transition: opacity var(--transition-page) ease, transform var(--transition-page) ease;
+  pointer-events: none;
+}
+
+.story-layer.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.story-layer.is-departing {
+  opacity: 0;
+  transform: translateX(-7px);
+}
+
+.story-panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+  box-shadow: 0 0 38px rgba(2, 9, 18, 0.28);
+}
+
+.story-tap {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.return-hub {
+  position: absolute;
+  z-index: 7;
+  top: max(14px, env(safe-area-inset-top));
+  left: 12px;
+  min-width: 58px;
+  min-height: 44px;
+  padding: 0 8px;
+  color: rgba(231, 225, 210, 0.82);
+  border: 0;
+  background: linear-gradient(90deg, rgba(3, 13, 24, 0.72), transparent);
+  font-family: "STKaiti", "Kaiti SC", "KaiTi", serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.story-title,
+.story-prompt {
+  position: absolute;
+  z-index: 6;
+  margin: 0;
+  color: rgba(236, 230, 214, 0.9);
+  font-family: "STKaiti", "Kaiti SC", "KaiTi", serif;
+  pointer-events: none;
+  text-shadow: 0 1px 7px #020a13;
+}
+
+.story-title {
+  top: max(22px, env(safe-area-inset-top));
+  right: 18px;
+  font-size: 17px;
+  letter-spacing: 0.12em;
+}
+
+.story-prompt {
+  left: 10%;
+  right: 10%;
+  bottom: max(17px, env(safe-area-inset-bottom));
+  padding-top: 28px;
+  background: linear-gradient(transparent, rgba(2, 12, 22, 0.74));
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: center;
+  transition: opacity 150ms ease;
+}
+
+.story-scene.is-stargaze-finale .story-prompt {
+  opacity: 0;
+}
+
+.stargaze-finale {
+  position: absolute;
+  z-index: 5;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.meteor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.meteor-trace {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 138px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(244, 232, 197, 0.96) 0%,
+    rgba(190, 210, 217, 0.72) 18%,
+    rgba(125, 158, 177, 0.28) 58%,
+    transparent 100%
+  );
+  border-radius: 999px;
+  transform: rotate(-38deg);
+  transform-origin: 0 50%;
+}
+
+.meteor-trace::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -1px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #f3e7c4;
+}
+
+.stargaze-finale.is-running .meteor {
+  animation: meteor-flight 1250ms cubic-bezier(0.3, 0.05, 0.45, 1) 900ms both;
+}
+
+@keyframes meteor-flight {
+  0% {
+    opacity: 0;
+    transform: translate3d(338px, 138px, 0);
+  }
+  7% {
+    opacity: 0.92;
+  }
+  64% {
+    opacity: 0.92;
+    transform: translate3d(176px, 286px, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(176px, 286px, 0);
+  }
+}
+
+.stargaze-finale-copy {
+  position: absolute;
+  z-index: 2;
+  top: 47%;
+  right: 9%;
+  left: 12%;
+  color: rgba(235, 229, 214, 0.96);
+  font-family: "STKaiti", "Kaiti SC", "KaiTi", "Songti SC", serif;
+  text-align: right;
+  text-shadow: 0 1px 7px rgba(2, 10, 19, 0.95);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity var(--finale-reveal) ease, transform var(--finale-reveal) ease;
+  pointer-events: none;
+}
+
+.stargaze-finale.choices-ready .stargaze-finale-copy {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.finale-observation,
+.finale-question {
+  margin: 0;
+}
+
+.finale-observation {
+  font-size: 16px;
+  line-height: 1.65;
+  letter-spacing: 0.045em;
+}
+
+.finale-question {
+  margin-top: 2px;
+  color: #f0dfbc;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.055em;
+}
+
+.finale-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.finale-action {
+  min-width: 100px;
+  min-height: 48px;
+  padding: 0 14px;
+  color: #e5dfcf;
+  border: 0;
+  border-bottom: 1px solid rgba(188, 207, 213, 0.72);
+  background: linear-gradient(180deg, transparent 62%, rgba(8, 28, 47, 0.42));
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 120ms linear, border-color 120ms linear, background-color 120ms linear;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.finale-home {
+  color: #f1d49a;
+  border-color: rgba(228, 169, 75, 0.76);
+}
+
+.finale-action:hover,
+.finale-action:focus-visible,
+.finale-action:active {
+  color: #fff6df;
+  border-color: #f2bf68;
+  background-color: rgba(14, 44, 69, 0.42);
+}
+
+.finale-action:focus-visible {
+  outline: 2px solid var(--flower-warm);
+  outline-offset: 2px;
+}
+
+.story-scene.is-home-ending {
+  background: #4e270e;
+}
+
+.story-scene.is-home-ending .story-title,
+.story-scene.is-home-ending .story-prompt,
+.story-scene.is-home-ending .return-hub {
+  color: #fff0cb;
+  text-shadow: 0 1px 7px #3a1705;
+}
+
+.proof-aside {
+  grid-area: aside;
+  align-self: start;
+  margin-top: 0;
+  padding-left: 24px;
+  border-left: 1px solid rgba(190, 202, 198, 0.2);
+}
+
+.proof-aside h2 {
+  margin: 0 0 9px;
+  font-family: "STKaiti", "Kaiti SC", "KaiTi", serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.proof-aside > p:not(.aside-label):not(.asset-boundary) {
+  margin: 0;
+  color: #a8b5ba;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.ink-rule {
+  width: 72px;
+  height: 9px;
+  margin: 26px 0 22px;
+  border-top: 1px solid rgba(222, 212, 188, 0.45);
+  transform: rotate(-2deg);
+}
+
+.proof-aside ul {
+  margin: 0 0 24px;
+  padding-left: 1.2em;
+  color: #a8b5ba;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.motion-toggle {
+  display: flex;
+  width: fit-content;
+  min-height: 44px;
+  align-items: center;
+  gap: 9px;
+  color: #bcc5c4;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.phone-stage.large-text .ink-invitation {
+  font-size: clamp(18px, 5.28vw, 22px);
+}
+
+.phone-stage.large-text .gentle-hint,
+.phone-stage.large-text .story-prompt {
+  font-size: 16.8px;
+}
+
+.phone-stage.large-text .story-title {
+  font-size: 20.4px;
+}
+
+.phone-stage.large-text .return-hub {
+  min-width: 70px;
+  font-size: 15.6px;
+}
+
+.phone-stage.large-text .finale-observation {
+  font-size: 19.2px;
+}
+
+.phone-stage.large-text .finale-question {
+  font-size: 21.6px;
+}
+
+.phone-stage.large-text .finale-action {
+  min-width: 108px;
+  font-size: 16.8px;
+}
+
+.motion-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: #dca34b;
+}
+
+.proof-reset {
+  display: block;
+  min-height: 44px;
+  margin-top: 8px;
+  padding: 0;
+  color: #e6d7b6;
+  border: 0;
+  border-bottom: 1px solid rgba(230, 215, 182, 0.45);
+  background: transparent;
+  cursor: pointer;
+}
+
+.asset-boundary {
+  margin: 28px 0 0;
+  color: #6f808b;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.reduced-motion .hub-scene,
+.reduced-motion .story-scene,
+.reduced-motion .story-layer,
+.reduced-motion .ink-invitation,
+.reduced-motion .gentle-hint {
+  transition-duration: var(--transition-reduced) !important;
+  transform: none !important;
+}
+
+.reduced-motion .stargaze-finale-copy {
+  transition-duration: var(--finale-reveal) !important;
+  transform: none !important;
+}
+
+.reduced-motion .stargaze-finale.is-running .meteor {
+  top: 286px;
+  left: 176px;
+  animation: meteor-static 1250ms linear 900ms both;
+  transform: none !important;
+}
+
+@keyframes meteor-static {
+  0% {
+    opacity: 0;
+  }
+  14.4% {
+    opacity: 0.88;
+  }
+  85.6% {
+    opacity: 0.88;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hub-scene,
+  .story-scene,
+  .story-layer,
+  .ink-invitation,
+  .gentle-hint {
+    transition-duration: var(--transition-reduced) !important;
+    transform: none !important;
+  }
+
+  .stargaze-finale-copy {
+    transition-duration: var(--finale-reveal) !important;
+    transform: none !important;
+  }
+
+  .stargaze-finale.is-running .meteor {
+    top: 286px;
+    left: 176px;
+    animation: meteor-static 1250ms linear 900ms both;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .proof-layout {
+    grid-template-columns: minmax(0, 390px);
+    grid-template-areas:
+      "heading"
+      "phone"
+      "aside";
+    gap: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .proof-heading h1 {
+    font-size: 25px;
+  }
+
+  .proof-note {
+    font-size: 13px;
+  }
+
+  .proof-aside {
+    margin-top: 0;
+    padding: 18px 0 0;
+    border-top: 1px solid rgba(190, 202, 198, 0.2);
+    border-left: 0;
+  }
+
+  .phone-column {
+    position: static;
+  }
+}
+
+@media (max-width: 380px) {
+  .proof-layout {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

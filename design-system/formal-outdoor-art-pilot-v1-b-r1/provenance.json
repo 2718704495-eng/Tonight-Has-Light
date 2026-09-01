@@ -1,0 +1,61 @@
+{
+  "candidate_id": "formal-outdoor-art-pilot-v1-b-r1",
+  "frame_id": "root_night_slope_v1",
+  "status": "MASTER_PREFLIGHT_PASS_TRUE_ALPHA_PROBE_FAIL_LAYERING_BLOCKED",
+  "approval": {
+    "route": "FORMAL-OUTDOOR-ART-PILOT-V1-B",
+    "spec_approval_file": "docs/FORMAL-OUTDOOR-ART-PILOT-V1-B-SPEC-APPROVAL.md",
+    "spec_approval_sha256": "a2cfa319278380b54fdddee364abe8fa329763fc332b1d4e73d33abb9fac1ef4",
+    "scope": "one new AI-assisted formal-pilot outdoor root frame only; no Cocos, no WeChat, no build, no upload, no Git"
+  },
+  "generation": {
+    "mode": "built-in image_gen",
+    "prompt_file": "design-system/formal-outdoor-art-pilot-v1-b-r1/prompts/root_night_slope_v1.md",
+    "prompt_sha256": "8c975ac0a322664eecad5612f2a1ce946658d379e4c0a755b984f614ea8da764",
+    "input_reference_role": "B style reference for mood, value hierarchy, material and high-level spatial grammar only; not an edit target and not a production pixel source",
+    "raw_output_path": "design-system/formal-outdoor-art-pilot-v1-b-r1/source/raw/root_night_slope_v1-imagegen-r1.png",
+    "raw_output_sha256": "97fcad9a1800204cf06aba5be23fbc6e8aad73e650cd81d2c3af14f7edcc95c7",
+    "raw_output_size": "853x1844"
+  },
+  "normalization": {
+    "script": "design-system/formal-outdoor-art-pilot-v1-b-r1/scripts/normalize-master.mjs",
+    "operation": "center-cover resize to 780x1688, add a fully opaque alpha channel, attach sRGB metadata, and normalize PNG encoding; no retouching, repainting or segmentation",
+    "raw_channels": 3,
+    "master_channels": 4,
+    "rgb_equivalence_check": {
+      "different_rgb_bytes": 0,
+      "max_channel_delta": 0,
+      "note": "Adding the opaque alpha channel changed no visible RGB byte."
+    },
+    "master_path": "design-system/formal-outdoor-art-pilot-v1-b-r1/source/root_night_slope_v1-master-2x.png",
+    "master_sha256": "5c84ce815ba011cd9be570889c768573e80c3d55d6b59fb2bd211301f86c74e3",
+    "master_size": "780x1688",
+    "preflight_390_path": "design-system/formal-outdoor-art-pilot-v1-b-r1/evidence/preflight/root_night_slope_v1-390x844.png",
+    "preflight_390_sha256": "e5cc6cfe263bab1f7152ca50336ddbd452f0cfabe635e469c1e1ccf310d1094c",
+    "preflight_195_path": "design-system/formal-outdoor-art-pilot-v1-b-r1/evidence/preflight/root_night_slope_v1-195x422.png",
+    "preflight_195_sha256": "b4dfe6f466bc1912046be32901b682e188d876f2067f592b62b98bf595a4d1eb"
+  },
+  "owner_preflight": {
+    "date": "2026-08-29",
+    "decision": "Continue from this master candidate without spending the single targeted edit yet, but keep formal 20-layer production blocked after the transparent-layer probe failed.",
+    "pass_reasons": [
+      "Sky reads first at 390x844 and 195x422.",
+      "Adult and ordinary cat read as shared back-view stargazing companions.",
+      "Deep-indigo mature comic material, dry-brush linework, halftone and broad value masses are aligned with approved B direction.",
+      "Exactly one broad pale broken Milky Way, exactly two weak glowing flowers, and no text, UI, meteor or task-map marks are visible."
+    ],
+    "known_risks": [
+      "The house and warm door are deliberately small and quiet; later branch invitation UI must preserve the sky-first hierarchy while keeping the door hittable.",
+      "The cat is slightly large but still reads as an ordinary domestic cat; do not enlarge it in future frames.",
+      "This is still a flat master candidate. It does not prove honest 20-layer reconstruction, alpha quality, ORA packaging, Cocos readiness, or phone performance.",
+      "The first transparent-layer probe returned RGB with a painted checkerboard and background ghosting, not a usable alpha layer."
+    ]
+  },
+  "layer_probe": {
+    "status": "FAIL_TRUE_ALPHA_NOT_PRODUCED",
+    "probe_readme": "design-system/formal-outdoor-art-pilot-v1-b-r1/evidence/extraction-probes/README.md",
+    "probe_output": "design-system/formal-outdoor-art-pilot-v1-b-r1/evidence/extraction-probes/10_adult_body-transparent-probe-rgb-checkerboard-FAIL.png",
+    "probe_output_sha256": "8c324ec2bd023f732c533c9984831a99ac6c7c18f7a5068374ff454782dd0af2",
+    "conclusion": "Do not continue producing the remaining nineteen layers with the same method. The formal layer package remains blocked."
+  }
+}

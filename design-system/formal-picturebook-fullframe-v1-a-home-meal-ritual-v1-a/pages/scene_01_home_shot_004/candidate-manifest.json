@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "contractId": "HOME-MEAL-RITUAL-V1-A",
+  "candidateId": "home-meal-h4-table-ritual-v1-a-r2",
+  "pageId": "scene_01_home_shot_004",
+  "assetId": "ART-PBOOK-HOME-004",
+  "sourceProperty": "ai-assisted-formal-fullframe",
+  "promptId": "HOME-H4-TABLE-RITUAL-PROMPT-V1-A",
+  "status": "USER VISUAL PASS / FROZEN",
+  "prompt": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/prompt.md",
+    "sha256": "592ef4234a6ba8fa41c0c9f8b31847588c77ff799cfbf3bfc970e97f9c4f0be5"
+  },
+  "repairPrompt": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/prompt-r2-cup-hand-repair.md",
+    "sha256": "3bf3bb95a87158008fb8902c4d988ba6fb3e9de4bc669507481f2bf37d9781e6"
+  },
+  "references": [
+    {
+      "index": 1,
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_003/exports/390x844/scene_01_home_shot_003.png",
+      "sha256": "c582fa5e9ad5c0f465e307472ccfc6791ed78b2d1e81663669df9151819aab72",
+      "role": "user-approved H3 adult, inner knit, ordinary cat, warm-ochre dish, shallow plate, woodwork and honey-amber light continuity only"
+    },
+    {
+      "index": 2,
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png",
+      "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51",
+      "role": "approved H5 low table, kettle, exactly two cups, rice, soup, final warm-ochre dish, room material and ordinary cat continuity only"
+    }
+  ],
+  "generation": {
+    "tool": "built-in image_gen",
+    "date": "2026-08-31",
+    "generationCount": 1,
+    "repairCount": 1,
+    "maxGenerations": 2,
+    "initialRawPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/source/raw/scene_01_home_shot_004-imagegen-r1.png",
+    "initialRawSha256": "e4a140f5fcae20b24afd87a475e3a76fa1ad4dc5e3c6cb77d9ab243fe5848ea8",
+    "repairRawPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/source/raw/scene_01_home_shot_004-imagegen-r2.png",
+    "repairRawSha256": "ce09961a330d76870660ba1128635b9e2d0296f5b3e7ec30bae7bed4fb63a7ba",
+    "acceptedVersionForReview": "r2"
+  },
+  "ownerPreflight": {
+    "decision": "PASS / ONE TARGETED REPAIR USED",
+    "p0": 0,
+    "p1": 0,
+    "p2": 0,
+    "repairReason": "r1 already showed a cup in the adult hand before user input; r2 returns exactly two cups to the tabletop and rests the hand beside the nearer cup",
+    "responseLayerDecision": "Do not draw ate/sipped layers until a fresh independent zero-write clean-plate review also closes P0/P1."
+  },
+  "normalization": {
+    "type": "deterministic center cover to 780x1688 master; SHOW_ALL review exports",
+    "safeBorder": "#06265F",
+    "masterPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/source/masters/scene_01_home_shot_004-r2-master-2x.png",
+    "masterSha256": "e8d85bcbdd3c680e5b39a7fcd49a1403e087a89ca4e739b706cbd560139c9d8f",
+    "pixelGenerationOrRepaint": false
+  },
+  "reviewExports": {
+    "195x422": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/195x422/scene_01_home_shot_004.png", "sha256": "269a8f7243959fe785d264064a5f57a356f3768471456a9b0e877c31acd8b35a" },
+    "360x800": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/360x800/scene_01_home_shot_004.png", "sha256": "2ba27b0df4ace5ccc2b5555e9732f2d1cbbf9e6fec2fdba951fde94f2dcd0b03" },
+    "390x844": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/390x844/scene_01_home_shot_004.png", "sha256": "bbb02106fb4f5a820d1199eb61c7b10b5065028461bfdd6bf813276abe796533" },
+    "430x932": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/430x932/scene_01_home_shot_004.png", "sha256": "6e2fdf75d52bb242f940988e77f897605628027abc2a48cca31b7941ea170050" },
+    "430x844-pressure": { "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/430x844-pressure/scene_01_home_shot_004.png", "sha256": "36f076082f19f0bbe35b2306f56ac5d88ebd91f364f87d692f186ebb8b666509" }
+  },
+  "upstreamGates": {
+    "h2H3UserApproval": {
+      "recordPath": "docs/HOME-H2-H3-VISUAL-APPROVAL-20260831.md",
+      "recordSha256": "8c6ff2e17d67233c3a95049a114f50f12123b81ab8e128d2814dbf6ceb37dbb5",
+      "decision": "H2/H3 USER VISUAL PASS / H4 LOCAL GATE B PRODUCTION AUTHORIZED"
+    },
+    "h3Approved390Sha256": "c582fa5e9ad5c0f465e307472ccfc6791ed78b2d1e81663669df9151819aab72",
+    "h5Canonical390Sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51"
+  },
+  "safetyReview": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/reviews/PROMPT-SAFETY.md",
+    "sha256": "085be67a92e4019ad683c951b893b213f3f0c45e513ed57b6e6eb5310fdb8ad8",
+    "decision": "PASS"
+  },
+  "visualReviews": {
+    "owner": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/reviews/OWNER-VISUAL-REVIEW.md",
+      "sha256": "e2083fd97a945e116a51d39fa6071c7d60d063d8bc5b4edb64c783e2c9708963",
+      "decision": "PASS FOR INDEPENDENT CLEAN-PLATE REVIEW",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0
+    },
+    "independent": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/reviews/INDEPENDENT-CLEAN-PLATE-REVIEW.md",
+      "sha256": "09059d0d2610a14a3b35850c22a694a7c3ce542aef8d0b76ee6ccb8369b3b558",
+      "decision": "PASS FOR RESPONSE LAYER PRODUCTION",
+      "p0": 0,
+      "p1": 0,
+      "p2": 1,
+      "writeOperations": 0
+    }
+  },
+  "responseLayers": {
+    "status": "PASS / LOCAL EDITABLE RESPONSE LAYERS BUILT",
+    "sourceBoundary": "non-generated editable SVG geometry, rendered by approved clean-plate pixel reuse only",
+    "stateReport": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/evidence/h4-response-state-report.json",
+      "sha256": "f2b1642da1d405dc90802c45580318c1728775b9a939e680a450a80aef3fa752"
+    },
+    "reviewBoard": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/evidence/h4-response-states-2x2.png",
+      "sha256": "ac3d68a7e40b6e946eb5895c6363ba8ff18a171a713f3628a99e3abc288e77ef"
+    },
+    "states": {
+      "none": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/states/scene_01_home_shot_004-none-390x844.png",
+        "sha256": "bbb02106fb4f5a820d1199eb61c7b10b5065028461bfdd6bf813276abe796533"
+      },
+      "ate": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/states/scene_01_home_shot_004-ate-390x844.png",
+        "sha256": "0a356ea97cc91afecc93c8c9a607583d63a40db0a6e0226ec224be4a47a450b5"
+      },
+      "sipped": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/states/scene_01_home_shot_004-sipped-390x844.png",
+        "sha256": "710a4b4f54641e0880639147807120594b7e43302e74ce5d97c4784614cf841e"
+      },
+      "both": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/states/scene_01_home_shot_004-both-390x844.png",
+        "sha256": "69a9ab2b2982cd83beec6430c9684940f2b9924c5a15beb29615eeaaf722a530"
+      }
+    },
+    "ate": {
+      "sourceSvgPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/source/response-layers/ate.svg",
+      "sourceSvgSha256": "acfe49b8be244198e521f371c17bb61355e3b7951708dc7ed3aff346e9ce5ae5",
+      "pngPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/states/ate-layer-390x844.png",
+      "pngSha256": "e8a5a5bc5506a152e5834639600897362597c17eba5c60b0f1477d70f11199ab",
+      "roi": { "x": 154, "y": 366, "width": 132, "height": 122 },
+      "nonTargetAlphaPixels": 0,
+      "transparentColoredPixels": 0
+    },
+    "sipped": {
+      "sourceSvgPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/source/response-layers/sipped.svg",
+      "sourceSvgSha256": "d01ee8136be38d0a083becc6ae8cec4c6d65e7096f1fdb12611270a0b4c874a5",
+      "pngPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/exports/states/sipped-layer-390x844.png",
+      "pngSha256": "7236e4d62713c55dd60f2598797ab3b1622c04523410fed39af3dfcdf6a3511f",
+      "roi": { "x": 294, "y": 366, "width": 78, "height": 96 },
+      "nonTargetAlphaPixels": 0,
+      "transparentColoredPixels": 0
+    }
+  },
+  "quietUi": {
+    "status": "USER VISUAL PASS / FROZEN",
+    "contractPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/home-meal-ui-contract.json",
+    "contractSha256": "4a141348a924a8a1874bca378d55aa3c4070a79408a2c216a4fb0f05c45a7540",
+    "buildReportPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/evidence/build-report.json",
+    "buildReportSha256": "934d29aac1195f5d72eb0b724c9c2870821b52c979ef6dcc3c961e14bba43002",
+    "pixelContrastReportPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/evidence/pixel-contrast-report.json",
+    "pixelContrastReportSha256": "f1ece2e04eb29ebabf4c068bb9e7bb965cc29d437936fe611d8336e585cb2e0e",
+    "standardStateBoard": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/evidence/h4-standard-state-board.png",
+      "sha256": "2bf247ef9f877f7048669dbab1d350073aaf4b2ca967f452b71875f4f1b67158"
+    },
+    "largeTextSample": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/evidence/h4-none-large-390x844.png",
+      "sha256": "05a964b9adbbeb7fad87ecc64903701349509f294a54ed08a345bcbf608a4b30"
+    },
+    "reducedMotionSample": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/evidence/h4-both-reduced-390x844.png",
+      "sha256": "fe04e56e8053bbab1d793771ad3d8425494deb51e2dfa3471668b4ff58f8acd5"
+    },
+    "largeModePaperSource": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/source/h4-large-table-paper.svg",
+      "sha256": "69a669459acc1e2e72e12ea9de9d9be9510106429f8d50c3054f149c0ad6e265"
+    },
+    "normalModeSource": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/ui/source/h4-quiet-actions.svg",
+      "sha256": "00167732c770322de9cb1c5a7861341ec5610555bcbdae2f109ad470f729908d"
+    }
+  },
+  "userApproval": {
+    "recordPath": "docs/HOME-H4-TABLE-RITUAL-V1-A-R2-APPROVAL.md",
+    "recordSha256": "9337f3315a8c623597aa29da7f8edbdb3540b89bd72dd29767145663cc846579",
+    "approvedPageId": "scene_01_home_shot_004",
+    "approved390Sha256": "bbb02106fb4f5a820d1199eb61c7b10b5065028461bfdd6bf813276abe796533",
+    "approvedStateHashes": {
+      "none": "bbb02106fb4f5a820d1199eb61c7b10b5065028461bfdd6bf813276abe796533",
+      "ate": "0a356ea97cc91afecc93c8c9a607583d63a40db0a6e0226ec224be4a47a450b5",
+      "sipped": "710a4b4f54641e0880639147807120594b7e43302e74ce5d97c4784614cf841e",
+      "both": "69a9ab2b2982cd83beec6430c9684940f2b9924c5a15beb29615eeaaf722a530"
+    },
+    "preApprovalManifestPath": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_004/approvals/HASHES.pre-approval.sha256",
+    "preApprovalManifestSha256": "e38d96750c277145285f2e20d3bc52df57728e847a85a447ac02d7704a6f47b0",
+    "scope": "H4 Gate B user visual pass/frozen; completes the HOME-MEAL-RITUAL-V1-A five-shot visual subpackage only"
+  },
+  "permissions": {
+    "localH4CleanPlateGeneration": false,
+    "responseLayerProduction": false,
+    "uiProduction": false,
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "release": false,
+    "git": false,
+    "remoteWrite": false
+  }
+}

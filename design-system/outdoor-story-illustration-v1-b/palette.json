@@ -1,0 +1,24 @@
+{
+  "version": "STORY-ILLUSTRATION-REDESIGN-V1-B-FORMAL-R1",
+  "colorSpace": "sRGB IEC61966-2.1",
+  "colors": {
+    "inkNavy": "#06182F",
+    "paperBlue": "#173B57",
+    "dustTeal": "#4E7380",
+    "coldPaper": "#91A5AA",
+    "oldLamp": "#D3A05B"
+  },
+  "usage": {
+    "inkNavy": "sky base, deepest contour, contact shadow",
+    "paperBlue": "mountains, clothes, grass body",
+    "dustTeal": "secondary print pass and halftone",
+    "coldPaper": "broken moonlit edge and dry-brush lift",
+    "oldLamp": "stable door and two weaker flowers only"
+  },
+  "constraints": {
+    "visibleColors": 5,
+    "normalBlendOnly": true,
+    "bloom": false,
+    "uniformStickerOutline": false
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "package_id": "STARGAZE-FORMAL-BATCH-V1-A",
+  "candidate_id": "stargaze-formal-batch-v1-a-f2-r1",
+  "page_name": "银河深处",
+  "asset_id": "ART-PBOOK-STAR-002",
+  "status": "user-visual-pass-frozen",
+  "production_property": "ai-assisted-formal-fullframe",
+  "generation": {
+    "tool": "OpenAI built-in image_gen",
+    "generation_count": 1,
+    "targeted_repair_count": 0,
+    "raw_path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/source/raw/scene_02_stargaze_shot_002-imagegen-r1.png",
+    "raw_sha256": "0d44c7dcc7af05432c91f89056fa023a7ce2ccf3b4ebb74ca847c1ce694d0084",
+    "prompt_path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/prompt.md",
+    "prompt_sha256": "4cf599551b48b0082c804649bbe463552f7b9850a417d631856576297dbdbb4f"
+  },
+  "references": [
+    {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_001/exports/390x844/scene_02_stargaze_shot_001.png",
+      "sha256": "6b2450a1993742545b83958d4f17913fda63a512071f42fa0a148feb4856c26e",
+      "role": "F1 approved lower-edge adult/cat gaze bridge, sky hierarchy, and stargaze sequence continuity"
+    },
+    {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-batch1/exports/390x844/scene_02_stargaze_shot_005.png",
+      "sha256": "ad3a13c6a4d915f178d03d444874776e2df042f328f998de81a2bfbf0d774d8d",
+      "role": "approved F5 Milky Way geography, deep-indigo negative space, and final-sky material reference"
+    },
+    {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-root-r4-manual-hem/exports/390x844/root_night_slope_v2-wind-hem-r4-manual.png",
+      "sha256": "23443918a0c892d569a6fd49b55b889d70bb4ed0dc7a6396a0af2bf5fad2306a",
+      "role": "approved root adult/cat relation, location, house, door, and two-flower geography reference"
+    }
+  ],
+  "master": {
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/source/masters/scene_02_stargaze_shot_002-master-2x.png",
+    "sha256": "2c8326bae7dbd85384583864e5689bf719d84d3dfdca998711ee681eff0a2d63",
+    "dimensions": {
+      "width": 780,
+      "height": 1688
+    },
+    "metadata": {
+      "format": "png",
+      "width": 780,
+      "height": 1688,
+      "space": "srgb",
+      "depth": "uchar",
+      "hasAlpha": false
+    }
+  },
+  "exports": {
+    "195x422": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/195x422/scene_02_stargaze_shot_002.png",
+      "sha256": "01309ee9a41e36e52d1f7b8eb3f69948796a518c22b9586c8a0111bec540586c",
+      "dimensions": {
+        "width": 195,
+        "height": 422
+      },
+      "metadata": {
+        "format": "png",
+        "width": 195,
+        "height": 422,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    "360x800": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/360x800/scene_02_stargaze_shot_002.png",
+      "sha256": "944ee935672e8dfaf6d734fa60da0f4d90ed012f2dc25a2de0fa3e3233b636d6",
+      "dimensions": {
+        "width": 360,
+        "height": 800
+      },
+      "metadata": {
+        "format": "png",
+        "width": 360,
+        "height": 800,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    "390x844": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/390x844/scene_02_stargaze_shot_002.png",
+      "sha256": "98e267506a5485a93fdefa9759611c0ac4de2120edd5dc61d253a9ff59deee52",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "metadata": {
+        "format": "png",
+        "width": 390,
+        "height": 844,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    "430x932": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/430x932/scene_02_stargaze_shot_002.png",
+      "sha256": "b42f74ee5deaecdda5923e6b9c15020ed5df75d7b9f69e7c75612cccb4ec21b9",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      },
+      "metadata": {
+        "format": "png",
+        "width": 430,
+        "height": 932,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    },
+    "430x844-pressure": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/exports/430x844-pressure/scene_02_stargaze_shot_002.png",
+      "sha256": "98ed43de9b2fc938e91b1e4df3a0329e674fbcc345306e0d8cd8a010155126fb",
+      "dimensions": {
+        "width": 430,
+        "height": 844
+      },
+      "metadata": {
+        "format": "png",
+        "width": 430,
+        "height": 844,
+        "space": "srgb",
+        "depth": "uchar",
+        "hasAlpha": false
+      }
+    }
+  },
+  "runtime_authorized": false,
+  "owner_review": {
+    "decision": "ROOT_OWNER_PASS_FOR_INDEPENDENT_REVIEW",
+    "p0": 0,
+    "p1": 0,
+    "p2": [],
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/reviews/ROOT-OWNER-VISUAL-REVIEW.md",
+    "targeted_repair_used": false,
+    "clean_plate_forbidden_items": {
+      "text_or_pseudo_text": 0,
+      "ui_or_logo": 0,
+      "meteor_or_trail": 0,
+      "moon_or_aurora_or_second_galaxy": 0,
+      "constellation_or_task_marker": 0
+    }
+  },
+  "independent_review": {
+    "decision": "READY_FOR_USER_SAME_FILE_VISUAL_REVIEW",
+    "p0": 0,
+    "p1": 0,
+    "p2": 0,
+    "pre_final_hash_refresh_findings": [
+      {
+        "issue": "Package HASHES.sha256 was stale during independent review",
+        "disposition": "Closed by root after independent review through final package hash refresh and full shasum verification"
+      }
+    ],
+    "write_operations": 0,
+    "path": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/reviews/INDEPENDENT-VISUAL-REVIEW.md"
+  },
+  "review_artifacts": {
+    "board_390": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/evidence/root-f1-f2-f5-board-390x844.png",
+    "board_195": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/evidence/root-f1-f2-f5-board-195x422.png",
+    "review_board_report": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/evidence/f2-review-board-report.json",
+    "mechanical_validation": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/evidence/mechanical-validation.json",
+    "board_390_sha256": "7a46cd06ba21d2feef5225fd44f8a980783e01760a6465192ba9569ea3268bcb",
+    "board_195_sha256": "f8e57f623457e405264a40d84e01dc443004c87b2b5f43183edafe4f944084dc",
+    "review_board_report_sha256": "62eb8aceb91f60cf0e3c9af720f9e1d1475a9bfa47aa58a6e15e354074416032",
+    "mechanical_validation_sha256": "d8417896262969359477197fd6f4065efb68b514afc4d8ab334103c4a825a111"
+  },
+  "page_id": "scene_02_stargaze_shot_002",
+  "not_in_build": true,
+  "source_property": "ai-assisted-formal-fullframe",
+  "permissions": {
+    "cocos": false,
+    "build": false,
+    "wechat": false,
+    "upload": false,
+    "review": false,
+    "release": false,
+    "git": false,
+    "remote_write": false,
+    "runtime": false
+  },
+  "approval": {
+    "f1_user_visual_approval": {
+      "phrase": "批准 STARGAZE-F1-FORMAL-V1-A-R1：F1 单帧视觉通过",
+      "date": "2026-08-31",
+      "record": "docs/STARGAZE-F1-FORMAL-V1-A-R1-APPROVAL.md",
+      "approved_390x844_sha256": "6b2450a1993742545b83958d4f17913fda63a512071f42fa0a148feb4856c26e"
+    },
+    "user_visual_approval": {
+      "date": "2026-08-31",
+      "phrase": "批准 STARGAZE-F2-FORMAL-V1-A-R1：F2 单帧视觉通过",
+      "record": "docs/STARGAZE-F2-FORMAL-V1-A-R1-APPROVAL.md",
+      "status": "USER VISUAL PASS / FROZEN",
+      "approved_390x844_sha256": "98e267506a5485a93fdefa9759611c0ac4de2120edd5dc61d253a9ff59deee52",
+      "approved_master_sha256": "2c8326bae7dbd85384583864e5689bf719d84d3dfdca998711ee681eff0a2d63",
+      "pre_approval_hash_manifest": "design-system/formal-picturebook-fullframe-v1-a-stargaze-formal-batch-v1-a/pages/scene_02_stargaze_shot_002/approvals/HASHES.pre-approval.sha256",
+      "pre_approval_hash_manifest_sha256": "6639f380d2cbc408b64a1cfac6631ff74c6ebaeb5d91862aa4301d2b2cfb5e47"
+    }
+  }
+}

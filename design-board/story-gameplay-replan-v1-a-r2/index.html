@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>今夜有灯｜R2 可见证明</title>
+  <style>
+    :root { --night: #06162f; --ink: #f6eedc; --paper: #f5e3bc; --warm: #e6a04f; --copy-scale: 1; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; color: var(--ink); font-family: "PingFang SC", system-ui, sans-serif; background: radial-gradient(circle at 20% 10%, #213c67, transparent 36%), #050a15; }
+    body.large-text { --copy-scale: 1.2; }
+    .shell { min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+    .layout { width: min(1080px, 100%); display: grid; grid-template-columns: minmax(300px, 390px) minmax(250px, 1fr); gap: clamp(26px, 7vw, 86px); align-items: center; }
+    .phone { position: relative; width: min(390px, calc(100vw - 32px)); aspect-ratio: 390 / 844; overflow: hidden; border: 1px solid rgba(255,255,255,.2); border-radius: 28px; background: #07182e; box-shadow: 0 26px 72px rgba(0,0,0,.55); isolation: isolate; touch-action: none; }
+    .backdrop, .fx, .story, .hotspots { position: absolute; inset: 0; }
+    .backdrop img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .backdrop::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(1,8,20,.12), transparent 42%, rgba(1,6,13,.3)); pointer-events: none; }
+    .phone.indoor .backdrop::after { background: linear-gradient(180deg, rgba(70,32,8,.02), transparent); }
+    .topline { position: absolute; z-index: 3; top: 18px; left: 20px; margin: 0; font: 500 14px/1 "STKaiti", "KaiTi", serif; letter-spacing: .18em; text-shadow: 0 1px 10px #010816; }
+    .settings-toggle { position: absolute; z-index: 5; top: 11px; right: 12px; width: 44px; height: 44px; border: 0; border-radius: 50%; color: var(--ink); background: rgba(3,13,28,.45); font-size: 18px; }
+    .settings { position: absolute; z-index: 6; top: 58px; right: 12px; width: 172px; padding: 8px; display: none; border: 1px solid rgba(255,255,255,.18); border-radius: 14px; background: rgba(3,12,26,.86); backdrop-filter: blur(12px); }
+    .settings.open { display: grid; gap: 6px; }
+    .settings button { min-height: 44px; border: 0; border-radius: 9px; padding: 0 10px; color: var(--ink); text-align: left; background: rgba(255,255,255,.08); }
+    .story { z-index: 3; pointer-events: none; }
+    .copy { position: absolute; left: 19px; right: 24px; top: 43%; padding: 11px 14px; border-left: 2px solid rgba(255,211,133,.78); border-radius: 4px 14px 14px 4px; background: linear-gradient(100deg, rgba(2,10,24,.84), rgba(2,10,24,.32)); text-shadow: 0 1px 9px #000; }
+    .phone.indoor .copy { top: 76px; right: 52px; color: #2a1709; border-left-color: rgba(106,50,14,.64); background: linear-gradient(100deg, rgba(255,237,201,.94), rgba(255,220,161,.7)); text-shadow: none; }
+    .kicker { display: block; color: #ffd38c; font-size: calc(9px * var(--copy-scale)); letter-spacing: .15em; }
+    .phone.indoor .kicker { color: #7a4016; }
+    .copy h1 { margin: 4px 0; font: 500 calc(18px * var(--copy-scale))/1.25 "STKaiti", "KaiTi", serif; }
+    .copy p { margin: 0; font: calc(13px * var(--copy-scale))/1.65 "STKaiti", "KaiTi", serif; }
+    .hotspots { z-index: 4; pointer-events: none; }
+    .action, .zone { position: absolute; pointer-events: auto; min-width: 44px; min-height: 44px; border: 0; color: var(--ink); cursor: pointer; }
+    .action { padding: 9px 12px; border-radius: 18px; background: rgba(4,14,30,.62); box-shadow: 0 1px 0 rgba(255,255,255,.16) inset; font: 500 calc(13px * var(--copy-scale))/1 "STKaiti", "KaiTi", serif; }
+    .phone.indoor .action { color: #3c200c; background: rgba(255,235,194,.85); }
+    .sky { left: 23%; top: 20%; } .grass { left: 9%; bottom: 13%; } .door { right: 8%; bottom: 25%; }
+    .next { right: 15px; bottom: 22px; } .choice-a { left: 22px; bottom: 22px; } .choice-b { right: 18px; bottom: 22px; }
+    .kitchen-warm-zone { left: 50%; top: 32%; width: 44%; height: 34%; background: transparent; border: 1px solid transparent; }
+    .coat-zone { left: 5%; top: 26%; width: 36%; height: 40%; background: transparent; border: 1px solid transparent; }
+    .eyes-hold-zone { left: 0; top: 0; width: 100%; height: 72%; pointer-events: auto; background: transparent; border: 0; }
+    .meteor-skip-zone { inset: 0; width: 100%; height: 100%; pointer-events: auto; background: transparent; border: 0; }
+    .table-eat { left: 18%; bottom: 20%; } .table-sip { right: 18%; bottom: 20%; }
+    .veil { position: absolute; z-index: 2; inset: 0; background: #07172f; opacity: .68; pointer-events: none; transition: opacity 180ms ease; }
+    .veil.revealed { opacity: 0; }
+    .wind-token { position: absolute; z-index: 2; left: 35%; bottom: 26%; color: #f7d78f; opacity: .9; font-size: 20px; }
+    .steam { position: absolute; z-index: 2; left: 59%; top: 28%; width: 34px; height: 74px; border-left: 2px solid rgba(255,235,197,.75); border-radius: 50%; opacity: 0; transform: translateY(14px); transition: opacity 160ms ease, transform 560ms ease; }
+    .steam.visible { opacity: .9; transform: translateY(0); }
+    .meteor { position: absolute; z-index: 2; top: 22%; right: 14%; width: 2px; height: 110px; background: linear-gradient(180deg, transparent, #fff9d8); transform: rotate(48deg); transform-origin: top; opacity: 0; }
+    .meteor.run { animation: meteor 1250ms ease-out 900ms 1 both; }
+    @keyframes meteor { 12% { opacity: 0; } 35% { opacity: .96; } 100% { opacity: 0; transform: translate(-100px, 115px) rotate(48deg); } }
+    .reduced .meteor.run { animation: fade-only 180ms ease-out 900ms 1 both; transform: rotate(48deg); }
+    .phone.meteor-event .copy { opacity: 0; }
+    .phone.after-meteor .copy { animation: copy-in 180ms ease-out both; }
+    .reduced .steam { transition: opacity 180ms ease; transform: none; }
+    .reduced .steam.visible { transform: none; }
+    @keyframes fade-only { 45% { opacity: .88; } 100% { opacity: 0; } }
+    @keyframes copy-in { from { opacity: 0; } to { opacity: 1; } }
+    .keepsakes { position: absolute; z-index: 3; left: 20px; right: 20px; top: 34%; display: grid; gap: 4px; margin: 0; padding: 10px 14px; list-style: none; color: #3a210f; border: 1px solid rgba(115,65,24,.24); border-radius: 14px; background: rgba(255,230,183,.82); box-shadow: 0 10px 28px rgba(75,35,8,.14); font: calc(10px * var(--copy-scale))/1.3 "STKaiti", "KaiTi", serif; }
+    .keepsakes li { display: flex; align-items: center; gap: 7px; }
+    .keepsakes li::before { content: "·"; color: #9a541d; }
+    .ending-note { position: absolute; z-index: 3; left: 22px; right: 22px; bottom: 92px; padding: 10px 13px; color: #3b210e; border-radius: 12px; background: rgba(255,235,197,.9); font: calc(12px * var(--copy-scale))/1.55 "STKaiti", "KaiTi", serif; text-align: center; }
+    .end-choice { left: 22px; bottom: 22px; }
+    .return-choice { right: 18px; bottom: 22px; }
+    .review { color: rgba(245,237,220,.82); font-size: 14px; line-height: 1.65; }
+    .review h2 { margin: 0 0 8px; color: #f4d69b; font: 500 22px/1.3 "STKaiti", "KaiTi", serif; }
+    .review p { margin: 0 0 10px; } .review code { color: #f5dca9; }
+    .review .tag { display: inline-block; padding: 3px 7px; color: #f3d9a4; border: 1px solid rgba(243,217,164,.33); border-radius: 999px; font-size: 11px; letter-spacing: .08em; }
+    @media (max-width: 720px) { .shell { padding: 16px; } .layout { grid-template-columns: 1fr; justify-items: center; } .review { max-width: 390px; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="layout" aria-label="R2 story proof">
+      <article id="phone" class="phone" aria-label="今夜有灯">
+        <div class="backdrop"><img id="art" alt="" /></div>
+        <div id="fx" class="fx" aria-hidden="true"></div>
+        <h1 class="topline">今夜有灯</h1>
+        <button id="settings-toggle" class="settings-toggle" type="button" aria-label="设置">◌</button>
+        <div id="settings" class="settings" aria-label="设置">
+          <button type="button" data-setting="sound">声音：开</button>
+          <button type="button" data-setting="motion">减少动态：关</button>
+          <button type="button" data-setting="text">大字：关</button>
+        </div>
+        <div id="story" class="story"></div>
+        <div id="hotspots" class="hotspots" data-boundary="first-touch"></div>
+        <audio id="night-breeze" preload="none" loop src="/.superpowers/brainstorm/51330-1788246254/content/night-breeze.ogg"></audio>
+        <audio id="night-room" preload="none" loop src="/.superpowers/brainstorm/51330-1788246254/content/night-room.ogg"></audio>
+      </article>
+      <aside class="review">
+        <span class="tag">prototype-only</span>
+        <h2>R2｜完整夜晚可见证明</h2>
+        <p>这是独立的 16 状态浏览器候选。全幅底图保持已批准身份；流星、云、蒸汽、衣角与临时声音只用于本页验证。</p>
+        <p>减少动态：不位移云、草、流星或蒸汽；只保留 ≤180ms 的亮度、透明度或交叉淡化。大字为真实 120%。</p>
+        <p>评审可用控制台 <code>window.__storyR2Debug</code> 检查快照、路线和确定性重置；这些控制不会出现在手机故事里。</p>
+      </aside>
+    </section>
+  </main>
+  <script type="module">
+    import {
+      APPROVED_ASSET_PATHS,
+      METEOR_TIMING,
+      R2_EXPERIENCE_COPY,
+      advanceStoryState,
+      buildEndingConsequences,
+      createStoryState,
+      loadStoryContract,
+      markRootInvitationsReady,
+      selectViewportVariant
+    } from './story-data.js';
+
+    const phone = document.querySelector('#phone');
+    const art = document.querySelector('#art');
+    const fx = document.querySelector('#fx');
+    const story = document.querySelector('#story');
+    const hotspots = document.querySelector('#hotspots');
+    const settings = document.querySelector('#settings');
+    const breeze = document.querySelector('#night-breeze');
+    const room = document.querySelector('#night-room');
+    const timers = new Set();
+    let contract;
+    let holdTimer;
+    let rootInvitationTimer;
+    let state;
+
+    const schedule = (callback, delay) => {
+      const timer = window.setTimeout(() => { timers.delete(timer); callback(); }, delay);
+      timers.add(timer);
+      return timer;
+    };
+    const cancelTimer = (timer) => { if (timer === undefined) return; window.clearTimeout(timer); timers.delete(timer); };
+    const cancelHoldTimer = () => { cancelTimer(holdTimer); holdTimer = undefined; };
+    const clearTransient = () => {
+      for (const timer of timers) window.clearTimeout(timer);
+      timers.clear();
+      holdTimer = undefined;
+      rootInvitationTimer = undefined;
+    };
+    const snapshot = () => Object.freeze({ ...state, actionLog: Object.freeze([...state.actionLog]) });
+    const variant = () => selectViewportVariant(window.innerWidth, window.innerHeight);
+    const isIndoor = () => ['DOOR_MATCH_CUT', 'ARRIVAL_H1', 'KITCHEN_CALL', 'COOK_AND_SERVE', 'TABLE_RITUAL', 'LEAVE_THE_LIGHT'].includes(state.nodeId);
+
+    function withLog(nextState, previousState, action) {
+      return {
+        ...nextState,
+        actionLog: [...previousState.actionLog, Object.freeze({ nodeId: previousState.nodeId, action, target: nextState.nodeId })]
+      };
+    }
+
+    function syncAudio() {
+      if (!state.audioUnlocked || !state.sound) return;
+      breeze.pause();
+      room.pause();
+      (isIndoor() ? room : breeze).play().catch(() => {});
+    }
+
+    function applyEvent(event, action, renderAfter = true) {
+      const previous = state;
+      const next = advanceStoryState(state, event);
+      const nodeChanged = next.nodeId !== previous.nodeId;
+      if (nodeChanged) clearTransient();
+      state = withLog(next, previous, action);
+      if (renderAfter || nodeChanged) render();
+      if (nodeChanged && state.nodeId === 'METEOR_EVENT') {
+        const meteorDelay = state.meteorPresentation === 'first'
+          ? METEOR_TIMING.quietBefore
+            + (state.reducedMotion ? METEOR_TIMING.reducedFade : METEOR_TIMING.streak + METEOR_TIMING.tail)
+            + METEOR_TIMING.quietAfter
+          : METEOR_TIMING.copyFade;
+        schedule(() => applyEvent('METEOR_SETTLED', 'meteor-settled'), meteorDelay);
+      }
+      if (nodeChanged && state.nodeId === 'DOOR_MATCH_CUT') {
+        schedule(() => applyEvent('MATCH_CUT_SETTLED', 'warm-match-cut'), state.reducedMotion ? 180 : 420);
+      }
+      if (nodeChanged) syncAudio();
+      return nodeChanged;
+    }
+
+    function unlockAudio() {
+      if (!state.audioUnlocked) {
+        const previous = state;
+        state = advanceStoryState(state, 'UNLOCK_AUDIO');
+        state = withLog(state, previous, 'first-touch');
+      }
+      if (state.sound) (isIndoor() ? room : breeze).play().catch(() => {});
+    }
+
+    function assetForNode() {
+      const size = variant();
+      const assets = {
+        ROOT_STILL: APPROVED_ASSET_PATHS.root, WIND_AWAKENS: APPROVED_ASSET_PATHS.root,
+        LOOK_UP: APPROVED_ASSET_PATHS.stargazeF1, EYES_ADJUST: APPROVED_ASSET_PATHS.stargazeF2,
+        STAR_OCCLUDED: APPROVED_ASSET_PATHS.stargazeF3, FOLLOW_CLOUD: APPROVED_ASSET_PATHS.stargazeF3,
+        STAR_RETURNS: APPROVED_ASSET_PATHS.stargazeF4, WIDE_SKY: APPROVED_ASSET_PATHS.stargazeF5,
+        METEOR_EVENT: APPROVED_ASSET_PATHS.stargazeF5, AFTER_METEOR: APPROVED_ASSET_PATHS.stargazeF5,
+        DOOR_MATCH_CUT: APPROVED_ASSET_PATHS.homeH1, ARRIVAL_H1: APPROVED_ASSET_PATHS.homeH1,
+        KITCHEN_CALL: APPROVED_ASSET_PATHS.homeH2, COOK_AND_SERVE: APPROVED_ASSET_PATHS.homeH3,
+        TABLE_RITUAL: APPROVED_ASSET_PATHS.homeH4, LEAVE_THE_LIGHT: APPROVED_ASSET_PATHS.homeH5
+      };
+      if (state.nodeId === 'TABLE_RITUAL') {
+        const tableState = state.ate && state.sipped ? 'both' : state.ate ? 'ate' : state.sipped ? 'sipped' : 'none';
+        return APPROVED_ASSET_PATHS.homeH4State(tableState);
+      }
+      return assets[state.nodeId].variant(size);
+    }
+
+    function copyForNode() {
+      if (state.nodeId === 'LEAVE_THE_LIGHT' && state.leaveStage === 'feedback') {
+        return state.lightChoice === 'leave'
+          ? { kicker: '灯下留笺', title: '这盏灯，会替你等一会儿', body: '今晚带回来的风、热饭和那一点星光，都已经有了落脚处。' }
+          : { kicker: '灯下留笺', title: '再坐一会儿，也很好', body: '不用立刻做决定。杯子还暖，屋里的光也不会催你。' };
+      }
+      if (state.nodeId === 'LEAVE_THE_LIGHT' && state.leaveStage === 'ended') {
+        return { kicker: '今晚到这里', title: '灯还亮着', body: '这一晚已经好好落下。下次回来，门口仍会有光。' };
+      }
+      return R2_EXPERIENCE_COPY[state.nodeId] || contract.nodeById.get(state.nodeId).narrative;
+    }
+
+    function altForNode() {
+      if (['ROOT_STILL', 'WIND_AWAKENS'].includes(state.nodeId)) return '一位成年人和一只猫坐在夜风草坡上，远处小屋亮着灯';
+      if (['LOOK_UP', 'EYES_ADJUST'].includes(state.nodeId)) return '成年人和猫的背影留在画面下方，宽阔银河占据夜空';
+      if (['STAR_OCCLUDED', 'FOLLOW_CLOUD'].includes(state.nodeId)) return '一层薄云经过星空，成年人和猫仍并肩仰望';
+      if (['STAR_RETURNS', 'WIDE_SKY', 'METEOR_EVENT', 'AFTER_METEOR'].includes(state.nodeId)) return '云层散开，星空重新显露，草坡上的两道背影安静坐着';
+      if (['DOOR_MATCH_CUT', 'ARRIVAL_H1'].includes(state.nodeId)) return '明亮暖屋全景里，人物和猫刚刚回到家';
+      if (state.nodeId === 'KITCHEN_CALL') return '人物在暖屋左墙放下外衣，厨房方向透出热气';
+      if (state.nodeId === 'COOK_AND_SERVE') return '明亮厨房里，简单热饭与温水正被准备好';
+      if (state.nodeId === 'TABLE_RITUAL') return '人物和猫回到饭桌前，热饭与温水在灯下冒着暖意';
+      return '整间暖屋灯火明亮，今晚留下的物件与痕迹都安稳可见';
+    }
+
+    function button(label, className, action) {
+      const item = document.createElement('button');
+      item.type = 'button';
+      item.className = `action ${className}`;
+      item.textContent = label;
+      item.addEventListener('click', (event) => { event.stopPropagation(); unlockAudio(); action(); });
+      return item;
+    }
+
+    function zone(className, label, action) {
+      const item = document.createElement('button');
+      item.type = 'button';
+      item.className = `zone ${className}`;
+      item.setAttribute('aria-label', label);
+      item.addEventListener('click', (event) => { event.stopPropagation(); unlockAudio(); action(); });
+      return item;
+    }
+
+    function revealEyes(reason) {
+      if (state.nodeId !== 'EYES_ADJUST' || state.eyesAdjusted) return;
+      cancelHoldTimer();
+      applyEvent('EYES_REVEALED', reason);
+    }
+
+    function revealEyesFromHold() {
+      holdTimer = undefined;
+      revealEyes('720ms-hold');
+    }
+
+    function kitchenResponse() {
+      if (state.nodeId !== 'KITCHEN_CALL' || state.kitchenEntered) return;
+      applyEvent('KITCHEN_RESPONDED', 'kitchen-warm-zone');
+      schedule(() => applyEvent('KITCHEN_ARRIVED', 'kitchen-arrival'), 560);
+    }
+
+    function appendRootInvitations() {
+      hotspots.append(button('看看星空', 'sky', () => applyEvent('START_LOOK_UP', 'sky-invitation')));
+      hotspots.append(button('吹吹风', 'grass', () => applyEvent('START_WIND', 'grass-invitation')));
+      hotspots.append(button('回家', 'door', () => applyEvent('DIRECT_HOME', 'door-invitation')));
+    }
+
+    function ensureRootInvitations() {
+      if (state.rootInvitationsReady) {
+        appendRootInvitations();
+        return;
+      }
+      if (rootInvitationTimer !== undefined) return;
+      rootInvitationTimer = schedule(() => {
+        rootInvitationTimer = undefined;
+        if (state.nodeId !== 'ROOT_STILL') return;
+        state = markRootInvitationsReady(state);
+        render();
+      }, 1500);
+    }
+
+    function appendEndingConsequences() {
+      const list = document.createElement('ul');
+      list.className = 'keepsakes';
+      list.setAttribute('aria-label', '今晚留下的痕迹');
+      for (const marker of buildEndingConsequences(state)) {
+        const item = document.createElement('li');
+        item.dataset.consequence = marker.key;
+        item.textContent = marker.text;
+        list.append(item);
+      }
+      story.append(list);
+    }
+
+    function updateSettingLabels() {
+      settings.querySelector('[data-setting="sound"]').textContent = `声音：${state.sound ? '开' : '关'}`;
+      settings.querySelector('[data-setting="motion"]').textContent = `减少动态：${state.reducedMotion ? '开' : '关'}`;
+      settings.querySelector('[data-setting="text"]').textContent = `大字：${state.largeText ? '开' : '关'}`;
+    }
+
+    function render() {
+      if (!state || !contract) return;
+      cancelHoldTimer();
+      phone.classList.toggle('indoor', isIndoor());
+      phone.classList.toggle('reduced', state.reducedMotion);
+      phone.classList.toggle('meteor-event', state.nodeId === 'METEOR_EVENT');
+      phone.classList.toggle('after-meteor', state.nodeId === 'AFTER_METEOR');
+      document.body.classList.toggle('large-text', state.largeText);
+      updateSettingLabels();
+      art.src = assetForNode();
+      art.alt = altForNode();
+      const copy = copyForNode();
+      story.replaceChildren();
+      hotspots.replaceChildren();
+      fx.replaceChildren();
+      const copyEl = document.createElement('section');
+      copyEl.className = 'copy';
+      const kicker = document.createElement('span');
+      kicker.className = 'kicker';
+      kicker.textContent = copy.kicker;
+      const heading = document.createElement('h1');
+      heading.textContent = copy.title;
+      const body = document.createElement('p');
+      body.textContent = copy.body;
+      copyEl.append(kicker, heading, body);
+      story.append(copyEl);
+      if (state.windToken !== 'none' && ['ROOT_STILL', 'ARRIVAL_H1', 'KITCHEN_CALL', 'LEAVE_THE_LIGHT'].includes(state.nodeId)) {
+        fx.insertAdjacentHTML('beforeend', '<span class="wind-token">·</span>');
+      }
+      if (state.nodeId === 'EYES_ADJUST' && !state.eyesAdjusted) fx.insertAdjacentHTML('beforeend', '<i class="veil"></i>');
+      if (state.nodeId === 'KITCHEN_CALL') fx.insertAdjacentHTML('beforeend', `<i class="steam${state.kitchenEntered ? ' visible' : ''}"></i>`);
+      if (state.nodeId === 'METEOR_EVENT' && state.meteorPresentation === 'first') fx.insertAdjacentHTML('beforeend', '<i class="meteor run"></i>');
+      if (state.nodeId === 'LEAVE_THE_LIGHT') appendEndingConsequences();
+
+      switch (state.nodeId) {
+        case 'ROOT_STILL':
+          ensureRootInvitations();
+          break;
+        case 'WIND_AWAKENS':
+          hotspots.append(button('让风经过', 'next', () => applyEvent({ type: 'GESTURE_TAP' }, 'wind-tap')));
+          break;
+        case 'LOOK_UP':
+          hotspots.append(button('再停一会儿', 'next', () => applyEvent('LOOK_UP_COMPLETE', 'look-up')));
+          break;
+        case 'EYES_ADJUST':
+          if (!state.eyesAdjusted) {
+            const holdZone = zone('eyes-hold-zone', '按住或轻触深蓝留白', () => revealEyes('light-tap'));
+            holdZone.addEventListener('pointerdown', () => { cancelHoldTimer(); holdTimer = schedule(revealEyesFromHold, 720); });
+            holdZone.addEventListener('pointerup', cancelHoldTimer);
+            holdZone.addEventListener('pointercancel', cancelHoldTimer);
+            hotspots.append(holdZone);
+          }
+          if (state.eyesAdjusted) hotspots.append(button('继续看云', 'next', () => applyEvent('EYES_CONTINUE', 'eyes-continue')));
+          break;
+        case 'STAR_OCCLUDED':
+          hotspots.append(button('陪它走一段', 'next', () => applyEvent('START_FOLLOW_CLOUD', 'cloud-noticed')));
+          break;
+        case 'FOLLOW_CLOUD':
+          hotspots.append(button('顺云慢慢看', 'next', () => applyEvent({ type: 'GESTURE_TAP' }, 'cloud-tap')));
+          break;
+        case 'STAR_RETURNS':
+          hotspots.append(button('看向那颗星', 'next', () => applyEvent('STAR_SETTLED', 'star-returned')));
+          break;
+        case 'WIDE_SKY':
+          hotspots.append(button(state.meteorPlayed ? '回到流星之后' : '夜空还在', 'next', () => applyEvent('START_METEOR', 'wide-sky-wait')));
+          break;
+        case 'METEOR_EVENT':
+          hotspots.append(zone('meteor-skip-zone', '轻触继续', () => applyEvent('METEOR_SETTLED', 'meteor-skip')));
+          break;
+        case 'AFTER_METEOR':
+          hotspots.append(button('再坐一会儿', 'choice-a', () => applyEvent('STAY_OUTSIDE', 'stay-outside')));
+          hotspots.append(button('回家', 'choice-b', () => applyEvent('DIRECT_HOME', 'home-after-meteor')));
+          break;
+        case 'DOOR_MATCH_CUT':
+          break;
+        case 'ARRIVAL_H1':
+          hotspots.append(zone('coat-zone', '把外衣放到挂钩', () => applyEvent('COAT_HUNG', 'coat-hook')));
+          hotspots.append(button('放下外衣', 'next', () => applyEvent('COAT_HUNG', 'coat-tap-equivalent')));
+          break;
+        case 'KITCHEN_CALL':
+          if (!state.kitchenEntered) {
+            hotspots.append(zone('kitchen-warm-zone', '厨房暖区', kitchenResponse));
+            hotspots.append(button('听见了', 'next', kitchenResponse));
+          }
+          break;
+        case 'COOK_AND_SERVE':
+          hotspots.append(button(state.kettleWarm ? '把热饭端来' : '按住壶盖', 'next', () => {
+            applyEvent(state.kettleWarm ? 'MEAL_SERVED' : 'KETTLE_WARM', state.kettleWarm ? 'dish-tap-equivalent' : 'kettle-warm');
+          }));
+          break;
+        case 'TABLE_RITUAL':
+          hotspots.append(button('吃一点', 'table-eat', () => applyEvent('TABLE_EAT', 'eat')));
+          hotspots.append(button('喝口温水', 'table-sip', () => applyEvent('TABLE_SIP', 'sip')));
+          hotspots.append(button('回看暖屋', 'next', () => applyEvent('TABLE_SETTLED', 'table-settle')));
+          break;
+        case 'LEAVE_THE_LIGHT':
+          if (state.leaveStage === 'choice') {
+            hotspots.append(button('留一盏灯', 'choice-a', () => applyEvent('CHOOSE_LEAVE_LIGHT', 'leave-light')));
+            hotspots.append(button('再坐一会儿', 'choice-b', () => applyEvent('CHOOSE_STAY_LIGHT', 'stay-light')));
+          }
+          if (state.leaveStage === 'feedback') {
+            hotspots.append(button('今晚到这里', 'end-choice', () => applyEvent('END_EVENING', 'end-evening')));
+            hotspots.append(button('回到草坡', 'return-choice', () => applyEvent('RETURN_TO_ROOT', 'return-to-root')));
+          }
+          if (state.leaveStage === 'ended') {
+            const note = document.createElement('p');
+            note.className = 'ending-note';
+            note.textContent = '不用完成更多。今晚已经被好好接住。';
+            story.append(note);
+            hotspots.append(button('回到草坡', 'return-choice', () => applyEvent('RETURN_TO_ROOT', 'return-after-end')));
+          }
+          break;
+      }
+    }
+
+    phone.addEventListener('pointerdown', (event) => { unlockAudio(); state = advanceStoryState(state, { type: 'GESTURE_START', clientX: event.clientX }); });
+    phone.addEventListener('pointerup', (event) => {
+      if (!['WIND_AWAKENS', 'FOLLOW_CLOUD'].includes(state.nodeId)) return;
+      applyEvent({ type: 'GESTURE_END', clientX: event.clientX }, 'slow-slide', false);
+    });
+    document.querySelector('#settings-toggle').addEventListener('click', (event) => { event.stopPropagation(); settings.classList.toggle('open'); });
+    settings.addEventListener('click', (event) => {
+      const setting = event.target.dataset.setting;
+      if (!setting) return;
+      event.stopPropagation();
+      const previous = state;
+      state = advanceStoryState(state, { type: 'TOGGLE_SETTING', setting });
+      state = withLog(state, previous, `toggle-${setting}`);
+      if (!state.sound) { breeze.pause(); room.pause(); } else syncAudio();
+      render();
+      settings.classList.add('open');
+    });
+    window.addEventListener('resize', render);
+
+    contract = await loadStoryContract();
+    state = createStoryState();
+    window.__storyR2Debug = Object.freeze({
+      snapshot,
+      actionLog: () => Object.freeze([...state.actionLog]),
+      toggleSound: () => applyEvent({ type: 'TOGGLE_SETTING', setting: 'sound' }, 'debug-toggle-sound'),
+      toggleReducedMotion: () => applyEvent({ type: 'TOGGLE_SETTING', setting: 'motion' }, 'debug-toggle-motion'),
+      toggleLargeText: () => applyEvent({ type: 'TOGGLE_SETTING', setting: 'text' }, 'debug-toggle-text'),
+      reset: () => { clearTransient(); breeze.pause(); room.pause(); state = createStoryState(); render(); },
+      goTo: (stateId) => {
+        if (!contract.nodeById.has(stateId)) throw new Error(`Unknown R2 node: ${stateId}`);
+        clearTransient();
+        applyEvent({ type: 'DEBUG_GO_TO', nodeId: stateId }, 'debug-goTo');
+      }
+    });
+    render();
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "operation": "masked_texture_reuse_from_frozen_r2",
+  "source_rect_master_2x": { "left": 70, "top": 1335, "width": 200, "height": 80 },
+  "source_mask_path": "source/manual-patch/right_hem_source_mask.svg",
+  "transform": {
+    "flop": true,
+    "width": 135,
+    "height": 54,
+    "rotate_degrees": -12,
+    "brightness": 1.03,
+    "saturation": 0.97,
+    "mask_blur_sigma": 1.1
+  },
+  "destination_master_2x": { "left": 224, "top": 1330 },
+  "notes": [
+    "The knit pixels come only from the frozen R2 hem and are not generated.",
+    "The editable source mask and contour SVG keep the correction local and reversible.",
+    "The transformed transparent patch must remain inside the approved R4 ROI and outside the cat guard."
+  ]
+}

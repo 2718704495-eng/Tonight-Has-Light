@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#4a220d" />
+    <meta
+      name="description"
+      content="《今夜有灯》第一夜“壶盖轻响”可丢弃高保真互动样片。"
+    />
+    <title>今夜有灯 · 壶盖轻响互动样片</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="prototype-shell">
+      <section
+        id="prototype"
+        class="prototype-stage"
+        data-phase="waiting"
+        data-beat="idle"
+        aria-label="第一夜，灯一直为你亮着。明亮温暖的房间里，桌上已经准备好晚饭和热水。"
+      >
+        <img
+          class="approved-backplate"
+          src="../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png"
+          alt="明亮暖黄的房间里，一位成年人和一只普通家猫坐在准备好晚饭的矮桌前；窗外是深蓝星夜。"
+          draggable="false"
+        />
+
+        <div class="kettle-response-glow" aria-hidden="true"></div>
+
+        <svg
+          class="motion-layer"
+          viewBox="0 0 390 844"
+          preserveAspectRatio="xMidYMid meet"
+          aria-hidden="true"
+        >
+          <defs>
+            <clipPath id="lidClip" clipPathUnits="userSpaceOnUse">
+              <path d="M211 518c2-12 10-18 23-20 14-1 24 6 27 19-13 9-37 9-50 1Z" />
+            </clipPath>
+            <clipPath id="catHeadClip" clipPathUnits="userSpaceOnUse">
+              <path d="M202 647c-4-21-1-44 9-59l10 8 10-9c11 16 16 39 11 60-8 11-32 12-40 0Z" />
+            </clipPath>
+            <clipPath id="sleeveClip" clipPathUnits="userSpaceOnUse">
+              <path d="M143 523c21 2 38 18 45 40 3 10 0 26-9 34-13-2-28-14-36-27-8-13-9-33 0-47Z" />
+            </clipPath>
+            <clipPath id="cupSpriteClip" clipPathUnits="userSpaceOnUse">
+              <path d="M179 527c4-4 17-5 22-1 4 3 5 8 4 15 0 9-5 15-13 16-9 0-14-6-14-15-1-7-1-12 1-15Z" />
+            </clipPath>
+          </defs>
+
+          <g class="lid-overlay">
+            <image
+              href="../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png"
+              width="390"
+              height="844"
+              clip-path="url(#lidClip)"
+              preserveAspectRatio="none"
+            />
+          </g>
+
+          <g class="cat-head-overlay">
+            <image
+              href="../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png"
+              width="390"
+              height="844"
+              clip-path="url(#catHeadClip)"
+              preserveAspectRatio="none"
+            />
+          </g>
+
+          <g class="sleeve-overlay">
+            <image
+              href="../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png"
+              width="390"
+              height="844"
+              clip-path="url(#sleeveClip)"
+              preserveAspectRatio="none"
+            />
+          </g>
+
+          <g class="idle-steam" fill="none" stroke-linecap="round">
+            <path d="M230 498c-6-8 6-12 1-22-3-6 2-10 5-14" />
+            <path d="M244 497c5-9-5-14 0-23 3-6-1-10-4-14" />
+          </g>
+
+          <g class="response-steam" fill="none" stroke-linecap="round">
+            <path d="M222 498c-10-13 8-19 0-33-5-8 3-14 7-19" />
+            <path d="M238 496c8-13-7-20 0-34 4-8-2-13-5-18" />
+            <path d="M252 499c-7-14 8-19 2-32-4-8 1-14 6-19" />
+          </g>
+
+          <g class="cup-cover">
+            <path d="M176 524c8-5 25-5 32 2l-1 31c-8 7-24 7-32 0Z" fill="#834415" opacity="0.96" />
+            <ellipse cx="191.5" cy="556" rx="15.5" ry="3.8" fill="#54290f" opacity="0.38" />
+          </g>
+
+          <g class="spare-cup spare-cup-down">
+            <g transform="rotate(180 191 541)">
+              <image
+                href="../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png"
+                width="390"
+                height="844"
+                clip-path="url(#cupSpriteClip)"
+                preserveAspectRatio="none"
+              />
+            </g>
+          </g>
+
+          <g class="spare-cup spare-cup-up">
+            <image
+              href="../../design-board/formal-ui-v1-2/approvals/formal-ui-v1-2-a-user-approved-reference-2026-08-24.png"
+              width="390"
+              height="844"
+              clip-path="url(#cupSpriteClip)"
+              preserveAspectRatio="none"
+            />
+          </g>
+
+          <g class="cup-tap-ripple" fill="none">
+            <ellipse cx="191" cy="542" rx="13" ry="7" />
+            <ellipse cx="191" cy="542" rx="20" ry="11" />
+          </g>
+        </svg>
+
+        <button
+          id="kettleHotspot"
+          class="kettle-hotspot"
+          type="button"
+          aria-label="轻轻碰一下水壶，听壶盖回应"
+          aria-describedby="interactionDescription"
+        >
+          <span class="touch-feedback" aria-hidden="true"></span>
+        </button>
+
+        <button
+          id="cupHotspot"
+          class="cup-hotspot"
+          type="button"
+          aria-label="轻轻碰一下倒扣的杯子"
+          disabled
+        >
+          <span class="sr-only">杯子会被轻轻扶正；不点也会自然继续</span>
+        </button>
+
+        <button
+          id="soundToggle"
+          class="sound-toggle"
+          type="button"
+          aria-label="关闭样片声音"
+          aria-pressed="true"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path class="speaker-shape" d="M5 10v4h3l4 3V7L8 10Z" />
+            <path class="sound-wave sound-wave-one" d="M15 9.4c1.2 1.4 1.2 3.8 0 5.2" />
+            <path class="sound-wave sound-wave-two" d="M18 7c2.8 2.8 2.8 7.2 0 10" />
+            <path class="sound-muted" d="m15 9 5 6m0-6-5 6" />
+          </svg>
+        </button>
+
+        <div id="storyCopy" class="story-copy" aria-live="polite" aria-atomic="true">
+          <p id="storyLine"></p>
+        </div>
+
+        <p id="interactionDescription" class="sr-only">
+          这是一个没有失败的互动。轻触水壶后，蒸汽会变得清楚，壶盖轻响；静音时仍可从画面理解。
+        </p>
+        <p id="assertiveStatus" class="sr-only" aria-live="assertive"></p>
+      </section>
+
+      <aside class="prototype-note" aria-label="样片说明">
+        <p><strong>INDOOR-N01-PROTOTYPE-V1</strong></p>
+        <p>轻触水壶 · 壶盖轻响 · 杯子小剧场</p>
+        <p>批准参考图仅用于此可丢弃样片，不进入正式微信包。</p>
+      </aside>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

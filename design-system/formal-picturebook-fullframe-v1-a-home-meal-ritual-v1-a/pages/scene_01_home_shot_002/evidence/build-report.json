@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "status": "BUILT / VISUAL REVIEW REQUIRED",
+  "deterministic": true,
+  "pageId": "scene_01_home_shot_002",
+  "inputs": {
+    "h1": {
+      "approved": true,
+      "export390": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/390x844/scene_01_home_shot_001.png",
+        "sha256": "b68c2dfd7bcf40a9d3bd77320faecdbeff517e2b2f7f160abbf4a7d4c6a836fe",
+        "width": 390,
+        "height": 844,
+        "format": "png"
+      },
+      "export195": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_001/exports/195x422/scene_01_home_shot_001.png",
+        "sha256": "037523e90281531145a6ae47633e6ec87e883df943e1853ef13f910296acd982",
+        "width": 195,
+        "height": 422,
+        "format": "png"
+      }
+    },
+    "h2": {
+      "candidateVersion": "r1",
+      "export390": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/390x844/scene_01_home_shot_002.png",
+        "sha256": "ef11fcb38d1e515cb2f8702d7b4ea8734f0f92ac08f24c8e2a18bfad97ccc6dd",
+        "width": 390,
+        "height": 844,
+        "format": "png"
+      },
+      "export195": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/exports/195x422/scene_01_home_shot_002.png",
+        "sha256": "8419a54d7aea95c00eb638299f4f3a0faec8e41c0a259fce190336b878bf7593",
+        "width": 195,
+        "height": 422,
+        "format": "png"
+      }
+    },
+    "h5": {
+      "approved": true,
+      "export390": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/390x844/scene_01_home_shot_005.png",
+        "sha256": "569a7b9b71d16d13ad311bdea9a29d6bc93a7dc68c99892faf8c416f38bc1c51",
+        "width": 390,
+        "height": 844,
+        "format": "png"
+      },
+      "export195": {
+        "path": "design-system/formal-picturebook-fullframe-v1-a-home-f5-wide-room-v1-a-r1/exports/195x422/scene_01_home_shot_005.png",
+        "sha256": "674994ba660f8f2ed8a7f605c976e6eb0199ede70ced81e91e092862078ed57e",
+        "width": 195,
+        "height": 422,
+        "format": "png"
+      }
+    }
+  },
+  "sequence": [
+    {
+      "pageId": "scene_01_home_shot_001",
+      "state": "outerwear worn"
+    },
+    {
+      "pageId": "scene_01_home_shot_002",
+      "state": "outerwear hanging action"
+    },
+    {
+      "pageId": "scene_01_home_shot_005",
+      "state": "outerwear hanging result"
+    }
+  ],
+  "annotations": {
+    "roomAnchors": [
+      "door frame",
+      "same left hook",
+      "cabinet / lamp",
+      "floor direction"
+    ]
+  },
+  "outputs": {
+    "h1H2H5Outerwear390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/evidence/h1-h2-h5-outerwear-390.png",
+      "sha256": "fd80bd99010fc4925cfc1a7fe37ed0f34bb1ec4696c6405abe2949afd6b9aeff",
+      "width": 1170,
+      "height": 900,
+      "format": "png"
+    },
+    "h1H2H5Outerwear195": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/evidence/h1-h2-h5-outerwear-195.png",
+      "sha256": "5019ee0c6862f0ee0f74947f78c8c24529f10cd241b3be550ed99198361051c9",
+      "width": 585,
+      "height": 478,
+      "format": "png"
+    },
+    "h2H5InnerKnit390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/evidence/h2-h5-inner-knit-390.png",
+      "sha256": "fd8aaf27033f80ef13ad4c8d469dc87e8e3b8b6ddb3249c6ffc1967ca98dab3d",
+      "width": 780,
+      "height": 900,
+      "format": "png"
+    },
+    "h2RoomAnchors390": {
+      "path": "design-system/formal-picturebook-fullframe-v1-a-home-meal-ritual-v1-a/pages/scene_01_home_shot_002/evidence/h2-room-anchors-390.png",
+      "sha256": "11f737e2cea7ce95d6884dc611b036f170c3ade3e5e75ce4259c4a4b27b13821",
+      "width": 390,
+      "height": 844,
+      "format": "png"
+    }
+  },
+  "evidenceBoundary": {
+    "cleanPlate": false,
+    "userApproved": false,
+    "chineseLabelsBakedInEvidenceOnly": true
+  },
+  "notes": [
+    "The 390 and 195 triptychs read H1 outerwear worn → H2 hanging action → H5 hanging result.",
+    "Chinese labels are baked only into evidence boards, never into any H1, H2, or H5 clean plate.",
+    "This is continuity evidence, not a clean plate, Gate B visual PASS, or user approval."
+  ]
+}

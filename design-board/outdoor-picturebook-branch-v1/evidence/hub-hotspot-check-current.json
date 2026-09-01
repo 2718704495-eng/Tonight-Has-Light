@@ -1,0 +1,45 @@
+{
+  "els": [
+    {
+      "branch": "star",
+      "height": 427,
+      "label": "看看星空",
+      "selector": "[data-branch=\"star\"]",
+      "topBranchAtCenter": "star",
+      "topLabelAtCenter": "看看星空",
+      "width": 364,
+      "withinStage": true
+    },
+    {
+      "branch": "breeze",
+      "height": 229,
+      "label": "吹吹风",
+      "selector": "[data-branch=\"breeze\"]",
+      "topBranchAtCenter": null,
+      "topLabelAtCenter": null,
+      "width": 251,
+      "withinStage": true
+    },
+    {
+      "branch": "home",
+      "height": 174,
+      "label": "回家",
+      "selector": "[data-branch=\"home\"]",
+      "topBranchAtCenter": "home",
+      "topLabelAtCenter": "回家",
+      "width": 98,
+      "withinStage": true
+    },
+    {
+      "branch": null,
+      "height": 213,
+      "label": "人物和猫",
+      "selector": "#quiet-character-zone",
+      "topBranchAtCenter": null,
+      "topLabelAtCenter": "人物和猫",
+      "width": 207,
+      "withinStage": true
+    }
+  ],
+  "hintsReady": true
+}

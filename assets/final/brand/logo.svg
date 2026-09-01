@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 256" role="img" aria-labelledby="title desc">
+  <title id="title">今夜有灯·主标志</title>
+  <desc id="desc">一页微微折起的灯与可编辑中文标题，冷月蓝和琥珀色版本。</desc>
+  <metadata>
+    AI-assisted code-authored editable vector; project: 今夜有灯; asset: primary-logo;
+    version: 1.0.0; date: 2026-08-21; third-party assets: none.
+    Chinese remains editable text and uses system font fallbacks only.
+  </metadata>
+  <defs>
+    <linearGradient id="brand-amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF1CD"/>
+      <stop offset="1" stop-color="#F2B66D"/>
+    </linearGradient>
+    <filter id="brand-glow" x="-80%" y="-60%" width="260%" height="220%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <g id="layer-preview-background" data-layer="preview-background">
+    <rect width="1024" height="256" rx="28" fill="#10151F"/>
+    <path d="M0 213C194 177 323 226 489 203c192-27 318-91 535-37v90H0Z" fill="#182235" opacity="0.6"/>
+  </g>
+
+  <g id="layer-mark" data-layer="folded-lamp-mark" transform="translate(62 38)">
+    <path d="M47 18 75 0l22 30c-16 12-34 8-50-12Z" fill="#B8C6CF"/>
+    <path d="M47 18c-10 38-8 99-4 137 3 27 55 29 58 0 5-45-2-91 3-125-25-3-43-9-57-12Z" fill="#8FA4A5"/>
+    <ellipse cx="72" cy="92" rx="52" ry="68" fill="#F2B66D" opacity="0.18" filter="url(#brand-glow)"/>
+    <path d="M58 113c-1-18 10-33 26-33 18 0 27 18 21 35-6 17-15 29-28 27-13-2-18-14-19-29Z" fill="url(#brand-amber)"/>
+    <path d="M100 73c21 14 27 44 7 58-2-18-8-40-7-58Z" fill="#6F898B"/>
+    <circle cx="67" cy="55" r="3.5" fill="#26303A"/>
+    <circle cx="86" cy="55" r="3.5" fill="#26303A"/>
+  </g>
+
+  <g id="layer-wordmark" data-layer="editable-wordmark">
+    <text x="236" y="142" fill="#F6EBD7" font-family="Songti SC, STSong, serif" font-size="78" font-weight="500" letter-spacing="10">今夜有灯</text>
+    <text x="242" y="184" fill="#B8C6CF" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="18" font-weight="500" letter-spacing="8">TONIGHT, A LIGHT IS ON</text>
+    <path d="M239 205h513" stroke="#2A3A4F" stroke-width="2"/>
+    <circle cx="776" cy="205" r="4" fill="#F2B66D"/>
+  </g>
+</svg>

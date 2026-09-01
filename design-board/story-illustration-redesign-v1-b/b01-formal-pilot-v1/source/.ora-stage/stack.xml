@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<image version="0.0.1" w="780" h="1688" name="B01-FORMAL-PILOT-V1-R1">
+  <stack name="B01 source layers">
+    <layer name="17-paper-grain" src="data/17-paper-grain.png" visibility="visible" opacity="1.0"/>
+    <layer name="16-foreground-grass-strokes" src="data/16-foreground-grass-strokes.png" visibility="visible" opacity="1.0"/>
+    <layer name="15-two-flowers" src="data/15-two-flowers.png" visibility="visible" opacity="1.0"/>
+    <layer name="14-cat-tail" src="data/14-cat-tail.png" visibility="visible" opacity="1.0"/>
+    <layer name="13-cat-ears" src="data/13-cat-ears.png" visibility="visible" opacity="1.0"/>
+    <layer name="12-cat-body" src="data/12-cat-body.png" visibility="visible" opacity="1.0"/>
+    <layer name="11-adult-clothing-edge" src="data/11-adult-clothing-edge.png" visibility="visible" opacity="1.0"/>
+    <layer name="10-adult-hair" src="data/10-adult-hair.png" visibility="visible" opacity="1.0"/>
+    <layer name="09-adult-body" src="data/09-adult-body.png" visibility="visible" opacity="1.0"/>
+    <layer name="08-near-grass" src="data/08-near-grass.png" visibility="visible" opacity="1.0"/>
+    <layer name="07-far-grass" src="data/07-far-grass.png" visibility="visible" opacity="1.0"/>
+    <layer name="06-door-light" src="data/06-door-light.png" visibility="visible" opacity="1.0"/>
+    <layer name="05-house" src="data/05-house.png" visibility="visible" opacity="1.0"/>
+    <layer name="04-mountains" src="data/04-mountains.png" visibility="visible" opacity="1.0"/>
+    <layer name="03-main-stars" src="data/03-main-stars.png" visibility="visible" opacity="1.0"/>
+    <layer name="02-milky-way" src="data/02-milky-way.png" visibility="visible" opacity="1.0"/>
+    <layer name="01-sky" src="data/01-sky.png" visibility="visible" opacity="1.0"/>
+  </stack>
+</image>
